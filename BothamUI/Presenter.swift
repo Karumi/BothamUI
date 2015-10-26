@@ -23,13 +23,11 @@ public extension Presenter {
     func viewDidDisappear() {}
 }
 
-public class BasePresenter<W: Wireframe, U: UI>: Presenter {
+public class BasePresenter<W: Wireframe>: Presenter {
     public let wireframe: W
-    public let ui: U
 
-    public init(wireframe: W, ui: U) {
+    public init(wireframe: W) {
         self.wireframe = wireframe
-        self.ui = ui
     }
 
     public func viewDidLoad() {}

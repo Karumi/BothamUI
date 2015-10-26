@@ -9,7 +9,7 @@
 import UIKit
 import BothamUI
 
-class HomeViewController<T>: BothamViewController, HomeUI {
+class HomeViewController: BothamViewController<HomePresenter>, HomeUI {
 
     override func viewDidLoad() {
         super.viewDidLoad()
