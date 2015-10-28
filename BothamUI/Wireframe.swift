@@ -16,8 +16,7 @@ public protocol BothamWireframe {
 
 extension BothamWireframe {
     func storyboard(name: String) -> UIStoryboard {
-        let storyboard = UIStoryboard(name: name, bundle: NSBundle.mainBundle())
-        return storyboard
+        return UIStoryboard(name: name, bundle: NSBundle.mainBundle())
     }
 
     public func viewControllerFromStoryboard<T>(ViewControllerIdentifier: String) -> T {
