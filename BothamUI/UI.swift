@@ -9,5 +9,4 @@
 import Foundation
 
 public protocol BothamUI {
-    var title: String? { get set }
 }
