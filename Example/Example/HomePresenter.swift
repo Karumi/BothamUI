@@ -9,7 +9,7 @@
 import Foundation
 import BothamUI
 
-class HomePresenter: BasePresenter<MainWireframe> {
+class HomePresenter: BothamBasePresenter<MainWireframe> {
     let ui: HomeUI
 
     init(wireframe: MainWireframe, ui: HomeUI) {

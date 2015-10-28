@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol Presenter {
+public protocol BothamPresenter {
     func viewDidLoad()
     func viewWillAppear()
     func viewDidAppear()
@@ -16,14 +16,14 @@ public protocol Presenter {
     func viewDidDisappear()
 }
 
-public extension Presenter {
+public extension BothamPresenter {
     func viewWillAppear() {}
     func viewDidAppear() {}
     func viewWillDisappear() {}
     func viewDidDisappear() {}
 }
 
-public class BasePresenter<W: Wireframe>: Presenter {
+public class BothamBasePresenter<W: Wireframe>: BothamPresenter {
     public let wireframe: W
 
     public init(wireframe: W) {
