@@ -12,7 +12,7 @@ import UIKit
 
 
 // Warning: Subclass from UIViewController cannot be generic or the IB is not able to find it.
-public class BothamViewController<T: BothamPresenter>: UIViewController, UI {
+public class BothamViewController<T: BothamPresenter>: UIViewController, BothamUI {
     public var presenter: T! = nil
 
     public override func viewDidLoad() {
