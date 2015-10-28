@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-public protocol Wireframe {
+public protocol BothamWireframe {
     var storyboardName: String { get }
     func presentRootViewControllerInWindow(window: UIWindow)
 }
 
-extension Wireframe {
+extension BothamWireframe {
     func storyboard(name: String) -> UIStoryboard {
         let storyboard = UIStoryboard(name: name, bundle: NSBundle.mainBundle())
         return storyboard

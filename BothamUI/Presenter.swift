@@ -23,7 +23,7 @@ public extension BothamPresenter {
     func viewDidDisappear() {}
 }
 
-public class BothamBasePresenter<W: Wireframe>: BothamPresenter {
+public class BothamBasePresenter<W: BothamWireframe>: BothamPresenter {
     public let wireframe: W
 
     public init(wireframe: W) {

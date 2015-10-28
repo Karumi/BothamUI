@@ -9,7 +9,7 @@
 import Foundation
 import BothamUI
 
-struct MainWireframe: Wireframe {
+struct MainWireframe: BothamWireframe {
     let storyboardName: String = "Main"
     let serviceLocator = ServiceLocator()
 
