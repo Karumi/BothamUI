@@ -13,6 +13,10 @@
 		6B6CCD511BDD11810015A4D4 /* BothamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD501BDD11810015A4D4 /* BothamViewController.swift */; };
 		6B6CCD531BDD12C40015A4D4 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD521BDD12C40015A4D4 /* Presenter.swift */; };
 		6B6CCD561BDD131B0015A4D4 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD551BDD131B0015A4D4 /* Wireframe.swift */; };
+		6B97DB3B1BE8A1EC00EE96B7 /* BothamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97DB3A1BE8A1EC00EE96B7 /* BothamUITests.swift */; };
+		6B97DB3D1BE8A53000EE96B7 /* FakeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97DB3C1BE8A53000EE96B7 /* FakeWireframe.swift */; };
+		6B97DB3F1BE8A5DB00EE96B7 /* FakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97DB3E1BE8A5DB00EE96B7 /* FakeViewController.swift */; };
+		6B97DB411BE8A61600EE96B7 /* FakePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97DB401BE8A61600EE96B7 /* FakePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 		6B6CCD501BDD11810015A4D4 /* BothamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamViewController.swift; sourceTree = "<group>"; };
 		6B6CCD521BDD12C40015A4D4 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		6B6CCD551BDD131B0015A4D4 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		6B97DB3A1BE8A1EC00EE96B7 /* BothamUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamUITests.swift; sourceTree = "<group>"; };
+		6B97DB3C1BE8A53000EE96B7 /* FakeWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeWireframe.swift; sourceTree = "<group>"; };
+		6B97DB3E1BE8A5DB00EE96B7 /* FakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeViewController.swift; sourceTree = "<group>"; };
+		6B97DB401BE8A61600EE96B7 /* FakePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				6B6CCD411BDD0FFB0015A4D4 /* Info.plist */,
+				6B97DB3A1BE8A1EC00EE96B7 /* BothamUITests.swift */,
+				6B97DB421BE8A99200EE96B7 /* Fakes */,
 			);
 			path = BothamUITests;
 			sourceTree = "<group>";
@@ -117,6 +127,16 @@
 				6B6CCD551BDD131B0015A4D4 /* Wireframe.swift */,
 			);
 			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		6B97DB421BE8A99200EE96B7 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				6B97DB3C1BE8A53000EE96B7 /* FakeWireframe.swift */,
+				6B97DB3E1BE8A5DB00EE96B7 /* FakeViewController.swift */,
+				6B97DB401BE8A61600EE96B7 /* FakePresenter.swift */,
+			);
+			name = Fakes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,7 +195,7 @@
 		6B6CCD271BDD0FFB0015A4D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "GoKarumi S.L.";
 				TargetAttributes = {
@@ -238,6 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B97DB3F1BE8A5DB00EE96B7 /* FakeViewController.swift in Sources */,
+				6B97DB411BE8A61600EE96B7 /* FakePresenter.swift in Sources */,
+				6B97DB3B1BE8A1EC00EE96B7 /* BothamUITests.swift in Sources */,
+				6B97DB3D1BE8A53000EE96B7 /* FakeWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,16 +403,19 @@
 		6B6CCD481BDD0FFB0015A4D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BothamUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.BothamUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		6B6CCD491BDD0FFB0015A4D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BothamUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.BothamUITests;
