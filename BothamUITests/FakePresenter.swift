@@ -9,5 +9,30 @@
 import Foundation
 import BothamUI
 
-class FakePresenter: BothamBasePresenter<FakeWireframe> {
+class FakePresenter: BothamPresenter {
+    var viewDidLoadCalled = false
+    var viewWillAppearCalled = false
+    var viewDidAppearCalled = false
+    var viewWillDisappearCalled = false
+    var viewDidDisappearCalled = false
+
+    func viewDidLoad() {
+        viewDidLoadCalled = true
+    }
+
+    func viewWillAppear() {
+        viewWillAppearCalled = true
+    }
+
+    func viewDidAppear(){
+        viewDidAppearCalled = true
+    }
+
+    func viewWillDisappear(){
+        viewWillDisappearCalled = true
+    }
+
+    func viewDidDisappear() {
+        viewDidDisappearCalled = true
+    }
 }

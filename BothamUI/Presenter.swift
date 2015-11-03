@@ -22,13 +22,3 @@ public extension BothamPresenter {
     func viewWillDisappear() {}
     func viewDidDisappear() {}
 }
-
-public class BothamBasePresenter<W: BothamWireframe>: BothamPresenter {
-    public let wireframe: W
-
-    public init(wireframe: W) {
-        self.wireframe = wireframe
-    }
-
-    public func viewDidLoad() {}
-}

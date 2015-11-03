@@ -9,15 +9,14 @@
 import Foundation
 import BothamUI
 
-class HomePresenter: BothamBasePresenter<MainWireframe> {
+class HomePresenter: BothamPresenter {
     let ui: HomeUI
 
     init(wireframe: MainWireframe, ui: HomeUI) {
         self.ui = ui
-        super.init(wireframe: wireframe)
     }
 
-    override func viewDidLoad() {
+    func viewDidLoad() {
         ui.showMainMessage("Welcome")
     }
 }
