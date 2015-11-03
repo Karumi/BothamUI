@@ -11,45 +11,45 @@ import XCTest
 
 class BothamUITests: XCTestCase {
 
-    override func setUp() {
-        super.setUp()
-    }
-
-    override func tearDown() {
-        super.tearDown()
-    }
-
     func testWireframe() {
+        // Given
         let wireframe = FakeWireframe()
+        // When
         wireframe.presentRootViewControllerInWindow(UIWindow())
+        // Then
         XCTAssertTrue(wireframe.isRootViewControllerPresented)
     }
 
     func testViewControllerPresenterStateTransitions() {
+        // Given
         let viewController = FakeWireframe().fakeViewControllerFromStoryboard()
         let presenter = FakePresenter()
         viewController.presenter = presenter
-
-        viewController.viewDidLoad()
-
-        XCTAssertTrue(presenter.viewDidLoadCalled)
-
         let animated = false
 
-        viewController.viewWillAppear(animated)
+        // When
+        viewController.viewDidLoad()
+        // Then
+        XCTAssertTrue(presenter.viewDidLoadCalled)
 
+        // When
+        viewController.viewWillAppear(animated)
+        // Then
         XCTAssertTrue(presenter.viewWillAppearCalled)
 
+        // When
         viewController.viewDidAppear(animated)
-
+        // Then
         XCTAssertTrue(presenter.viewDidAppearCalled)
 
+        // When
         viewController.viewWillDisappear(animated)
-
+        // Then
         XCTAssertTrue(presenter.viewWillDisappearCalled)
 
+        // When
         viewController.viewDidDisappear(animated)
-
+        // Then
         XCTAssertTrue(presenter.viewDidDisappearCalled)
     }
 }
