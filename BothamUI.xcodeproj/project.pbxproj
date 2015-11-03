@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B1BACCE1BDD27E100AC5E9B /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BACCD1BDD27E100AC5E9B /* UI.swift */; };
 		6B6CCD341BDD0FFB0015A4D4 /* BothamUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B6CCD331BDD0FFB0015A4D4 /* BothamUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B6CCD3B1BDD0FFB0015A4D4 /* BothamUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6CCD301BDD0FFB0015A4D4 /* BothamUI.framework */; settings = {ASSET_TAGS = (); }; };
-		6B6CCD401BDD0FFB0015A4D4 /* BothamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD3F1BDD0FFB0015A4D4 /* BothamUITests.swift */; };
+		6B6CCD3B1BDD0FFB0015A4D4 /* BothamUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6CCD301BDD0FFB0015A4D4 /* BothamUI.framework */; };
+		6B6CCD511BDD11810015A4D4 /* BothamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD501BDD11810015A4D4 /* BothamViewController.swift */; };
+		6B6CCD531BDD12C40015A4D4 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD521BDD12C40015A4D4 /* Presenter.swift */; };
+		6B6CCD561BDD131B0015A4D4 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD551BDD131B0015A4D4 /* Wireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B1BACCD1BDD27E100AC5E9B /* UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
 		6B6CCD301BDD0FFB0015A4D4 /* BothamUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BothamUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6CCD331BDD0FFB0015A4D4 /* BothamUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BothamUI.h; sourceTree = "<group>"; };
 		6B6CCD351BDD0FFB0015A4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B6CCD3A1BDD0FFB0015A4D4 /* BothamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BothamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B6CCD3F1BDD0FFB0015A4D4 /* BothamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothamUITests.swift; sourceTree = "<group>"; };
 		6B6CCD411BDD0FFB0015A4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B6CCD501BDD11810015A4D4 /* BothamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamViewController.swift; sourceTree = "<group>"; };
+		6B6CCD521BDD12C40015A4D4 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		6B6CCD551BDD131B0015A4D4 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 		6B6CCD321BDD0FFB0015A4D4 /* BothamUI */ = {
 			isa = PBXGroup;
 			children = (
+				6B6CCD541BDD13070015A4D4 /* Wireframe */,
+				6B6CCD4B1BDD10CD0015A4D4 /* Presenter */,
+				6B6CCD4A1BDD10C40015A4D4 /* ViewController */,
 				6B6CCD331BDD0FFB0015A4D4 /* BothamUI.h */,
 				6B6CCD351BDD0FFB0015A4D4 /* Info.plist */,
 			);
@@ -80,10 +89,34 @@
 		6B6CCD3E1BDD0FFB0015A4D4 /* BothamUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6B6CCD3F1BDD0FFB0015A4D4 /* BothamUITests.swift */,
 				6B6CCD411BDD0FFB0015A4D4 /* Info.plist */,
 			);
 			path = BothamUITests;
+			sourceTree = "<group>";
+		};
+		6B6CCD4A1BDD10C40015A4D4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6B6CCD501BDD11810015A4D4 /* BothamViewController.swift */,
+				6B1BACCD1BDD27E100AC5E9B /* UI.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		6B6CCD4B1BDD10CD0015A4D4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6B6CCD521BDD12C40015A4D4 /* Presenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		6B6CCD541BDD13070015A4D4 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				6B6CCD551BDD131B0015A4D4 /* Wireframe.swift */,
+			);
+			name = Wireframe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +175,7 @@
 		6B6CCD271BDD0FFB0015A4D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "GoKarumi S.L.";
 				TargetAttributes = {
@@ -193,6 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B6CCD531BDD12C40015A4D4 /* Presenter.swift in Sources */,
+				6B1BACCE1BDD27E100AC5E9B /* UI.swift in Sources */,
+				6B6CCD511BDD11810015A4D4 /* BothamViewController.swift in Sources */,
+				6B6CCD561BDD131B0015A4D4 /* Wireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B6CCD401BDD0FFB0015A4D4 /* BothamUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +344,7 @@
 		6B6CCD451BDD0FFB0015A4D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,12 +355,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.BothamUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		6B6CCD461BDD0FFB0015A4D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -375,6 +415,7 @@
 				6B6CCD461BDD0FFB0015A4D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B6CCD471BDD0FFB0015A4D4 /* Build configuration list for PBXNativeTarget "BothamUITests" */ = {
 			isa = XCConfigurationList;
@@ -383,6 +424,7 @@
 				6B6CCD491BDD0FFB0015A4D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
