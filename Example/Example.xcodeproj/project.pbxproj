@@ -15,10 +15,9 @@
 		6B6B092E1BDD1A830013891D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6B092C1BDD1A830013891D /* Main.storyboard */; };
 		6B6B09301BDD1A830013891D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6B092F1BDD1A830013891D /* Assets.xcassets */; };
 		6B6B09331BDD1A830013891D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6B09311BDD1A830013891D /* LaunchScreen.storyboard */; };
-		6B6B093E1BDD1A830013891D /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B093D1BDD1A830013891D /* ExampleTests.swift */; };
 		6B6B09491BDD1A830013891D /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B09481BDD1A830013891D /* ExampleUITests.swift */; };
 		6B6B09571BDD1B580013891D /* BothamUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6B09561BDD1B580013891D /* BothamUI.framework */; };
-		6BB5CD951BDD2D670009C2F0 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB5CD941BDD2D670009C2F0 /* ServiceLocator.swift */; settings = {ASSET_TAGS = (); }; };
+		6BB5CD951BDD2D670009C2F0 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB5CD941BDD2D670009C2F0 /* ServiceLocator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		6B6B09321BDD1A830013891D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B6B09341BDD1A830013891D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B6B09391BDD1A830013891D /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B6B093D1BDD1A830013891D /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		6B6B093F1BDD1A830013891D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B6B09441BDD1A830013891D /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6B09481BDD1A830013891D /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 		6B6B093C1BDD1A830013891D /* ExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				6B6B093D1BDD1A830013891D /* ExampleTests.swift */,
 				6B6B093F1BDD1A830013891D /* Info.plist */,
 			);
 			path = ExampleTests;
@@ -284,7 +281,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B6B093E1BDD1A830013891D /* ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

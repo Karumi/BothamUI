@@ -10,7 +10,6 @@
 		6B1BACCE1BDD27E100AC5E9B /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BACCD1BDD27E100AC5E9B /* UI.swift */; };
 		6B6CCD341BDD0FFB0015A4D4 /* BothamUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B6CCD331BDD0FFB0015A4D4 /* BothamUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B6CCD3B1BDD0FFB0015A4D4 /* BothamUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6CCD301BDD0FFB0015A4D4 /* BothamUI.framework */; };
-		6B6CCD401BDD0FFB0015A4D4 /* BothamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD3F1BDD0FFB0015A4D4 /* BothamUITests.swift */; };
 		6B6CCD511BDD11810015A4D4 /* BothamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD501BDD11810015A4D4 /* BothamViewController.swift */; };
 		6B6CCD531BDD12C40015A4D4 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD521BDD12C40015A4D4 /* Presenter.swift */; };
 		6B6CCD561BDD131B0015A4D4 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD551BDD131B0015A4D4 /* Wireframe.swift */; };
@@ -32,7 +31,6 @@
 		6B6CCD331BDD0FFB0015A4D4 /* BothamUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BothamUI.h; sourceTree = "<group>"; };
 		6B6CCD351BDD0FFB0015A4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B6CCD3A1BDD0FFB0015A4D4 /* BothamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BothamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B6CCD3F1BDD0FFB0015A4D4 /* BothamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BothamUITests.swift; sourceTree = "<group>"; };
 		6B6CCD411BDD0FFB0015A4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B6CCD501BDD11810015A4D4 /* BothamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamViewController.swift; sourceTree = "<group>"; };
 		6B6CCD521BDD12C40015A4D4 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 		6B6CCD3E1BDD0FFB0015A4D4 /* BothamUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6B6CCD3F1BDD0FFB0015A4D4 /* BothamUITests.swift */,
 				6B6CCD411BDD0FFB0015A4D4 /* Info.plist */,
 			);
 			path = BothamUITests;
@@ -241,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B6CCD401BDD0FFB0015A4D4 /* BothamUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
