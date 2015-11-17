@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func installRootViewControllerIntoWindow(window: UIWindow) {
-        wireframe.presentRootViewControllerInWindow(window)
+        wireframe.presentInitialViewControllerInWindow(window)
     }
 }
 

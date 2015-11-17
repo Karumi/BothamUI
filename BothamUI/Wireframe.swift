@@ -11,7 +11,7 @@ import UIKit
 
 public protocol BothamWireframe {
     var storyboardName: String { get }
-    func presentRootViewControllerInWindow(window: UIWindow)
+    func presentInitialViewControllerInWindow(window: UIWindow)
 }
 
 extension BothamWireframe {
@@ -19,6 +19,11 @@ extension BothamWireframe {
         return UIStoryboard(name: name, bundle: NSBundle.mainBundle())
     }
 
+    public func initialViewControllerFromStoryboard<T>() -> T {
+        let uiStoryboard = storyboard(storyboardName)
+        return uiStoryboard.instantiateInitialViewController() as! T
+    }
+    
     public func viewControllerFromStoryboard<T>(ViewControllerIdentifier: String) -> T {
         let uiStoryboard = storyboard(storyboardName)
         return uiStoryboard.instantiateViewControllerWithIdentifier(ViewControllerIdentifier) as! T
