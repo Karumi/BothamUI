@@ -11,6 +11,10 @@ import UIKit
 // ServiceLocator or Module in Dagger 2
 
 struct ServiceLocator {
+    func provideMainWireframe() -> MainWireframe {
+        return MainWireframe()
+    }
+
     func provideInitialViewControllerFromStoryboard(mainWireframe: MainWireframe) -> UITabBarController {
         return mainWireframe.initialViewControllerFromStoryboard()
     }

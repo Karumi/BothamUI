@@ -31,13 +31,14 @@
                             <constraint firstItem="WbF-3P-okg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QKW-yo-yw9"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="rdh-eU-nWn"/>
                     <connections>
                         <outlet property="mainMessageLabel" destination="WbF-3P-okg" id="85A-sv-CCg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="454" y="1059"/>
+            <point key="canvasLocation" x="2052" y="-857"/>
         </scene>
         <!--Characters-->
         <scene sceneID="LUd-WA-hJN">
@@ -50,7 +51,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="XNv-3P-e3b" style="IBUITableViewCellStyleDefault" id="1IV-na-C82">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1IV-na-C82" id="r41-gU-E6R">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -84,16 +85,13 @@
         <!--Characters-->
         <scene sceneID="D7p-0m-WT2">
             <objects>
-                <navigationController id="yCJ-fo-ItF" sceneMemberID="viewController">
+                <navigationController id="yCJ-fo-ItF" customClass="CharactersNavigationController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Characters" id="5ji-sq-6RW"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qMp-BI-RlE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="3l2-G1-fxU" kind="relationship" relationship="rootViewController" id="Cd5-kp-xE3"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K2L-0h-hrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
