@@ -15,7 +15,7 @@ import UIKit
 public class BothamViewController<T: BothamPresenter>: UIViewController, BothamUI {
     public var presenter: T! = nil
 
-    override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 

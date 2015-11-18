@@ -13,10 +13,11 @@
 		6B6CCD511BDD11810015A4D4 /* BothamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD501BDD11810015A4D4 /* BothamViewController.swift */; };
 		6B6CCD531BDD12C40015A4D4 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD521BDD12C40015A4D4 /* Presenter.swift */; };
 		6B6CCD561BDD131B0015A4D4 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD551BDD131B0015A4D4 /* Wireframe.swift */; };
-		6B97DB3B1BE8A1EC00EE96B7 /* BothamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97DB3A1BE8A1EC00EE96B7 /* BothamUITests.swift */; };
-		6B97DB3D1BE8A53000EE96B7 /* FakeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97DB3C1BE8A53000EE96B7 /* FakeWireframe.swift */; };
-		6B97DB3F1BE8A5DB00EE96B7 /* FakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97DB3E1BE8A5DB00EE96B7 /* FakeViewController.swift */; };
-		6B97DB411BE8A61600EE96B7 /* FakePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B97DB401BE8A61600EE96B7 /* FakePresenter.swift */; };
+		6BB4A80C1BFCB6B000EA6F34 /* BothamViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A80B1BFCB6B000EA6F34 /* BothamViewControllerTest.swift */; };
+		6BB4A80E1BFCB6FF00EA6F34 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A80D1BFCB6FF00EA6F34 /* DummyViewController.swift */; };
+		6BB4A8101BFCB71F00EA6F34 /* SpyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A80F1BFCB71F00EA6F34 /* SpyPresenter.swift */; };
+		6BB4A8121BFCB73F00EA6F34 /* SpyWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A8111BFCB73F00EA6F34 /* SpyWireframe.swift */; };
+		6BB4A8141BFCB76100EA6F34 /* WireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A8131BFCB76100EA6F34 /* WireframeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +40,11 @@
 		6B6CCD501BDD11810015A4D4 /* BothamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamViewController.swift; sourceTree = "<group>"; };
 		6B6CCD521BDD12C40015A4D4 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		6B6CCD551BDD131B0015A4D4 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
-		6B97DB3A1BE8A1EC00EE96B7 /* BothamUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamUITests.swift; sourceTree = "<group>"; };
-		6B97DB3C1BE8A53000EE96B7 /* FakeWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeWireframe.swift; sourceTree = "<group>"; };
-		6B97DB3E1BE8A5DB00EE96B7 /* FakeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeViewController.swift; sourceTree = "<group>"; };
-		6B97DB401BE8A61600EE96B7 /* FakePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakePresenter.swift; sourceTree = "<group>"; };
+		6BB4A80B1BFCB6B000EA6F34 /* BothamViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamViewControllerTest.swift; sourceTree = "<group>"; };
+		6BB4A80D1BFCB6FF00EA6F34 /* DummyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		6BB4A80F1BFCB71F00EA6F34 /* SpyPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyPresenter.swift; sourceTree = "<group>"; };
+		6BB4A8111BFCB73F00EA6F34 /* SpyWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyWireframe.swift; sourceTree = "<group>"; };
+		6BB4A8131BFCB76100EA6F34 /* WireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireframeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				6B6CCD411BDD0FFB0015A4D4 /* Info.plist */,
-				6B97DB3A1BE8A1EC00EE96B7 /* BothamUITests.swift */,
 				6B97DB421BE8A99200EE96B7 /* Fakes */,
+				6BB4A80B1BFCB6B000EA6F34 /* BothamViewControllerTest.swift */,
+				6BB4A8131BFCB76100EA6F34 /* WireframeTests.swift */,
 			);
 			path = BothamUITests;
 			sourceTree = "<group>";
@@ -132,9 +135,9 @@
 		6B97DB421BE8A99200EE96B7 /* Fakes */ = {
 			isa = PBXGroup;
 			children = (
-				6B97DB3C1BE8A53000EE96B7 /* FakeWireframe.swift */,
-				6B97DB3E1BE8A5DB00EE96B7 /* FakeViewController.swift */,
-				6B97DB401BE8A61600EE96B7 /* FakePresenter.swift */,
+				6BB4A80D1BFCB6FF00EA6F34 /* DummyViewController.swift */,
+				6BB4A80F1BFCB71F00EA6F34 /* SpyPresenter.swift */,
+				6BB4A8111BFCB73F00EA6F34 /* SpyWireframe.swift */,
 			);
 			name = Fakes;
 			sourceTree = "<group>";
@@ -258,10 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B97DB3F1BE8A5DB00EE96B7 /* FakeViewController.swift in Sources */,
-				6B97DB411BE8A61600EE96B7 /* FakePresenter.swift in Sources */,
-				6B97DB3B1BE8A1EC00EE96B7 /* BothamUITests.swift in Sources */,
-				6B97DB3D1BE8A53000EE96B7 /* FakeWireframe.swift in Sources */,
+				6BB4A80C1BFCB6B000EA6F34 /* BothamViewControllerTest.swift in Sources */,
+				6BB4A8101BFCB71F00EA6F34 /* SpyPresenter.swift in Sources */,
+				6BB4A80E1BFCB6FF00EA6F34 /* DummyViewController.swift in Sources */,
+				6BB4A8121BFCB73F00EA6F34 /* SpyWireframe.swift in Sources */,
+				6BB4A8141BFCB76100EA6F34 /* WireframeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

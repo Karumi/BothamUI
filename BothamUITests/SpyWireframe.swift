@@ -1,5 +1,5 @@
 //
-//  FakeWireframe.swift
+//  SpyWireframe.swift
 //  BothamUI
 //
 //  Created by Davide Mendolia on 03/11/15.
@@ -10,7 +10,7 @@ import Foundation
 import BothamUI
 import UIKit
 
-class FakeWireframe: BothamWireframe {
+class SpyWireframe: BothamWireframe {
     let storyboardName: String = "Fake"
     var isRootViewControllerPresented = false
 
@@ -18,7 +18,7 @@ class FakeWireframe: BothamWireframe {
         isRootViewControllerPresented = true
     }
 
-    func fakeViewControllerFromStoryboard() -> FakeViewController {
-        return FakeViewController()
+    func dummyViewControllerFromStoryboard() -> DummyViewController {
+        return DummyViewController()
     }
 }
