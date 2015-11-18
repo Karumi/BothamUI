@@ -13,16 +13,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    static let wireframe = MainWireframe()
+    static var service = ServiceLocator()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        AppDelegate.installRootViewControllerIntoWindow(window!)
+        let wireframe = MainWireframe()
+
+        AppDelegate.service.register { return wireframe }
+
+        installRootViewControllerIntoWindow(window!)
 
         return true
     }
 
-    static func installRootViewControllerIntoWindow(window: UIWindow) {
+    func installRootViewControllerIntoWindow(window: UIWindow) {
+        let wireframe: MainWireframe = AppDelegate.service.getInstance()
         wireframe.presentInitialViewControllerInWindow(window)
     }
 }

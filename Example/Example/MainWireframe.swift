@@ -9,7 +9,7 @@
 import Foundation
 import BothamUI
 
-struct MainWireframe: BothamWireframe {
+struct MainWireframe: BothamWireframe, IOCRegistrable {
     let storyboardName: String = "Main"
     let serviceLocator = ServiceLocator()
 
@@ -20,5 +20,9 @@ struct MainWireframe: BothamWireframe {
 
     func homeViewControllerFromStoryboard() -> HomeViewController {
         return self.viewControllerFromStoryboard("HomeViewController")
+    }
+
+    static func registrableTypeName() -> String {
+        return "MainWireframe"
     }
 }

@@ -8,9 +8,11 @@
 
 import Foundation
 import UIKit
-// ServiceLocator or Module in Dagger 2
+import BothamUI
 
-struct ServiceLocator {
+// ServiceLocator or Module in Dagger 2
+class ServiceLocator: SimpleIOC {
+
     func provideMainWireframe() -> MainWireframe {
         return MainWireframe()
     }

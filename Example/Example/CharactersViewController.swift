@@ -13,7 +13,8 @@ import BothamUI
 class CharactersNavigationController: UINavigationController {
     override func awakeFromNib() {
         super.awakeFromNib()
-        let homeViewController = AppDelegate.wireframe.serviceLocator.provideHomeViewController(AppDelegate.wireframe)
+        let wireframe = AppDelegate.service.provideMainWireframe()
+        let homeViewController = AppDelegate.service.provideHomeViewController(wireframe)
         pushViewController(homeViewController, animated: false)
     }
 }
