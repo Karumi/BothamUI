@@ -14,7 +14,7 @@ class SpyWireframe: BothamWireframe {
     let storyboardName: String = "Fake"
     var isRootViewControllerPresented = false
 
-    func presentRootViewControllerInWindow(window: UIWindow) {
+    func presentInitialViewControllerInWindow(window: UIWindow) {
         isRootViewControllerPresented = true
     }
 

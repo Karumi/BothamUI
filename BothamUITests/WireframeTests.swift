@@ -14,7 +14,7 @@ class WireframeTests: XCTestCase {
     func testPresentsRootViewController() {
         let wireframe = SpyWireframe()
 
-        wireframe.presentRootViewControllerInWindow(UIWindow())
+        wireframe.presentInitialViewControllerInWindow(UIWindow())
 
         XCTAssertTrue(wireframe.isRootViewControllerPresented)
     }
