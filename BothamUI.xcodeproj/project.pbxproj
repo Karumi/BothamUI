@@ -19,6 +19,7 @@
 		6BB4A8101BFCB71F00EA6F34 /* SpyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A80F1BFCB71F00EA6F34 /* SpyPresenter.swift */; };
 		6BB4A8121BFCB73F00EA6F34 /* SpyWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A8111BFCB73F00EA6F34 /* SpyWireframe.swift */; };
 		6BB4A8141BFCB76100EA6F34 /* WireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A8131BFCB76100EA6F34 /* WireframeTests.swift */; };
+		6BB4A8171BFCD60800EA6F34 /* SimpleIOC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A8161BFCD60800EA6F34 /* SimpleIOC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		6BB4A80F1BFCB71F00EA6F34 /* SpyPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyPresenter.swift; sourceTree = "<group>"; };
 		6BB4A8111BFCB73F00EA6F34 /* SpyWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyWireframe.swift; sourceTree = "<group>"; };
 		6BB4A8131BFCB76100EA6F34 /* WireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireframeTests.swift; sourceTree = "<group>"; };
+		6BB4A8161BFCD60800EA6F34 /* SimpleIOC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleIOC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		6B6CCD321BDD0FFB0015A4D4 /* BothamUI */ = {
 			isa = PBXGroup;
 			children = (
+				6BB4A8151BFCD5F500EA6F34 /* IOC */,
 				6B6CCD541BDD13070015A4D4 /* Wireframe */,
 				6B6CCD4B1BDD10CD0015A4D4 /* Presenter */,
 				6B6CCD4A1BDD10C40015A4D4 /* ViewController */,
@@ -143,6 +146,14 @@
 				6BB4A8111BFCB73F00EA6F34 /* SpyWireframe.swift */,
 			);
 			name = Fakes;
+			sourceTree = "<group>";
+		};
+		6BB4A8151BFCD5F500EA6F34 /* IOC */ = {
+			isa = PBXGroup;
+			children = (
+				6BB4A8161BFCD60800EA6F34 /* SimpleIOC.swift */,
+			);
+			name = IOC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 				6B2C2D1E1BFBB19B00576464 /* BothamTableViewController.swift in Sources */,
 				6B6CCD531BDD12C40015A4D4 /* Presenter.swift in Sources */,
 				6B1BACCE1BDD27E100AC5E9B /* UI.swift in Sources */,
+				6BB4A8171BFCD60800EA6F34 /* SimpleIOC.swift in Sources */,
 				6B6CCD511BDD11810015A4D4 /* BothamViewController.swift in Sources */,
 				6B6CCD561BDD131B0015A4D4 /* Wireframe.swift in Sources */,
 			);
