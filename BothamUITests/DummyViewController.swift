@@ -1,5 +1,5 @@
 //
-//  FakeViewController.swift
+//  DummyViewController.swift
 //  BothamUI
 //
 //  Created by Davide Mendolia on 03/11/15.
@@ -9,7 +9,7 @@
 import UIKit
 import BothamUI
 
-class FakeViewController: BothamViewController<FakePresenter> {
+class DummyViewController: BothamViewController<SpyPresenter> {
     init() {
         super.init(nibName: nil, bundle: nil)
     }
