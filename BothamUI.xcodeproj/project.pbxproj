@@ -35,7 +35,7 @@
 		6B6CCD301BDD0FFB0015A4D4 /* BothamUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BothamUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6CCD331BDD0FFB0015A4D4 /* BothamUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BothamUI.h; sourceTree = "<group>"; };
 		6B6CCD351BDD0FFB0015A4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B6CCD3A1BDD0FFB0015A4D4 /* BothamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BothamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6CCD3A1BDD0FFB0015A4D4 /* BothamUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BothamUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6CCD411BDD0FFB0015A4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B6CCD501BDD11810015A4D4 /* BothamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamViewController.swift; sourceTree = "<group>"; };
 		6B6CCD521BDD12C40015A4D4 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				6B6CCD301BDD0FFB0015A4D4 /* BothamUI.framework */,
-				6B6CCD3A1BDD0FFB0015A4D4 /* BothamUITests.xctest */,
+				6B6CCD3A1BDD0FFB0015A4D4 /* BothamUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,9 +175,9 @@
 			productReference = 6B6CCD301BDD0FFB0015A4D4 /* BothamUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6B6CCD391BDD0FFB0015A4D4 /* BothamUITests */ = {
+		6B6CCD391BDD0FFB0015A4D4 /* BothamUnitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B6CCD471BDD0FFB0015A4D4 /* Build configuration list for PBXNativeTarget "BothamUITests" */;
+			buildConfigurationList = 6B6CCD471BDD0FFB0015A4D4 /* Build configuration list for PBXNativeTarget "BothamUnitTests" */;
 			buildPhases = (
 				6B6CCD361BDD0FFB0015A4D4 /* Sources */,
 				6B6CCD371BDD0FFB0015A4D4 /* Frameworks */,
@@ -188,9 +188,9 @@
 			dependencies = (
 				6B6CCD3D1BDD0FFB0015A4D4 /* PBXTargetDependency */,
 			);
-			name = BothamUITests;
+			name = BothamUnitTests;
 			productName = BothamUITests;
-			productReference = 6B6CCD3A1BDD0FFB0015A4D4 /* BothamUITests.xctest */;
+			productReference = 6B6CCD3A1BDD0FFB0015A4D4 /* BothamUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -224,7 +224,7 @@
 			projectRoot = "";
 			targets = (
 				6B6CCD2F1BDD0FFB0015A4D4 /* BothamUI */,
-				6B6CCD391BDD0FFB0015A4D4 /* BothamUITests */,
+				6B6CCD391BDD0FFB0015A4D4 /* BothamUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -449,7 +449,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B6CCD471BDD0FFB0015A4D4 /* Build configuration list for PBXNativeTarget "BothamUITests" */ = {
+		6B6CCD471BDD0FFB0015A4D4 /* Build configuration list for PBXNativeTarget "BothamUnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6B6CCD481BDD0FFB0015A4D4 /* Debug */,
