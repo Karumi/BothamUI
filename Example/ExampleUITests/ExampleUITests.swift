@@ -10,14 +10,14 @@ import XCTest
 import Nimble
 
 class ExampleUITests: XCTestCase {
-        
+
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
         XCUIApplication().launch()
     }
 
-    
+
     func testShowsCharactersTab() {
         let charactersTab = XCUIApplication().tabBars.buttons["Characters"]
 
@@ -35,5 +35,5 @@ class ExampleUITests: XCTestCase {
 
         expect(navBarTitle.exists).to(beTrue())
     }
-    
+
 }
