@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0710"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FA05CFC5603F59A00F3A407F2EA9478A"
+               BlueprintIdentifier = "9D8637CE349BCB90A4BAC18188413E22"
                BuildableName = "BothamUI.framework"
                BlueprintName = "BothamUI"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA05CFC5603F59A00F3A407F2EA9478A"
+            BlueprintIdentifier = "9D8637CE349BCB90A4BAC18188413E22"
             BuildableName = "BothamUI.framework"
             BlueprintName = "BothamUI"
             ReferencedContainer = "container:Pods.xcodeproj">

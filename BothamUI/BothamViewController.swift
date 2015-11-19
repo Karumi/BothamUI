@@ -19,7 +19,7 @@ public class BothamViewController<T: BothamPresenter>: UIViewController, BothamU
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 
-    required public init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
 
