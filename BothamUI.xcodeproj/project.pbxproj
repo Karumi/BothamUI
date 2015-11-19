@@ -70,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				6B6CCD321BDD0FFB0015A4D4 /* BothamUI */,
-				6B6CCD3E1BDD0FFB0015A4D4 /* BothamUITests */,
+				6B6CCD3E1BDD0FFB0015A4D4 /* BothamUnitTests */,
 				6B6CCD311BDD0FFB0015A4D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,7 +96,7 @@
 			path = BothamUI;
 			sourceTree = "<group>";
 		};
-		6B6CCD3E1BDD0FFB0015A4D4 /* BothamUITests */ = {
+		6B6CCD3E1BDD0FFB0015A4D4 /* BothamUnitTests */ = {
 			isa = PBXGroup;
 			children = (
 				6B6CCD411BDD0FFB0015A4D4 /* Info.plist */,
@@ -104,6 +104,7 @@
 				6BB4A80B1BFCB6B000EA6F34 /* BothamViewControllerTest.swift */,
 				6BB4A8131BFCB76100EA6F34 /* WireframeTests.swift */,
 			);
+			name = BothamUnitTests;
 			path = BothamUITests;
 			sourceTree = "<group>";
 		};
