@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		168BBF004D2769ACD85FB91F /* Pods_BothamUIUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF37E82FA1E8951B20CF920 /* Pods_BothamUIUnitTests.framework */; };
 		6B0736FD1BFDCB83000E0E7D /* BothamTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0736FC1BFDCB83000E0E7D /* BothamTableViewDataSource.swift */; };
 		6B0737001BFDCBF3000E0E7D /* BothamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0736FF1BFDCBF3000E0E7D /* BothamTableViewCell.swift */; };
 		6B1BACCE1BDD27E100AC5E9B /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BACCD1BDD27E100AC5E9B /* UI.swift */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0955C3E71675DF3E12853E18 /* Pods-BothamUIUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BothamUIUnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BothamUIUnitTests/Pods-BothamUIUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1AF37E82FA1E8951B20CF920 /* Pods_BothamUIUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BothamUIUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28655E756E2C312F243CEE4A /* Pods_BothamUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BothamUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4B841725A0D71FEB1D4871 /* Pods-BothamUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BothamUnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BothamUnitTests/Pods-BothamUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B0736FC1BFDCB83000E0E7D /* BothamTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamTableViewDataSource.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		6BB4A8111BFCB73F00EA6F34 /* SpyWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyWireframe.swift; sourceTree = "<group>"; };
 		6BB4A8131BFCB76100EA6F34 /* WireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireframeTests.swift; sourceTree = "<group>"; };
 		79EF6311B818596A2229FAEB /* Pods-BothamUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BothamUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BothamUnitTests/Pods-BothamUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA0B0EC999465C46E114B5C6 /* Pods-BothamUIUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BothamUIUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BothamUIUnitTests/Pods-BothamUIUnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		EBEC624F1BFE2CF600662B5F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		EBEC62661BFE3A7300662B5F /* BothamUIUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BothamUIUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEC626A1BFE3A7300662B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBEC626B1BFE3A7300662B5F /* BothamUI.framework in Frameworks */,
+				168BBF004D2769ACD85FB91F /* Pods_BothamUIUnitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,8 @@
 			children = (
 				4C4B841725A0D71FEB1D4871 /* Pods-BothamUnitTests.debug.xcconfig */,
 				79EF6311B818596A2229FAEB /* Pods-BothamUnitTests.release.xcconfig */,
+				0955C3E71675DF3E12853E18 /* Pods-BothamUIUnitTests.debug.xcconfig */,
+				EA0B0EC999465C46E114B5C6 /* Pods-BothamUIUnitTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -85,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				28655E756E2C312F243CEE4A /* Pods_BothamUnitTests.framework */,
+				1AF37E82FA1E8951B20CF920 /* Pods_BothamUIUnitTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -242,9 +250,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBEC626E1BFE3A7300662B5F /* Build configuration list for PBXNativeTarget "BothamUIUnitTests" */;
 			buildPhases = (
+				C3477870ABC504E089CEE066 /* Check Pods Manifest.lock */,
 				EBEC62621BFE3A7300662B5F /* Sources */,
 				EBEC62631BFE3A7300662B5F /* Frameworks */,
 				EBEC62641BFE3A7300662B5F /* Resources */,
+				9596ED742A51C653AA1012C1 /* Embed Pods Frameworks */,
+				210F3AFB46DE57467F98933E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,6 +320,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		210F3AFB46DE57467F98933E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BothamUIUnitTests/Pods-BothamUIUnitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9596ED742A51C653AA1012C1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BothamUIUnitTests/Pods-BothamUIUnitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3477870ABC504E089CEE066 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6B6CCD2B1BDD0FFB0015A4D4 /* Sources */ = {
@@ -469,6 +528,7 @@
 		};
 		EBEC626F1BFE3A7300662B5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0955C3E71675DF3E12853E18 /* Pods-BothamUIUnitTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BothamUIUnitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -480,6 +540,7 @@
 		};
 		EBEC62701BFE3A7300662B5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA0B0EC999465C46E114B5C6 /* Pods-BothamUIUnitTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BothamUIUnitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -517,6 +578,7 @@
 				EBEC62701BFE3A7300662B5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

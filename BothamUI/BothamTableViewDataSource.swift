@@ -8,7 +8,8 @@
 
 import Foundation
 
-public class BothamTableViewDataSource<U, V: BothamTableViewCell where U == V.ItemType>: NSObject, UITableViewDataSource {
+public class BothamTableViewDataSource<U, V: BothamTableViewCell where U == V.ItemType>
+                                      : NSObject, UITableViewDataSource {
     public var items: [U] = []
 
     public override init() {
