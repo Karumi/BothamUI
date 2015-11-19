@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6B6CCD391BDD0FFB0015A4D4"
-               BuildableName = "BothamUnitTests.xctest"
-               BlueprintName = "BothamUnitTests"
+               BlueprintIdentifier = "EBEC62651BFE3A7300662B5F"
+               BuildableName = "BothamUIUnitTests.xctest"
+               BlueprintName = "BothamUIUnitTests"
                ReferencedContainer = "container:BothamUI.xcodeproj">
             </BuildableReference>
          </TestableReference>

@@ -2,7 +2,7 @@ workspace 'BothamUI.xcworkspace'
 xcodeproj 'BothamUI.xcodeproj'
 use_frameworks!
 
-target 'BothamUnitTests' do
+target 'BothamUIUnitTests' do
     pod "Nimble"
 end
 
