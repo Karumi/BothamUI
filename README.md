@@ -1,4 +1,5 @@
-# BothamUI
+# BothamUI [![Build Status](https://travis-ci.org/Karumi/BothamUI.svg?branch=ui-tests-and-travis-ci-support)](https://travis-ci.org/Karumi/BothamUI)
+==========
 
 BothamUI is MVP(Model-View-Presenter) framework written in swift. In addition we will use a wireframe navigation model and a service locator example.
 
