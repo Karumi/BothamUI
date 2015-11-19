@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol BothamTableViewCell {
+public protocol BothamViewCell {
     typealias ItemType
 
     func configureForItem(item: ItemType)

@@ -8,8 +8,12 @@
 
 import Foundation
 
+<<<<<<< HEAD
 public class BothamTableViewDataSource<U, V: BothamTableViewCell where U == V.ItemType>
                                       : NSObject, UITableViewDataSource {
+=======
+public class BothamTableViewDataSource<U, V: BothamViewCell where U == V.ItemType>: NSObject, UITableViewDataSource {
+>>>>>>> 5346ee4... Add support of CollectionView
     public var items: [U] = []
 
     public override init() {
@@ -25,6 +29,29 @@ public class BothamTableViewDataSource<U, V: BothamTableViewCell where U == V.It
 
     public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
+    }
+
+    public func itemAtIndexPath(indexPath: NSIndexPath) -> U {
+        return items[indexPath.item]
+    }
+}
+
+public class BothamCollectionViewDataSource<U, V: BothamViewCell where U == V.ItemType>: NSObject, UICollectionViewDataSource {
+    public var items: [U] = []
+
+    public override init() {
+        super.init()
+    }
+
+    public func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.count
+    }
+
+    public func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(String(V.self) + "ReuseIdentifier", forIndexPath: indexPath)
+        let item = itemAtIndexPath(indexPath)
+        (cell as! V).configureForItem(item)
+        return cell
     }
 
     public func itemAtIndexPath(indexPath: NSIndexPath) -> U {

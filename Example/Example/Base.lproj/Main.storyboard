@@ -62,7 +62,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QOm-xw-JTT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2038" y="-158"/>
+            <point key="canvasLocation" x="2038" y="-180"/>
         </scene>
         <!--Characters-->
         <scene sceneID="D7p-0m-WT2">
@@ -97,24 +97,57 @@
             <point key="canvasLocation" x="1283" y="-180"/>
         </scene>
         <!--Comics-->
-        <scene sceneID="xRv-eM-ty8">
+        <scene sceneID="MNO-6A-kwV">
             <objects>
-                <viewController id="rfg-Xp-rFo" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Nrl-kN-8FP"/>
-                        <viewControllerLayoutGuide type="bottom" id="mZN-a4-JtX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xJv-Xd-c3C">
+                <viewController storyboardIdentifier="ComicsViewController" title="Comics" id="jgV-K8-1bz" customClass="ComicsViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Ra1-Dr-zyT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Comics" id="8uL-TD-ZRa"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gZE-61-YdF">
+                            <size key="itemSize" width="200" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ComicCollectionViewCellReuseIdentifier" id="Ygd-gR-ohY" customClass="ComicCollectionViewCell" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NDy-IZ-ZbD">
+                                            <rect key="frame" x="5" y="5" width="190" height="190"/>
+                                            <animations/>
+                                        </imageView>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="NDy-IZ-ZbD" firstAttribute="leading" secondItem="Ygd-gR-ohY" secondAttribute="leading" constant="5" id="Adx-na-eLO"/>
+                                    <constraint firstAttribute="trailing" secondItem="NDy-IZ-ZbD" secondAttribute="trailing" constant="5" id="Ebh-Kb-L4x"/>
+                                    <constraint firstItem="NDy-IZ-ZbD" firstAttribute="top" secondItem="Ygd-gR-ohY" secondAttribute="top" constant="5" id="H47-CV-zU2"/>
+                                    <constraint firstAttribute="bottom" secondItem="NDy-IZ-ZbD" secondAttribute="bottom" constant="5" id="tnb-W6-b9Z"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="NDy-IZ-ZbD" id="gEQ-sg-ea5"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="AXW-Xh-mwk"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Ra1-Dr-zyT" id="2rF-4g-Vlg"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5NF-Uy-uib" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jX-b9-8QJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1274" y="574"/>
+            <point key="canvasLocation" x="2038" y="576"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Kyr-kK-0Xh">
@@ -128,12 +161,30 @@
                     </tabBar>
                     <connections>
                         <segue destination="yCJ-fo-ItF" kind="relationship" relationship="viewControllers" id="GAV-Bz-UtU"/>
-                        <segue destination="rfg-Xp-rFo" kind="relationship" relationship="viewControllers" id="H8f-Kr-4xR"/>
+                        <segue destination="mxS-0v-nLC" kind="relationship" relationship="viewControllers" id="rFT-Ar-8jf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OYQ-uf-gcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="454" y="241"/>
+        </scene>
+        <!--Comics-->
+        <scene sceneID="c8y-vi-V06">
+            <objects>
+                <navigationController title="Comics" automaticallyAdjustsScrollViewInsets="NO" id="mxS-0v-nLC" customClass="ComicsNavigationController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Comics" id="hIZ-sE-WdY"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aoe-Ac-X9O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ej5-t6-qFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="576"/>
         </scene>
     </scenes>
 </document>
