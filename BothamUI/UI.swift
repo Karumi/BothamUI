@@ -8,5 +8,5 @@
 
 import Foundation
 
-public protocol BothamUI {
+public protocol BothamUI: class {
 }

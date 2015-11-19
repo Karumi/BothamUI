@@ -10,37 +10,13 @@ import Foundation
 import UIKit
 import BothamUI
 
-class CharactersNavigationController: UINavigationController {
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        let wireframe = AppDelegate.service.provideMainWireframe()
-        let homeViewController = AppDelegate.service.provideHomeViewController(wireframe)
-        pushViewController(homeViewController, animated: false)
-    }
-}
-
-class CharactersViewController: BothamTableViewController<HomePresenter, Character, CharacterTableViewCell> {
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
+class CharactersViewController: BothamViewController<CharactersPresenter>, BothamTableViewController, CharactersUI {
+    @IBOutlet var tableView: UITableView!
+    var dataSource: BothamTableViewDataSource<Character, CharacterTableViewCell>!
 
     override func viewDidLoad() {
-        //tableViewCellReuseIdentifier = ""
+        dataSource = BothamTableViewDataSource()
+        tableView.dataSource = dataSource
         super.viewDidLoad()
-    }
-}
-
-struct Character {
-    let name = "Spiderman"
-}
-
-
-class CharacterTableViewCell: UITableViewCell, BothamTableViewCell {
-    func configureForItem(item: Character) {
-        self.textLabel?.text = item.name
     }
 }
