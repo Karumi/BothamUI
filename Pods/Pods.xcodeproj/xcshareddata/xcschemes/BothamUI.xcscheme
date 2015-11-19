@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CE969F08A322FBB52B6B6F16'
+               BlueprintIdentifier = 'F47899335D8578C9027D3FA2'
                BlueprintName = 'BothamUI'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'BothamUI.framework'>

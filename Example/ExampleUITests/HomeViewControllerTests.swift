@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Nimble
 
 class ExampleUITests: XCTestCase {
 
@@ -16,12 +17,16 @@ class ExampleUITests: XCTestCase {
         XCUIApplication().launch()
     }
 
-    override func tearDown() {
-        super.tearDown()
+    func testShowsCharactersTab() {
+        let charactersTab = XCUIApplication().tabBars.buttons["Characters"]
+
+        expect(charactersTab.exists).to(beTrue())
     }
 
-    func testExample() {
+    func testShowsComicsTab() {
+        let comicsTab = XCUIApplication().tabBars.buttons["Comics"]
 
+        expect(comicsTab.exists).to(beTrue())
     }
 
 }

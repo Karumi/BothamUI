@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Nimble
 @testable import BothamUI
 
 class WireframeTests: XCTestCase {
@@ -16,6 +17,6 @@ class WireframeTests: XCTestCase {
 
         wireframe.presentInitialViewControllerInWindow(UIWindow())
 
-        XCTAssertTrue(wireframe.isRootViewControllerPresented)
+        expect(wireframe.isRootViewControllerPresented).to(beTrue())
     }
 }

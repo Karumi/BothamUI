@@ -3,7 +3,7 @@ xcodeproj 'BothamUI.xcodeproj'
 use_frameworks!
 
 target 'BothamUnitTests' do
-
+    pod "Nimble"
 end
 
 target 'Example', :exclusive => true do
@@ -14,4 +14,5 @@ end
 target 'ExampleUITests', :exclusive => true do
         xcodeproj 'Example/Example.xcodeproj'
     pod "BothamUI", :path => "./"
+    pod "Nimble"
 end
