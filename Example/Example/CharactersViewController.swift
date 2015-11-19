@@ -15,7 +15,6 @@ class CharactersViewController: BothamViewController<CharactersPresenter>, Botha
     var dataSource: BothamTableViewDataSource<Character, CharacterTableViewCell>!
 
     override func viewDidLoad() {
-        dataSource = BothamTableViewDataSource()
         tableView.dataSource = dataSource
         super.viewDidLoad()
     }

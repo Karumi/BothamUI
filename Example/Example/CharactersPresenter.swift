@@ -10,13 +10,13 @@ import Foundation
 import BothamUI
 
 class CharactersPresenter: BothamPresenter {
-    var ui: CharactersUI
+    weak var ui: CharactersUI?
 
-    init(wireframe: MainWireframe, ui: CharactersUI) {
+    init(ui: CharactersUI) {
         self.ui = ui
     }
 
     func viewDidLoad() {
-        self.ui.showItems([Character(name: "Spiderman"), Character(name: "IronMan")])
+        self.ui?.showItems([Character(name: "Spiderman"), Character(name: "IronMan")])
     }
 }

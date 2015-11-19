@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 import BothamUI
 
-// ServiceLocator or Module in Dagger 2
 class ServiceLocator {
 
     func provideMainWireframe() -> MainWireframe {
@@ -32,7 +31,8 @@ class ServiceLocator {
     func provideCharactersViewController() -> CharactersViewController {
         let mainWireframe = provideMainWireframe()
         let viewController: CharactersViewController = mainWireframe.viewControllerFromStoryboard()
-        viewController.presenter = CharactersPresenter(wireframe: mainWireframe, ui: viewController)
+        viewController.presenter = CharactersPresenter(ui: viewController)
+        viewController.dataSource = BothamTableViewDataSource()
         return viewController
     }
 }

@@ -12,6 +12,7 @@
 		6B0737091BFDCF67000E0E7D /* CharactersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0737081BFDCF67000E0E7D /* CharactersPresenter.swift */; };
 		6B07370B1BFDCF98000E0E7D /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B07370A1BFDCF98000E0E7D /* CharacterTableViewCell.swift */; };
 		6B07370D1BFDD45D000E0E7D /* CharactersUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B07370C1BFDD45D000E0E7D /* CharactersUI.swift */; };
+		6B0737121BFDE841000E0E7D /* BothamUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0737111BFDE841000E0E7D /* BothamUI.framework */; };
 		6B1BACD01BDD2BC100AC5E9B /* HomeUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BACCF1BDD2BC100AC5E9B /* HomeUI.swift */; };
 		6B1BACD21BDD2BF800AC5E9B /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BACD11BDD2BF800AC5E9B /* MainWireframe.swift */; };
 		6B1BACD41BDD2C5D00AC5E9B /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BACD31BDD2C5D00AC5E9B /* HomePresenter.swift */; };
@@ -22,7 +23,6 @@
 		6B6B09301BDD1A830013891D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6B092F1BDD1A830013891D /* Assets.xcassets */; };
 		6B6B09331BDD1A830013891D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6B09311BDD1A830013891D /* LaunchScreen.storyboard */; };
 		6B6B09491BDD1A830013891D /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B09481BDD1A830013891D /* ExampleUITests.swift */; };
-		6B6B09571BDD1B580013891D /* BothamUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6B09561BDD1B580013891D /* BothamUI.framework */; };
 		6BB5CD951BDD2D670009C2F0 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB5CD941BDD2D670009C2F0 /* ServiceLocator.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +49,7 @@
 		6B0737081BFDCF67000E0E7D /* CharactersPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersPresenter.swift; sourceTree = "<group>"; };
 		6B07370A1BFDCF98000E0E7D /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		6B07370C1BFDD45D000E0E7D /* CharactersUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersUI.swift; sourceTree = "<group>"; };
+		6B0737111BFDE841000E0E7D /* BothamUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BothamUI.framework; path = "../build/Debug-iphoneos/BothamUI.framework"; sourceTree = "<group>"; };
 		6B1BACCF1BDD2BC100AC5E9B /* HomeUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeUI.swift; sourceTree = "<group>"; };
 		6B1BACD11BDD2BF800AC5E9B /* MainWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
 		6B1BACD31BDD2C5D00AC5E9B /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -74,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B6B09571BDD1B580013891D /* BothamUI.framework in Frameworks */,
+				6B0737121BFDE841000E0E7D /* BothamUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +154,7 @@
 		6B6B091C1BDD1A820013891D = {
 			isa = PBXGroup;
 			children = (
+				6B0737111BFDE841000E0E7D /* BothamUI.framework */,
 				6B6B09561BDD1B580013891D /* BothamUI.framework */,
 				6B6B09271BDD1A830013891D /* Example */,
 				6B6B093C1BDD1A830013891D /* ExampleTests */,
