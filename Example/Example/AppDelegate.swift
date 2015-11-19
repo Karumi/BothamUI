@@ -16,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let wireframe = MainWireframe()
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
         installRootViewControllerIntoWindow(window!)
 

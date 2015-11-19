@@ -16,13 +16,16 @@ class BothamViewControllerTests: XCTestCase {
             let presenter = SpyPresenter()
             viewController.presenter = presenter
             let animated = false
-    
+
             viewController.viewDidLoad()
             viewController.viewWillAppear(animated)
             viewController.viewDidAppear(animated)
             viewController.viewWillDisappear(animated)
             viewController.viewDidDisappear(animated)
-    
-            XCTAssertEqual([.ViewDidLoad, .ViewWillAppear, .ViewDidAppear, .ViewWillDisappear, .ViewDidDisappear], presenter.executedStages)
+
+            XCTAssertEqual([.ViewDidLoad,
+                .ViewWillAppear, .ViewDidAppear,
+                .ViewWillDisappear, .ViewDidDisappear],
+                presenter.executedStages)
         }
 }
