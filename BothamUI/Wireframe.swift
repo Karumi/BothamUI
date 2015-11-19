@@ -23,7 +23,12 @@ extension BothamWireframe {
         let uiStoryboard = storyboard(storyboardName)
         return uiStoryboard.instantiateInitialViewController() as! T
     }
-    
+
+    public func viewControllerFromStoryboard<T>() -> T {
+        let uiStoryboard = storyboard(storyboardName)
+        return uiStoryboard.instantiateViewControllerWithIdentifier(String(T.self)) as! T
+    }
+
     public func viewControllerFromStoryboard<T>(ViewControllerIdentifier: String) -> T {
         let uiStoryboard = storyboard(storyboardName)
         return uiStoryboard.instantiateViewControllerWithIdentifier(ViewControllerIdentifier) as! T

@@ -14,11 +14,7 @@ struct MainWireframe: BothamWireframe {
     let serviceLocator = ServiceLocator()
 
     func presentInitialViewControllerInWindow(window: UIWindow) {
-        let viewController = serviceLocator.provideInitialViewControllerFromStoryboard(self)
+        let viewController = serviceLocator.provideInitialViewControllerFromStoryboard()
         self.showRootViewController(viewController, inWindow: window)
-    }
-
-    func homeViewControllerFromStoryboard() -> HomeViewController {
-        return self.viewControllerFromStoryboard("HomeViewController")
     }
 }
