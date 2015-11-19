@@ -1,6 +1,0 @@
-framework module BothamUI {
-  umbrella header "BothamUI-umbrella.h"
-
-  export *
-  module * { export * }
-}
