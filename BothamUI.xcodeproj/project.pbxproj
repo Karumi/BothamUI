@@ -16,6 +16,11 @@
 		6B6CCD511BDD11810015A4D4 /* BothamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD501BDD11810015A4D4 /* BothamViewController.swift */; };
 		6B6CCD531BDD12C40015A4D4 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD521BDD12C40015A4D4 /* Presenter.swift */; };
 		6B6CCD561BDD131B0015A4D4 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD551BDD131B0015A4D4 /* Wireframe.swift */; };
+		EBB63E421BFE5D5500DB3F8A /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB63E3F1BFE5D5500DB3F8A /* DummyViewController.swift */; };
+		EBB63E431BFE5D5500DB3F8A /* SpyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB63E401BFE5D5500DB3F8A /* SpyPresenter.swift */; };
+		EBB63E441BFE5D5500DB3F8A /* SpyWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB63E411BFE5D5500DB3F8A /* SpyWireframe.swift */; };
+		EBB63E461BFE5D5D00DB3F8A /* BothamViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB63E451BFE5D5D00DB3F8A /* BothamViewControllerTest.swift */; };
+		EBB63E481BFE5D6200DB3F8A /* WireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB63E471BFE5D6200DB3F8A /* WireframeTests.swift */; };
 		EBEC62501BFE2CF600662B5F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = EBEC624F1BFE2CF600662B5F /* Podfile */; };
 		EBEC626B1BFE3A7300662B5F /* BothamUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6CCD301BDD0FFB0015A4D4 /* BothamUI.framework */; };
 /* End PBXBuildFile section */
@@ -45,13 +50,13 @@
 		6B6CCD501BDD11810015A4D4 /* BothamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamViewController.swift; sourceTree = "<group>"; };
 		6B6CCD521BDD12C40015A4D4 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		6B6CCD551BDD131B0015A4D4 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
-		6BB4A80B1BFCB6B000EA6F34 /* BothamViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamViewControllerTest.swift; sourceTree = "<group>"; };
-		6BB4A80D1BFCB6FF00EA6F34 /* DummyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
-		6BB4A80F1BFCB71F00EA6F34 /* SpyPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyPresenter.swift; sourceTree = "<group>"; };
-		6BB4A8111BFCB73F00EA6F34 /* SpyWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyWireframe.swift; sourceTree = "<group>"; };
-		6BB4A8131BFCB76100EA6F34 /* WireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireframeTests.swift; sourceTree = "<group>"; };
 		79EF6311B818596A2229FAEB /* Pods-BothamUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BothamUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BothamUnitTests/Pods-BothamUnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA0B0EC999465C46E114B5C6 /* Pods-BothamUIUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BothamUIUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BothamUIUnitTests/Pods-BothamUIUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		EBB63E3F1BFE5D5500DB3F8A /* DummyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DummyViewController.swift; path = BothamUIUnitTests/DummyViewController.swift; sourceTree = SOURCE_ROOT; };
+		EBB63E401BFE5D5500DB3F8A /* SpyPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpyPresenter.swift; path = BothamUIUnitTests/SpyPresenter.swift; sourceTree = SOURCE_ROOT; };
+		EBB63E411BFE5D5500DB3F8A /* SpyWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpyWireframe.swift; path = BothamUIUnitTests/SpyWireframe.swift; sourceTree = SOURCE_ROOT; };
+		EBB63E451BFE5D5D00DB3F8A /* BothamViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BothamViewControllerTest.swift; path = BothamUIUnitTests/BothamViewControllerTest.swift; sourceTree = SOURCE_ROOT; };
+		EBB63E471BFE5D6200DB3F8A /* WireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WireframeTests.swift; path = BothamUIUnitTests/WireframeTests.swift; sourceTree = SOURCE_ROOT; };
 		EBEC624F1BFE2CF600662B5F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		EBEC62661BFE3A7300662B5F /* BothamUIUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BothamUIUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEC626A1BFE3A7300662B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -177,9 +182,9 @@
 		6B97DB421BE8A99200EE96B7 /* Fakes */ = {
 			isa = PBXGroup;
 			children = (
-				6BB4A80D1BFCB6FF00EA6F34 /* DummyViewController.swift */,
-				6BB4A80F1BFCB71F00EA6F34 /* SpyPresenter.swift */,
-				6BB4A8111BFCB73F00EA6F34 /* SpyWireframe.swift */,
+				EBB63E3F1BFE5D5500DB3F8A /* DummyViewController.swift */,
+				EBB63E401BFE5D5500DB3F8A /* SpyPresenter.swift */,
+				EBB63E411BFE5D5500DB3F8A /* SpyWireframe.swift */,
 			);
 			name = Fakes;
 			path = ../BothamUITests;
@@ -188,7 +193,7 @@
 		EBEC62601BFE3A4D00662B5F /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
-				6BB4A8131BFCB76100EA6F34 /* WireframeTests.swift */,
+				EBB63E471BFE5D6200DB3F8A /* WireframeTests.swift */,
 			);
 			name = Wireframe;
 			path = ../BothamUITests;
@@ -197,7 +202,7 @@
 		EBEC62611BFE3A5400662B5F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6BB4A80B1BFCB6B000EA6F34 /* BothamViewControllerTest.swift */,
+				EBB63E451BFE5D5D00DB3F8A /* BothamViewControllerTest.swift */,
 			);
 			name = ViewController;
 			path = ../BothamUITests;
@@ -388,6 +393,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB63E441BFE5D5500DB3F8A /* SpyWireframe.swift in Sources */,
+				EBB63E421BFE5D5500DB3F8A /* DummyViewController.swift in Sources */,
+				EBB63E431BFE5D5500DB3F8A /* SpyPresenter.swift in Sources */,
+				EBB63E461BFE5D5D00DB3F8A /* BothamViewControllerTest.swift in Sources */,
+				EBB63E481BFE5D6200DB3F8A /* WireframeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,11 +540,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0955C3E71675DF3E12853E18 /* Pods-BothamUIUnitTests.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BothamUIUnitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.marvelapiclient.BothamUIUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -542,6 +554,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EA0B0EC999465C46E114B5C6 /* Pods-BothamUIUnitTests.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BothamUIUnitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
