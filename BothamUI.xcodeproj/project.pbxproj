@@ -18,6 +18,8 @@
 		6BB4A8101BFCB71F00EA6F34 /* SpyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A80F1BFCB71F00EA6F34 /* SpyPresenter.swift */; };
 		6BB4A8121BFCB73F00EA6F34 /* SpyWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A8111BFCB73F00EA6F34 /* SpyWireframe.swift */; };
 		6BB4A8141BFCB76100EA6F34 /* WireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4A8131BFCB76100EA6F34 /* WireframeTests.swift */; };
+		EBCAAAB01BFDEDB3005AA8A7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = EBCAAAAF1BFDEDB3005AA8A7 /* Podfile */; };
+		EBCAAAB21BFDEE7F005AA8A7 /* BothamUI.podspec in Resources */ = {isa = PBXBuildFile; fileRef = EBCAAAB11BFDEE7F005AA8A7 /* BothamUI.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		6BB4A80F1BFCB71F00EA6F34 /* SpyPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyPresenter.swift; sourceTree = "<group>"; };
 		6BB4A8111BFCB73F00EA6F34 /* SpyWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpyWireframe.swift; sourceTree = "<group>"; };
 		6BB4A8131BFCB76100EA6F34 /* WireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireframeTests.swift; sourceTree = "<group>"; };
+		EBCAAAAF1BFDEDB3005AA8A7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EBCAAAB11BFDEE7F005AA8A7 /* BothamUI.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BothamUI.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 		6B6CCD261BDD0FFB0015A4D4 = {
 			isa = PBXGroup;
 			children = (
+				EBCAAAB11BFDEE7F005AA8A7 /* BothamUI.podspec */,
+				EBCAAAAF1BFDEDB3005AA8A7 /* Podfile */,
 				6B6CCD321BDD0FFB0015A4D4 /* BothamUI */,
 				6B6CCD3E1BDD0FFB0015A4D4 /* BothamUnitTests */,
 				6B6CCD311BDD0FFB0015A4D4 /* Products */,
@@ -234,6 +240,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBCAAAB01BFDEDB3005AA8A7 /* Podfile in Resources */,
+				EBCAAAB21BFDEE7F005AA8A7 /* BothamUI.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

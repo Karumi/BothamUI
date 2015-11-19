@@ -1,0 +1,14 @@
+PODS:
+  - BothamUI (0.0.1)
+
+DEPENDENCIES:
+  - BothamUI (from `./`)
+
+EXTERNAL SOURCES:
+  BothamUI:
+    :path: ./
+
+SPEC CHECKSUMS:
+  BothamUI: f078a2f66467f696a2259e68f79daa90ac235ea0
+
+COCOAPODS: 0.39.0
