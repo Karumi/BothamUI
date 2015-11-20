@@ -2,7 +2,7 @@
 //  ExampleUITests.swift
 //  ExampleUITests
 //
-//  Created by Pedro Vicente Gomez on 19/11/15.
+//  Created by Davide Mendolia on 25/10/15.
 //  Copyright © 2015 GoKarumi S.L. All rights reserved.
 //
 
@@ -17,7 +17,6 @@ class ExampleUITests: XCTestCase {
         XCUIApplication().launch()
     }
 
-
     func testShowsCharactersTab() {
         let charactersTab = XCUIApplication().tabBars.buttons["Characters"]
 
@@ -28,12 +27,6 @@ class ExampleUITests: XCTestCase {
         let comicsTab = XCUIApplication().tabBars.buttons["Comics"]
 
         expect(comicsTab.exists).to(beTrue())
-    }
-
-    func testShowsTitle() {
-        let navBarTitle = XCUIApplication().navigationBars["Title"]
-
-        expect(navBarTitle.exists).to(beTrue())
     }
 
 }

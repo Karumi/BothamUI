@@ -1,0 +1,17 @@
+PODS:
+  - BothamUI (0.0.1)
+  - Nimble (3.0.0)
+
+DEPENDENCIES:
+  - BothamUI (from `./`)
+  - Nimble
+
+EXTERNAL SOURCES:
+  BothamUI:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  BothamUI: d052c2c24aa58900bd0b93efedc3d3e25ca6ddd7
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+
+COCOAPODS: 0.39.0

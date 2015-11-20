@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:BothamUI.xcodeproj">
+      location = "group:BothamUI.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Example/Example.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

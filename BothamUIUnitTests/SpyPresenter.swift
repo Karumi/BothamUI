@@ -10,6 +10,7 @@ import Foundation
 import BothamUI
 
 class SpyPresenter: BothamPresenter {
+
     var executedStages: [Stage] = []
 
     func viewDidLoad() {
@@ -20,11 +21,11 @@ class SpyPresenter: BothamPresenter {
         executedStages.append(.ViewWillAppear)
     }
 
-    func viewDidAppear(){
+    func viewDidAppear() {
         executedStages.append(.ViewDidAppear)
     }
 
-    func viewWillDisappear(){
+    func viewWillDisappear() {
         executedStages.append(.ViewWillDisappear)
     }
 

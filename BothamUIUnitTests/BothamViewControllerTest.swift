@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Nimble
 @testable import BothamUI
 
 class BothamViewControllerTests: XCTestCase {
@@ -16,13 +17,15 @@ class BothamViewControllerTests: XCTestCase {
             let presenter = SpyPresenter()
             viewController.presenter = presenter
             let animated = false
-    
+
             viewController.viewDidLoad()
             viewController.viewWillAppear(animated)
             viewController.viewDidAppear(animated)
             viewController.viewWillDisappear(animated)
             viewController.viewDidDisappear(animated)
-    
-            XCTAssertEqual([.ViewDidLoad, .ViewWillAppear, .ViewDidAppear, .ViewWillDisappear, .ViewDidDisappear], presenter.executedStages)
+
+            expect(presenter.executedStages).to(equal([.ViewDidLoad,
+                .ViewWillAppear, .ViewDidAppear,
+                .ViewWillDisappear, .ViewDidDisappear]))
         }
 }

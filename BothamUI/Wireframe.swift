@@ -29,9 +29,9 @@ extension BothamWireframe {
         return uiStoryboard.instantiateViewControllerWithIdentifier(String(T.self)) as! T
     }
 
-    public func viewControllerFromStoryboard<T>(ViewControllerIdentifier: String) -> T {
+    public func viewControllerFromStoryboard<T>(viewControllerIdentifier: String) -> T {
         let uiStoryboard = storyboard(storyboardName)
-        return uiStoryboard.instantiateViewControllerWithIdentifier(ViewControllerIdentifier) as! T
+        return uiStoryboard.instantiateViewControllerWithIdentifier(viewControllerIdentifier) as! T
     }
 
     public func showRootViewController(viewController: UIViewController, inWindow: UIWindow) {
