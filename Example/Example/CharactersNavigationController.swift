@@ -13,7 +13,7 @@ class CharactersNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let homeViewController = AppDelegate.service.provideCharactersViewController()
-        pushViewController(homeViewController, animated: false)
+        let viewController = AppDelegate.service.provideCharactersViewController()
+        pushViewController(viewController, animated: false)
     }
 }
