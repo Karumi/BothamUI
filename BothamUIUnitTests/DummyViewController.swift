@@ -9,8 +9,5 @@
 import UIKit
 import BothamUI
 
-class DummyViewController: BothamViewController<SpyPresenter> {
-    init() {
-        super.init(nibName: nil, bundle: nil)
-    }
+class DummyViewController: BothamViewController {
 }

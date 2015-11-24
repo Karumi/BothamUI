@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import BothamUI
 
-class CharactersViewController: BothamViewController<CharactersPresenter>, BothamTableViewController, CharactersUI {
+class CharactersViewController: BothamViewController, BothamTableViewController, CharactersUI {
     @IBOutlet var tableView: UITableView!
     var dataSource: BothamTableViewDataSource<Character, CharacterTableViewCell>!
 
