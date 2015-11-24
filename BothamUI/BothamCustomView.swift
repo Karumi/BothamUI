@@ -21,14 +21,14 @@ public class BothamCustomView: UIView {
         xibSetup()
     }
 
-    func xibSetup() {
+    private func xibSetup() {
         view = loadViewFromNib()
         view.frame = bounds
         view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
         addSubview(view)
     }
 
-    func loadViewFromNib() -> UIView {
+    private func loadViewFromNib() -> UIView {
         return NSBundle(forClass: self.dynamicType).loadNib(name: String(self.dynamicType), owner: self)
     }
 }
