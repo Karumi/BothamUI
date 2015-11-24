@@ -10,7 +10,7 @@ import Foundation
 import BothamUI
 
 class ComicsPresenter: BothamPresenter {
-    var ui: ComicsUI?
+    weak var ui: ComicsUI?
 
     init(ui: ComicsUI) {
         self.ui = ui
