@@ -10,20 +10,10 @@ import Foundation
 import UIKit
 
 
-// Warning: Subclass from UIViewController cannot be generic or the IB is not able to find it.
-public class BothamViewController<T: BothamPresenter>: UIViewController, BothamUI {
-    public var presenter: T! = nil
+public class BothamViewController: UIViewController, BothamUI {
+    public var presenter: BothamPresenter! = nil
 
     // MARK: UIViewController
-
-    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    }
-
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-
     public override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
