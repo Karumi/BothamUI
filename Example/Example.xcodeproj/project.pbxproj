@@ -197,7 +197,7 @@
 				6B6B09281BDD1A830013891D /* AppDelegate.swift */,
 				6BDE3E1E1C04A3290030EB8B /* ExampleViewController.swift */,
 				6B6B092C1BDD1A830013891D /* Main.storyboard */,
-				6BDE3E181C0392970030EB8B /* Library */,
+				6BDE3E181C0392970030EB8B /* Utils */,
 				6B6B092F1BDD1A830013891D /* Assets.xcassets */,
 				6B6B09311BDD1A830013891D /* LaunchScreen.storyboard */,
 				6B6B09341BDD1A830013891D /* Info.plist */,
@@ -250,12 +250,12 @@
 			name = CollectionView;
 			sourceTree = "<group>";
 		};
-		6BDE3E181C0392970030EB8B /* Library */ = {
+		6BDE3E181C0392970030EB8B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				6BDE3E191C0392ED0030EB8B /* Dispatch.swift */,
 			);
-			name = Library;
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		B49D375BE1C92ECC6F2567F1 /* Pods */ = {

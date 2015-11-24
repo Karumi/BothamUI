@@ -161,7 +161,7 @@
 		6B6CCD321BDD0FFB0015A4D4 /* BothamUI */ = {
 			isa = PBXGroup;
 			children = (
-				6BDE3E1B1C0397FA0030EB8B /* Libary */,
+				6BDE3E1B1C0397FA0030EB8B /* Extensions */,
 				6BDE3E0A1BFFB2F20030EB8B /* UI */,
 				6B0736FE1BFDCBE3000E0E7D /* ViewCell */,
 				6B0736FB1BFDCB5C000E0E7D /* DataSource */,
@@ -222,12 +222,12 @@
 			name = UI;
 			sourceTree = "<group>";
 		};
-		6BDE3E1B1C0397FA0030EB8B /* Libary */ = {
+		6BDE3E1B1C0397FA0030EB8B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				6BDE3E1C1C0398390030EB8B /* NSBundle.swift */,
 			);
-			name = Libary;
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		EBEC62601BFE3A4D00662B5F /* Wireframe */ = {
