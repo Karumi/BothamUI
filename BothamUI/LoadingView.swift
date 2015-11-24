@@ -10,9 +10,10 @@ import Foundation
 import UIKit
 
 
-@IBDesignable public class LoadingView: BothamCustomView {
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    @IBOutlet weak var loadingLabel: UILabel!
+@IBDesignable
+public class LoadingView: BothamCustomView {
+    @IBOutlet public weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet public weak var loadingLabel: UILabel!
 
     @IBInspectable public var color: UIColor? = nil {
         didSet {

@@ -9,12 +9,11 @@
 import Foundation
 import BothamUI
 
-struct MainWireframe: BothamWireframe {
+class MainWireframe: BothamWireframe {
     let storyboardName: String = "Main"
-    let serviceLocator = ServiceLocator()
 
     func presentInitialViewControllerInWindow(window: UIWindow) {
-        let viewController = serviceLocator.provideInitialViewControllerFromStoryboard()
+        let viewController: UITabBarController = self.initialViewControllerFromStoryboard()
         self.showRootViewController(viewController, inWindow: window)
     }
 }

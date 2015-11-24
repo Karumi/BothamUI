@@ -29,6 +29,6 @@ public class BothamCustomView: UIView {
     }
 
     func loadViewFromNib() -> UIView {
-        return NSBundle(forClass: self.dynamicType).loadNibNamed(String(self.dynamicType), owner: self, options: nil) [0] as! UIView
+        return NSBundle(forClass: self.dynamicType).loadNib(name: String(self.dynamicType), owner: self)
     }
 }

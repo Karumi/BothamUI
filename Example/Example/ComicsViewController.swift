@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import BothamUI
 
-class ComicsViewController: BothamViewController<ComicsPresenter>, BothamCollectionViewController, ComicsUI, UICollectionViewDelegateFlowLayout {
+class ComicsViewController: ExampleViewController<ComicsPresenter>, BothamCollectionViewController, ComicsUI, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet var collectionView: UICollectionView!
     var dataSource: BothamCollectionViewDataSource<Comic, ComicCollectionViewCell>!
