@@ -10,7 +10,7 @@ import Foundation
 
 public protocol BothamTableViewController {
     var tableView: UITableView! { get }
-    typealias TableViewCellType: BothamTableViewCell
+    typealias TableViewCellType: BothamViewCell
     var dataSource: BothamTableViewDataSource<TableViewCellType.ItemType, TableViewCellType>! { get }
 }
 

@@ -9,7 +9,7 @@
 import Foundation
 import BothamUI
 
-class CharacterTableViewCell: UITableViewCell, BothamTableViewCell {
+class CharacterTableViewCell: UITableViewCell, BothamViewCell {
     func configureForItem(item: Character) {
         self.textLabel?.text = item.name
     }

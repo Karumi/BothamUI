@@ -35,4 +35,12 @@ class ServiceLocator {
         viewController.dataSource = BothamTableViewDataSource()
         return viewController
     }
+
+    func provideComicsViewController() -> ComicsViewController {
+        let mainWireframe = provideMainWireframe()
+        let viewController: ComicsViewController = mainWireframe.viewControllerFromStoryboard()
+        viewController.presenter = ComicsPresenter(ui: viewController)
+        viewController.dataSource = BothamCollectionViewDataSource()
+        return viewController
+    }
 }

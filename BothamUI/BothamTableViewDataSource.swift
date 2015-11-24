@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class BothamTableViewDataSource<U, V: BothamTableViewCell where U == V.ItemType>
+public class BothamTableViewDataSource<U, V: BothamViewCell where U == V.ItemType>
                                       : NSObject, UITableViewDataSource {
     public var items: [U] = []
 

@@ -1,5 +1,5 @@
 //
-//  CharactersNavigationController.swift
+//  ComicsNavigationController.swift
 //  Example
 //
 //  Created by Davide Mendolia on 19/11/15.
@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-class CharactersNavigationController: UINavigationController {
+class ComicsNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let viewController = AppDelegate.service.provideCharactersViewController()
+        let viewController = AppDelegate.service.provideComicsViewController()
         pushViewController(viewController, animated: false)
     }
 }

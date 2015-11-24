@@ -47,4 +47,8 @@ public class BothamViewController<T: BothamPresenter>: UIViewController, BothamU
         super.viewDidDisappear(animated)
         presenter.viewDidDisappear()
     }
+
+    deinit {
+        print("deinit " + String(self.dynamicType))
+    }
 }
