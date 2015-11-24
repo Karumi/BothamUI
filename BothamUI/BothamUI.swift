@@ -10,8 +10,3 @@ import Foundation
 
 public protocol BothamUI: class {
 }
-
-public protocol BothamLoadingUI: BothamUI {
-    func showLoader()
-    func hideLoader()
-}

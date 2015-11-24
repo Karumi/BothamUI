@@ -9,14 +9,6 @@
 import Foundation
 import BothamUI
 
-class ExampleViewController<T:BothamPresenter>: BothamViewController<T>, BothamLoadingUI {
-    let currentLoadingView: LoadingView = LoadingView()
-
-    func showLoader() {
-        view.addSubview(currentLoadingView)
-    }
-
-    func hideLoader() {
-        currentLoadingView.removeFromSuperview()
-    }
+class ExampleViewController: BothamViewController, BothamLoadingViewController {
+    let currentLoadingView: UIView = LoadingView()
 }
