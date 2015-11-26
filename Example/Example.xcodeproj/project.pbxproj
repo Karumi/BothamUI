@@ -39,6 +39,7 @@
 		D0216A57D96557DB5D28B4E0 /* Pods_ExampleAcceptanceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3B00CD55A824F7D88F99E1 /* Pods_ExampleAcceptanceTests.framework */; };
 		EB9A492E1C07536800BF4D55 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A492D1C07536800BF4D55 /* XCTestCase.swift */; };
 		EB9A49301C07538100BF4D55 /* KIFTestActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A492F1C07538100BF4D55 /* KIFTestActor.swift */; };
+		EB9A49361C07544B00BF4D55 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A49351C07544B00BF4D55 /* MainViewController.swift */; };
 		EBEC62581BFE2E0800662B5F /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC62571BFE2E0800662B5F /* ExampleUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +115,7 @@
 		EB9A492D1C07536800BF4D55 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 		EB9A492F1C07538100BF4D55 /* KIFTestActor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KIFTestActor.swift; sourceTree = "<group>"; };
 		EB9A49311C0753E000BF4D55 /* ExampleAcceptanceTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExampleAcceptanceTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB9A49351C07544B00BF4D55 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EBEC62551BFE2E0800662B5F /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEC62571BFE2E0800662B5F /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		EBEC62591BFE2E0800662B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 		EB9A49231C07529200BF4D55 /* ExampleAcceptanceTests */ = {
 			isa = PBXGroup;
 			children = (
+				EB9A49351C07544B00BF4D55 /* MainViewController.swift */,
 				EB9A492C1C07535E00BF4D55 /* Extensions */,
 				EB9A49261C07529200BF4D55 /* Info.plist */,
 				EB9A49311C0753E000BF4D55 /* ExampleAcceptanceTests-Bridging-Header.h */,
@@ -758,6 +761,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9A49361C07544B00BF4D55 /* MainViewController.swift in Sources */,
 				EB9A49301C07538100BF4D55 /* KIFTestActor.swift in Sources */,
 				EB9A492E1C07536800BF4D55 /* XCTestCase.swift in Sources */,
 			);

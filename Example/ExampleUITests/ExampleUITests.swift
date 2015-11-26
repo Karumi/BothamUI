@@ -19,13 +19,13 @@ class ExampleUITests: XCTestCase {
 
 
     func testShowsCharactersTab() {
-        let charactersTab = XCUIApplication().tabBars.buttons["Characters"]
-
+        let charactersTab = XCUIApplication().tabBars.buttons["Characters Tab"]
+        
         expect(charactersTab.exists).to(beTrue())
     }
 
     func testShowsComicsTab() {
-        let comicsTab = XCUIApplication().tabBars.buttons["Comics"]
+        let comicsTab = XCUIApplication().tabBars.buttons["Comics Tab"]
 
         expect(comicsTab.exists).to(beTrue())
     }
