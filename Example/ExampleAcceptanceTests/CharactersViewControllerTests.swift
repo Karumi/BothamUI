@@ -13,10 +13,6 @@ import Nimble
 
 class CharactersViewControllerTests: AcceptanceTestCase {
 
-    override func tearDown() {
-        super.tearDown()
-    }
-
     func testShowsSpiderManAndIronManByDefaultSuperHeroes() {
         openCharactersViewController()
 
