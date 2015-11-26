@@ -11,7 +11,16 @@ import KIF
 
 class AcceptanceTestCase: KIFTestCase {
 
-    var originalRootViewController: UIViewController?
+    private var originalRootViewController: UIViewController?
+    private var rootViewController: UIViewController? {
+        get {
+            return UIApplication.sharedApplication().keyWindow?.rootViewController
+        }
+
+        set(newRootViewController) {
+            UIApplication.sharedApplication().keyWindow?.rootViewController = newRootViewController
+        }
+    }
 
     override func tearDown() {
         super.tearDown()
@@ -23,15 +32,5 @@ class AcceptanceTestCase: KIFTestCase {
     func presentViewController(viewController: UIViewController) {
         originalRootViewController = rootViewController
         rootViewController = viewController
-    }
-
-    private var rootViewController: UIViewController? {
-        get {
-            return UIApplication.sharedApplication().keyWindow?.rootViewController
-        }
-
-        set(newRootViewController) {
-            UIApplication.sharedApplication().keyWindow?.rootViewController = newRootViewController
-        }
     }
 }
