@@ -1,5 +1,5 @@
 //
-//  BothamPullToRefreshPresenter.swift
+//  BothamPullToResfreshUI.swift
 //  BothamUI
 //
 //  Created by Davide Mendolia on 26/11/15.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol BothamPullToRefreshPresenter: BothamPresenter {
-    func didStartRefreshing()
+public protocol BothamPullToResfreshUI {
+    func wilEndRefreshing()
 }

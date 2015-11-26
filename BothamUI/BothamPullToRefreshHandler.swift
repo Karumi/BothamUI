@@ -26,8 +26,10 @@ public class BothamPullToRefreshHandler: NSObject {
 
     func refresh(refreshControl: UIRefreshControl)
     {
-        presenter.refresh() {
-            self.refreshControl.endRefreshing()
-        }
+        presenter.didStartRefreshing()
+    }
+
+    public func endRefreshing() {
+        self.refreshControl.endRefreshing()
     }
 }

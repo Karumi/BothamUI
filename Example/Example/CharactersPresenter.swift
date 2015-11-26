@@ -20,9 +20,9 @@ class CharactersPresenter: BothamPresenter, BothamPullToRefreshPresenter {
         loadItems([Character(name: "Spiderman"), Character(name: "IronMan")])
     }
 
-    func refresh(didRefresh: () -> ()) {
+    func didStartRefreshing() {
         loadItems([Character(name: "Captain America"), Character(name: "Magneto"), Character(name: "Star-Lord")])
-        didRefresh()
+        self.ui?.wilEndRefreshing()
     }
 
     private func loadItems(items: [Character]) {

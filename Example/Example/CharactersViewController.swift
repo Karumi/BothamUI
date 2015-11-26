@@ -21,4 +21,8 @@ class CharactersViewController: BothamViewController, BothamTableViewController,
         pullToRefreshHandler.addTo(tableView)
         super.viewDidLoad()
     }
+
+    func wilEndRefreshing() {
+        pullToRefreshHandler.endRefreshing()
+    }
 }
