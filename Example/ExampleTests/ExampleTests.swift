@@ -15,11 +15,9 @@ class ExampleTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
@@ -32,25 +30,5 @@ class ExampleTests: XCTestCase {
         expect(fakeComicsUI.loaderWasShowed).to(beTrue())
         expect(fakeComicsUI.itemsShowed.count).toEventually(equal(4))
         expect(fakeComicsUI.loaderWasHided).toEventually(beTrue())
-    }
-}
-
-
-class FakeComicsUI: ComicsUI {
-    var loaderWasShowed = false
-    var loaderWasHided = false
-
-    func showLoader() {
-        loaderWasShowed = true
-    }
-
-    func hideLoader() {
-        loaderWasHided = true
-    }
-
-    var itemsShowed:[Comic] = []
-
-    func showItems(items: [Comic]) {
-        itemsShowed = items
     }
 }
