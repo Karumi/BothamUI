@@ -12,7 +12,7 @@ import KIF
 import Nimble
 @testable import Example
 
-class ComicsNavigationControllerTests: KIFTestCase {
+class ComicsNavigationControllerTests: AcceptanceTestCase {
 
     func testShouldShowLoadingView() {
         openComicsViewController()

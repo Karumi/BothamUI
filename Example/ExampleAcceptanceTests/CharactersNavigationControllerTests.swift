@@ -11,7 +11,11 @@ import KIF
 import Nimble
 @testable import Example
 
-class CharactersNavigationControllerTests: KIFTestCase {
+class CharactersNavigationControllerTests: AcceptanceTestCase {
+
+    override func tearDown() {
+        super.tearDown()
+    }
 
     func testShowsSpiderManAndIronManByDefaultSuperHeroes() {
         openCharactersViewController()

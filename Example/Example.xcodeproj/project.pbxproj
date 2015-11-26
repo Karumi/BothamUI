@@ -41,7 +41,7 @@
 		EB9A49361C07544B00BF4D55 /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A49351C07544B00BF4D55 /* MainViewControllerTests.swift */; };
 		EB9A49391C0757B300BF4D55 /* CharactersNavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A49381C0757B300BF4D55 /* CharactersNavigationControllerTests.swift */; };
 		EB9A493C1C075A8100BF4D55 /* ComicsNavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A493B1C075A8100BF4D55 /* ComicsNavigationControllerTests.swift */; };
-		EB9A493E1C075AB100BF4D55 /* KIFTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A493D1C075AB100BF4D55 /* KIFTestCase.swift */; };
+		EB9A49441C076B1600BF4D55 /* AcceptanceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A49431C076B1600BF4D55 /* AcceptanceTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,8 +111,8 @@
 		EB9A49351C07544B00BF4D55 /* MainViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
 		EB9A49381C0757B300BF4D55 /* CharactersNavigationControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersNavigationControllerTests.swift; sourceTree = "<group>"; };
 		EB9A493B1C075A8100BF4D55 /* ComicsNavigationControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicsNavigationControllerTests.swift; sourceTree = "<group>"; };
-		EB9A493D1C075AB100BF4D55 /* KIFTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KIFTestCase.swift; sourceTree = "<group>"; };
 		EB9A49421C07631E00BF4D55 /* ExampleAcceptanceTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExampleAcceptanceTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB9A49431C076B1600BF4D55 /* AcceptanceTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptanceTestCase.swift; sourceTree = "<group>"; };
 		F448661AC2CAA127286870BE /* Pods-ExampleAcceptanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleAcceptanceTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ExampleAcceptanceTests/Pods-ExampleAcceptanceTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -348,6 +348,7 @@
 				EB9A492C1C07535E00BF4D55 /* Extensions */,
 				EB9A49261C07529200BF4D55 /* Info.plist */,
 				EB9A49421C07631E00BF4D55 /* ExampleAcceptanceTests-Bridging-Header.h */,
+				EB9A49431C076B1600BF4D55 /* AcceptanceTestCase.swift */,
 			);
 			path = ExampleAcceptanceTests;
 			sourceTree = "<group>";
@@ -357,7 +358,6 @@
 			children = (
 				EB9A492D1C07536800BF4D55 /* XCTestCase.swift */,
 				EB9A492F1C07538100BF4D55 /* KIFTestActor.swift */,
-				EB9A493D1C075AB100BF4D55 /* KIFTestCase.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -695,9 +695,9 @@
 			files = (
 				EB9A49391C0757B300BF4D55 /* CharactersNavigationControllerTests.swift in Sources */,
 				EB9A49361C07544B00BF4D55 /* MainViewControllerTests.swift in Sources */,
-				EB9A493E1C075AB100BF4D55 /* KIFTestCase.swift in Sources */,
 				EB9A493C1C075A8100BF4D55 /* ComicsNavigationControllerTests.swift in Sources */,
 				EB9A49301C07538100BF4D55 /* KIFTestActor.swift in Sources */,
+				EB9A49441C076B1600BF4D55 /* AcceptanceTestCase.swift in Sources */,
 				EB9A492E1C07536800BF4D55 /* XCTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

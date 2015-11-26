@@ -9,9 +9,9 @@
 import Foundation
 import KIF
 import Nimble
+@testable import Example
 
-class MainViewControllerTests: KIFTestCase {
-
+class MainViewControllerTests: AcceptanceTestCase {
 
     func testShouldShowTwoTabBarItems() {
         expect(self.tabBar.items?.count).to(equal(2))
