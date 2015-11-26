@@ -35,12 +35,4 @@ class ExampleUITests: XCTestCase {
 
         expect(navBarTitle.exists).to(beTrue())
     }
-
-    func testShowListOfCovers() {
-        let app = XCUIApplication()
-        app.tabBars.buttons["Comics"].tap()
-
-        let image = app.collectionViews.images["50b4fc783d30f"]
-        expect(image.exists).to(beTrue())
-    }
 }

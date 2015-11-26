@@ -18,7 +18,7 @@ class ComicsPresenter: BothamPresenter {
 
     func viewDidLoad() {
         self.ui?.showLoader()
-        delay(3) {
+        delay(0.5) {
             self.ui?.hideLoader()
 
             self.ui?.showItems([Comic(cover: UIImage(named: "50b4fc783d30f")),
