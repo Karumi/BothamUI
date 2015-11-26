@@ -37,7 +37,8 @@
 		6BDE3E1F1C04A3290030EB8B /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E1E1C04A3290030EB8B /* ExampleViewController.swift */; };
 		A32530B9E53EDE25FD574398 /* Pods_ExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35B163CE0DC7AF697E4632CE /* Pods_ExampleUITests.framework */; };
 		D0216A57D96557DB5D28B4E0 /* Pods_ExampleAcceptanceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3B00CD55A824F7D88F99E1 /* Pods_ExampleAcceptanceTests.framework */; };
-		EB9A49251C07529200BF4D55 /* ExampleAcceptanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A49241C07529200BF4D55 /* ExampleAcceptanceTests.swift */; };
+		EB9A492E1C07536800BF4D55 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A492D1C07536800BF4D55 /* XCTestCase.swift */; };
+		EB9A49301C07538100BF4D55 /* KIFTestActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A492F1C07538100BF4D55 /* KIFTestActor.swift */; };
 		EBEC62581BFE2E0800662B5F /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC62571BFE2E0800662B5F /* ExampleUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -109,8 +110,10 @@
 		AC17EACDA99BFBD45DF05CE1 /* Pods_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3B00CD55A824F7D88F99E1 /* Pods_ExampleAcceptanceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleAcceptanceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9A49221C07529200BF4D55 /* ExampleAcceptanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleAcceptanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB9A49241C07529200BF4D55 /* ExampleAcceptanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAcceptanceTests.swift; sourceTree = "<group>"; };
 		EB9A49261C07529200BF4D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9A492D1C07536800BF4D55 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		EB9A492F1C07538100BF4D55 /* KIFTestActor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KIFTestActor.swift; sourceTree = "<group>"; };
+		EB9A49311C0753E000BF4D55 /* ExampleAcceptanceTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExampleAcceptanceTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		EBEC62551BFE2E0800662B5F /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEC62571BFE2E0800662B5F /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		EBEC62591BFE2E0800662B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -353,10 +356,20 @@
 		EB9A49231C07529200BF4D55 /* ExampleAcceptanceTests */ = {
 			isa = PBXGroup;
 			children = (
-				EB9A49241C07529200BF4D55 /* ExampleAcceptanceTests.swift */,
+				EB9A492C1C07535E00BF4D55 /* Extensions */,
 				EB9A49261C07529200BF4D55 /* Info.plist */,
+				EB9A49311C0753E000BF4D55 /* ExampleAcceptanceTests-Bridging-Header.h */,
 			);
 			path = ExampleAcceptanceTests;
+			sourceTree = "<group>";
+		};
+		EB9A492C1C07535E00BF4D55 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB9A492D1C07536800BF4D55 /* XCTestCase.swift */,
+				EB9A492F1C07538100BF4D55 /* KIFTestActor.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		EBEC62561BFE2E0800662B5F /* ExampleUITests */ = {
@@ -745,7 +758,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB9A49251C07529200BF4D55 /* ExampleAcceptanceTests.swift in Sources */,
+				EB9A49301C07538100BF4D55 /* KIFTestActor.swift in Sources */,
+				EB9A492E1C07536800BF4D55 /* XCTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,11 +951,14 @@
 			baseConfigurationReference = A49A5D1539EF98BE0B5BBAE8 /* Pods-ExampleAcceptanceTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ExampleAcceptanceTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.bothamnetworking.ExampleAcceptanceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ExampleAcceptanceTests/ExampleAcceptanceTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
 			name = Debug;
@@ -951,11 +968,13 @@
 			baseConfigurationReference = F448661AC2CAA127286870BE /* Pods-ExampleAcceptanceTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ExampleAcceptanceTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.bothamnetworking.ExampleAcceptanceTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ExampleAcceptanceTests/ExampleAcceptanceTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
 			name = Release;
