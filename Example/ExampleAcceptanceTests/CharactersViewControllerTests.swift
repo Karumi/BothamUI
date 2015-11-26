@@ -11,7 +11,7 @@ import KIF
 import Nimble
 @testable import Example
 
-class CharactersNavigationControllerTests: AcceptanceTestCase {
+class CharactersViewControllerTests: AcceptanceTestCase {
 
     override func tearDown() {
         super.tearDown()
