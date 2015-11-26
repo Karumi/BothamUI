@@ -15,8 +15,7 @@ class MainWireframe: BothamWireframe {
     func presentInitialViewControllerInWindow(window: UIWindow) {
         let viewController: UITabBarController = self.initialViewControllerFromStoryboard()
         let tabBar = viewController.tabBar
-        tabBar.items?[0].accessibilityLabel = "Characters Tab"
-        tabBar.items?[1].accessibilityLabel = "Comics Tab"
+        tabBar.accessibilityLabel = "MainWireframe TabBar"
         self.showRootViewController(viewController, inWindow: window)
     }
 }
