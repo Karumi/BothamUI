@@ -9,7 +9,7 @@
 import Foundation
 import BothamUI
 
-class CharactersPresenter: BothamPresenter {
+class CharactersPresenter: BothamPresenter, BothamPullToRefreshPresenter {
     weak var ui: CharactersUI?
 
     init(ui: CharactersUI) {
@@ -17,6 +17,15 @@ class CharactersPresenter: BothamPresenter {
     }
 
     func viewDidLoad() {
-        self.ui?.showItems([Character(name: "Spiderman"), Character(name: "IronMan")])
+        loadItems([Character(name: "Spiderman"), Character(name: "IronMan")])
+    }
+
+    func refresh(didRefresh: () -> ()) {
+        loadItems([Character(name: "Captain America"), Character(name: "Magneto"), Character(name: "Star-Lord")])
+        didRefresh()
+    }
+
+    private func loadItems(items: [Character]) {
+        self.ui?.showItems(items)
     }
 }

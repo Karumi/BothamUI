@@ -13,9 +13,12 @@ import BothamUI
 class CharactersViewController: BothamViewController, BothamTableViewController, CharactersUI {
     @IBOutlet var tableView: UITableView!
     var dataSource: BothamTableViewDataSource<Character, CharacterTableViewCell>!
+    var pullToRefreshHandler: BothamPullToRefreshHandler!
 
     override func viewDidLoad() {
         tableView.dataSource = dataSource
+
+        pullToRefreshHandler.addTo(tableView)
         super.viewDidLoad()
     }
 }

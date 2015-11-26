@@ -31,4 +31,17 @@ class ExampleTests: XCTestCase {
         expect(fakeComicsUI.itemsShowed.count).toEventually(equal(4), timeout: 5)
         expect(fakeComicsUI.loaderWasHided).toEventually(beTrue(), timeout: 5)
     }
+
+    func testResfreshTableOfCharacters() {
+        let fakeCharactersUI = FakeCharactersUI()
+        let presenter = CharactersPresenter(ui: fakeCharactersUI)
+
+        var didRefresh = false
+        presenter.refresh {
+            didRefresh = true
+        }
+
+        expect(fakeCharactersUI.itemsShowed.count).toEventually(equal(3), timeout: 5)
+        expect(didRefresh).toEventually(beTrue(), timeout: 5)
+    }
 }
