@@ -17,12 +17,6 @@ target 'ExampleTests', :exclusive => true do
     pod "Nimble"
 end
 
-target 'ExampleUITests', :exclusive => true do
-    xcodeproj 'Example/Example.xcodeproj'
-    pod "BothamUI", :path => "./"
-    pod "Nimble"
-end
-
 target 'ExampleAcceptanceTests', :exclusive => true do
         xcodeproj 'Example/Example.xcodeproj'
     pod "BothamUI", :path => "./"
