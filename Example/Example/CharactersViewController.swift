@@ -10,19 +10,14 @@ import Foundation
 import UIKit
 import BothamUI
 
-class CharactersViewController: BothamViewController, BothamTableViewController, CharactersUI {
+class CharactersViewController: ExampleViewController, BothamTableViewController, CharactersUI {
     @IBOutlet var tableView: UITableView!
     var dataSource: BothamTableViewDataSource<Character, CharacterTableViewCell>!
-    var pullToRefreshHandler: BothamPullToRefreshHandler!
 
     override func viewDidLoad() {
         tableView.dataSource = dataSource
 
         pullToRefreshHandler.addTo(tableView)
         super.viewDidLoad()
-    }
-
-    func wilEndRefreshing() {
-        pullToRefreshHandler.endRefreshing()
     }
 }
