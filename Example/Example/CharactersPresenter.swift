@@ -17,6 +17,6 @@ class CharactersPresenter: BothamPresenter {
     }
 
     func viewDidLoad() {
-        self.ui?.showItems([Character(name: "Spiderman"), Character(name: "IronMan")])
+        self.ui?.showItems([Character(name: "SpiderMan"), Character(name: "IronMan")])
     }
 }

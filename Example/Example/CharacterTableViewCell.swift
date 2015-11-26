@@ -12,5 +12,6 @@ import BothamUI
 class CharacterTableViewCell: UITableViewCell, BothamViewCell {
     func configureForItem(item: Character) {
         self.textLabel?.text = item.name
+        self.textLabel?.accessibilityLabel = item.name
     }
 }

@@ -9,7 +9,7 @@
 import Foundation
 import KIF
 
-class MainViewController: KIFTestCase {
+class MainViewControllerTests: KIFTestCase {
 
     func testShouldShowCharactersTab() {
         tester().waitForViewWithAccessibilityLabel("Characters Tab")
