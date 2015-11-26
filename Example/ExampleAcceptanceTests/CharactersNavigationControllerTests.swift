@@ -1,5 +1,5 @@
 //
-//  CharactersViewControllerTest.swift
+//  CharactersNavigationControllerTests.swift
 //  Example
 //
 //  Created by Pedro Vicente Gomez on 26/11/15.
@@ -26,14 +26,6 @@ class CharactersNavigationControllerTests: KIFTestCase {
     private func openCharactersViewController() {
         let charactersViewController = ServiceLocator().provideCharactersViewController()
         presentViewController(charactersViewController)
-    }
-
-}
-
-extension KIFTestCase {
-
-    func presentViewController(viewController: UIViewController) {
-        UIApplication.sharedApplication().keyWindow?.rootViewController = viewController
     }
 
 }
