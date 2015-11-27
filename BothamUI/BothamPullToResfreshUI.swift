@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol BothamPullToResfreshUI {
+public protocol BothamPullToResfreshUI: class {
     func wilEndRefreshing()
 }

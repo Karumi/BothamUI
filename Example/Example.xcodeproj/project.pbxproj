@@ -27,6 +27,7 @@
 		6B82AD411C074322009247FB /* FakeComicsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD401C074322009247FB /* FakeComicsUI.swift */; };
 		6B82AD441C0743EB009247FB /* FakeBothamLoadingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD431C0743EB009247FB /* FakeBothamLoadingUI.swift */; };
 		6B82AD4B1C075DC5009247FB /* FakeCharactersUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD4A1C075DC5009247FB /* FakeCharactersUI.swift */; };
+		6B82AD511C08B511009247FB /* FakeBothamPullToResfreshUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD501C08B511009247FB /* FakeBothamPullToResfreshUI.swift */; };
 		6BB5CD951BDD2D670009C2F0 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB5CD941BDD2D670009C2F0 /* ServiceLocator.swift */; };
 		6BDE3DF81BFE0DEE0030EB8B /* ComicsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3DF71BFE0DEE0030EB8B /* ComicsNavigationController.swift */; };
 		6BDE3DFA1BFE0E760030EB8B /* ComicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3DF91BFE0E760030EB8B /* ComicsViewController.swift */; };
@@ -88,6 +89,7 @@
 		6B82AD401C074322009247FB /* FakeComicsUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeComicsUI.swift; sourceTree = "<group>"; };
 		6B82AD431C0743EB009247FB /* FakeBothamLoadingUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeBothamLoadingUI.swift; sourceTree = "<group>"; };
 		6B82AD4A1C075DC5009247FB /* FakeCharactersUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeCharactersUI.swift; sourceTree = "<group>"; };
+		6B82AD501C08B511009247FB /* FakeBothamPullToResfreshUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeBothamPullToResfreshUI.swift; sourceTree = "<group>"; };
 		6BB5CD941BDD2D670009C2F0 /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		6BDE3DF71BFE0DEE0030EB8B /* ComicsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicsNavigationController.swift; sourceTree = "<group>"; };
 		6BDE3DF91BFE0E760030EB8B /* ComicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicsViewController.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				6B82AD401C074322009247FB /* FakeComicsUI.swift */,
 				6B82AD431C0743EB009247FB /* FakeBothamLoadingUI.swift */,
 				6B82AD4A1C075DC5009247FB /* FakeCharactersUI.swift */,
+				6B82AD501C08B511009247FB /* FakeBothamPullToResfreshUI.swift */,
 			);
 			name = Fake;
 			sourceTree = "<group>";
@@ -624,6 +627,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B82AD411C074322009247FB /* FakeComicsUI.swift in Sources */,
+				6B82AD511C08B511009247FB /* FakeBothamPullToResfreshUI.swift in Sources */,
 				6B82AD441C0743EB009247FB /* FakeBothamLoadingUI.swift in Sources */,
 				6B82AD4B1C075DC5009247FB /* FakeCharactersUI.swift in Sources */,
 				6B82AD391C062497009247FB /* ExampleTests.swift in Sources */,

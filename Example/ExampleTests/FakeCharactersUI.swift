@@ -8,9 +8,11 @@
 
 import Foundation
 @testable import Example
+import BothamUI
 
-class FakeCharactersUI: CharactersUI {
+class FakeCharactersUI: CharactersUI, FakeBothamPullToResfreshUI {
     var itemsShowed:[Example.Character] = []
+    var didRefresh = false
 
     func showItems(items: [Example.Character]) {
         itemsShowed = items

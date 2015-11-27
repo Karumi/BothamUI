@@ -36,12 +36,9 @@ class ExampleTests: XCTestCase {
         let fakeCharactersUI = FakeCharactersUI()
         let presenter = CharactersPresenter(ui: fakeCharactersUI)
 
-        var didRefresh = false
-        presenter.refresh {
-            didRefresh = true
-        }
+        presenter.didStartRefreshing()
 
-        expect(fakeCharactersUI.itemsShowed.count).toEventually(equal(3), timeout: 5)
-        expect(didRefresh).toEventually(beTrue(), timeout: 5)
+        expect(fakeCharactersUI.itemsShowed.count).to(equal(3))
+        expect(fakeCharactersUI.didRefresh).to(beTrue())
     }
 }
