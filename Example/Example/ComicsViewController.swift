@@ -17,6 +17,7 @@ class ComicsViewController: ExampleViewController, BothamCollectionViewControlle
     var dataSource: BothamCollectionViewDataSource<Comic, ComicCollectionViewCell>!
 
     override func viewDidLoad() {
+        collectionView.accessibilityLabel = "Comics CollectionView"
         collectionView.delegate = self
         collectionView.dataSource = dataSource
         super.viewDidLoad()

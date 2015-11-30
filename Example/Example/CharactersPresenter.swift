@@ -17,7 +17,7 @@ class CharactersPresenter: BothamPresenter, BothamPullToRefreshPresenter {
     }
 
     func viewDidLoad() {
-        loadItems([Character(name: "Spiderman"), Character(name: "IronMan")])
+        loadItems([Character(name: "SpiderMan"), Character(name: "IronMan")])
     }
 
     func didStartRefreshing() {
