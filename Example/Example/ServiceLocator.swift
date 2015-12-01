@@ -31,8 +31,10 @@ class ServiceLocator {
     func provideCharactersViewController() -> CharactersViewController {
         let mainWireframe = provideMainWireframe()
         let viewController: CharactersViewController = mainWireframe.viewControllerFromStoryboard()
-        viewController.presenter = CharactersPresenter(ui: viewController)
+        let presenter = CharactersPresenter(ui: viewController)
+        viewController.presenter = presenter
         viewController.dataSource = BothamTableViewDataSource()
+        viewController.pullToRefreshHandler = BothamPullToRefreshHandler(presenter: presenter)
         return viewController
     }
 

@@ -23,6 +23,7 @@ class ComicsViewControllerTests: AcceptanceTestCase {
     func testShouldShowThreeComics() {
         openComicsViewController()
 
+        waitForTableViewLoaded()
         let comicsTableView = tester().waitForViewWithAccessibilityLabel("Comics CollectionView") as! UICollectionView
 
         expect(comicsTableView.visibleCells().count).toEventually(beGreaterThanOrEqualTo(3))
@@ -31,6 +32,11 @@ class ComicsViewControllerTests: AcceptanceTestCase {
     private func openComicsViewController() {
         let comicsViewController = ServiceLocator().provideComicsViewController()
         presentViewController(comicsViewController)
+    }
+
+    private func waitForTableViewLoaded() {
+        let loadingView = tester().waitForViewWithAccessibilityLabel("LoadingView")
+        expect(loadingView.isVisibleInViewHierarchy()).toEventually(beFalse(), timeout: 15)
     }
 
 }

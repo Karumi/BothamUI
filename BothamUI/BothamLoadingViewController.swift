@@ -16,10 +16,12 @@ public protocol BothamLoadingViewController: BothamLoadingUI {
 public extension BothamLoadingViewController {
     func showLoader() {
         view.addSubview(currentLoadingView)
+        currentLoadingView.hidden = false
         currentLoadingView.center = view.center
     }
 
     func hideLoader() {
         currentLoadingView.removeFromSuperview()
+        currentLoadingView.hidden = true
     }
 }
