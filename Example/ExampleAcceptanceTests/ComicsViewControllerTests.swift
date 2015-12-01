@@ -36,7 +36,7 @@ class ComicsViewControllerTests: AcceptanceTestCase {
 
     private func waitForTableViewLoaded() {
         let loadingView = tester().waitForViewWithAccessibilityLabel("LoadingView")
-        expect(loadingView.isVisibleInViewHierarchy()).toEventually(beFalse(), timeout: 3)
+        expect(loadingView.isVisibleInViewHierarchy()).toEventually(beFalse(), timeout: 5)
     }
 
 }
