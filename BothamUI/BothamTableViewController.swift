@@ -12,6 +12,7 @@ public protocol BothamTableViewController {
     var tableView: UITableView! { get }
     typealias TableViewCellType: BothamViewCell
     var dataSource: BothamTableViewDataSource<TableViewCellType.ItemType, TableViewCellType>! { get }
+    var delegate: UITableViewDelegate! { get }
 }
 
 extension BothamTableViewController {

@@ -81,7 +81,7 @@
 		EBB63E411BFE5D5500DB3F8A /* SpyWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpyWireframe.swift; path = BothamUIUnitTests/SpyWireframe.swift; sourceTree = SOURCE_ROOT; };
 		EBB63E451BFE5D5D00DB3F8A /* BothamViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BothamViewControllerTest.swift; path = BothamUIUnitTests/BothamViewControllerTest.swift; sourceTree = SOURCE_ROOT; };
 		EBB63E471BFE5D6200DB3F8A /* WireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WireframeTests.swift; path = BothamUIUnitTests/WireframeTests.swift; sourceTree = SOURCE_ROOT; };
-		EBEC624F1BFE2CF600662B5F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		EBEC624F1BFE2CF600662B5F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EBEC62661BFE3A7300662B5F /* BothamUIUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BothamUIUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEC626A1BFE3A7300662B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
