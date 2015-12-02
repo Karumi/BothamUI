@@ -12,6 +12,9 @@ import BothamUI
 
 class ServiceLocator {
 
+    static let SharedInstance = ServiceLocator()
+    let navigatorContainer = BothamNavigatorContainer()
+
     func provideMainWireframe() -> MainWireframe {
         return MainWireframe()
     }
@@ -28,12 +31,18 @@ class ServiceLocator {
         return viewController
     }
 
+    func provideCharactersTableViewDataSource() -> BothamTableViewDataSource<Character, CharacterTableViewCell> {
+        return BothamTableViewDataSource()
+    }
+
     func provideCharactersViewController() -> CharactersViewController {
         let mainWireframe = provideMainWireframe()
         let viewController: CharactersViewController = mainWireframe.viewControllerFromStoryboard()
-        let presenter = CharactersPresenter(ui: viewController)
+        let presenter = CharactersPresenter(ui: viewController, wireframe: ServiceLocator.SharedInstance.provideMainWireframe())
         viewController.presenter = presenter
-        viewController.dataSource = BothamTableViewDataSource()
+        let dataSource = provideCharactersTableViewDataSource()
+        viewController.dataSource = dataSource
+        viewController.delegate = TableViewNavigationDelegate(dataSource: dataSource, presenter: presenter)
         viewController.pullToRefreshHandler = BothamPullToRefreshHandler(presenter: presenter)
         return viewController
     }

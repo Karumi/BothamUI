@@ -15,9 +15,6 @@ class HomeViewController: BothamViewController, HomeUI {
         super.viewDidLoad()
     }
 
-    @IBOutlet weak var mainMessageLabel: UILabel!
-
     func showMainMessage(message: String) {
-        mainMessageLabel.text = message
     }
 }
