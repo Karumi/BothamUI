@@ -18,4 +18,9 @@ class MainWireframe: BothamWireframe {
         tabBar.accessibilityLabel = "MainWireframe TabBar"
         self.showRootViewController(viewController, inWindow: window)
     }
+
+    func presentCharacterDetailViewController() {
+        let viewController = ServiceLocator.SharedInstance.provideHomeViewController()
+        ServiceLocator.SharedInstance.navigatorContainer.resolve("Characters")?.goTo(viewController)
+    }
 }

@@ -13,7 +13,9 @@ class CharactersNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let viewController = AppDelegate.service.provideCharactersViewController()
-        pushViewController(viewController, animated: false)
+        let navigator = ServiceLocator.SharedInstance.navigatorContainer.register("Characters", navigationController: self)
+
+        let viewController = ServiceLocator.SharedInstance.provideCharactersViewController()
+        navigator.goTo(viewController, animated: false)
     }
 }
