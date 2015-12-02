@@ -12,6 +12,9 @@ import BothamUI
 
 class ServiceLocator {
 
+    static let SharedInstance = ServiceLocator()
+    let navigatorContainer = BothamNavigatorContainer()
+
     func provideMainWireframe() -> MainWireframe {
         return MainWireframe()
     }
@@ -35,7 +38,7 @@ class ServiceLocator {
     func provideCharactersViewController() -> CharactersViewController {
         let mainWireframe = provideMainWireframe()
         let viewController: CharactersViewController = mainWireframe.viewControllerFromStoryboard()
-        let presenter = CharactersPresenter(ui: viewController)
+        let presenter = CharactersPresenter(ui: viewController, wireframe: ServiceLocator.SharedInstance.provideMainWireframe())
         viewController.presenter = presenter
         let dataSource = provideCharactersTableViewDataSource()
         viewController.dataSource = dataSource

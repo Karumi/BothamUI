@@ -8,12 +8,16 @@
 
 import Foundation
 import UIKit
+import BothamUI
 
 class ComicsNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let viewController = AppDelegate.service.provideComicsViewController()
-        pushViewController(viewController, animated: false)
+
+        let navigator = ServiceLocator.SharedInstance.navigatorContainer.register("Comics", navigationController: self)
+
+        let viewController = ServiceLocator.SharedInstance.provideComicsViewController()
+        navigator.goTo(viewController, animated: false)
     }
 }
