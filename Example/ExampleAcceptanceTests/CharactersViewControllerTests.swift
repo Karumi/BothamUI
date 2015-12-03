@@ -24,7 +24,7 @@ class CharactersViewControllerTests: AcceptanceTestCase {
     }
 
     private func openCharactersViewController() {
-        let charactersViewController = ServiceLocator.SharedInstance.provideCharactersViewController()
+        let charactersViewController = ServiceLocator.sharedInstance.provideCharactersViewController()
         presentViewController(charactersViewController)
     }
 

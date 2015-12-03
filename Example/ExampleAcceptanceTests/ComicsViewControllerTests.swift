@@ -30,7 +30,7 @@ class ComicsViewControllerTests: AcceptanceTestCase {
     }
 
     private func openComicsViewController() {
-        let comicsViewController = ServiceLocator.SharedInstance.provideComicsViewController()
+        let comicsViewController = ServiceLocator.sharedInstance.provideComicsViewController()
         presentViewController(comicsViewController)
     }
 
