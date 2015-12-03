@@ -10,7 +10,7 @@ import Foundation
 import BothamUI
 import UIKit
 
-class SpyWireframe: BothamWireframe {
+class SpyWireframe {
     let storyboardName: String = "Fake"
     var isRootViewControllerPresented = false
 
