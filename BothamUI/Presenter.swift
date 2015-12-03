@@ -22,8 +22,3 @@ public extension BothamPresenter {
     func viewWillDisappear() {}
     func viewDidDisappear() {}
 }
-
-public protocol BothamNavigationPresenter: BothamPresenter {
-    typealias ItemType
-    func itemWasTapped(item: ItemType)
-}

@@ -42,7 +42,7 @@ class ServiceLocator {
         viewController.presenter = presenter
         let dataSource = provideCharactersTableViewDataSource()
         viewController.dataSource = dataSource
-        viewController.delegate = TableViewNavigationDelegate(dataSource: dataSource, presenter: presenter)
+        viewController.delegate = BothamTableViewNavigationDelegate(dataSource: dataSource, presenter: presenter)
         viewController.pullToRefreshHandler = BothamPullToRefreshHandler(presenter: presenter)
         return viewController
     }

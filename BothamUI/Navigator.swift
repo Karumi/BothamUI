@@ -20,20 +20,3 @@ public class BothamNavigator {
         navigationController?.pushViewController(viewController, animated: animated)
     }
 }
-
-public class BothamNavigatorContainer {
-    var container: [String : BothamNavigator] = [ : ]
-
-    public init() {
-    }
-
-    public func register(name: String, navigationController: UINavigationController) -> BothamNavigator {
-        let navigator = BothamNavigator(navigationController: navigationController)
-        container[name] = navigator
-        return navigator
-    }
-
-    public func resolve(name: String) -> BothamNavigator? {
-        return container[name]
-    }
-}

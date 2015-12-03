@@ -23,18 +23,3 @@ class CharactersViewController: ExampleViewController, BothamTableViewController
         super.viewDidLoad()
     }
 }
-
-class TableViewNavigationDelegate<T: BothamDataSource, U: BothamNavigationPresenter where T.ItemType == U.ItemType>: NSObject, UITableViewDelegate {
-    let dataSource: T
-    let presenter: U
-
-    init(dataSource: T, presenter: U) {
-        self.dataSource = dataSource
-        self.presenter = presenter
-    }
-
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let item = dataSource.itemAtIndexPath(indexPath)
-        presenter.itemWasTapped(item)
-    }
-}

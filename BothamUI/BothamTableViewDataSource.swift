@@ -27,15 +27,3 @@ public class BothamTableViewDataSource<U, V: BothamViewCell where U == V.ItemTyp
         return items.count
     }
 }
-
-public protocol BothamDataSource {
-    typealias ItemType
-
-    var items: [ItemType] { get set }
-}
-
-public extension BothamDataSource {
-    public func itemAtIndexPath(indexPath: NSIndexPath) -> ItemType {
-        return items[indexPath.item]
-    }
-}
