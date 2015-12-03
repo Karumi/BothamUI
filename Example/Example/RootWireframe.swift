@@ -10,9 +10,12 @@ import Foundation
 import BothamUI
 
 class RootWireframe {
+    var serviceLocator: ServiceLocator {
+        return ServiceLocator.sharedInstance
+    }
+
     func presentInitialViewControllerInWindow(window: UIWindow) {
-        let mainStoryboard = ServiceLocator.sharedInstance.provideMainStoryboard()
-        let viewController: UITabBarController = mainStoryboard.initialViewController()
+        let viewController = serviceLocator.provideRootTabBarController()
         let tabBar = viewController.tabBar
         tabBar.accessibilityLabel = "MainWireframe TabBar"
         window.rootViewController = viewController

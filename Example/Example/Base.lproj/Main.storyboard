@@ -92,7 +92,7 @@
         <!--Characters-->
         <scene sceneID="D7p-0m-WT2">
             <objects>
-                <navigationController id="yCJ-fo-ItF" customClass="CharactersNavigationController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="CharactersNavigationController" id="yCJ-fo-ItF" customClass="CharactersNavigationController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Characters" id="5ji-sq-6RW"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qMp-BI-RlE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -160,17 +160,13 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Kyr-kK-0Xh">
             <objects>
-                <tabBarController id="dqw-xU-fWi" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="RootTabBarController" id="dqw-xU-fWi" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="FNp-aW-Sf6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="yCJ-fo-ItF" kind="relationship" relationship="viewControllers" id="GAV-Bz-UtU"/>
-                        <segue destination="mxS-0v-nLC" kind="relationship" relationship="viewControllers" id="rFT-Ar-8jf"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OYQ-uf-gcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,7 +175,7 @@
         <!--Comics-->
         <scene sceneID="c8y-vi-V06">
             <objects>
-                <navigationController title="Comics" automaticallyAdjustsScrollViewInsets="NO" id="mxS-0v-nLC" customClass="ComicsNavigationController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ComicsNavigationController" title="Comics" automaticallyAdjustsScrollViewInsets="NO" id="mxS-0v-nLC" customClass="ComicsNavigationController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Comics" id="hIZ-sE-WdY"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

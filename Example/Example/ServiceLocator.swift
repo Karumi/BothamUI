@@ -15,7 +15,7 @@ class ServiceLocator {
     static let sharedInstance = ServiceLocator()
     let navigatorContainer = BothamNavigatorContainer()
 
-    func provideMainStoryboard() -> BothamStoryboard {
+    private func provideMainStoryboard() -> BothamStoryboard {
         return BothamStoryboard(name: "Main")
     }
 
@@ -33,6 +33,25 @@ class ServiceLocator {
 
     func provideComicsWireframe() -> ComicsWireframe {
         return ComicsWireframe()
+    }
+
+    func provideRootTabBarController() -> UITabBarController {
+        let viewController: UITabBarController = provideMainStoryboard().viewController("RootTabBarController")
+
+        viewController.viewControllers = [
+            provideCharactersNavigationController(),
+            provideComicsNavigationController()
+        ]
+        return viewController
+    }
+
+
+    func provideCharactersNavigationController() -> CharactersNavigationController {
+        return provideMainStoryboard().viewController()
+    }
+
+    func provideComicsNavigationController() -> ComicsNavigationController {
+        return provideMainStoryboard().viewController()
     }
 
     func provideInitialViewControllerFromStoryboard() -> UITabBarController {
