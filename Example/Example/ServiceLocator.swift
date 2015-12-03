@@ -31,6 +31,9 @@ class ServiceLocator {
         return CharactersWireframe()
     }
 
+    func provideComicsWireframe() -> ComicsWireframe {
+        return ComicsWireframe()
+    }
 
     func provideInitialViewControllerFromStoryboard() -> UITabBarController {
         return provideMainStoryboard().initialViewController()

@@ -15,9 +15,8 @@ class ComicsNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let navigator = ServiceLocator.sharedInstance.navigatorContainer.register("Comics", navigationController: self)
+        ServiceLocator.sharedInstance.navigatorContainer.register("Comics", navigationController: self)
 
-        let viewController = ServiceLocator.sharedInstance.provideComicsViewController()
-        navigator.push(viewController, animated: false)
+       ServiceLocator.sharedInstance.provideComicsWireframe().presentComicsViewController()
     }
 }
