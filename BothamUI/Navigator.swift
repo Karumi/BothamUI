@@ -16,7 +16,7 @@ public class BothamNavigator {
         self.navigationController = navigationController
     }
 
-    public func goTo(viewController: UIViewController, animated: Bool = true) {
+    public func push(viewController: UIViewController, animated: Bool = true) {
         navigationController?.pushViewController(viewController, animated: animated)
     }
 }

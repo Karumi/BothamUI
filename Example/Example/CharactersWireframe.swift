@@ -10,16 +10,16 @@ import Foundation
 
 class CharactersWireframe {
     var serviceLocator: ServiceLocator {
-        return ServiceLocator.SharedInstance
+        return ServiceLocator.sharedInstance
     }
 
     func presentCharactersViewController() {
         let viewController = serviceLocator.provideCharactersViewController()
-        serviceLocator.provideCharactersNavigator()?.goTo(viewController)
+        serviceLocator.provideCharactersNavigator()?.push(viewController)
     }
 
     func presentCharacterDetailViewController() {
         let viewController = serviceLocator.provideHomeViewController()
-        serviceLocator.provideCharactersNavigator()?.goTo(viewController)
+        serviceLocator.provideCharactersNavigator()?.push(viewController)
     }
 }

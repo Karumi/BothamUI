@@ -12,7 +12,7 @@ import BothamUI
 
 class ServiceLocator {
 
-    static let SharedInstance = ServiceLocator()
+    static let sharedInstance = ServiceLocator()
     let navigatorContainer = BothamNavigatorContainer()
 
     func provideMainStoryboard() -> BothamStoryboard {
