@@ -11,11 +11,11 @@ import BothamUI
 
 class CharactersPresenter: BothamPresenter, BothamPullToRefreshPresenter, BothamNavigationPresenter {
     weak var ui: CharactersUI?
-    let wireframe: MainWireframe
+    let navigator: BothamNavigator?
 
-    init(ui: CharactersUI, wireframe: MainWireframe) {
+    init(ui: CharactersUI, navigator: BothamNavigator?) {
         self.ui = ui
-        self.wireframe = wireframe
+        self.navigator = navigator
     }
 
     func viewDidLoad() {
@@ -32,6 +32,7 @@ class CharactersPresenter: BothamPresenter, BothamPullToRefreshPresenter, Botham
     }
 
     func itemWasTapped(item: Character) {
-        wireframe.presentCharacterDetailViewController()
+        let detailViewController = ServiceLocator.SharedInstance.provideHomeViewController()
+        navigator?.goTo(detailViewController)
     }
 }

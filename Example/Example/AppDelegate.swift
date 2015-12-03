@@ -21,8 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func installRootViewControllerIntoWindow(window: UIWindow) {
-        let wireframe = ServiceLocator.SharedInstance.provideMainWireframe()
-        wireframe.presentInitialViewControllerInWindow(window)
+        MainWireframe().presentInitialViewControllerInWindow(window)
     }
 }
 

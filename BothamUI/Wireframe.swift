@@ -10,30 +10,9 @@ import Foundation
 import UIKit
 
 public protocol BothamWireframe {
-    var storyboardName: String { get }
-    func presentInitialViewControllerInWindow(window: UIWindow)
 }
 
 extension BothamWireframe {
-    func storyboard(name: String) -> UIStoryboard {
-        return UIStoryboard(name: name, bundle: NSBundle.mainBundle())
-    }
-
-    public func initialViewControllerFromStoryboard<T>() -> T {
-        let uiStoryboard = storyboard(storyboardName)
-        return uiStoryboard.instantiateInitialViewController() as! T
-    }
-
-    public func viewControllerFromStoryboard<T>() -> T {
-        let uiStoryboard = storyboard(storyboardName)
-        return uiStoryboard.instantiateViewControllerWithIdentifier(String(T.self)) as! T
-    }
-
-    public func viewControllerFromStoryboard<T>(viewControllerIdentifier: String) -> T {
-        let uiStoryboard = storyboard(storyboardName)
-        return uiStoryboard.instantiateViewControllerWithIdentifier(viewControllerIdentifier) as! T
-    }
-
     public func showRootViewController(viewController: UIViewController, inWindow: UIWindow) {
         inWindow.rootViewController = viewController
     }

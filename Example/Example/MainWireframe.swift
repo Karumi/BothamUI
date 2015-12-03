@@ -10,17 +10,11 @@ import Foundation
 import BothamUI
 
 class MainWireframe: BothamWireframe {
-    let storyboardName: String = "Main"
-
     func presentInitialViewControllerInWindow(window: UIWindow) {
-        let viewController: UITabBarController = self.initialViewControllerFromStoryboard()
+        let mainStoryboard = ServiceLocator.SharedInstance.provideMainStoryboard()
+        let viewController: UITabBarController = mainStoryboard.initialViewController()
         let tabBar = viewController.tabBar
         tabBar.accessibilityLabel = "MainWireframe TabBar"
         self.showRootViewController(viewController, inWindow: window)
-    }
-
-    func presentCharacterDetailViewController() {
-        let viewController = ServiceLocator.SharedInstance.provideHomeViewController()
-        ServiceLocator.SharedInstance.navigatorContainer.resolve("Characters")?.goTo(viewController)
     }
 }

@@ -15,19 +15,26 @@ class ServiceLocator {
     static let SharedInstance = ServiceLocator()
     let navigatorContainer = BothamNavigatorContainer()
 
-    func provideMainWireframe() -> MainWireframe {
-        return MainWireframe()
+    func provideMainStoryboard() -> BothamStoryboard {
+        return BothamStoryboard(name: "Main")
     }
 
+    func provideCharactersNavigator() -> BothamNavigator? {
+        return navigatorContainer.resolve("Characters")
+    }
+
+    func provideComicsNavigator() -> BothamNavigator? {
+        return navigatorContainer.resolve("Comics")
+    }
+
+
     func provideInitialViewControllerFromStoryboard() -> UITabBarController {
-        let mainWireframe = provideMainWireframe()
-        return mainWireframe.initialViewControllerFromStoryboard()
+        return provideMainStoryboard().initialViewController()
     }
 
     func provideHomeViewController() -> HomeViewController {
-        let mainWireframe = provideMainWireframe()
-        let viewController: HomeViewController = mainWireframe.viewControllerFromStoryboard()
-        viewController.presenter = HomePresenter(wireframe: mainWireframe, ui: viewController)
+        let viewController: HomeViewController = provideMainStoryboard().viewController()
+        viewController.presenter = HomePresenter(ui: viewController)
         return viewController
     }
 
@@ -36,9 +43,8 @@ class ServiceLocator {
     }
 
     func provideCharactersViewController() -> CharactersViewController {
-        let mainWireframe = provideMainWireframe()
-        let viewController: CharactersViewController = mainWireframe.viewControllerFromStoryboard()
-        let presenter = CharactersPresenter(ui: viewController, wireframe: ServiceLocator.SharedInstance.provideMainWireframe())
+        let viewController: CharactersViewController = provideMainStoryboard().viewController()
+        let presenter = CharactersPresenter(ui: viewController, navigator: provideCharactersNavigator())
         viewController.presenter = presenter
         let dataSource = provideCharactersTableViewDataSource()
         viewController.dataSource = dataSource
@@ -48,8 +54,7 @@ class ServiceLocator {
     }
 
     func provideComicsViewController() -> ComicsViewController {
-        let mainWireframe = provideMainWireframe()
-        let viewController: ComicsViewController = mainWireframe.viewControllerFromStoryboard()
+        let viewController: ComicsViewController = provideMainStoryboard().viewController()
         viewController.presenter = ComicsPresenter(ui: viewController)
         viewController.dataSource = BothamCollectionViewDataSource()
         return viewController

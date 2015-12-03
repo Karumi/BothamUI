@@ -12,7 +12,7 @@ import BothamUI
 class HomePresenter: BothamPresenter {
     let ui: HomeUI
 
-    init(wireframe: MainWireframe, ui: HomeUI) {
+    init(ui: HomeUI) {
         self.ui = ui
     }
 
