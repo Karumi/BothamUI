@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         installRootViewControllerIntoWindow(window!)
@@ -21,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func installRootViewControllerIntoWindow(window: UIWindow) {
-        MainWireframe().presentInitialViewControllerInWindow(window)
+        RootWireframe().presentInitialViewControllerInWindow(window)
     }
 }
 

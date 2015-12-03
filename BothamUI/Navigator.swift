@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public class BothamNavigator {
-    weak var navigationController: UINavigationController!
+    private weak var navigationController: UINavigationController!
 
     public init(navigationController: UINavigationController) {
         self.navigationController = navigationController

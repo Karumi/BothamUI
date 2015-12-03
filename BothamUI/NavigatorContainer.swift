@@ -9,7 +9,7 @@
 import Foundation
 
 public class BothamNavigatorContainer {
-    var container: [String : BothamNavigator] = [ : ]
+    private var container: [String : BothamNavigator] = [ : ]
 
     public init() {
     }

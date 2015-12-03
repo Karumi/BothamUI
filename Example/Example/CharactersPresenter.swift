@@ -10,8 +10,8 @@ import Foundation
 import BothamUI
 
 class CharactersPresenter: BothamPresenter, BothamPullToRefreshPresenter, BothamNavigationPresenter {
-    weak var ui: CharactersUI?
-    let wireframe: CharactersWireframe
+    private weak var ui: CharactersUI?
+    private let wireframe: CharactersWireframe
 
     init(ui: CharactersUI, wireframe: CharactersWireframe) {
         self.ui = ui
