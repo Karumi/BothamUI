@@ -34,7 +34,7 @@ class ExampleTests: XCTestCase {
 
     func testResfreshTableOfCharacters() {
         let fakeCharactersUI = FakeCharactersUI()
-        let presenter = CharactersPresenter(ui: fakeCharactersUI)
+        let presenter = CharactersPresenter(ui: fakeCharactersUI, wireframe: CharactersWireframe())
 
         presenter.didStartRefreshing()
 

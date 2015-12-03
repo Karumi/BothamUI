@@ -27,6 +27,10 @@ class ServiceLocator {
         return navigatorContainer.resolve("Comics")
     }
 
+    func provideCharactersWireframe() -> CharactersWireframe {
+        return CharactersWireframe()
+    }
+
 
     func provideInitialViewControllerFromStoryboard() -> UITabBarController {
         return provideMainStoryboard().initialViewController()
@@ -44,7 +48,7 @@ class ServiceLocator {
 
     func provideCharactersViewController() -> CharactersViewController {
         let viewController: CharactersViewController = provideMainStoryboard().viewController()
-        let presenter = CharactersPresenter(ui: viewController, navigator: provideCharactersNavigator())
+        let presenter = CharactersPresenter(ui: viewController, wireframe: provideCharactersWireframe())
         viewController.presenter = presenter
         let dataSource = provideCharactersTableViewDataSource()
         viewController.dataSource = dataSource
