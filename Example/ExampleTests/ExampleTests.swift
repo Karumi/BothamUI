@@ -41,4 +41,15 @@ class ExampleTests: XCTestCase {
         expect(fakeCharactersUI.itemsShowed.count).to(equal(3))
         expect(fakeCharactersUI.didRefresh).to(beTrue())
     }
+
+    func testPresentCharacterDetailFromCharacterList() {
+        let fakeCharactersUI = FakeCharactersUI()
+        let fakeCharactersWireframe = FakeCharactersWireframe()
+        let presenter = CharactersPresenter(ui: fakeCharactersUI, wireframe: fakeCharactersWireframe)
+
+        let character = Character(name: "IronMan")
+        presenter.itemWasTapped(character)
+
+        expect(fakeCharactersWireframe.characterDetailViewControllerWasPresented).to(beTrue())
+    }
 }
