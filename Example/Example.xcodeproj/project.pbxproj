@@ -164,16 +164,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6B0737011BFDCE38000E0E7D /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				6B6B092A1BDD1A830013891D /* HomeViewController.swift */,
-				6B1BACCF1BDD2BC100AC5E9B /* HomeUI.swift */,
-				6B1BACD31BDD2C5D00AC5E9B /* HomePresenter.swift */,
-			);
-			name = Home;
-			sourceTree = "<group>";
-		};
 		6B0737021BFDCE42000E0E7D /* Characters */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +189,8 @@
 				6B0737101BFDD53C000E0E7D /* TableView */,
 				6B2C2D1B1BFBB0FF00576464 /* CharactersViewController.swift */,
 				6B0737061BFDCEE4000E0E7D /* CharactersNavigationController.swift */,
+				6B6B092A1BDD1A830013891D /* HomeViewController.swift */,
+				6B1BACCF1BDD2BC100AC5E9B /* HomeUI.swift */,
 				6B07370C1BFDD45D000E0E7D /* CharactersUI.swift */,
 			);
 			name = View;
@@ -207,6 +199,7 @@
 		6B07370F1BFDD4AC000E0E7D /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				6B1BACD31BDD2C5D00AC5E9B /* HomePresenter.swift */,
 				6B0737081BFDCF67000E0E7D /* CharactersPresenter.swift */,
 			);
 			name = Presenter;
@@ -247,7 +240,6 @@
 			children = (
 				6BDE3DF51BFE0D1A0030EB8B /* Comics */,
 				6B0737021BFDCE42000E0E7D /* Characters */,
-				6B0737011BFDCE38000E0E7D /* Home */,
 				6BB5CD941BDD2D670009C2F0 /* ServiceLocator.swift */,
 				6B1BACD11BDD2BF800AC5E9B /* RootWireframe.swift */,
 				6B6B09281BDD1A830013891D /* AppDelegate.swift */,

@@ -11,12 +11,4 @@ import UIKit
 import BothamUI
 
 class ComicsNavigationController: UINavigationController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        ServiceLocator.sharedInstance.navigatorContainer.register("Comics", navigationController: self)
-
-       ServiceLocator.sharedInstance.provideComicsWireframe().presentComicsViewController()
-    }
 }

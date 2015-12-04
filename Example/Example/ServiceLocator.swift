@@ -19,43 +19,35 @@ class ServiceLocator {
         return BothamStoryboard(name: "Main")
     }
 
-    func provideCharactersNavigator() -> BothamNavigator? {
-        return navigatorContainer.resolve("Characters")
-    }
-
-    func provideComicsNavigator() -> BothamNavigator? {
-        return navigatorContainer.resolve("Comics")
-    }
-
-    func provideCharactersWireframe() -> CharactersWireframe {
+    private func provideCharactersWireframe() -> CharactersWireframe {
         return CharactersWireframe()
     }
 
-    func provideComicsWireframe() -> ComicsWireframe {
+    private func provideComicsWireframe() -> ComicsWireframe {
         return ComicsWireframe()
+    }
+
+    func provideCharactersNavigator() -> CharactersNavigationController? {
+        return navigatorContainer.resolve()
+    }
+
+    func provideComicsNavigator() -> ComicsNavigationController? {
+        return navigatorContainer.resolve()
     }
 
     func provideRootTabBarController() -> UITabBarController {
         let viewController: UITabBarController = provideMainStoryboard().viewController("RootTabBarController")
-
-        viewController.viewControllers = [
-            provideCharactersNavigationController(),
-            provideComicsNavigationController()
-        ]
         return viewController
     }
 
-
     func provideCharactersNavigationController() -> CharactersNavigationController {
-        return provideMainStoryboard().viewController()
+        let viewController = provideCharactersViewController()
+        return CharactersNavigationController(rootViewController: viewController)
     }
 
     func provideComicsNavigationController() -> ComicsNavigationController {
-        return provideMainStoryboard().viewController()
-    }
-
-    func provideInitialViewControllerFromStoryboard() -> UITabBarController {
-        return provideMainStoryboard().initialViewController()
+        let viewController = provideComicsViewController()
+        return ComicsNavigationController(rootViewController: viewController)
     }
 
     func provideHomeViewController() -> HomeViewController {
@@ -64,7 +56,7 @@ class ServiceLocator {
         return viewController
     }
 
-    func provideCharactersTableViewDataSource() -> BothamTableViewDataSource<Character, CharacterTableViewCell> {
+    private func provideCharactersTableViewDataSource() -> BothamTableViewDataSource<Character, CharacterTableViewCell> {
         return BothamTableViewDataSource()
     }
 

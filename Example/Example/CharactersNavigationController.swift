@@ -10,11 +10,4 @@ import Foundation
 import UIKit
 
 class CharactersNavigationController: UINavigationController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let serviceLocator = ServiceLocator.sharedInstance
-        serviceLocator.navigatorContainer.register("Characters", navigationController: self)
-        serviceLocator.provideCharactersWireframe().presentCharactersViewController()
-    }
 }

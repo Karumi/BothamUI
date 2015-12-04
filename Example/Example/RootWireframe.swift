@@ -16,8 +16,23 @@ class RootWireframe {
 
     func presentInitialViewControllerInWindow(window: UIWindow) {
         let viewController = serviceLocator.provideRootTabBarController()
+        viewController.viewControllers = self.tabsViewControllers()
+
         let tabBar = viewController.tabBar
         tabBar.accessibilityLabel = "MainWireframe TabBar"
         window.rootViewController = viewController
+    }
+
+    private func tabsViewControllers() -> [UIViewController] {
+        let charactersNavigationController = serviceLocator.provideCharactersNavigationController()
+        serviceLocator.navigatorContainer.register(charactersNavigationController)
+
+        let comicsNavigationController = serviceLocator.provideComicsNavigationController()
+        ServiceLocator.sharedInstance.navigatorContainer.register(comicsNavigationController)
+
+        return [
+            charactersNavigationController,
+            comicsNavigationController
+        ]
     }
 }

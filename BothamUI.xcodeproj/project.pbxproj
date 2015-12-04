@@ -19,12 +19,12 @@
 		6B82AD491C075A2C009247FB /* BothamPullToRefreshPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD481C075A2C009247FB /* BothamPullToRefreshPresenter.swift */; };
 		6B82AD4D1C077A0E009247FB /* BothamPullToResfreshUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD4C1C077A0E009247FB /* BothamPullToResfreshUI.swift */; };
 		6B82AD4F1C0780E9009247FB /* BothamPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD4E1C0780E9009247FB /* BothamPullToRefresh.swift */; };
-		6B8E73261C0F5CEA0006F9E1 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E73251C0F5CEA0006F9E1 /* Navigator.swift */; };
 		6B8E73281C101D240006F9E1 /* BothamDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E73271C101D240006F9E1 /* BothamDataSource.swift */; };
 		6B8E732A1C101D8F0006F9E1 /* NavigatorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E73291C101D8F0006F9E1 /* NavigatorContainer.swift */; };
 		6B8E732C1C101DBA0006F9E1 /* NavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E732B1C101DBA0006F9E1 /* NavigationPresenter.swift */; };
 		6B8E732F1C101E570006F9E1 /* TableViewNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E732E1C101E570006F9E1 /* TableViewNavigationDelegate.swift */; };
 		6B8E73311C101FA90006F9E1 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E73301C101FA90006F9E1 /* Storyboard.swift */; };
+		6B8E73371C119C800006F9E1 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E73361C119C800006F9E1 /* UINavigationController.swift */; };
 		6BDE3E011BFE23B30030EB8B /* BothamCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E001BFE23B30030EB8B /* BothamCollectionViewController.swift */; };
 		6BDE3E091BFE41BF0030EB8B /* BothamCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E081BFE41BF0030EB8B /* BothamCollectionViewDataSource.swift */; };
 		6BDE3E111BFFB4B40030EB8B /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BDE3E101BFFB4B40030EB8B /* LoadingView.xib */; };
@@ -70,12 +70,12 @@
 		6B82AD481C075A2C009247FB /* BothamPullToRefreshPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamPullToRefreshPresenter.swift; sourceTree = "<group>"; };
 		6B82AD4C1C077A0E009247FB /* BothamPullToResfreshUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamPullToResfreshUI.swift; sourceTree = "<group>"; };
 		6B82AD4E1C0780E9009247FB /* BothamPullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamPullToRefresh.swift; sourceTree = "<group>"; };
-		6B8E73251C0F5CEA0006F9E1 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		6B8E73271C101D240006F9E1 /* BothamDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamDataSource.swift; sourceTree = "<group>"; };
 		6B8E73291C101D8F0006F9E1 /* NavigatorContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorContainer.swift; sourceTree = "<group>"; };
 		6B8E732B1C101DBA0006F9E1 /* NavigationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationPresenter.swift; sourceTree = "<group>"; };
 		6B8E732E1C101E570006F9E1 /* TableViewNavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewNavigationDelegate.swift; sourceTree = "<group>"; };
 		6B8E73301C101FA90006F9E1 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		6B8E73361C119C800006F9E1 /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		6BDE3E001BFE23B30030EB8B /* BothamCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamCollectionViewController.swift; sourceTree = "<group>"; };
 		6BDE3E081BFE41BF0030EB8B /* BothamCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		6BDE3E101BFFB4B40030EB8B /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
@@ -238,7 +238,6 @@
 		6B8E73241C0F5CDC0006F9E1 /* Navigator */ = {
 			isa = PBXGroup;
 			children = (
-				6B8E73251C0F5CEA0006F9E1 /* Navigator.swift */,
 				6B8E73291C101D8F0006F9E1 /* NavigatorContainer.swift */,
 			);
 			name = Navigator;
@@ -277,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				6BDE3E1C1C0398390030EB8B /* NSBundle.swift */,
+				6B8E73361C119C800006F9E1 /* UINavigationController.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -473,7 +473,6 @@
 			files = (
 				6BDE3E1D1C0398390030EB8B /* NSBundle.swift in Sources */,
 				6B2C2D1E1BFBB19B00576464 /* BothamTableViewController.swift in Sources */,
-				6B8E73261C0F5CEA0006F9E1 /* Navigator.swift in Sources */,
 				6B8E73281C101D240006F9E1 /* BothamDataSource.swift in Sources */,
 				6B8E73311C101FA90006F9E1 /* Storyboard.swift in Sources */,
 				6BDE3E231C04BAFF0030EB8B /* BothamLoadingViewController.swift in Sources */,
@@ -488,6 +487,7 @@
 				6BDE3E251C04BB1F0030EB8B /* BothamLoadingUI.swift in Sources */,
 				6B82AD4F1C0780E9009247FB /* BothamPullToRefresh.swift in Sources */,
 				6B82AD491C075A2C009247FB /* BothamPullToRefreshPresenter.swift in Sources */,
+				6B8E73371C119C800006F9E1 /* UINavigationController.swift in Sources */,
 				6B8E732F1C101E570006F9E1 /* TableViewNavigationDelegate.swift in Sources */,
 				6BDE3E011BFE23B30030EB8B /* BothamCollectionViewController.swift in Sources */,
 				6BDE3E171C0355A40030EB8B /* BothamCustomView.swift in Sources */,

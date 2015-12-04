@@ -9,18 +9,17 @@
 import Foundation
 
 public class BothamNavigatorContainer {
-    private var container: [String : BothamNavigator] = [ : ]
+    private var container: [String : UINavigationController] = [ : ]
 
     public init() {
     }
 
-    public func register(name: String, navigationController: UINavigationController) -> BothamNavigator {
-        let navigator = BothamNavigator(navigationController: navigationController)
-        container[name] = navigator
-        return navigator
+    public func register<T: UINavigationController>(navigationController: T) -> T {
+        container[String(T.self)] = navigationController
+        return navigationController
     }
 
-    public func resolve(name: String) -> BothamNavigator? {
-        return container[name]
+    public func resolve<T: UINavigationController>() -> T? {
+        return (container[String(T.self)] as! T)
     }
 }
