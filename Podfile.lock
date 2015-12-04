@@ -1,16 +1,12 @@
 PODS:
   - BothamUI (0.0.1)
-  - BrightFutures (3.2.0):
-    - Result (= 1.0.0)
   - KIF (3.3.0):
     - KIF/Core (= 3.3.0)
   - KIF/Core (3.3.0)
   - Nimble (3.0.0)
-  - Result (1.0.0)
 
 DEPENDENCIES:
   - BothamUI (from `./`)
-  - BrightFutures
   - KIF (~> 3.0)
   - Nimble
 
@@ -20,9 +16,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BothamUI: d21b72fb83154b38ea70af767593e7d2c89267a5
-  BrightFutures: 894dcfc04059093b5477c2197ed4c0fb4ad07180
   KIF: 0a82046d06f3648799cac522d2d0f7934214caac
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
-  Result: feaaff535eb59c414c6c7f95e6145ab991b1b07f
 
 COCOAPODS: 0.39.0

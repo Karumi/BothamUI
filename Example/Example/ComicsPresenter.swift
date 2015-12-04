@@ -8,7 +8,6 @@
 
 import Foundation
 import BothamUI
-import BrightFutures
 
 class ComicsPresenter: BothamPresenter {
     weak var ui: ComicsUI?
@@ -19,16 +18,13 @@ class ComicsPresenter: BothamPresenter {
 
     func viewDidLoad() {
         self.ui?.showLoader()
-        future {
-            sleep(UInt32(0.5))
-            dispatch_async(dispatch_get_main_queue(),{
-                self.ui?.hideLoader()
+        delay(0.5) {
+            self.ui?.hideLoader()
 
-                self.ui?.showItems([Comic(cover: UIImage(named: "50b4fc783d30f")),
-                    Comic(cover: UIImage(named: "4fe8cb51f32e0")),
-                    Comic(cover: UIImage(named: "502912f2a8809")),
-                    Comic(cover: UIImage(named: "564a1abbcf9b0"))])
-            })
+            self.ui?.showItems([Comic(cover: UIImage(named: "50b4fc783d30f")),
+                Comic(cover: UIImage(named: "4fe8cb51f32e0")),
+                Comic(cover: UIImage(named: "502912f2a8809")),
+                Comic(cover: UIImage(named: "564a1abbcf9b0"))])
         }
     }
 }
