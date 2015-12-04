@@ -28,8 +28,8 @@ class ExampleTests: XCTestCase {
         presenter.viewDidLoad()
 
         expect(fakeComicsUI.loaderWasShowed).to(beTrue())
-        expect(fakeComicsUI.itemsShowed.count).toEventually(equal(4), timeout: 5)
-        expect(fakeComicsUI.loaderWasHided).toEventually(beTrue(), timeout: 5)
+        expect(fakeComicsUI.itemsShowed.count).toOneDay(equal(4))
+        expect(fakeComicsUI.loaderWasHided).toOneDay(beTrue())
     }
 
     func testResfreshTableOfCharacters() {
