@@ -19,7 +19,7 @@ class CharactersWireframe {
     }
 
     func presentCharacterDetailViewController() {
-        let viewController = serviceLocator.provideHomeViewController()
+        let viewController = serviceLocator.provideCharacterDetailViewController()
         serviceLocator.provideCharactersNavigator()?.push(viewController)
     }
 }

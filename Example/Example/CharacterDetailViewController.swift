@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CharacterDetailViewController.swift
 //  Example
 //
 //  Created by Davide Mendolia on 25/10/15.
@@ -9,12 +9,9 @@
 import UIKit
 import BothamUI
 
-class HomeViewController: BothamViewController, HomeUI {
+class CharacterDetailViewController: BothamViewController, CharacterDetailUI {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    func showMainMessage(message: String) {
     }
 }

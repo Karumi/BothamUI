@@ -9,14 +9,13 @@
 import Foundation
 import BothamUI
 
-class HomePresenter: BothamPresenter {
-    let ui: HomeUI
+class CharacterDetailPresenter: BothamPresenter {
+    let ui: CharacterDetailUI
 
-    init(ui: HomeUI) {
+    init(ui: CharacterDetailUI) {
         self.ui = ui
     }
 
     func viewDidLoad() {
-        ui.showMainMessage("Welcome")
     }
 }

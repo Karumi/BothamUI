@@ -9,6 +9,5 @@
 import Foundation
 import BothamUI
 
-protocol HomeUI: BothamUI {
-    func showMainMessage(message: String)
+protocol CharacterDetailUI: BothamUI {
 }

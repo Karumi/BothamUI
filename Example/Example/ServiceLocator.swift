@@ -50,9 +50,9 @@ class ServiceLocator {
         return ComicsNavigationController(rootViewController: viewController)
     }
 
-    func provideHomeViewController() -> HomeViewController {
-        let viewController: HomeViewController = provideMainStoryboard().viewController()
-        viewController.presenter = HomePresenter(ui: viewController)
+    func provideCharacterDetailViewController() -> CharacterDetailViewController {
+        let viewController: CharacterDetailViewController = provideMainStoryboard().viewController()
+        viewController.presenter = CharacterDetailPresenter(ui: viewController)
         return viewController
     }
 
