@@ -7,15 +7,22 @@
 //
 
 import Foundation
+import XCTest
 @testable import Example
 
 class FakeComicsUI: ComicsUI, FakeBothamLoadingUI {
     var loaderWasShowed = false
     var loaderWasHided = false
-
     var itemsShowed:[Comic] = []
+
+    var expectation: XCTestExpectation?
+
+    init(expectation: XCTestExpectation? = nil) {
+        self.expectation = expectation
+    }
 
     func showItems(items: [Comic]) {
         itemsShowed = items
+        expectation?.fulfill()
     }
 }

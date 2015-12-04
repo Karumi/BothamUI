@@ -13,20 +13,14 @@ import BothamUI
 
 class ExampleTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
-    }
-    
     func testShowListOfCovers() {
-        let fakeComicsUI = FakeComicsUI()
+        let expectation = expectationWithDescription("Covers will be shown")
+        let fakeComicsUI = FakeComicsUI(expectation: expectation)
         let presenter = ComicsPresenter(ui: fakeComicsUI)
 
         presenter.viewDidLoad()
 
+        waitForExpectationsWithTimeout(10, handler: nil)
         expect(fakeComicsUI.loaderWasShowed).to(beTrue())
         expect(fakeComicsUI.itemsShowed.count).toOneDay(equal(4))
         expect(fakeComicsUI.loaderWasHided).toOneDay(beTrue())
