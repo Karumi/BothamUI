@@ -8,12 +8,7 @@
 
 import Foundation
 import UIKit
+import BothamUI
 
 class ComicsNavigationController: UINavigationController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let viewController = AppDelegate.service.provideComicsViewController()
-        pushViewController(viewController, animated: false)
-    }
 }

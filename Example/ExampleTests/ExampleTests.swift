@@ -28,17 +28,28 @@ class ExampleTests: XCTestCase {
         presenter.viewDidLoad()
 
         expect(fakeComicsUI.loaderWasShowed).to(beTrue())
-        expect(fakeComicsUI.itemsShowed.count).toEventually(equal(4), timeout: 5)
-        expect(fakeComicsUI.loaderWasHided).toEventually(beTrue(), timeout: 5)
+        expect(fakeComicsUI.itemsShowed.count).toOneDay(equal(4))
+        expect(fakeComicsUI.loaderWasHided).toOneDay(beTrue())
     }
 
     func testResfreshTableOfCharacters() {
         let fakeCharactersUI = FakeCharactersUI()
-        let presenter = CharactersPresenter(ui: fakeCharactersUI)
+        let presenter = CharactersPresenter(ui: fakeCharactersUI, wireframe: CharactersWireframe())
 
         presenter.didStartRefreshing()
 
         expect(fakeCharactersUI.itemsShowed.count).to(equal(3))
         expect(fakeCharactersUI.didRefresh).to(beTrue())
+    }
+
+    func testPresentCharacterDetailFromCharacterList() {
+        let fakeCharactersUI = FakeCharactersUI()
+        let fakeCharactersWireframe = FakeCharactersWireframe()
+        let presenter = CharactersPresenter(ui: fakeCharactersUI, wireframe: fakeCharactersWireframe)
+
+        let character = Character(name: "IronMan")
+        presenter.itemWasTapped(character)
+
+        expect(fakeCharactersWireframe.characterDetailViewControllerWasPresented).to(beTrue())
     }
 }

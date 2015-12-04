@@ -9,7 +9,7 @@
 import Foundation
 
 public class BothamTableViewDataSource<U, V: BothamViewCell where U == V.ItemType>
-                                      : NSObject, UITableViewDataSource {
+                                      : NSObject, UITableViewDataSource, BothamDataSource {
     public var items: [U] = []
 
     public override init() {
@@ -25,9 +25,5 @@ public class BothamTableViewDataSource<U, V: BothamViewCell where U == V.ItemTyp
 
     public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
-    }
-
-    public func itemAtIndexPath(indexPath: NSIndexPath) -> U {
-        return items[indexPath.item]
     }
 }

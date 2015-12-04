@@ -1,5 +1,5 @@
 //
-//  HomeUI.swift
+//  CharacterDetailUI.swift
 //  Example
 //
 //  Created by Davide Mendolia on 25/10/15.
@@ -9,6 +9,5 @@
 import Foundation
 import BothamUI
 
-protocol HomeUI: BothamUI {
-    func showMainMessage(message: String)
+protocol CharacterDetailUI: BothamUI {
 }

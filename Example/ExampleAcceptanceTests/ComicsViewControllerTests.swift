@@ -26,17 +26,17 @@ class ComicsViewControllerTests: AcceptanceTestCase {
         waitForTableViewLoaded()
         let comicsTableView = tester().waitForViewWithAccessibilityLabel("Comics CollectionView") as! UICollectionView
 
-        expect(comicsTableView.visibleCells().count).toEventually(beGreaterThanOrEqualTo(3))
+        expect(comicsTableView.visibleCells().count).toOneDay(beGreaterThanOrEqualTo(3))
     }
 
     private func openComicsViewController() {
-        let comicsViewController = ServiceLocator().provideComicsViewController()
+        let comicsViewController = ServiceLocator.sharedInstance.provideComicsViewController()
         presentViewController(comicsViewController)
     }
 
     private func waitForTableViewLoaded() {
         let loadingView = tester().waitForViewWithAccessibilityLabel("LoadingView")
-        expect(loadingView.isVisibleInViewHierarchy()).toEventually(beFalse(), timeout: 15)
+        expect(loadingView.isVisibleInViewHierarchy()).toOneDay(beFalse())
     }
 
 }
