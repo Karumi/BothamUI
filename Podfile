@@ -10,6 +10,7 @@ end
 target 'Example', :exclusive => true do
         xcodeproj 'Example/Example.xcodeproj'
     pod "BothamUI", :path => "./"
+    pod "BrightFutures"
 end
 
 target 'ExampleTests', :exclusive => true do
