@@ -1,5 +1,5 @@
 //
-//  HomePresenter.swift
+//  CharacterDetailPresenter.swift
 //  Example
 //
 //  Created by Davide Mendolia on 25/10/15.
