@@ -13,6 +13,7 @@ class FakeCharactersWireframe: CharactersWireframe {
     var characterDetailViewControllerWasPresented = false
 
     override func presentCharacterDetailViewController() {
+        super.presentCharacterDetailViewController()
         characterDetailViewControllerWasPresented = true
     }
 }

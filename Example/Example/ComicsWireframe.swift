@@ -8,13 +8,5 @@
 
 import Foundation
 
-class ComicsWireframe {
-    var serviceLocator: ServiceLocator {
-        return ServiceLocator.sharedInstance
-    }
-
-    func presentComicsViewController() {
-        let viewController = serviceLocator.provideComicsViewController()
-        serviceLocator.provideComicsNavigator()?.push(viewController, animated: false)
-    }
+class ComicsWireframe: ExampleWireframe {
 }

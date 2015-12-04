@@ -9,11 +9,7 @@
 import Foundation
 import BothamUI
 
-class RootWireframe {
-    var serviceLocator: ServiceLocator {
-        return ServiceLocator.sharedInstance
-    }
-
+class RootWireframe: ExampleWireframe {
     func presentInitialViewControllerInWindow(window: UIWindow) {
         let viewController = serviceLocator.provideRootTabBarController()
         viewController.viewControllers = self.tabsViewControllers()

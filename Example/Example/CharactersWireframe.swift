@@ -8,16 +8,7 @@
 
 import Foundation
 
-class CharactersWireframe {
-    var serviceLocator: ServiceLocator {
-        return ServiceLocator.sharedInstance
-    }
-
-    func presentCharactersViewController() {
-        let viewController = serviceLocator.provideCharactersViewController()
-        serviceLocator.provideCharactersNavigator()?.push(viewController)
-    }
-
+class CharactersWireframe: ExampleWireframe {
     func presentCharacterDetailViewController() {
         let viewController = serviceLocator.provideCharacterDetailViewController()
         serviceLocator.provideCharactersNavigator()?.push(viewController)
