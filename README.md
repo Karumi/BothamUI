@@ -1,4 +1,4 @@
-# ![Karumi logo][karumilogo]RBothamUI [![Build Status](https://travis-ci.org/Karumi/BothamUI.svg?branch=ui-tests-and-travis-ci-support)](https://travis-ci.org/Karumi/BothamUI)
+# ![Karumi logo][karumilogo]BothamUI [![Build Status](https://travis-ci.org/Karumi/BothamUI.svg?branch=ui-tests-and-travis-ci-support)](https://travis-ci.org/Karumi/BothamUI)
 ==========
 
 BothamUI is MVP(Model-View-Presenter)[[2] [mvp]] framework written in swift.
@@ -123,7 +123,7 @@ To understand when the lifecycle methods are called take a look at the following
 $ gem install cocoapods
 ```
 
-> CocoaPods 0.39.0+ is required to build Alamofire 1.0.0+.
+> CocoaPods 0.39.0+ is required to build BothamUI 1.0.0+.
 
 To integrate BothamUI into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
