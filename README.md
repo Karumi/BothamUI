@@ -1,15 +1,170 @@
-# BothamUI [![Build Status](https://travis-ci.org/Karumi/BothamUI.svg?branch=ui-tests-and-travis-ci-support)](https://travis-ci.org/Karumi/BothamUI)
+# ![Karumi logo][karumilogo]RBothamUI [![Build Status](https://travis-ci.org/Karumi/BothamUI.svg?branch=ui-tests-and-travis-ci-support)](https://travis-ci.org/Karumi/BothamUI)
 ==========
 
-BothamUI is MVP(Model-View-Presenter) framework written in swift. In addition we will use a wireframe navigation model and a service locator example.
+BothamUI is MVP(Model-View-Presenter)[[2] [mvp]] framework written in swift.
 
-Project is under development.
+This project will help you setup all your presentation logic. BothamUI provides classes to represent the main components of this pattern like ``BothamViewController`` and ``BothamPresenter``.
+
+In addition we will use a wireframe navigation model and a service locator example[[5] [di]].
 
 ## Usage
 
-**_TODO_**
+This framework contains all the classes needed to implement your presentation logic following the MVP pattern. To use the view package, make your ``ViewController`` extend from ``Botham ViewController`` and specify in the storyboard wich class and Storyboard ID is linked to:
 
-## Caveats
+```swift
+import BothamUI
+
+class SampleViewController: BothamViewController {
+    /*...*/
+}
+```
+![storyboardReference]
+
+#### Storyboard
+
+`BothamStoryboard` provide a series of methods to help you instantiate view controllers by there storyboard ID. By default `instantiateViewController()` will search for view controller with the storyboard ID with the same name as the class.
+
+```swift
+import BothamUI
+
+let mainStoryboard = BothamStoryboard(name: "Main")
+let viewController: SampleViewController = mainStoryboard.instantiateViewController("SampleViewController")
+let viewController: SampleViewController = mainStoryboard.instantiateViewController()
+```
+
+#### Presenter
+To follow the MVP pattern, BothamUI also provides a ``BothamPresenter`` protocol that will be responsible for all your presentation logic. BothamUI will take care of linking your view (a ``BothamViewController``) with your presenter and subscribing it to its lifecycle. In order to do that, create a class that implement ``BothamPresenter`` and link it to your view:
+
+```swift
+import BothamUI
+
+class SamplePresenter: BothamPresenter {
+    private weak var ui: SampleUI?
+
+    init(ui: CharacterDetailUI) {
+        self.ui = ui
+    }
+    
+    func viewDidLoad() {
+        /* ... */
+    }
+}
+```
+
+```swift
+protocol SampleUI: BothamUI {
+	/* ... */
+}
+```
+```swift
+class SampleViewController: BothamViewController, SampleUI {
+    /*...*/
+}
+```
+
+#### Service Locator
+
+We recommend the usage of a Service Locator pattern in order to instantiate view controllers.
+
+```swift
+class ServiceLocator {
+
+    static let sharedInstance = ServiceLocator()
+
+    func provideCharacterDetailViewController() -> CharacterDetailViewController {
+        let viewController: CharacterDetailViewController = provideMainStoryboard().viewController()
+        viewController.presenter = CharacterDetailPresenter(ui: viewController)
+        return viewController
+    }
+}
+```
+
+#### Lifecycle
+
+Once both, view and presenter, are linked you can react to your view lifecycle directly from the presenter. You will be also able to call your view easily from the presenter:
+
+```swift
+class SamplePresenter: BothamPresenter {
+    private weak var ui: SampleUI?
+
+    init(ui: CharacterDetailUI) {
+        self.ui = ui
+    }
+    
+    func viewDidLoad() {
+        self.ui?.showMessage("Welcome to Botham")
+    }
+}
+```
+
+To understand when the lifecycle methods are called take a look at the following table:
+
+| BothamPresenter       | UIViewController      |
+| --------------------- |-----------------------|
+| ``viewDidLoad``       | ``viewDidLoad``       |
+| ``viewWillAppear``    | ``viewWillAppear``    |
+| ``viewDidAppear``     | ``viewDidAppear ``    |
+| ``viewWillDisappear`` | ``viewWillDisappear`` |
+| ``viewDidDisappear``  | ``viewDidDisappear``  |
+
+
+### Caveats
 
 * ViewControllers instantiated view UIStoryboard, can't reference Generic Type.
 * Presenter and ViewController have a circular reference (like a ViewController and Datasource).
+
+
+
+## CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+> CocoaPods 0.39.0+ is required to build Alamofire 1.0.0+.
+
+To integrate BothamUI into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'BothamUI', '~> 1.0'
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
+Do you want to contribute?
+--------------------------
+
+Feel free to report us or add any useful feature to the library, we will be glad to improve it with your help.
+
+Keep in mind that your PRs **must** be validated by Travis-CI.
+
+License
+-------
+
+    Copyright 2015 Karumi
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+[mvp]: http://martinfowler.com/eaaDev/uiArchs.html#Model-view-presentermvp
+[karumilogo]: https://cloud.githubusercontent.com/assets/858090/11626547/e5a1dc66-9ce3-11e5-908d-537e07e82090.png
+[storyboardReference]: https://cloud.githubusercontent.com/assets/858090/11626971/57567c2e-9ce7-11e5-8601-2aabd0f04efc.png

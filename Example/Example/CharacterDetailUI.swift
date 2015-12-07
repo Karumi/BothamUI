@@ -9,5 +9,5 @@
 import Foundation
 import BothamUI
 
-protocol CharacterDetailUI: BothamUI {
+protocol CharacterDetailUI {
 }

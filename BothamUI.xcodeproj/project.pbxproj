@@ -188,7 +188,7 @@
 				6B0736FB1BFDCB5C000E0E7D /* DataSource */,
 				6B6CCD4B1BDD10CD0015A4D4 /* Presenter */,
 				6B6CCD4A1BDD10C40015A4D4 /* ViewController */,
-				6B6CCD541BDD13070015A4D4 /* Wireframe */,
+				6B6CCD541BDD13070015A4D4 /* Storyboard */,
 				6B8E73241C0F5CDC0006F9E1 /* Navigator */,
 			);
 			path = BothamUI;
@@ -217,12 +217,12 @@
 			name = Presenter;
 			sourceTree = "<group>";
 		};
-		6B6CCD541BDD13070015A4D4 /* Wireframe */ = {
+		6B6CCD541BDD13070015A4D4 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
 				6B8E73301C101FA90006F9E1 /* Storyboard.swift */,
 			);
-			name = Wireframe;
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 		6B82AD451C075A04009247FB /* ScrollView */ = {
