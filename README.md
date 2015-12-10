@@ -1,5 +1,4 @@
 # ![Karumi logo][karumilogo]BothamUI [![Build Status](https://travis-ci.org/Karumi/BothamUI.svg?branch=ui-tests-and-travis-ci-support)](https://travis-ci.org/Karumi/BothamUI)
-==========
 
 BothamUI is MVP(Model-View-Presenter)[[2] [mvp]] framework written in swift.
 
@@ -167,4 +166,4 @@ License
 
 [mvp]: http://martinfowler.com/eaaDev/uiArchs.html#Model-view-presentermvp
 [karumilogo]: https://cloud.githubusercontent.com/assets/858090/11626547/e5a1dc66-9ce3-11e5-908d-537e07e82090.png
-[storyboardReference]: https://cloud.githubusercontent.com/assets/858090/11626971/57567c2e-9ce7-11e5-8601-2aabd0f04efc.png
+[storyboardReference]: https://cloud.githubusercontent.com/assets/858090/11711471/f425f110-9f26-11e5-9ff3-d59b5a51308e.png
