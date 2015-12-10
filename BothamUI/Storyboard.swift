@@ -24,12 +24,12 @@ public struct BothamStoryboard {
         return uiStoryboard.instantiateInitialViewController() as! T
     }
 
-    public func viewController<T>(viewControllerIdentifier: String) -> T {
+    public func instantiateViewController<T>(viewControllerIdentifier: String) -> T {
         let uiStoryboard = storyboard(name)
         return uiStoryboard.instantiateViewControllerWithIdentifier(viewControllerIdentifier) as! T
     }
 
-    public func viewController<T>() -> T {
-        return viewController(String(T.self))
+    public func instantiateViewController<T>() -> T {
+        return instantiateViewController(String(T.self))
     }
 }

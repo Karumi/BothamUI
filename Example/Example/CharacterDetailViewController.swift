@@ -6,12 +6,7 @@
 //  Copyright © 2015 GoKarumi S.L. All rights reserved.
 //
 
-import UIKit
 import BothamUI
 
 class CharacterDetailViewController: BothamViewController, CharacterDetailUI {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }

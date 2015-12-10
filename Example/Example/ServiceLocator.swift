@@ -36,7 +36,7 @@ class ServiceLocator {
     }
 
     func provideRootTabBarController() -> UITabBarController {
-        let viewController: UITabBarController = provideMainStoryboard().viewController("RootTabBarController")
+        let viewController: UITabBarController = provideMainStoryboard().instantiateViewController("RootTabBarController")
         return viewController
     }
 
@@ -51,7 +51,7 @@ class ServiceLocator {
     }
 
     func provideCharacterDetailViewController() -> CharacterDetailViewController {
-        let viewController: CharacterDetailViewController = provideMainStoryboard().viewController()
+        let viewController: CharacterDetailViewController = provideMainStoryboard().instantiateViewController()
         viewController.presenter = CharacterDetailPresenter(ui: viewController)
         return viewController
     }
@@ -61,7 +61,7 @@ class ServiceLocator {
     }
 
     func provideCharactersViewController() -> CharactersViewController {
-        let viewController: CharactersViewController = provideMainStoryboard().viewController()
+        let viewController: CharactersViewController = provideMainStoryboard().instantiateViewController()
         let presenter = CharactersPresenter(ui: viewController, wireframe: provideCharactersWireframe())
         viewController.presenter = presenter
         let dataSource = provideCharactersTableViewDataSource()
@@ -72,7 +72,7 @@ class ServiceLocator {
     }
 
     func provideComicsViewController() -> ComicsViewController {
-        let viewController: ComicsViewController = provideMainStoryboard().viewController()
+        let viewController: ComicsViewController = provideMainStoryboard().instantiateViewController()
         viewController.presenter = ComicsPresenter(ui: viewController)
         viewController.dataSource = BothamCollectionViewDataSource()
         return viewController
