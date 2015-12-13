@@ -13,6 +13,11 @@ class ComicCollectionViewCell: UICollectionViewCell, BothamViewCell {
     @IBOutlet weak var imageView: UIImageView!
 
     func configureForItem(item: Comic) {
-        self.imageView.image = item.cover
+        switch item {
+        case .Featured(let cover):
+            self.imageView.image = cover
+        case .Normal(let cover):
+            self.imageView.image = cover
+        }
     }
 }
