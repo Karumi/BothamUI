@@ -1,5 +1,5 @@
 //
-//  ComicsPresenter.swift
+//  MockComicsPresenter.swift
 //  Example
 //
 //  Created by Pedro Vicente Gomez on 13/12/15.
