@@ -11,8 +11,10 @@ import XCTest
 @testable import Example
 
 class FakeComicsUI: ComicsUI, FakeBothamLoadingUI {
-    var loaderWasShowed = false
-    var loaderWasHided = false
+    var loaderWasShown = false
+    var loaderWasHidden = false
+    var emptyCaseWasShown = false
+    var emptyCaseWasHidden = false
     var itemsShowed:[Comic] = []
 
     var expectation: XCTestExpectation?
@@ -25,4 +27,5 @@ class FakeComicsUI: ComicsUI, FakeBothamLoadingUI {
         itemsShowed = items
         expectation?.fulfill()
     }
+
 }

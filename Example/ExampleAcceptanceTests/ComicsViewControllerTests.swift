@@ -29,8 +29,20 @@ class ComicsViewControllerTests: AcceptanceTestCase {
         expect(comicsTableView.visibleCells().count).toOneDay(beGreaterThanOrEqualTo(3))
     }
 
+    func testShouldShowEmptyCaseViewIfThereAreNoComics() {
+        openComicsViewControllerWithoutComics()
+
+        tester().waitForViewWithAccessibilityLabel("EmptyCaseView")
+    }
+
     private func openComicsViewController() {
         let comicsViewController = ServiceLocator.sharedInstance.provideComicsViewController()
+        presentViewController(comicsViewController)
+    }
+
+    private func openComicsViewControllerWithoutComics() {
+        let comicsViewController = ServiceLocator.sharedInstance.provideComicsViewController()
+        comicsViewController.presenter = MockComicsPresenter(ui: comicsViewController)
         presentViewController(comicsViewController)
     }
 

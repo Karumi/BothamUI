@@ -50,6 +50,7 @@
 		EB9A49391C0757B300BF4D55 /* CharactersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A49381C0757B300BF4D55 /* CharactersViewControllerTests.swift */; };
 		EB9A493C1C075A8100BF4D55 /* ComicsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A493B1C075A8100BF4D55 /* ComicsViewControllerTests.swift */; };
 		EB9A49441C076B1600BF4D55 /* AcceptanceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A49431C076B1600BF4D55 /* AcceptanceTestCase.swift */; };
+		EBB2060F1C1DB9B5001FD877 /* MockComicsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB2060E1C1DB9B5001FD877 /* MockComicsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,7 @@
 		EB9A493B1C075A8100BF4D55 /* ComicsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicsViewControllerTests.swift; sourceTree = "<group>"; };
 		EB9A49421C07631E00BF4D55 /* ExampleAcceptanceTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExampleAcceptanceTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		EB9A49431C076B1600BF4D55 /* AcceptanceTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptanceTestCase.swift; sourceTree = "<group>"; };
+		EBB2060E1C1DB9B5001FD877 /* MockComicsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockComicsPresenter.swift; sourceTree = "<group>"; };
 		F448661AC2CAA127286870BE /* Pods-ExampleAcceptanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleAcceptanceTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ExampleAcceptanceTests/Pods-ExampleAcceptanceTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -397,9 +399,18 @@
 		EB9A493A1C075A5500BF4D55 /* Comics */ = {
 			isa = PBXGroup;
 			children = (
+				EBB2060D1C1DB99F001FD877 /* Fakes */,
 				EB9A493B1C075A8100BF4D55 /* ComicsViewControllerTests.swift */,
 			);
 			name = Comics;
+			sourceTree = "<group>";
+		};
+		EBB2060D1C1DB99F001FD877 /* Fakes */ = {
+			isa = PBXGroup;
+			children = (
+				EBB2060E1C1DB9B5001FD877 /* MockComicsPresenter.swift */,
+			);
+			name = Fakes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -730,6 +741,7 @@
 				EB9A49301C07538100BF4D55 /* KIFTestActor.swift in Sources */,
 				EB9A49441C076B1600BF4D55 /* AcceptanceTestCase.swift in Sources */,
 				EB9A492E1C07536800BF4D55 /* XCTestCase.swift in Sources */,
+				EBB2060F1C1DB9B5001FD877 /* MockComicsPresenter.swift in Sources */,
 				6B8E733D1C11B55D0006F9E1 /* Expectation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

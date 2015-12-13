@@ -24,6 +24,9 @@
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <accessibility key="accessibilityConfiguration" identifier="" label="EmptyCaseView">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
             <constraints>
                 <constraint firstItem="bJD-zF-l1V" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qVb-cy-lR5"/>
                 <constraint firstItem="bJD-zF-l1V" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rXu-Fn-Kqq"/>

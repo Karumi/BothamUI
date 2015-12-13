@@ -17,4 +17,12 @@ class FakeCharactersUI: CharactersUI, FakeBothamPullToResfreshUI {
     func showItems(items: [Example.Character]) {
         itemsShowed = items
     }
+
+    func showEmptyCase() {
+        
+    }
+
+    func hideEmptyCase() {
+
+    }
 }
