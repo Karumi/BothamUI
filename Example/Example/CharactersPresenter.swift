@@ -28,7 +28,12 @@ class CharactersPresenter: BothamPresenter, BothamPullToRefreshPresenter, Botham
     }
 
     private func loadItems(items: [Character]) {
-        self.ui?.showItems(items)
+        if items.isEmpty {
+            self.ui?.showEmptyCase()
+        } else {
+            self.ui?.hideEmptyCase()
+            self.ui?.showItems(items)
+        }
     }
 
     func itemWasTapped(item: Character) {

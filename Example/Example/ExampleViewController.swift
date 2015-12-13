@@ -9,8 +9,9 @@
 import Foundation
 import BothamUI
 
-class ExampleViewController: BothamViewController, BothamLoadingViewController, BothamPullToRefresh {
+class ExampleViewController: BothamViewController, BothamLoadingViewController, BothamEmptyCaseViewController, BothamPullToRefresh {
     let currentLoadingView: UIView = LoadingView()
+    let currentEmptyCaseView: UIView = EmptyCaseView()
     var pullToRefreshHandler: BothamPullToRefreshHandler!
 
 }
