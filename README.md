@@ -70,9 +70,9 @@ class ServiceLocator {
 
     static let sharedInstance = ServiceLocator()
 
-    func provideCharacterDetailViewController() -> CharacterDetailViewController {
-        let viewController: CharacterDetailViewController = provideMainStoryboard().viewController()
-        viewController.presenter = CharacterDetailPresenter(ui: viewController)
+    func provideSampleViewController() -> SampleViewController {
+        let viewController: SampleViewController = provideMainStoryboard().viewController()
+        viewController.presenter = SamplePresenter(ui: viewController)
         return viewController
     }
 }
