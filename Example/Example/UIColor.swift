@@ -55,16 +55,20 @@ extension UIColor {
         self.init(red:red, green:green, blue:blue, alpha:alpha)
     }
 
-    static var tabBarTintColor: UIColor {
-        return UIColor(rgba: "#17D1FF")
-    }
-
     static var tabBarColor: UIColor {
         return UIColor(rgba: "#4D5B69FF")
     }
 
-    static var tabBarSelectedTintColor: UIColor {
-        return UIColor(rgba: "2D3F3DFF")
+    static var tabBarTintColor: UIColor {
+        return UIColor(rgba: "#17D1FFFF")
+    }
+
+    static var navigationBarColor: UIColor {
+        return UIColor(rgba: "#404B57FF")
+    }
+
+    static var navigationBarTitleColor: UIColor {
+        return UIColor(rgba: "#F5F5F5FF")
     }
 
 }

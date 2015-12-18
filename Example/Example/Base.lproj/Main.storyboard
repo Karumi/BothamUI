@@ -104,7 +104,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="eed-RG-CxL"/>
+                    <navigationItem key="navigationItem" title="CHARACTERS" id="eed-RG-CxL"/>
                     <connections>
                         <outlet property="tableView" destination="opo-6c-aIU" id="ayT-Ru-Bl2"/>
                     </connections>
