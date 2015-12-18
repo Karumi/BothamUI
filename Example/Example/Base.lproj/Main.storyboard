@@ -5,6 +5,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ManifoldCF-Regular.otf">
+            <string>ManifoldCF-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Character Detail View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -49,27 +54,42 @@
         <scene sceneID="Yyd-Cb-S7z">
             <objects>
                 <viewController storyboardIdentifier="CharactersViewController" title="Characters" id="qj6-kS-RvR" customClass="CharactersViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="opo-6c-aIU">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="163" sectionHeaderHeight="28" sectionFooterHeight="28" id="opo-6c-aIU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterTableViewCellIdentifier" textLabel="Kok-xT-sWb" style="IBUITableViewCellStyleDefault" id="37N-4n-5SO" customClass="CharacterTableViewCell" customModule="Example" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterTableViewCellIdentifier" rowHeight="163" id="37N-4n-5SO" customClass="CharacterTableViewCell" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="163"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="37N-4n-5SO" id="nfM-FD-FaB">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="162.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kok-xT-sWb">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zg4-yR-K1T">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="163"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Avengers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJt-hj-T9F">
+                                            <rect key="frame" x="8" y="135" width="584" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="ManifoldCF-Regular" family="Manifold CF" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="dJt-hj-T9F" secondAttribute="trailing" id="6dv-Tb-b46"/>
+                                        <constraint firstItem="Zg4-yR-K1T" firstAttribute="centerY" secondItem="nfM-FD-FaB" secondAttribute="centerY" id="98S-st-MXn"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="dJt-hj-T9F" secondAttribute="leading" id="9pN-My-5QY"/>
+                                        <constraint firstAttribute="trailing" secondItem="Zg4-yR-K1T" secondAttribute="trailing" id="SnU-DC-OjG"/>
+                                        <constraint firstItem="Zg4-yR-K1T" firstAttribute="top" secondItem="nfM-FD-FaB" secondAttribute="top" id="TGL-Et-0gW"/>
+                                        <constraint firstItem="Zg4-yR-K1T" firstAttribute="leading" secondItem="nfM-FD-FaB" secondAttribute="leading" id="nGz-PR-BRl"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="dJt-hj-T9F" secondAttribute="bottom" id="q3j-4k-Ubg"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="dJt-hj-T9F" id="HaA-ni-YfG"/>
+                                    <outlet property="thumbnailImage" destination="Zg4-yR-K1T" id="EJR-jT-ORc"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>

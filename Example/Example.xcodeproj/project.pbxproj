@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2CC29345B9DBD60055933D8F /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4C154F33C68A95C05026C9 /* Pods_Example.framework */; };
 		491AFB001C24000B00F8574D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491AFAFF1C24000B00F8574D /* LaunchScreen.storyboard */; };
+		491AFB041C241C4500F8574D /* ManifoldCF-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 491AFB021C241C1700F8574D /* ManifoldCF-Light.otf */; };
+		491AFB051C241C4500F8574D /* ManifoldCF-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 491AFB031C241C1700F8574D /* ManifoldCF-Regular.otf */; };
 		6AB5B208B9725DB1CB5B0829 /* Pods_ExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC17EACDA99BFBD45DF05CE1 /* Pods_ExampleTests.framework */; };
 		6B0737051BFDCEB4000E0E7D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0737041BFDCEB4000E0E7D /* Character.swift */; };
 		6B0737071BFDCEE4000E0E7D /* CharactersNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0737061BFDCEE4000E0E7D /* CharactersNavigationController.swift */; };
@@ -75,6 +77,8 @@
 		35B163CE0DC7AF697E4632CE /* Pods_ExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F4FD41D603422B68DA1AC8 /* Pods-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ExampleTests/Pods-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		491AFAFF1C24000B00F8574D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
+		491AFB021C241C1700F8574D /* ManifoldCF-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ManifoldCF-Light.otf"; sourceTree = "<group>"; };
+		491AFB031C241C1700F8574D /* ManifoldCF-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ManifoldCF-Regular.otf"; sourceTree = "<group>"; };
 		516B3CF49355166A2C927001 /* Pods-ExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleUITests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ExampleUITests/Pods-ExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		52612E8081519E1D866451B7 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5DDCD4FFC4D496BB86036BC1 /* Pods-ExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleUITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ExampleUITests/Pods-ExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -172,6 +176,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		491AFB011C241BDE00F8574D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				491AFB021C241C1700F8574D /* ManifoldCF-Light.otf */,
+				491AFB031C241C1700F8574D /* ManifoldCF-Regular.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		6B0737021BFDCE42000E0E7D /* Characters */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +259,7 @@
 		6B6B09271BDD1A830013891D /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				491AFB011C241BDE00F8574D /* Resources */,
 				6BDE3DF51BFE0D1A0030EB8B /* Comics */,
 				6B0737021BFDCE42000E0E7D /* Characters */,
 				6BB5CD941BDD2D670009C2F0 /* ServiceLocator.swift */,
@@ -518,6 +532,8 @@
 				491AFB001C24000B00F8574D /* LaunchScreen.storyboard in Resources */,
 				6B6B09301BDD1A830013891D /* Assets.xcassets in Resources */,
 				6B6B092E1BDD1A830013891D /* Main.storyboard in Resources */,
+				491AFB051C241C4500F8574D /* ManifoldCF-Regular.otf in Resources */,
+				491AFB041C241C4500F8574D /* ManifoldCF-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
