@@ -55,6 +55,10 @@ extension UIColor {
         self.init(red:red, green:green, blue:blue, alpha:alpha)
     }
 
+    static var windowBackgroundColor: UIColor {
+        return UIColor(rgba: "#22282FFF")
+    }
+
     static var tabBarColor: UIColor {
         return UIColor(rgba: "#4D5B69FF")
     }

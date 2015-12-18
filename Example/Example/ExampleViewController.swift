@@ -10,6 +10,7 @@ import Foundation
 import BothamUI
 
 class ExampleViewController: BothamViewController, BothamLoadingViewController, BothamPullToRefresh {
+
     let currentLoadingView: UIView = LoadingView()
     var pullToRefreshHandler: BothamPullToRefreshHandler!
 

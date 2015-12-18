@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         installRootViewControllerIntoWindow(window!)
+        window?.backgroundColor = UIColor.windowBackgroundColor
         configureNavigationBarStyle()
         return true
     }

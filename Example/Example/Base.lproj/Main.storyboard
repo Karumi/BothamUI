@@ -36,7 +36,6 @@
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="UzJ-8n-4pD" firstAttribute="top" secondItem="3uw-hi-hsD" secondAttribute="bottom" constant="8" symbolic="YES" id="4qA-vK-007"/>
                             <constraint firstAttribute="trailing" secondItem="3uw-hi-hsD" secondAttribute="trailing" id="GN3-RQ-ItC"/>
@@ -61,7 +60,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CharacterTableViewCellIdentifier" rowHeight="163" id="37N-4n-5SO" customClass="CharacterTableViewCell" customModule="Example" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="163"/>
@@ -136,7 +135,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <animations/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gZE-61-YdF">
                             <size key="itemSize" width="200" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -172,7 +170,7 @@
                             </collectionViewCell>
                         </cells>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="AXW-Xh-mwk"/>
+                    <navigationItem key="navigationItem" title="COMICS" id="AXW-Xh-mwk"/>
                     <connections>
                         <outlet property="collectionView" destination="Ra1-Dr-zyT" id="2rF-4g-Vlg"/>
                     </connections>
