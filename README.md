@@ -66,7 +66,7 @@ BothamUI is built around the concept of dependency injection, all the dependenci
 
 #### ViewController Instantiation
 
-In the example a Service Locator in order to instantiate view controllers, but you can also use [Swinject](https://github.com/Swinject/Swinject) or others DI frameworks.
+In the example a Service Locator is used in order to instantiate view controllers, but you can also use [Swinject](https://github.com/Swinject/Swinject) or others DI frameworks.
 
 ```swift
 class ServiceLocator {
