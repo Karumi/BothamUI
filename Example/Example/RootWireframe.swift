@@ -36,10 +36,15 @@ class RootWireframe: ExampleWireframe {
         tabBar.accessibilityLabel = "MainWireframe TabBar"
         tabBar.tintColor = UIColor.tabBarTintColor
 
+        let charactersIcon = UIImage(named: "tab_bar_icon_characters")
         let charactersTabBarItem = tabBar.items?[0]
-        charactersTabBarItem?.image = UIImage(named: "tab_bar_icon_characters")
+        charactersTabBarItem?.image = charactersIcon?.imageWithRenderingMode(.AlwaysOriginal)
+        charactersTabBarItem?.selectedImage = charactersIcon
 
+        let comicsIcon = UIImage(named: "tab_bar_icon_comics")
         let comicsTabBarItem = tabBar.items?[1]
-        comicsTabBarItem?.image = UIImage(named: "tab_bar_icon_comics")
+        comicsTabBarItem?.image = comicsIcon?.imageWithRenderingMode(.AlwaysOriginal)
+        comicsTabBarItem?.selectedImage = comicsIcon
     }
+
 }

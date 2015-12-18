@@ -60,7 +60,11 @@ extension UIColor {
     }
 
     static var tabBarColor: UIColor {
-        return UIColor(rgba: "#4D5B69")
+        return UIColor(rgba: "#4D5B69FF")
+    }
+
+    static var tabBarSelectedTintColor: UIColor {
+        return UIColor(rgba: "2D3F3DFF")
     }
 
 }
