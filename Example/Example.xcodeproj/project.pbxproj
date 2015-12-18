@@ -46,6 +46,7 @@
 		6BDE3E1A1C0392ED0030EB8B /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E191C0392ED0030EB8B /* Dispatch.swift */; };
 		6BDE3E1F1C04A3290030EB8B /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E1E1C04A3290030EB8B /* ExampleViewController.swift */; };
 		D0216A57D96557DB5D28B4E0 /* Pods_ExampleAcceptanceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD3B00CD55A824F7D88F99E1 /* Pods_ExampleAcceptanceTests.framework */; };
+		EB7B641F1C2422F600422325 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7B641E1C2422F600422325 /* UIColor.swift */; };
 		EB9A492E1C07536800BF4D55 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A492D1C07536800BF4D55 /* XCTestCase.swift */; };
 		EB9A49301C07538100BF4D55 /* KIFTestActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A492F1C07538100BF4D55 /* KIFTestActor.swift */; };
 		EB9A49361C07544B00BF4D55 /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A49351C07544B00BF4D55 /* MainViewControllerTests.swift */; };
@@ -124,6 +125,7 @@
 		A49A5D1539EF98BE0B5BBAE8 /* Pods-ExampleAcceptanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleAcceptanceTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ExampleAcceptanceTests/Pods-ExampleAcceptanceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC17EACDA99BFBD45DF05CE1 /* Pods_ExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3B00CD55A824F7D88F99E1 /* Pods_ExampleAcceptanceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleAcceptanceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB7B641E1C2422F600422325 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		EB9A49221C07529200BF4D55 /* ExampleAcceptanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleAcceptanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9A49261C07529200BF4D55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB9A492D1C07536800BF4D55 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				491AFB011C241BDE00F8574D /* Resources */,
+				EB7B641D1C2422D700422325 /* Extensions */,
 				6BDE3DF51BFE0D1A0030EB8B /* Comics */,
 				6B0737021BFDCE42000E0E7D /* Characters */,
 				6BB5CD941BDD2D670009C2F0 /* ServiceLocator.swift */,
@@ -374,6 +377,14 @@
 				F448661AC2CAA127286870BE /* Pods-ExampleAcceptanceTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB7B641D1C2422D700422325 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB7B641E1C2422F600422325 /* UIColor.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		EB9A49231C07529200BF4D55 /* ExampleAcceptanceTests */ = {
@@ -709,6 +720,7 @@
 				6B8E73331C10AA700006F9E1 /* CharactersWireframe.swift in Sources */,
 				6BDE3DF81BFE0DEE0030EB8B /* ComicsNavigationController.swift in Sources */,
 				6B0737091BFDCF67000E0E7D /* CharactersPresenter.swift in Sources */,
+				EB7B641F1C2422F600422325 /* UIColor.swift in Sources */,
 				6BDE3E1A1C0392ED0030EB8B /* Dispatch.swift in Sources */,
 				6B8E733B1C11AD640006F9E1 /* ExampleWireframe.swift in Sources */,
 				6BDE3DFA1BFE0E760030EB8B /* ComicsViewController.swift in Sources */,

@@ -8,14 +8,14 @@
 
 import Foundation
 import BothamUI
+import UIKit
 
 class RootWireframe: ExampleWireframe {
     func presentInitialViewControllerInWindow(window: UIWindow) {
         let viewController = serviceLocator.provideRootTabBarController()
         viewController.viewControllers = self.tabsViewControllers()
-
         let tabBar = viewController.tabBar
-        tabBar.accessibilityLabel = "MainWireframe TabBar"
+        configureTabBarItems(tabBar)
         window.rootViewController = viewController
     }
 
@@ -30,5 +30,16 @@ class RootWireframe: ExampleWireframe {
             charactersNavigationController,
             comicsNavigationController
         ]
+    }
+
+    private func configureTabBarItems(tabBar: UITabBar) {
+        tabBar.accessibilityLabel = "MainWireframe TabBar"
+        tabBar.tintColor = UIColor.tabBarTintColor
+
+        let charactersTabBarItem = tabBar.items?[0]
+        charactersTabBarItem?.image = UIImage(named: "tab_bar_icon_characters")
+
+        let comicsTabBarItem = tabBar.items?[1]
+        comicsTabBarItem?.image = UIImage(named: "tab_bar_icon_comics")
     }
 }
