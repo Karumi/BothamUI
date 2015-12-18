@@ -16,11 +16,11 @@ class CharactersViewControllerTests: AcceptanceTestCase {
     func testShowsSpiderManAndIronManByDefaultSuperHeroes() {
         openCharactersViewController()
 
-        let spiderManRowLabel = tester().waitForViewWithAccessibilityLabel("SpiderMan") as! UILabel
-        let ironManRowLabel = tester().waitForViewWithAccessibilityLabel("IronMan") as! UILabel
+        let spiderManCell = tester().waitForViewWithAccessibilityLabel("SpiderMan") as! CharacterTableViewCell
+        let ironManCell = tester().waitForViewWithAccessibilityLabel("IronMan") as! CharacterTableViewCell
 
-        expect(spiderManRowLabel.text).to(equal("SpiderMan"))
-        expect(ironManRowLabel.text).to(equal("IronMan"))
+        expect(spiderManCell.nameLabel.text).to(equal("SpiderMan"))
+        expect(ironManCell.nameLabel.text).to(equal("IronMan"))
     }
 
     private func openCharactersViewController() {

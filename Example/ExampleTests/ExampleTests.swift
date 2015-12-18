@@ -8,8 +8,8 @@
 
 import XCTest
 import Nimble
-@testable import Example
 import BothamUI
+@testable import Example
 
 class ExampleTests: XCTestCase {
     
@@ -41,7 +41,7 @@ class ExampleTests: XCTestCase {
         let fakeCharactersWireframe = FakeCharactersWireframe()
         let presenter = CharactersPresenter(ui: fakeCharactersUI, wireframe: fakeCharactersWireframe)
 
-        let character = Character(name: "IronMan")
+        let character = Character(name: "IronMan", thumbnail: NSURL())
         presenter.itemWasTapped(character)
 
         expect(fakeCharactersWireframe.characterDetailViewControllerWasPresented).to(beTrue())

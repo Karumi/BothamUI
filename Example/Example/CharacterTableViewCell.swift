@@ -17,6 +17,7 @@ class CharacterTableViewCell: UITableViewCell, BothamViewCell {
 
     func configureForItem(item: Character) {
         nameLabel.text = item.name
+        nameLabel.accessibilityLabel = item.name
         thumbnailImage.sd_setImageWithURL(item.thumbnail)
 
         let gradient: CAGradientLayer = CAGradientLayer(layer: thumbnailImage.layer)

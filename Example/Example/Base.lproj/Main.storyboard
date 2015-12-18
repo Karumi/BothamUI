@@ -72,14 +72,17 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zg4-yR-K1T">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="163"/>
+                                            <animations/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Avengers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJt-hj-T9F">
                                             <rect key="frame" x="8" y="135" width="584" height="19.5"/>
+                                            <animations/>
                                             <fontDescription key="fontDescription" name="ManifoldCF-Regular" family="Manifold CF" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="dJt-hj-T9F" secondAttribute="trailing" id="6dv-Tb-b46"/>
                                         <constraint firstItem="Zg4-yR-K1T" firstAttribute="centerY" secondItem="nfM-FD-FaB" secondAttribute="centerY" id="98S-st-MXn"/>
@@ -90,6 +93,10 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="dJt-hj-T9F" secondAttribute="bottom" id="q3j-4k-Ubg"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <animations/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <connections>
                                     <outlet property="nameLabel" destination="dJt-hj-T9F" id="HaA-ni-YfG"/>
                                     <outlet property="thumbnailImage" destination="Zg4-yR-K1T" id="EJR-jT-ORc"/>
