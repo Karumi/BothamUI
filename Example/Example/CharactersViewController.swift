@@ -18,7 +18,7 @@ class CharactersViewController: ExampleViewController, BothamTableViewController
     override func viewDidLoad() {
         tableView.dataSource = dataSource
         tableView.delegate = delegate
-
+        tableView.tableFooterView = UIView()
         pullToRefreshHandler.addTo(tableView)
         super.viewDidLoad()
     }
