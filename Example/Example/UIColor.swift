@@ -75,4 +75,12 @@ extension UIColor {
         return UIColor(rgba: "#F5F5F5FF")
     }
 
+    static var gradientStartColor: UIColor {
+        return UIColor(rgba: "#2C343C00")
+    }
+
+    static var gradientEndColor: UIColor {
+    return UIColor(rgba: "#2C343CE5")
+    }
+
 }
