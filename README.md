@@ -62,7 +62,7 @@ class SampleViewController: BothamViewController, SampleUI {
 ```
 ### Dependency injection
 
-BothamUI is build around the concept of dependency injection, all the dependencies are provided by constructor or properties, base what UIKit allow us.
+BothamUI is built around the concept of dependency injection, all the dependencies are provided by constructor or properties, base on what UIKit allows us.
 
 #### ViewController Instantiation
 
