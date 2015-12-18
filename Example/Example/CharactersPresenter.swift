@@ -20,8 +20,8 @@ class CharactersPresenter: BothamPresenter, BothamPullToRefreshPresenter, Botham
 
     func viewDidLoad() {
         loadItems([
-            Character(name: "SpiderMan", thumbnail: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")!),
-            Character(name: "IronMan", thumbnail: NSURL(string: "https://i.annihil.us/u/prod/marvel/i/mg/c/60/55b6a28ef24fa.jpg")!),
+            Character(name: "Spider-Man", thumbnail: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")!),
+            Character(name: "Iron Man", thumbnail: NSURL(string: "https://i.annihil.us/u/prod/marvel/i/mg/c/60/55b6a28ef24fa.jpg")!),
             Character(name: "Scarlet Witch", thumbnail: NSURL(string: "https://i.annihil.us/u/prod/marvel/i/mg/9/b0/537bc2375dfb9.jpg")!),
             Character(name: "Hulk", thumbnail: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/e/e0/537bafa34baa9.jpg")!),
             Character(name: "Wolverine", thumbnail: NSURL(string: "https://i.annihil.us/u/prod/marvel/i/mg/9/00/537bcb1133fd7.jpg")!),
