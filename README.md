@@ -60,10 +60,13 @@ class SampleViewController: BothamViewController, SampleUI {
     /*...*/
 }
 ```
+### Dependency injection
 
-#### Service Locator
+BothamUI is build around the concept of dependency injection, all the dependencies are provided by constructor or properties, base what UIKit allow us.
 
-We recommend the usage of a Service Locator pattern in order to instantiate view controllers.
+#### ViewController Instantiation
+
+In the example a Service Locator in order to instantiate view controllers, but you can also use [Swinject](https://github.com/Swinject/Swinject) or others DI frameworks.
 
 ```swift
 class ServiceLocator {
