@@ -19,6 +19,12 @@ class ComicsViewController: ExampleViewController, BothamCollectionViewControlle
     override func viewDidLoad() {
         collectionView.accessibilityLabel = "Comics CollectionView"
         collectionView.delegate = self
+        dataSource.reuseIdentifierForItem = { item in
+            if case .Featured = item {
+                return "FeaturedComicCollectionViewCellReuseIdentifier"
+            }
+            return "ComicCollectionViewCellReuseIdentifier"
+        }
         collectionView.dataSource = dataSource
         super.viewDidLoad()
     }
@@ -31,7 +37,14 @@ class ComicsViewController: ExampleViewController, BothamCollectionViewControlle
         sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
 
             let comic = dataSource.itemAtIndexPath(indexPath)
-            if var size = comic.cover?.size {
+            let size: CGSize?
+            switch comic {
+            case .Featured(let cover):
+                size = cover?.size
+            case .Normal(let cover):
+                size = cover?.size
+            }
+            if var size = size {
                 size.width += 10
                 size.height += 10
                 return size

@@ -12,6 +12,9 @@ import UIKit
 public class BothamCollectionViewDataSource<U, V: BothamViewCell where U == V.ItemType>
                                 : NSObject, UICollectionViewDataSource, BothamDataSource {
     public var items: [U] = []
+    public var reuseIdentifierForItem: U -> String = { _ in
+        return String(V.self) + "ReuseIdentifier"
+    }
 
     public override init() {
         super.init()
@@ -26,12 +29,12 @@ public class BothamCollectionViewDataSource<U, V: BothamViewCell where U == V.It
     public func collectionView(
         collectionView: UICollectionView,
         cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let item = itemAtIndexPath(indexPath)
 
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(
-            String(V.self) + "ReuseIdentifier",
+            reuseIdentifierForItem(item),
             forIndexPath: indexPath
         )
-        let item = itemAtIndexPath(indexPath)
         (cell as! V).configureForItem(item)
         return cell
     }

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
-struct Comic {
-    let cover: UIImage?
+enum Comic {
+    case Normal(cover: UIImage?)
+    case Featured(cover: UIImage?)
 }
