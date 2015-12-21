@@ -74,7 +74,6 @@
         <!--Series-->
         <scene sceneID="MNO-6A-kwV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7jX-b9-8QJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="SeriesViewController" title="Series" id="jgV-K8-1bz" customClass="SeriesViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4TP-Rs-L4T" userLabel="Series Table View">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -83,7 +82,7 @@
                         <color key="separatorColor" red="0.22352941176470587" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="SerieTableViewCellIdentifier" focusStyle="custom" rowHeight="375" id="fl0-27-EyA" userLabel="SerieTableViewCell" customClass="SerieTableViewCell" customModule="Example" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="SerieTableViewCellIdentifier" focusStyle="custom" rowHeight="375" id="fl0-27-EyA" userLabel="SerieTableViewCell" customClass="SerieTableViewCell" customModule="Example" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fl0-27-EyA" id="z2K-AO-WII">
@@ -97,7 +96,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.13252013921737671" green="0.15640446543693542" blue="0.18553909659385681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.10196078431372549" green="0.11764705882352941" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="3dN-ix-dIs" firstAttribute="centerY" secondItem="z2K-AO-WII" secondAttribute="centerY" id="dfQ-Yn-5Ec"/>
                                         <constraint firstItem="3dN-ix-dIs" firstAttribute="leading" secondItem="z2K-AO-WII" secondAttribute="leadingMargin" constant="15" id="kDO-NN-drK"/>
@@ -117,6 +116,7 @@
                         <outlet property="tableView" destination="4TP-Rs-L4T" id="M4Y-Zc-AYZ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jX-b9-8QJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2038" y="576"/>
         </scene>
