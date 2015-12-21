@@ -23,12 +23,12 @@ class RootWireframe: ExampleWireframe {
         let charactersNavigationController = serviceLocator.provideCharactersNavigationController()
         serviceLocator.navigatorContainer.register(charactersNavigationController)
 
-        let comicsNavigationController = serviceLocator.provideComicsNavigationController()
-        ServiceLocator.sharedInstance.navigatorContainer.register(comicsNavigationController)
+        let seriesNavigationController = serviceLocator.provideSeriesNavigationController()
+        ServiceLocator.sharedInstance.navigatorContainer.register(seriesNavigationController)
 
         return [
             charactersNavigationController,
-            comicsNavigationController
+            seriesNavigationController
         ]
     }
 

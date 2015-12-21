@@ -52,7 +52,7 @@
 		EB9A49301C07538100BF4D55 /* KIFTestActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A492F1C07538100BF4D55 /* KIFTestActor.swift */; };
 		EB9A49361C07544B00BF4D55 /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A49351C07544B00BF4D55 /* MainViewControllerTests.swift */; };
 		EB9A49391C0757B300BF4D55 /* CharactersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A49381C0757B300BF4D55 /* CharactersViewControllerTests.swift */; };
-		EB9A493C1C075A8100BF4D55 /* ComicsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A493B1C075A8100BF4D55 /* ComicsViewControllerTests.swift */; };
+		EB9A493C1C075A8100BF4D55 /* SeriessViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A493B1C075A8100BF4D55 /* SeriessViewControllerTests.swift */; };
 		EB9A49441C076B1600BF4D55 /* AcceptanceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A49431C076B1600BF4D55 /* AcceptanceTestCase.swift */; };
 /* End PBXBuildFile section */
 
@@ -134,7 +134,7 @@
 		EB9A492F1C07538100BF4D55 /* KIFTestActor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KIFTestActor.swift; sourceTree = "<group>"; };
 		EB9A49351C07544B00BF4D55 /* MainViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
 		EB9A49381C0757B300BF4D55 /* CharactersViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewControllerTests.swift; sourceTree = "<group>"; };
-		EB9A493B1C075A8100BF4D55 /* ComicsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicsViewControllerTests.swift; sourceTree = "<group>"; };
+		EB9A493B1C075A8100BF4D55 /* SeriessViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriessViewControllerTests.swift; sourceTree = "<group>"; };
 		EB9A49421C07631E00BF4D55 /* ExampleAcceptanceTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExampleAcceptanceTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		EB9A49431C076B1600BF4D55 /* AcceptanceTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptanceTestCase.swift; sourceTree = "<group>"; };
 		F448661AC2CAA127286870BE /* Pods-ExampleAcceptanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleAcceptanceTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ExampleAcceptanceTests/Pods-ExampleAcceptanceTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -395,7 +395,7 @@
 			children = (
 				EB9A49351C07544B00BF4D55 /* MainViewControllerTests.swift */,
 				EB9A49371C07579100BF4D55 /* Characters */,
-				EB9A493A1C075A5500BF4D55 /* Comics */,
+				EB9A493A1C075A5500BF4D55 /* Series */,
 				EB9A492C1C07535E00BF4D55 /* Extensions */,
 				EB9A49261C07529200BF4D55 /* Info.plist */,
 				EB9A49421C07631E00BF4D55 /* ExampleAcceptanceTests-Bridging-Header.h */,
@@ -422,12 +422,12 @@
 			name = Characters;
 			sourceTree = "<group>";
 		};
-		EB9A493A1C075A5500BF4D55 /* Comics */ = {
+		EB9A493A1C075A5500BF4D55 /* Series */ = {
 			isa = PBXGroup;
 			children = (
-				EB9A493B1C075A8100BF4D55 /* ComicsViewControllerTests.swift */,
+				EB9A493B1C075A8100BF4D55 /* SeriessViewControllerTests.swift */,
 			);
-			name = Comics;
+			name = Series;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -758,7 +758,7 @@
 			files = (
 				EB9A49391C0757B300BF4D55 /* CharactersViewControllerTests.swift in Sources */,
 				EB9A49361C07544B00BF4D55 /* MainViewControllerTests.swift in Sources */,
-				EB9A493C1C075A8100BF4D55 /* ComicsViewControllerTests.swift in Sources */,
+				EB9A493C1C075A8100BF4D55 /* SeriessViewControllerTests.swift in Sources */,
 				EB9A49301C07538100BF4D55 /* KIFTestActor.swift in Sources */,
 				EB9A49441C076B1600BF4D55 /* AcceptanceTestCase.swift in Sources */,
 				EB9A492E1C07536800BF4D55 /* XCTestCase.swift in Sources */,

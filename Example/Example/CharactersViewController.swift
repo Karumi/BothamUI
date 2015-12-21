@@ -20,6 +20,7 @@ class CharactersViewController: ExampleViewController, BothamTableViewController
         tableView.dataSource = dataSource
         tableView.delegate = delegate
         tableView.tableFooterView = UIView()
+        tableView.accessibilityLabel = "CharactersTableView"
         pullToRefreshHandler.addTo(tableView)
         super.viewDidLoad()
     }

@@ -23,7 +23,7 @@ class ServiceLocator {
         return CharactersWireframe()
     }
 
-    private func provideComicsWireframe() -> SeriesWireframe {
+    private func provideSeriesWireframe() -> SeriesWireframe {
         return SeriesWireframe()
     }
 
@@ -46,7 +46,7 @@ class ServiceLocator {
         return navigationController
     }
 
-    func provideComicsNavigationController() -> SeriesNavigationController {
+    func provideSeriesNavigationController() -> SeriesNavigationController {
         let viewController = provideSeriesViewController()
         return SeriesNavigationController(rootViewController: viewController)
     }

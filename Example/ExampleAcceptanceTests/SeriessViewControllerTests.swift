@@ -12,26 +12,26 @@ import KIF
 import Nimble
 @testable import Example
 
-class ComicsViewControllerTests: AcceptanceTestCase {
+class SeriesViewControllerTests: AcceptanceTestCase {
 
     func testShouldShowLoadingView() {
-        openComicsViewController()
+        openSeriesViewController()
 
         tester().waitForViewWithAccessibilityLabel("LoadingView")
     }
 
-    func testShouldShowThreeComics() {
-        openComicsViewController()
+    func testShouldShowSeventeenSeries() {
+        openSeriesViewController()
 
         waitForTableViewLoaded()
-        let comicsTableView = tester().waitForViewWithAccessibilityLabel("Comics CollectionView") as! UICollectionView
+        let seriesTableView = tester().waitForViewWithAccessibilityLabel("SeriesTableView") as! UITableView
 
-        expect(comicsTableView.visibleCells().count).toOneDay(beGreaterThanOrEqualTo(3))
+        expect(seriesTableView.numberOfRowsInSection(0)).toEventually(equal(17))
     }
 
-    private func openComicsViewController() {
-        let comicsViewController = ServiceLocator.sharedInstance.provideComicsViewController()
-        presentViewController(comicsViewController)
+    private func openSeriesViewController() {
+        let seriesViewController = ServiceLocator.sharedInstance.provideSeriesNavigationController()
+        presentViewController(seriesViewController)
     }
 
     private func waitForTableViewLoaded() {

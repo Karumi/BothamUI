@@ -23,10 +23,10 @@ class MainViewControllerTests: AcceptanceTestCase {
         expect(charactersTabBarItem?.title).to(equal("Characters"))
     }
 
-    func testShouldShowComicsTab() {
+    func testShouldShowSeriesTab() {
         let comicsTabBarItem = tabBarItemAtPosition(1)
 
-        expect(comicsTabBarItem?.title).to(equal("Comics"))
+        expect(comicsTabBarItem?.title).to(equal("Series"))
     }
 
     private func tabBarItemAtPosition(position: Int) -> UITabBarItem? {
