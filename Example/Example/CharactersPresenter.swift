@@ -38,7 +38,8 @@ class CharactersPresenter: BothamPresenter, BothamPullToRefreshPresenter {
         loadItems([
             Character(name: "Captain America", thumbnail: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/9/80/537ba5b368b7d.jpg")!),
             Character(name: "Magneto", thumbnail: NSURL(string: "https://i.annihil.us/u/prod/marvel/i/mg/c/70/537bb50ecbf68.jpg")!),
-            Character(name: "Star-Lord", thumbnail: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/9/a0/537bc5794cce1.jpg")!),Character(name: "SpiderMan", thumbnail: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")!),
+            Character(name: "Star-Lord", thumbnail: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/9/a0/537bc5794cce1.jpg")!),
+            Character(name: "SpiderMan", thumbnail: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")!),
             Character(name: "IronMan", thumbnail: NSURL(string: "https://i.annihil.us/u/prod/marvel/i/mg/c/60/55b6a28ef24fa.jpg")!),
             Character(name: "Scarlet Witch", thumbnail: NSURL(string: "https://i.annihil.us/u/prod/marvel/i/mg/9/b0/537bc2375dfb9.jpg")!),
             Character(name: "Hulk", thumbnail: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/e/e0/537bafa34baa9.jpg")!),
