@@ -121,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="1283" y="-180"/>
         </scene>
-        <!--Comics-->
+        <!--Series-->
         <scene sceneID="MNO-6A-kwV">
             <objects>
-                <viewController storyboardIdentifier="ComicsViewController" title="Comics" id="jgV-K8-1bz" customClass="ComicsViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SeriesViewController" title="Series" id="jgV-K8-1bz" customClass="SeriesViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Ra1-Dr-zyT">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -135,7 +135,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ComicCollectionViewCellReuseIdentifier" id="Ygd-gR-ohY" customClass="ComicCollectionViewCell" customModule="Example" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SerieCollectionViewCellReuseIdentifier" id="Ygd-gR-ohY" customClass="SerieCollectionViewCell" customModule="Example" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -160,7 +160,7 @@
                             </collectionViewCell>
                         </cells>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="COMICS" id="AXW-Xh-mwk"/>
+                    <navigationItem key="navigationItem" title="SERIES" id="AXW-Xh-mwk"/>
                     <connections>
                         <outlet property="collectionView" destination="Ra1-Dr-zyT" id="2rF-4g-Vlg"/>
                     </connections>
@@ -184,23 +184,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OYQ-uf-gcu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="454" y="241"/>
-        </scene>
-        <!--Comics-->
-        <scene sceneID="c8y-vi-V06">
-            <objects>
-                <navigationController storyboardIdentifier="ComicsNavigationController" title="Comics" automaticallyAdjustsScrollViewInsets="NO" id="mxS-0v-nLC" customClass="ComicsNavigationController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Comics" id="hIZ-sE-WdY"/>
-                    <toolbarItems/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aoe-Ac-X9O">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ej5-t6-qFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1283" y="576"/>
         </scene>
     </scenes>
 </document>

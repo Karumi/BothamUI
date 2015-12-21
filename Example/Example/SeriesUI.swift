@@ -1,5 +1,5 @@
 //
-//  ComicsNavigationController.swift
+//  ComicsUI.swift
 //  Example
 //
 //  Created by Davide Mendolia on 19/11/15.
@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import UIKit
 import BothamUI
 
-class ComicsNavigationController: UINavigationController {
+protocol SeriesUI: BothamUI, BothamLoadingUI {
+    func showItems(items: [Serie])
 }

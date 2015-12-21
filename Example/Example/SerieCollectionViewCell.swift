@@ -9,10 +9,10 @@
 import Foundation
 import BothamUI
 
-class ComicCollectionViewCell: UICollectionViewCell, BothamViewCell {
+class SerieCollectionViewCell: UICollectionViewCell, BothamViewCell {
     @IBOutlet weak var imageView: UIImageView!
 
-    func configureForItem(item: Comic) {
+    func configureForItem(item: Serie) {
         self.imageView.image = item.cover
     }
 }

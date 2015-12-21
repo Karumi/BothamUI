@@ -8,5 +8,5 @@
 
 import Foundation
 
-class ComicsWireframe: ExampleWireframe {
+class SeriesWireframe: ExampleWireframe {
 }

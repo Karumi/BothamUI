@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-struct Comic {
+struct Serie {
     let cover: UIImage?
 }

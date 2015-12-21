@@ -23,15 +23,15 @@ class ServiceLocator {
         return CharactersWireframe()
     }
 
-    private func provideComicsWireframe() -> ComicsWireframe {
-        return ComicsWireframe()
+    private func provideComicsWireframe() -> SeriesWireframe {
+        return SeriesWireframe()
     }
 
     func provideCharactersNavigator() -> CharactersNavigationController? {
         return navigatorContainer.resolve()
     }
 
-    func provideComicsNavigator() -> ComicsNavigationController? {
+    func provideComicsNavigator() -> SeriesNavigationController? {
         return navigatorContainer.resolve()
     }
 
@@ -45,9 +45,9 @@ class ServiceLocator {
         return CharactersNavigationController(rootViewController: viewController)
     }
 
-    func provideComicsNavigationController() -> ComicsNavigationController {
+    func provideComicsNavigationController() -> SeriesNavigationController {
         let viewController = provideComicsViewController()
-        return ComicsNavigationController(rootViewController: viewController)
+        return SeriesNavigationController(rootViewController: viewController)
     }
 
     func provideCharacterDetailViewController() -> CharacterDetailViewController {
@@ -71,9 +71,9 @@ class ServiceLocator {
         return viewController
     }
 
-    func provideComicsViewController() -> ComicsViewController {
-        let viewController: ComicsViewController = provideMainStoryboard().instantiateViewController()
-        viewController.presenter = ComicsPresenter(ui: viewController)
+    func provideComicsViewController() -> SeriesViewController {
+        let viewController: SeriesViewController = provideMainStoryboard().instantiateViewController()
+        viewController.presenter = SeriesPresenter(ui: viewController)
         viewController.dataSource = BothamCollectionViewDataSource()
         return viewController
     }
