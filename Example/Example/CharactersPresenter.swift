@@ -9,7 +9,7 @@
 import Foundation
 import BothamUI
 
-class CharactersPresenter: BothamPresenter, BothamPullToRefreshPresenter, BothamNavigationPresenter {
+class CharactersPresenter: BothamPresenter, BothamPullToRefreshPresenter {
     private weak var ui: CharactersUI?
     private let wireframe: CharactersWireframe
 
@@ -53,9 +53,5 @@ class CharactersPresenter: BothamPresenter, BothamPullToRefreshPresenter, Botham
 
     private func loadItems(items: [Character]) {
         self.ui?.showItems(items)
-    }
-
-    func itemWasTapped(item: Character) {
-        wireframe.presentCharacterDetailViewController()
     }
 }

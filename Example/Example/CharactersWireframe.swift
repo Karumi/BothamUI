@@ -9,8 +9,5 @@
 import Foundation
 
 class CharactersWireframe: ExampleWireframe {
-    func presentCharacterDetailViewController() {
-        let viewController = serviceLocator.provideCharacterDetailViewController()
-        serviceLocator.provideCharactersNavigator()?.push(viewController)
-    }
+
 }
