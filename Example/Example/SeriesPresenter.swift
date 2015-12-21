@@ -23,16 +23,23 @@ class SeriesPresenter: BothamPresenter {
             self.ui?.hideLoader()
 
             self.ui?.showItems([
-                Serie(name: "Iron Fist (2004)"),
+                Serie(name: "Spider-Man (2004)"),
                 Serie(name: "Iron Fist: The Living Weapon (2004 - Present)"),
                 Serie(name: "Iron Man & the Armor Wars (2009)"),
-                Serie(name: "Iron Man (1968 - 1996)"),
-                Serie(name: "Iron Man (1996 - 1998)"),
-                Serie(name: "Iron Man (1998 - 2004)"),
-                Serie(name: "Iron Man (2010 - 2011)"),
-                Serie(name: "Iron Man (2011)"),
+                Serie(name: "Avengers (2012 - Present)"),
+                Serie(name: "Thor: God of Thunder (2012 - Present)"),
                 Serie(name: "Iron Man (2012 - Present)"),
-                Serie(name: "Iron Man (2013)")
+                Serie(name: "Deadpool (2012 - Present"),
+                Serie(name: "All-New X-Men (2012 - Present"),
+                Serie(name: "Iron Man (2013)"),
+                Serie(name: "Guardians of the Galaxy (2013 - Present"),
+                Serie(name: "Amazing Spider-Man (2014 - Present"),
+                Serie(name: "Daredevil (2014 - Present)"),
+                Serie(name: "Inhuman (2014 - Present)"),
+                Serie(name: "Jessica Jones (2014 - Present)"),
+                Serie(name: "Civil War (2014 - Present)"),
+                Serie(name: "Avengers & X_Men: Axis (2014 - Present)"),
+                Serie(name: "Death of Wolverine: Axis (2015 - Present)"),
                 ])
         }
     }
