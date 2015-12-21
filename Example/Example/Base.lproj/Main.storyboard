@@ -119,6 +119,24 @@
             </objects>
             <point key="canvasLocation" x="2038" y="576"/>
         </scene>
+        <!--Serie Detail View Controller-->
+        <scene sceneID="eun-5n-RXV">
+            <objects>
+                <viewController id="ieI-79-zNb" customClass="SerieDetailViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lWM-qq-opW"/>
+                        <viewControllerLayoutGuide type="bottom" id="jBb-AP-dat"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Qp-9X-Gew">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRp-PY-wUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2734" y="576"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Kyr-kK-0Xh">
             <objects>
