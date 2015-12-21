@@ -22,10 +22,18 @@ class SeriesPresenter: BothamPresenter {
         delay(0.5) {
             self.ui?.hideLoader()
 
-            self.ui?.showItems([Serie(cover: UIImage(named: "50b4fc783d30f")),
-                Serie(cover: UIImage(named: "4fe8cb51f32e0")),
-                Serie(cover: UIImage(named: "502912f2a8809")),
-                Serie(cover: UIImage(named: "564a1abbcf9b0"))])
+            self.ui?.showItems([
+                Serie(name: "Iron Fist (2004)"),
+                Serie(name: "Iron Fist: The Living Weapon (2004 - Present)"),
+                Serie(name: "Iron Man & the Armor Wars (2009)"),
+                Serie(name: "Iron Man (1968 - 1996)"),
+                Serie(name: "Iron Man (1996 - 1998)"),
+                Serie(name: "Iron Man (1998 - 2004)"),
+                Serie(name: "Iron Man (2010 - 2011)"),
+                Serie(name: "Iron Man (2011)"),
+                Serie(name: "Iron Man (2012 - Present)"),
+                Serie(name: "Iron Man (2013)")
+                ])
         }
     }
 }

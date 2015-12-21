@@ -6,6 +6,9 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="ManifoldCF-Light.otf">
+            <string>ManifoldCF-Light</string>
+        </mutableArray>
         <mutableArray key="ManifoldCF-Regular.otf">
             <string>ManifoldCF-Regular</string>
         </mutableArray>
@@ -126,20 +129,38 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jX-b9-8QJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="SeriesViewController" title="Series" id="jgV-K8-1bz" customClass="SeriesViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4TP-Rs-L4T" userLabel="Series Table View">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4TP-Rs-L4T" userLabel="Series Table View">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.22352941176470587" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SerieCollectionViewCellIdentifier" id="fl0-27-EyA" customClass="SerieCollectionViewCell" customModule="Example" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SerieTableViewCellIdentifier" rowHeight="375" id="fl0-27-EyA" userLabel="SerieCollectionViewCell" customClass="SerieTableViewCell" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fl0-27-EyA" id="z2K-AO-WII">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="374.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dN-ix-dIs" userLabel="Serie Name Label">
+                                            <rect key="frame" x="23" y="177.5" width="34.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="ManifoldCF-Light" family="Manifold CF" pointSize="16"/>
+                                            <color key="textColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="3dN-ix-dIs" firstAttribute="centerY" secondItem="z2K-AO-WII" secondAttribute="centerY" id="dfQ-Yn-5Ec"/>
+                                        <constraint firstItem="3dN-ix-dIs" firstAttribute="leading" secondItem="z2K-AO-WII" secondAttribute="leadingMargin" constant="15" id="kDO-NN-drK"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="serieNameLabel" destination="3dN-ix-dIs" id="i4A-KO-27Y"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                     </tableView>
                     <navigationItem key="navigationItem" title="SERIES" id="AXW-Xh-mwk"/>
                     <connections>

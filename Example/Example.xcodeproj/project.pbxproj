@@ -41,7 +41,7 @@
 		6BDE3DFA1BFE0E760030EB8B /* SeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3DF91BFE0E760030EB8B /* SeriesViewController.swift */; };
 		6BDE3DFD1BFE0F010030EB8B /* SeriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3DFC1BFE0F010030EB8B /* SeriesPresenter.swift */; };
 		6BDE3DFF1BFE0F4A0030EB8B /* SeriesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3DFE1BFE0F4A0030EB8B /* SeriesUI.swift */; };
-		6BDE3E041BFE24A30030EB8B /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E031BFE24A30030EB8B /* Comic.swift */; };
+		6BDE3E041BFE24A30030EB8B /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E031BFE24A30030EB8B /* Serie.swift */; };
 		6BDE3E071BFE283A0030EB8B /* SerieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E061BFE283A0030EB8B /* SerieTableViewCell.swift */; };
 		6BDE3E1A1C0392ED0030EB8B /* Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E191C0392ED0030EB8B /* Dispatch.swift */; };
 		6BDE3E1F1C04A3290030EB8B /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E1E1C04A3290030EB8B /* ExampleViewController.swift */; };
@@ -117,7 +117,7 @@
 		6BDE3DF91BFE0E760030EB8B /* SeriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesViewController.swift; sourceTree = "<group>"; };
 		6BDE3DFC1BFE0F010030EB8B /* SeriesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesPresenter.swift; sourceTree = "<group>"; };
 		6BDE3DFE1BFE0F4A0030EB8B /* SeriesUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesUI.swift; sourceTree = "<group>"; };
-		6BDE3E031BFE24A30030EB8B /* Comic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		6BDE3E031BFE24A30030EB8B /* Serie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
 		6BDE3E061BFE283A0030EB8B /* SerieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerieTableViewCell.swift; sourceTree = "<group>"; };
 		6BDE3E191C0392ED0030EB8B /* Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatch.swift; sourceTree = "<group>"; };
 		6BDE3E1E1C04A3290030EB8B /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
@@ -324,7 +324,7 @@
 		6BDE3DF61BFE0DD60030EB8B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6BDE3E051BFE27CB0030EB8B /* CollectionView */,
+				6BDE3E051BFE27CB0030EB8B /* TableView */,
 				6BDE3DF71BFE0DEE0030EB8B /* SeriesNavigationController.swift */,
 				6BDE3DF91BFE0E760030EB8B /* SeriesViewController.swift */,
 				6BDE3DFE1BFE0F4A0030EB8B /* SeriesUI.swift */,
@@ -343,17 +343,17 @@
 		6BDE3E021BFE247E0030EB8B /* PresentationModel */ = {
 			isa = PBXGroup;
 			children = (
-				6BDE3E031BFE24A30030EB8B /* Comic.swift */,
+				6BDE3E031BFE24A30030EB8B /* Serie.swift */,
 			);
 			name = PresentationModel;
 			sourceTree = "<group>";
 		};
-		6BDE3E051BFE27CB0030EB8B /* CollectionView */ = {
+		6BDE3E051BFE27CB0030EB8B /* TableView */ = {
 			isa = PBXGroup;
 			children = (
 				6BDE3E061BFE283A0030EB8B /* SerieTableViewCell.swift */,
 			);
-			name = CollectionView;
+			name = TableView;
 			sourceTree = "<group>";
 		};
 		6BDE3E181C0392970030EB8B /* Utils */ = {
@@ -708,7 +708,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B2C2D1C1BFBB0FF00576464 /* CharactersViewController.swift in Sources */,
-				6BDE3E041BFE24A30030EB8B /* Comic.swift in Sources */,
+				6BDE3E041BFE24A30030EB8B /* Serie.swift in Sources */,
 				6BB5CD951BDD2D670009C2F0 /* ServiceLocator.swift in Sources */,
 				6B1BACD01BDD2BC100AC5E9B /* CharacterDetailUI.swift in Sources */,
 				6B0737071BFDCEE4000E0E7D /* CharactersNavigationController.swift in Sources */,

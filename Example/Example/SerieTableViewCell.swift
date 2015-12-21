@@ -11,8 +11,9 @@ import BothamUI
 
 class SerieTableViewCell: UITableViewCell, BothamViewCell {
 
+    @IBOutlet weak var serieNameLabel: UILabel!
 
     func configureForItem(item: Serie) {
-
+        serieNameLabel.text = item.name
     }
 }

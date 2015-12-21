@@ -10,5 +10,7 @@ import Foundation
 import UIKit
 
 struct Serie {
-    let cover: UIImage?
+
+    let name: String
+    
 }

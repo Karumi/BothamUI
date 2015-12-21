@@ -11,16 +11,16 @@ import UIKit
 import BothamUI
 
 
-class SeriesViewController: ExampleViewController, BothamTableViewController, SeriesUI, UICollectionViewDelegateFlowLayout {
+class SeriesViewController: ExampleViewController, BothamTableViewController, SeriesUI, UITableViewDelegate {
 
     @IBOutlet var tableView: UITableView!
     var dataSource: BothamTableViewDataSource<Serie, SerieTableViewCell>!
     var delegate: UITableViewDelegate!
 
     override func viewDidLoad() {
-//        collectionView.accessibilityLabel = "SeriesCollectionView"
-//        collectionView.delegate = self
-  //      collectionView.dataSource = dataSource
+        tableView.accessibilityLabel = "SeriesCollectionView"
+        tableView.delegate = self
+        tableView.dataSource = dataSource
         super.viewDidLoad()
     }
 }
