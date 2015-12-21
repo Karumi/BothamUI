@@ -25,13 +25,13 @@
 		6B6B092E1BDD1A830013891D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B6B092C1BDD1A830013891D /* Main.storyboard */; };
 		6B6B09301BDD1A830013891D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6B092F1BDD1A830013891D /* Assets.xcassets */; };
 		6B82AD391C062497009247FB /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD381C062497009247FB /* ExampleTests.swift */; };
-		6B82AD411C074322009247FB /* FakeComicsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD401C074322009247FB /* FakeComicsUI.swift */; };
+		6B82AD411C074322009247FB /* FakeSeriesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD401C074322009247FB /* FakeSeriesUI.swift */; };
 		6B82AD441C0743EB009247FB /* FakeBothamLoadingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD431C0743EB009247FB /* FakeBothamLoadingUI.swift */; };
 		6B82AD4B1C075DC5009247FB /* FakeCharactersUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD4A1C075DC5009247FB /* FakeCharactersUI.swift */; };
 		6B82AD511C08B511009247FB /* FakeBothamPullToResfreshUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD501C08B511009247FB /* FakeBothamPullToResfreshUI.swift */; };
 		6B8E73331C10AA700006F9E1 /* CharactersWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E73321C10AA700006F9E1 /* CharactersWireframe.swift */; };
 		6B8E73351C10EDD10006F9E1 /* SeriesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E73341C10EDD10006F9E1 /* SeriesWireframe.swift */; };
-		6B8E73391C11AA3F0006F9E1 /* FakeCharactersWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E73381C11AA3F0006F9E1 /* FakeCharactersWireframe.swift */; };
+		6B8E73391C11AA3F0006F9E1 /* FakeSeriesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E73381C11AA3F0006F9E1 /* FakeSeriesWireframe.swift */; };
 		6B8E733B1C11AD640006F9E1 /* ExampleWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E733A1C11AD640006F9E1 /* ExampleWireframe.swift */; };
 		6B8E733D1C11B55D0006F9E1 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E733C1C11B55D0006F9E1 /* Expectation.swift */; };
 		6B8E73401C11B5890006F9E1 /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E733F1C11B5890006F9E1 /* Expectation.swift */; };
@@ -102,13 +102,13 @@
 		6B82AD361C062497009247FB /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B82AD381C062497009247FB /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
 		6B82AD3A1C062497009247FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B82AD401C074322009247FB /* FakeComicsUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeComicsUI.swift; sourceTree = "<group>"; };
+		6B82AD401C074322009247FB /* FakeSeriesUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeSeriesUI.swift; sourceTree = "<group>"; };
 		6B82AD431C0743EB009247FB /* FakeBothamLoadingUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeBothamLoadingUI.swift; sourceTree = "<group>"; };
 		6B82AD4A1C075DC5009247FB /* FakeCharactersUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeCharactersUI.swift; sourceTree = "<group>"; };
 		6B82AD501C08B511009247FB /* FakeBothamPullToResfreshUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeBothamPullToResfreshUI.swift; sourceTree = "<group>"; };
 		6B8E73321C10AA700006F9E1 /* CharactersWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersWireframe.swift; sourceTree = "<group>"; };
 		6B8E73341C10EDD10006F9E1 /* SeriesWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesWireframe.swift; sourceTree = "<group>"; };
-		6B8E73381C11AA3F0006F9E1 /* FakeCharactersWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeCharactersWireframe.swift; sourceTree = "<group>"; };
+		6B8E73381C11AA3F0006F9E1 /* FakeSeriesWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeSeriesWireframe.swift; sourceTree = "<group>"; };
 		6B8E733A1C11AD640006F9E1 /* ExampleWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleWireframe.swift; sourceTree = "<group>"; };
 		6B8E733C1C11B55D0006F9E1 /* Expectation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
 		6B8E733F1C11B5890006F9E1 /* Expectation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Expectation.swift; sourceTree = "<group>"; };
@@ -294,11 +294,11 @@
 		6B82AD421C0743DF009247FB /* Fake */ = {
 			isa = PBXGroup;
 			children = (
-				6B82AD401C074322009247FB /* FakeComicsUI.swift */,
+				6B82AD401C074322009247FB /* FakeSeriesUI.swift */,
 				6B82AD431C0743EB009247FB /* FakeBothamLoadingUI.swift */,
 				6B82AD4A1C075DC5009247FB /* FakeCharactersUI.swift */,
 				6B82AD501C08B511009247FB /* FakeBothamPullToResfreshUI.swift */,
-				6B8E73381C11AA3F0006F9E1 /* FakeCharactersWireframe.swift */,
+				6B8E73381C11AA3F0006F9E1 /* FakeSeriesWireframe.swift */,
 			);
 			name = Fake;
 			sourceTree = "<group>";
@@ -742,10 +742,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B82AD411C074322009247FB /* FakeComicsUI.swift in Sources */,
+				6B82AD411C074322009247FB /* FakeSeriesUI.swift in Sources */,
 				6B82AD511C08B511009247FB /* FakeBothamPullToResfreshUI.swift in Sources */,
 				6B82AD441C0743EB009247FB /* FakeBothamLoadingUI.swift in Sources */,
-				6B8E73391C11AA3F0006F9E1 /* FakeCharactersWireframe.swift in Sources */,
+				6B8E73391C11AA3F0006F9E1 /* FakeSeriesWireframe.swift in Sources */,
 				6B82AD4B1C075DC5009247FB /* FakeCharactersUI.swift in Sources */,
 				6B82AD391C062497009247FB /* ExampleTests.swift in Sources */,
 				6B8E73401C11B5890006F9E1 /* Expectation.swift in Sources */,
