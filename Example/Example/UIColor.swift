@@ -84,7 +84,7 @@ extension UIColor {
     }
 
     static var cellBackgroundColor: UIColor {
-        return UIColor(rgba: "#1A1E23FF")
+        return UIColor(rgba: "#22282fFF")
     }
 
     static var cellBackgroundSelectedColor: UIColor {

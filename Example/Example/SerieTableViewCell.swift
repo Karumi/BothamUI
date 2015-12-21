@@ -15,28 +15,17 @@ class SerieTableViewCell: UITableViewCell, BothamViewCell {
 
     func configureForItem(item: Serie) {
         serieNameLabel.text = item.name
+        accessoryType = .DisclosureIndicator
     }
 
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        selectCell()
-    }
-
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        deselectCell()
-    }
-
-    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
-        deselectCell()
-    }
-
-    private func selectCell() {
-        serieNameLabel.textColor = UIColor.tabBarTintColor
-        contentView.backgroundColor = UIColor.cellBackgroundSelectedColor
-    }
-
-    private func deselectCell() {
-        serieNameLabel.textColor = UIColor.cellTextColor
-        contentView.backgroundColor = UIColor.cellBackgroundColor
+    override func setHighlighted(highlighted: Bool, animated: Bool) {
+        if highlighted {
+            serieNameLabel.textColor = UIColor.tabBarTintColor
+            backgroundColor = UIColor.cellBackgroundSelectedColor
+        } else {
+            serieNameLabel.textColor = UIColor.cellTextColor
+            backgroundColor = UIColor.cellBackgroundColor
+        }
     }
 
 }

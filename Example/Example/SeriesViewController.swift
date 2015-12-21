@@ -18,8 +18,8 @@ class SeriesViewController: ExampleViewController, BothamTableViewController, Se
 
     override func viewDidLoad() {
         tableView.accessibilityLabel = "SeriesCollectionView"
-        tableView.delegate = self
         tableView.dataSource = dataSource
+        tableView.delegate = delegate
         tableView.tableFooterView = UIView()
         super.viewDidLoad()
     }
