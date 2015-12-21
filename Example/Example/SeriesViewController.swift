@@ -21,6 +21,7 @@ class SeriesViewController: ExampleViewController, BothamTableViewController, Se
         tableView.accessibilityLabel = "SeriesCollectionView"
         tableView.delegate = self
         tableView.dataSource = dataSource
+        tableView.tableFooterView = UIView()
         super.viewDidLoad()
     }
 }

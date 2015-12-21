@@ -56,7 +56,7 @@
         <scene sceneID="Yyd-Cb-S7z">
             <objects>
                 <viewController storyboardIdentifier="CharactersViewController" title="Characters" id="qj6-kS-RvR" customClass="CharactersViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="163" sectionHeaderHeight="28" sectionFooterHeight="28" id="opo-6c-aIU">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="163" sectionHeaderHeight="28" sectionFooterHeight="28" id="opo-6c-aIU" userLabel="Characters Table View">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -110,29 +110,15 @@
             </objects>
             <point key="canvasLocation" x="2038" y="-180"/>
         </scene>
-        <!--Characters-->
-        <scene sceneID="D7p-0m-WT2">
-            <objects>
-                <navigationController storyboardIdentifier="CharactersNavigationController" id="yCJ-fo-ItF" customClass="CharactersNavigationController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Characters" id="5ji-sq-6RW"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qMp-BI-RlE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="K2L-0h-hrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1283" y="-180"/>
-        </scene>
         <!--Series-->
         <scene sceneID="MNO-6A-kwV">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jX-b9-8QJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="SeriesViewController" title="Series" id="jgV-K8-1bz" customClass="SeriesViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4TP-Rs-L4T" userLabel="Series Table View">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4TP-Rs-L4T" userLabel="Series Table View">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" red="0.22352941176470587" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
@@ -150,11 +136,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.13252013921737671" green="0.15640446543693542" blue="0.18553909659385681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="3dN-ix-dIs" firstAttribute="centerY" secondItem="z2K-AO-WII" secondAttribute="centerY" id="dfQ-Yn-5Ec"/>
                                         <constraint firstItem="3dN-ix-dIs" firstAttribute="leading" secondItem="z2K-AO-WII" secondAttribute="leadingMargin" constant="15" id="kDO-NN-drK"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                 <connections>
                                     <outlet property="serieNameLabel" destination="3dN-ix-dIs" id="i4A-KO-27Y"/>
                                 </connections>
