@@ -9,4 +9,9 @@
 import Foundation
 
 class SeriesWireframe: ExampleWireframe {
+
+    func presentSerieDetailViewController(serieName: String) {
+        let viewController = serviceLocator.provideSerieDetailViewController()
+        serviceLocator.provideSeriesNavigator()?.push(viewController)
+    }
 }

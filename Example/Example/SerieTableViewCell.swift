@@ -15,5 +15,17 @@ class SerieTableViewCell: UITableViewCell, BothamViewCell {
 
     func configureForItem(item: Serie) {
         serieNameLabel.text = item.name
+        selectedBackgroundView = UIView()
+        selectedBackgroundView?.backgroundColor = UIColor.cellBackgroundColor
+    }
+
+    func select() {
+        serieNameLabel.textColor = UIColor.tabBarTintColor
+        selectedBackgroundView?.backgroundColor = UIColor.cellBackgroundSelectedColor
+    }
+
+    func deselect() {
+        serieNameLabel.textColor = UIColor.cellTextColor
+        selectedBackgroundView?.backgroundColor = UIColor.cellBackgroundColor
     }
 }

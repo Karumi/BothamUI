@@ -80,7 +80,19 @@ extension UIColor {
     }
 
     static var gradientEndColor: UIColor {
-    return UIColor(rgba: "#2C343CE5")
+        return UIColor(rgba: "#2C343CE5")
+    }
+
+    static var cellBackgroundColor: UIColor {
+        return UIColor(rgba: "#22282FFF")
+    }
+
+    static var cellBackgroundSelectedColor: UIColor {
+        return UIColor(rgba: "#2C343FFF")
+    }
+
+    static var cellTextColor: UIColor {
+        return UIColor(rgba: "#F5F5F5FF")
     }
 
 }

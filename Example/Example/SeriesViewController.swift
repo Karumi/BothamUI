@@ -23,4 +23,18 @@ class SeriesViewController: ExampleViewController, BothamTableViewController, Se
         tableView.tableFooterView = UIView()
         super.viewDidLoad()
     }
+    func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+        let serie = dataSource.items[indexPath.row]
+        let serieCell = tableView.cellForRowAtIndexPath(indexPath) as? SerieTableViewCell
+        serieCell?.select()
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        (presenter as? SeriesPresenter)?.itemWasTapped(serie)
+        return indexPath
+    }
+
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        let serieCell = tableView.cellForRowAtIndexPath(indexPath) as? SerieTableViewCell
+        serieCell?.deselect()
+    }
+
 }

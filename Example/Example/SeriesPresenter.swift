@@ -9,12 +9,14 @@
 import Foundation
 import BothamUI
 
-class SeriesPresenter: BothamPresenter {
+class SeriesPresenter: BothamPresenter, BothamNavigationPresenter {
     
     private weak var ui: SeriesUI?
+    private let wireframe: SeriesWireframe
 
-    init(ui: SeriesUI) {
+    init(ui: SeriesUI, wireframe: SeriesWireframe) {
         self.ui = ui
+        self.wireframe = wireframe
     }
 
     func viewDidLoad() {
@@ -29,8 +31,8 @@ class SeriesPresenter: BothamPresenter {
                 Serie(name: "Avengers (2012 - Present)"),
                 Serie(name: "Thor: God of Thunder (2012 - Present)"),
                 Serie(name: "Iron Man (2012 - Present)"),
-                Serie(name: "Deadpool (2012 - Present"),
-                Serie(name: "All-New X-Men (2012 - Present"),
+                Serie(name: "Deadpool (2012 - Present)"),
+                Serie(name: "All-New X-Men (2012 - Present)"),
                 Serie(name: "Iron Man (2013)"),
                 Serie(name: "Guardians of the Galaxy (2013 - Present"),
                 Serie(name: "Amazing Spider-Man (2014 - Present"),
@@ -42,5 +44,9 @@ class SeriesPresenter: BothamPresenter {
                 Serie(name: "Death of Wolverine: Axis (2015 - Present)"),
                 ])
         }
+    }
+
+    func itemWasTapped(item: Serie) {
+        wireframe.presentSerieDetailViewController(item.name)
     }
 }
