@@ -124,48 +124,28 @@
         <!--Series-->
         <scene sceneID="MNO-6A-kwV">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jX-b9-8QJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="SeriesViewController" title="Series" id="jgV-K8-1bz" customClass="SeriesViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Ra1-Dr-zyT">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4TP-Rs-L4T" userLabel="Series Table View">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gZE-61-YdF">
-                            <size key="itemSize" width="200" height="200"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SerieCollectionViewCellReuseIdentifier" id="Ygd-gR-ohY" customClass="SerieCollectionViewCell" customModule="Example" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SerieCollectionViewCellIdentifier" id="fl0-27-EyA" customClass="SerieCollectionViewCell" customModule="Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fl0-27-EyA" id="z2K-AO-WII">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NDy-IZ-ZbD">
-                                            <rect key="frame" x="5" y="5" width="190" height="190"/>
-                                        </imageView>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <constraints>
-                                    <constraint firstItem="NDy-IZ-ZbD" firstAttribute="leading" secondItem="Ygd-gR-ohY" secondAttribute="leading" constant="5" id="Adx-na-eLO"/>
-                                    <constraint firstAttribute="trailing" secondItem="NDy-IZ-ZbD" secondAttribute="trailing" constant="5" id="Ebh-Kb-L4x"/>
-                                    <constraint firstItem="NDy-IZ-ZbD" firstAttribute="top" secondItem="Ygd-gR-ohY" secondAttribute="top" constant="5" id="H47-CV-zU2"/>
-                                    <constraint firstAttribute="bottom" secondItem="NDy-IZ-ZbD" secondAttribute="bottom" constant="5" id="tnb-W6-b9Z"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="imageView" destination="NDy-IZ-ZbD" id="gEQ-sg-ea5"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
-                    </collectionView>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
                     <navigationItem key="navigationItem" title="SERIES" id="AXW-Xh-mwk"/>
                     <connections>
-                        <outlet property="collectionView" destination="Ra1-Dr-zyT" id="2rF-4g-Vlg"/>
+                        <outlet property="tableView" destination="4TP-Rs-L4T" id="M4Y-Zc-AYZ"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7jX-b9-8QJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2038" y="576"/>
         </scene>

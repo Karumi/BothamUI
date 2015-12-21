@@ -11,29 +11,16 @@ import UIKit
 import BothamUI
 
 
-class SeriesViewController: ExampleViewController, BothamCollectionViewController, SeriesUI, UICollectionViewDelegateFlowLayout {
+class SeriesViewController: ExampleViewController, BothamTableViewController, SeriesUI, UICollectionViewDelegateFlowLayout {
 
-    @IBOutlet var collectionView: UICollectionView!
-    var dataSource: BothamCollectionViewDataSource<Serie, SerieCollectionViewCell>!
+    @IBOutlet var tableView: UITableView!
+    var dataSource: BothamTableViewDataSource<Serie, SerieTableViewCell>!
+    var delegate: UITableViewDelegate!
 
     override func viewDidLoad() {
-        collectionView.accessibilityLabel = "SeriesCollectionView"
-        collectionView.delegate = self
-        collectionView.dataSource = dataSource
+//        collectionView.accessibilityLabel = "SeriesCollectionView"
+//        collectionView.delegate = self
+  //      collectionView.dataSource = dataSource
         super.viewDidLoad()
     }
-
-    func collectionView(collectionView: UICollectionView,
-        layout collectionViewLayout: UICollectionViewLayout,
-        sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-
-            let comic = dataSource.itemAtIndexPath(indexPath)
-            if var size = comic.cover?.size {
-                size.width += 10
-                size.height += 10
-                return size
-            }
-            return CGSize(width: 100, height: 100)
-    }
-
 }

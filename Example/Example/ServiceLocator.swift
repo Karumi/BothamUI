@@ -74,7 +74,7 @@ class ServiceLocator {
     func provideComicsViewController() -> SeriesViewController {
         let viewController: SeriesViewController = provideMainStoryboard().instantiateViewController()
         viewController.presenter = SeriesPresenter(ui: viewController)
-        viewController.dataSource = BothamCollectionViewDataSource()
+        viewController.dataSource = BothamTableViewDataSource()
         return viewController
     }
 }
