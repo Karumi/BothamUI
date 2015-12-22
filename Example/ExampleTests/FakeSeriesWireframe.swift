@@ -10,11 +10,11 @@ import Foundation
 @testable import Example
 
 class FakeSeriesWireframe: SeriesWireframe {
-    var serieDetailViewControllerWasPresented = false
-    var serieName = ""
+    var seriesDetailViewControllerWasPresented = false
+    var seriesName = ""
 
-    override func presentSerieDetailViewController(serieName: String) {
-        self.serieName = serieName
-        serieDetailViewControllerWasPresented = true
+    override func presentSeriesDetailViewController(seriesName: String) {
+        self.seriesName = seriesName
+        seriesDetailViewControllerWasPresented = true
     }
 }

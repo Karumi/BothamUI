@@ -1,5 +1,5 @@
 //
-//  Comic.swift
+//  Series.swift
 //  Example
 //
 //  Created by Davide Mendolia on 19/11/15.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct Serie {
+struct Series {
 
     let name: String
     

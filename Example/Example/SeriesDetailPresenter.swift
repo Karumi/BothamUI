@@ -9,12 +9,12 @@
 import Foundation
 import BothamUI
 
-class SerieDetailPresenter : BothamPresenter {
+class SeriesDetailPresenter : BothamPresenter {
 
-    private let serieName: String
+    private let seriesName: String
 
-    init(serieName: String) {
-        self.serieName = serieName
+    init(seriesName: String) {
+        self.seriesName = seriesName
     }
 
     func viewDidLoad() {

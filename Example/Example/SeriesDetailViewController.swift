@@ -1,5 +1,5 @@
 //
-//  SerieDetailViewController.swift
+//  SeriesDetailViewController.swift
 //  Example
 //
 //  Created by Pedro Vicente Gomez on 21/12/15.
@@ -9,6 +9,6 @@
 import Foundation
 import BothamUI
 
-class SerieDetailViewController : ExampleViewController {
+class SeriesDetailViewController : ExampleViewController {
 
 }

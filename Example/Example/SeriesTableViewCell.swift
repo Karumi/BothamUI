@@ -9,21 +9,21 @@
 import Foundation
 import BothamUI
 
-class SerieTableViewCell: UITableViewCell, BothamViewCell {
+class SeriesTableViewCell: UITableViewCell, BothamViewCell {
 
-    @IBOutlet weak var serieNameLabel: UILabel!
+    @IBOutlet weak var seriesNameLabel: UILabel!
 
-    func configureForItem(item: Serie) {
-        serieNameLabel.text = item.name
+    func configureForItem(item: Series) {
+        seriesNameLabel.text = item.name
         accessoryType = .DisclosureIndicator
     }
 
     override func setHighlighted(highlighted: Bool, animated: Bool) {
         if highlighted {
-            serieNameLabel.textColor = UIColor.tabBarTintColor
-            backgroundColor = UIColor.cellBackgroundSelectedColor
+            seriesNameLabel.textColor = UIColor.cellTextHighlightedColor
+            backgroundColor = UIColor.cellBackgroundHighlightedColor
         } else {
-            serieNameLabel.textColor = UIColor.cellTextColor
+            seriesNameLabel.textColor = UIColor.cellTextColor
             backgroundColor = UIColor.cellBackgroundColor
         }
     }

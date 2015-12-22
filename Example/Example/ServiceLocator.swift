@@ -42,8 +42,7 @@ class ServiceLocator {
 
     func provideCharactersNavigationController() -> CharactersNavigationController {
         let viewController = provideCharactersViewController()
-        let navigationController = CharactersNavigationController(rootViewController: viewController)
-        return navigationController
+        return CharactersNavigationController(rootViewController: viewController)
     }
 
     func provideSeriesNavigationController() -> SeriesNavigationController {
@@ -69,19 +68,19 @@ class ServiceLocator {
         let viewController: SeriesViewController = provideMainStoryboard().instantiateViewController()
         let presenter = SeriesPresenter(ui: viewController, wireframe: SeriesWireframe())
         viewController.presenter = presenter
-        let dataSource = BothamTableViewDataSource<Serie, SerieTableViewCell>()
+        let dataSource = BothamTableViewDataSource<Series, SeriesTableViewCell>()
         viewController.dataSource = dataSource
         viewController.delegate = BothamTableViewNavigationDelegate(dataSource: dataSource, presenter: presenter)
         return viewController
     }
 
-    func provideSerieDetailViewController(serieName: String) -> SerieDetailViewController {
-        let viewController: SerieDetailViewController = provideMainStoryboard().instantiateViewController("SerieDetailViewController")
-        viewController.presenter = provideSerieDetailPresenter(serieName)
+    func provideSeriesDetailViewController(seriesName: String) -> SeriesDetailViewController {
+        let viewController: SeriesDetailViewController = provideMainStoryboard().instantiateViewController("SeriesDetailViewController")
+        viewController.presenter = provideSeriesDetailPresenter(seriesName)
         return viewController
     }
 
-    func provideSerieDetailPresenter(serieName: String) -> SerieDetailPresenter {
-        return SerieDetailPresenter(serieName: serieName)
+    func provideSeriesDetailPresenter(seriesName: String) -> SeriesDetailPresenter {
+        return SeriesDetailPresenter(seriesName: seriesName)
     }
 }
