@@ -13,6 +13,8 @@ import UIKit
 class SeriesDetailCollectionHeaderView: UICollectionReusableView, BothamViewCell {
 
     @IBOutlet weak var seriesCoverImageView: UIImageView!
+    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
 
     func configureForItem(series: Series) {
         let url = NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")

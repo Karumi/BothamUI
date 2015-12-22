@@ -7,6 +7,9 @@
     <customFonts key="customFonts">
         <mutableArray key="Gidole-Regular.ttf">
             <string>Gidole-Regular</string>
+            <string>Gidole-Regular</string>
+            <string>Gidole-Regular</string>
+            <string>Gidole-Regular</string>
         </mutableArray>
         <mutableArray key="ManifoldCF-Light.otf">
             <string>ManifoldCF-Light</string>
@@ -191,13 +194,39 @@
                                                 <constraint firstAttribute="height" constant="305" id="qXd-2G-mOk"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBF-ue-gFw" userLabel="Rating">
+                                            <rect key="frame" x="20" y="325" width="42" height="17"/>
+                                            <fontDescription key="fontDescription" name="Gidole-Regular" family="Gidole" pointSize="15"/>
+                                            <color key="textColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0j3-WL-IHg" userLabel="Rating Label">
+                                            <rect key="frame" x="67" y="325" width="7.5" height="17"/>
+                                            <fontDescription key="fontDescription" name="Gidole-Regular" family="Gidole" pointSize="15"/>
+                                            <color key="textColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFy-7d-7WE" userLabel="Series Description">
+                                            <rect key="frame" x="20" y="350" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" name="Gidole-Regular" family="Gidole" pointSize="17"/>
+                                            <color key="textColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="Coh-fQ-nhO" firstAttribute="width" secondItem="0Tn-pl-Jzw" secondAttribute="width" id="2pC-39-Wpy"/>
+                                        <constraint firstItem="xBF-ue-gFw" firstAttribute="leading" secondItem="0Tn-pl-Jzw" secondAttribute="leading" constant="20" id="CFs-zz-Utn"/>
                                         <constraint firstItem="Coh-fQ-nhO" firstAttribute="top" secondItem="0Tn-pl-Jzw" secondAttribute="topMargin" constant="-8" id="MZM-6r-mIT"/>
+                                        <constraint firstItem="jFy-7d-7WE" firstAttribute="top" secondItem="0j3-WL-IHg" secondAttribute="bottom" constant="15" id="NYK-Gh-M1D"/>
+                                        <constraint firstItem="0j3-WL-IHg" firstAttribute="leading" secondItem="xBF-ue-gFw" secondAttribute="trailing" constant="5" id="Phj-QI-xpV"/>
+                                        <constraint firstItem="jFy-7d-7WE" firstAttribute="leading" secondItem="0Tn-pl-Jzw" secondAttribute="leading" constant="20" id="T60-w1-f6x"/>
                                         <constraint firstItem="Coh-fQ-nhO" firstAttribute="centerX" secondItem="0Tn-pl-Jzw" secondAttribute="centerX" id="dHn-Po-OJN"/>
+                                        <constraint firstItem="xBF-ue-gFw" firstAttribute="top" secondItem="Coh-fQ-nhO" secondAttribute="bottom" constant="20" id="gjf-HW-zBq"/>
+                                        <constraint firstItem="0j3-WL-IHg" firstAttribute="baseline" secondItem="xBF-ue-gFw" secondAttribute="baseline" id="zqJ-87-5Fq"/>
                                     </constraints>
                                     <connections>
+                                        <outlet property="descriptionLabel" destination="jFy-7d-7WE" id="bTv-Ct-3pn"/>
+                                        <outlet property="ratingLabel" destination="0j3-WL-IHg" id="r6M-jT-obL"/>
                                         <outlet property="seriesCoverImageView" destination="Coh-fQ-nhO" id="8mP-au-Qbf"/>
                                     </connections>
                                 </collectionReusableView>

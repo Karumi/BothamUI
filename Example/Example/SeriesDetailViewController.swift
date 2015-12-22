@@ -13,6 +13,8 @@ class SeriesDetailViewController : ExampleViewController, BothamCollectionViewCo
 
     let numberOfColumns = 3
     let cellHeight = 174
+    let headerHeight = 534
+
     var dataSource: BothamCollectionViewDataSource<Comic, ComicCollectionViewCell>!
 
     @IBOutlet weak var collectionView: UICollectionView!
@@ -74,7 +76,7 @@ class SeriesDetailViewController : ExampleViewController, BothamCollectionViewCo
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 20
         collectionView.setCollectionViewLayout(layout, animated: true)
-        layout.headerReferenceSize = CGSize(width: view.frame.width, height: CGFloat(300))
+        layout.headerReferenceSize = CGSize(width: view.frame.width, height: CGFloat(headerHeight))
         let comics: [Comic] = [
             Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
             Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
