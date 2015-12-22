@@ -23,15 +23,15 @@ class ServiceLocator {
         return CharactersWireframe()
     }
 
-    private func provideComicsWireframe() -> ComicsWireframe {
-        return ComicsWireframe()
+    private func provideSeriesWireframe() -> SeriesWireframe {
+        return SeriesWireframe()
     }
 
     func provideCharactersNavigator() -> CharactersNavigationController? {
         return navigatorContainer.resolve()
     }
 
-    func provideComicsNavigator() -> ComicsNavigationController? {
+    func provideSeriesNavigator() -> SeriesNavigationController? {
         return navigatorContainer.resolve()
     }
 
@@ -45,15 +45,9 @@ class ServiceLocator {
         return CharactersNavigationController(rootViewController: viewController)
     }
 
-    func provideComicsNavigationController() -> ComicsNavigationController {
-        let viewController = provideComicsViewController()
-        return ComicsNavigationController(rootViewController: viewController)
-    }
-
-    func provideCharacterDetailViewController() -> CharacterDetailViewController {
-        let viewController: CharacterDetailViewController = provideMainStoryboard().instantiateViewController()
-        viewController.presenter = CharacterDetailPresenter(ui: viewController)
-        return viewController
+    func provideSeriesNavigationController() -> SeriesNavigationController {
+        let viewController = provideSeriesViewController()
+        return SeriesNavigationController(rootViewController: viewController)
     }
 
     private func provideCharactersTableViewDataSource() -> BothamTableViewDataSource<Character, CharacterTableViewCell> {
@@ -66,15 +60,27 @@ class ServiceLocator {
         viewController.presenter = presenter
         let dataSource = provideCharactersTableViewDataSource()
         viewController.dataSource = dataSource
-        viewController.delegate = BothamTableViewNavigationDelegate(dataSource: dataSource, presenter: presenter)
         viewController.pullToRefreshHandler = BothamPullToRefreshHandler(presenter: presenter)
         return viewController
     }
 
-    func provideComicsViewController() -> ComicsViewController {
-        let viewController: ComicsViewController = provideMainStoryboard().instantiateViewController()
-        viewController.presenter = ComicsPresenter(ui: viewController)
-        viewController.dataSource = BothamCollectionViewDataSource()
+    func provideSeriesViewController() -> SeriesViewController {
+        let viewController: SeriesViewController = provideMainStoryboard().instantiateViewController()
+        let presenter = SeriesPresenter(ui: viewController, wireframe: SeriesWireframe())
+        viewController.presenter = presenter
+        let dataSource = BothamTableViewDataSource<Series, SeriesTableViewCell>()
+        viewController.dataSource = dataSource
+        viewController.delegate = BothamTableViewNavigationDelegate(dataSource: dataSource, presenter: presenter)
         return viewController
+    }
+
+    func provideSeriesDetailViewController() -> SeriesDetailViewController {
+        let viewController: SeriesDetailViewController = provideMainStoryboard().instantiateViewController("SeriesDetailViewController")
+        viewController.presenter = provideSerieDetailPresenter()
+        return viewController
+    }
+
+    private func provideSerieDetailPresenter() -> SeriesDetailPresenter {
+        return SeriesDetailPresenter()
     }
 }

@@ -1,5 +1,5 @@
 //
-//  Comic.swift
+//  ComicsUI.swift
 //  Example
 //
 //  Created by Davide Mendolia on 19/11/15.
@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import UIKit
+import BothamUI
 
-struct Comic {
-    let cover: UIImage?
+protocol SeriesUI: BothamUI, BothamLoadingUI {
+    func showItems(items: [Series])
 }

@@ -10,10 +10,10 @@ import Foundation
 import XCTest
 @testable import Example
 
-class FakeComicsUI: ComicsUI, FakeBothamLoadingUI {
+class FakeSeriesUI: SeriesUI, FakeBothamLoadingUI {
     var loaderWasShowed = false
     var loaderWasHided = false
-    var itemsShowed:[Comic] = []
+    var itemsShowed:[Series] = []
 
     var expectation: XCTestExpectation?
 
@@ -21,7 +21,7 @@ class FakeComicsUI: ComicsUI, FakeBothamLoadingUI {
         self.expectation = expectation
     }
 
-    func showItems(items: [Comic]) {
+    func showItems(items: [Series]) {
         itemsShowed = items
         expectation?.fulfill()
     }

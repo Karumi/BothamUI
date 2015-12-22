@@ -13,14 +13,16 @@ import Nimble
 
 class CharactersViewControllerTests: AcceptanceTestCase {
 
-    func testShowsSpiderManAndIronManByDefaultSuperHeroes() {
+    func testShowsDefaultSuperHeroes() {
         openCharactersViewController()
 
-        let spiderManRowLabel = tester().waitForViewWithAccessibilityLabel("SpiderMan") as! UILabel
-        let ironManRowLabel = tester().waitForViewWithAccessibilityLabel("IronMan") as! UILabel
+        let tableView = tester().waitForViewWithAccessibilityLabel("CharactersTableView") as! UITableView
+        let spiderManCell = tester().waitForViewWithAccessibilityLabel("Spider-Man") as! CharacterTableViewCell
+        let ironManCell = tester().waitForViewWithAccessibilityLabel("Iron Man") as! CharacterTableViewCell
 
-        expect(spiderManRowLabel.text).to(equal("SpiderMan"))
-        expect(ironManRowLabel.text).to(equal("IronMan"))
+        expect(spiderManCell.nameLabel.text).to(equal("Spider-Man"))
+        expect(ironManCell.nameLabel.text).to(equal("Iron Man"))
+        expect(tableView.numberOfRowsInSection(0)).toEventually(equal(11))
     }
 
     private func openCharactersViewController() {

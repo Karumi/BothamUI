@@ -16,11 +16,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         installRootViewControllerIntoWindow(window!)
+        configureWindow()
+        configureNavigationBarStyle()
         return true
     }
 
-    func installRootViewControllerIntoWindow(window: UIWindow) {
+    private func installRootViewControllerIntoWindow(window: UIWindow) {
         RootWireframe().presentInitialViewControllerInWindow(window)
     }
+
+    private func configureWindow() {
+        window?.backgroundColor = UIColor.windowBackgroundColor
+    }
+
+    private func configureNavigationBarStyle() {
+        let navigationBarAppearance = UINavigationBar.appearance()
+        navigationBarAppearance.barTintColor = UIColor.navigationBarColor
+        navigationBarAppearance.tintColor = UIColor.navigationBarTitleColor
+        navigationBarAppearance.translucent = false
+        navigationBarAppearance.titleTextAttributes = [
+            NSForegroundColorAttributeName : UIColor.navigationBarTitleColor,
+            NSFontAttributeName : UIFont.navigationBarTitleFont
+        ]
+    }
+
 }
 

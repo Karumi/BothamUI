@@ -1,5 +1,5 @@
 //
-//  ComicsNavigationController.swift
+//  Comic.swift
 //  Example
 //
 //  Created by Davide Mendolia on 19/11/15.
@@ -8,7 +8,9 @@
 
 import Foundation
 import UIKit
-import BothamUI
 
-class ComicsNavigationController: UINavigationController {
+struct Series {
+
+    let name: String
+    
 }

@@ -8,22 +8,22 @@
 
 import XCTest
 import Nimble
-@testable import Example
 import BothamUI
+@testable import Example
 
 class ExampleTests: XCTestCase {
     
-    func testShowListOfCovers() {
+    func testShowListOfSeries() {
         let expectation = expectationWithDescription("Covers will be shown")
-        let fakeComicsUI = FakeComicsUI(expectation: expectation)
-        let presenter = ComicsPresenter(ui: fakeComicsUI)
+        let fakeSeriesUI = FakeSeriesUI(expectation: expectation)
+        let presenter = SeriesPresenter(ui: fakeSeriesUI, wireframe: FakeSeriesWireframe())
 
         presenter.viewDidLoad()
 
         waitForExpectationsWithTimeout(10, handler: nil)
-        expect(fakeComicsUI.loaderWasShowed).to(beTrue())
-        expect(fakeComicsUI.itemsShowed.count).toOneDay(equal(4))
-        expect(fakeComicsUI.loaderWasHided).toOneDay(beTrue())
+        expect(fakeSeriesUI.loaderWasShowed).to(beTrue())
+        expect(fakeSeriesUI.itemsShowed.count).toOneDay(equal(17))
+        expect(fakeSeriesUI.loaderWasHided).toOneDay(beTrue())
     }
 
     func testResfreshTableOfCharacters() {
@@ -32,18 +32,18 @@ class ExampleTests: XCTestCase {
 
         presenter.didStartRefreshing()
 
-        expect(fakeCharactersUI.itemsShowed.count).to(equal(3))
+        expect(fakeCharactersUI.itemsShowed.count).to(equal(11))
         expect(fakeCharactersUI.didRefresh).to(beTrue())
     }
 
     func testPresentCharacterDetailFromCharacterList() {
-        let fakeCharactersUI = FakeCharactersUI()
-        let fakeCharactersWireframe = FakeCharactersWireframe()
-        let presenter = CharactersPresenter(ui: fakeCharactersUI, wireframe: fakeCharactersWireframe)
+        let fakeSeriesUI = FakeSeriesUI()
+        let fakeSeriesWireframe = FakeSeriesWireframe()
+        let presenter = SeriesPresenter(ui: fakeSeriesUI, wireframe: fakeSeriesWireframe)
 
-        let character = Character(name: "IronMan")
-        presenter.itemWasTapped(character)
+        let series = Series(name: "IronMan")
+        presenter.itemWasTapped(series)
 
-        expect(fakeCharactersWireframe.characterDetailViewControllerWasPresented).to(beTrue())
+        expect(fakeSeriesWireframe.serieDetailViewControllerWasPresented).to(beTrue())
     }
 }
