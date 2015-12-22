@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationBarAppearance.translucent = false
         navigationBarAppearance.titleTextAttributes = [
             NSForegroundColorAttributeName : UIColor.navigationBarTitleColor,
-            NSFontAttributeName : UIFont(name: "ManifoldCF-Regular", size: 16)!
+            NSFontAttributeName : UIFont.navigationBarTitleFont
         ]
     }
 
