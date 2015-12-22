@@ -11,5 +11,13 @@ import BothamUI
 
 class SeriesDetailViewController : ExampleViewController, SeriesDetailUI {
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.navigationBar.backgroundColor = UIColor.clearColor()
+        navigationController?.navigationBar.translucent = true
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+
+    }
 
 }

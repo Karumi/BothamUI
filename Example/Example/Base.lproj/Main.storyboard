@@ -131,6 +131,34 @@
                     <view key="view" contentMode="scaleToFill" id="5Qp-9X-Gew">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xyq-Qk-QYB" userLabel="Series Detail Collection View">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HIw-0i-MdX">
+                                    <size key="itemSize" width="235" height="136"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="T99-sD-NG3">
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="136"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="235" height="136"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Xyq-Qk-QYB" firstAttribute="centerY" secondItem="5Qp-9X-Gew" secondAttribute="centerY" id="18g-wf-pax"/>
+                            <constraint firstItem="Xyq-Qk-QYB" firstAttribute="height" secondItem="5Qp-9X-Gew" secondAttribute="height" id="cLl-gK-Ujv"/>
+                            <constraint firstItem="Xyq-Qk-QYB" firstAttribute="width" secondItem="5Qp-9X-Gew" secondAttribute="width" id="scf-I9-gSL"/>
+                            <constraint firstItem="Xyq-Qk-QYB" firstAttribute="centerX" secondItem="5Qp-9X-Gew" secondAttribute="centerX" id="u6W-Pk-1BK"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TRp-PY-wUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
