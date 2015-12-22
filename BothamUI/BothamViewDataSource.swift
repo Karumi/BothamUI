@@ -8,13 +8,13 @@
 
 import Foundation
 
-public protocol BothamDataSource {
+public protocol BothamViewDataSource {
     typealias ItemType
 
     var items: [ItemType] { get set }
 }
 
-public extension BothamDataSource {
+public extension BothamViewDataSource {
     public func itemAtIndexPath(indexPath: NSIndexPath) -> ItemType {
         return items[indexPath.item]
     }
