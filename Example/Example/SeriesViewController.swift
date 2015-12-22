@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import BothamUI
 
-class SeriesViewController: ExampleViewController, BothamTableViewController, SeriesUI, UITableViewDelegate {
+class SeriesViewController: ExampleViewController, BothamTableViewController, SeriesUI {
 
     @IBOutlet var tableView: UITableView!
     var dataSource: BothamTableViewDataSource<Serie, SerieTableViewCell>!
