@@ -202,12 +202,16 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0j3-WL-IHg" userLabel="Rating Label">
                                             <rect key="frame" x="67" y="325" width="7.5" height="17"/>
+                                            <accessibility key="accessibilityConfiguration" label="RatingLabel"/>
                                             <fontDescription key="fontDescription" name="Gidole-Regular" family="Gidole" pointSize="15"/>
                                             <color key="textColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFy-7d-7WE" userLabel="Series Description">
                                             <rect key="frame" x="20" y="357" width="560" height="19.5"/>
+                                            <accessibility key="accessibilityConfiguration" label="DescriptionLabel">
+                                                <bool key="isElement" value="YES"/>
+                                            </accessibility>
                                             <fontDescription key="fontDescription" name="Gidole-Regular" family="Gidole" pointSize="17"/>
                                             <color key="textColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>

@@ -15,6 +15,7 @@ class SeriesTableViewCell: UITableViewCell, BothamViewCell {
 
     func configureForItem(item: Series) {
         seriesNameLabel.text = item.name
+        seriesNameLabel.accessibilityLabel = item.name
         accessoryType = .DisclosureIndicator
     }
 

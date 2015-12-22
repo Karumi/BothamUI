@@ -81,6 +81,7 @@ class SeriesDetailViewController : ExampleViewController, BothamCollectionViewCo
         let navBarHeight = navigationController?.navigationBar.frame.height ?? 0
         let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.size.height
         let topInset = navBarHeight + statusBarHeight
+        collectionView.accessibilityLabel = "ComicsCollectionView"
         collectionView.contentInset = UIEdgeInsetsMake(-topInset, 0, 0, 0)
         collectionView.dataSource = self
         let layout = UICollectionViewFlowLayout()

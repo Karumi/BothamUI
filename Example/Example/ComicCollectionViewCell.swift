@@ -19,6 +19,7 @@ class ComicCollectionViewCell: UICollectionViewCell, BothamViewCell {
     func configureForItem(item: Comic) {
         coverImageView.sd_setImageWithURL(item.coverURL)
         comicNameLabel.text = item.name
+        comicNameLabel.accessibilityLabel = item.name
     }
 
 }
