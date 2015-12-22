@@ -91,12 +91,16 @@ extension UIColor {
         return UIColor(rgba: "#22282fFF")
     }
 
-    static var cellBackgroundSelectedColor: UIColor {
+    static var cellBackgroundHighlightedColor: UIColor {
         return UIColor(rgba: "#2C343FFF")
     }
 
     static var cellTextColor: UIColor {
         return UIColor(rgba: "#F5F5F5FF")
+    }
+
+    static var cellTextHighlightedColor: UIColor {
+        return UIColor(rgba: "#17D1FFFF")
     }
 
 }

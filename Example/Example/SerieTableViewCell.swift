@@ -20,8 +20,8 @@ class SerieTableViewCell: UITableViewCell, BothamViewCell {
 
     override func setHighlighted(highlighted: Bool, animated: Bool) {
         if highlighted {
-            serieNameLabel.textColor = UIColor.tabBarTintColor
-            backgroundColor = UIColor.cellBackgroundSelectedColor
+            serieNameLabel.textColor = UIColor.cellTextHighlightedColor
+            backgroundColor = UIColor.cellBackgroundHighlightedColor
         } else {
             serieNameLabel.textColor = UIColor.cellTextColor
             backgroundColor = UIColor.cellBackgroundColor
