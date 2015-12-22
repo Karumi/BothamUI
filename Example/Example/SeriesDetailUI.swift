@@ -12,5 +12,8 @@ import BothamUI
 protocol SeriesDetailUI: BothamUI, BothamLoadingUI {
 
     var title: String? { get set }
+    
+    func configureHeader(series: Series)
+    func showItems(items: [Comic])
 
 }

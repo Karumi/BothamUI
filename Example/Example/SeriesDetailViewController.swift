@@ -14,14 +14,17 @@ class SeriesDetailViewController : ExampleViewController, BothamCollectionViewCo
     let numberOfColumns = 3
     let cellHeight = 174
     let headerHeight = 534
+    let footerHeight = 20
 
     var dataSource: BothamCollectionViewDataSource<Comic, ComicCollectionViewCell>!
+    var header: Series?
 
     @IBOutlet weak var collectionView: UICollectionView!
+
     override func viewDidLoad() {
-        super.viewDidLoad()
         configureNavigationBar()
         configureCollectionView()
+        super.viewDidLoad()
     }
 
     func collectionView(
@@ -40,22 +43,23 @@ class SeriesDetailViewController : ExampleViewController, BothamCollectionViewCo
     func collectionView(collectionView: UICollectionView,
         viewForSupplementaryElementOfKind kind: String,
         atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-            //1
-            switch kind {
-                //2
-            case UICollectionElementKindSectionHeader:
-                //3
+            if kind == UICollectionElementKindSectionHeader {
                 let headerView =
                 collectionView.dequeueReusableSupplementaryViewOfKind(kind,
                     withReuseIdentifier: "SeriesDetailCollectionHeaderViewReusableIdentifier",
                     forIndexPath: indexPath)
                     as! SeriesDetailCollectionHeaderView
-                headerView.configureForItem(Series(name: "asf"))
+                if let header = self.header {
+                    headerView.configureForItem(header)
+                }
                 return headerView
-            default:
-                //4
-                assert(false, "Unexpected element kind")
+
             }
+            assert(false, "Unexpected element kind")
+    }
+
+    func configureHeader(series: Series) {
+        header = series
     }
 
     private func configureNavigationBar() {
@@ -68,7 +72,6 @@ class SeriesDetailViewController : ExampleViewController, BothamCollectionViewCo
     private func configureCollectionView() {
         dataSource = BothamCollectionViewDataSource<Comic, ComicCollectionViewCell>()
         collectionView.dataSource = self
-        collectionView.delegate = self
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(
             width: view.frame.width / CGFloat(numberOfColumns),
@@ -77,32 +80,6 @@ class SeriesDetailViewController : ExampleViewController, BothamCollectionViewCo
         layout.minimumLineSpacing = 20
         collectionView.setCollectionViewLayout(layout, animated: true)
         layout.headerReferenceSize = CGSize(width: view.frame.width, height: CGFloat(headerHeight))
-        let comics: [Comic] = [
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")),
-            Comic(name: "IronMan", coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg"))
-        ]
-
-        showItems(comics)
     }
-
-
 
 }

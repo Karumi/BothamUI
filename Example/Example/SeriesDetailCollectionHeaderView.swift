@@ -19,5 +19,7 @@ class SeriesDetailCollectionHeaderView: UICollectionReusableView, BothamViewCell
     func configureForItem(series: Series) {
         let url = NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")
         seriesCoverImageView.sd_setImageWithURL(url)
+        ratingLabel.text = series.rating
+        descriptionLabel.text = series.description
     }
 }
