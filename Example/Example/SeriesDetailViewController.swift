@@ -9,12 +9,14 @@
 import Foundation
 import BothamUI
 
+private struct Config {
+    static let numberOfColumns = 3
+    static let cellHeight = 174
+    static let headerHeight = 534
+    static let footerHeight = 20
+}
 class SeriesDetailViewController : ExampleViewController, BothamCollectionViewController, SeriesDetailUI, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource {
 
-    let numberOfColumns = 3
-    let cellHeight = 174
-    let headerHeight = 534
-    let footerHeight = 20
 
     var dataSource: BothamCollectionViewDataSource<Comic, ComicCollectionViewCell>!
     var header: Series?
@@ -86,12 +88,12 @@ class SeriesDetailViewController : ExampleViewController, BothamCollectionViewCo
         collectionView.dataSource = self
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(
-            width: view.frame.width / CGFloat(numberOfColumns),
-            height: CGFloat(cellHeight))
+            width: view.frame.width / CGFloat(Config.numberOfColumns),
+            height: CGFloat(Config.cellHeight))
         layout.minimumInteritemSpacing = 0
         layout.minimumLineSpacing = 20
         collectionView.setCollectionViewLayout(layout, animated: true)
-        layout.headerReferenceSize = CGSize(width: view.frame.width, height: CGFloat(headerHeight))
+        layout.headerReferenceSize = CGSize(width: view.frame.width, height: CGFloat(Config.headerHeight))
     }
 
 }
