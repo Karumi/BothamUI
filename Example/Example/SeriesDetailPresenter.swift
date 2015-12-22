@@ -12,12 +12,14 @@ import BothamUI
 class SeriesDetailPresenter : BothamPresenter {
 
     private let seriesName: String
+    private weak var ui: SeriesDetailUI?
 
-    init(seriesName: String) {
+    init(ui: SeriesDetailUI, seriesName: String) {
+        self.ui = ui
         self.seriesName = seriesName
     }
 
     func viewDidLoad() {
-
+        ui?.title = seriesName.uppercaseString
     }
 }

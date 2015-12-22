@@ -9,6 +9,7 @@
 import Foundation
 import BothamUI
 
-class SeriesDetailViewController : ExampleViewController {
+class SeriesDetailViewController : ExampleViewController, SeriesDetailUI {
+
 
 }
