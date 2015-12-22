@@ -188,7 +188,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="569"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Coh-fQ-nhO" userLabel="Series Image View">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Coh-fQ-nhO" userLabel="Series Image View">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="305"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="305" id="qXd-2G-mOk"/>

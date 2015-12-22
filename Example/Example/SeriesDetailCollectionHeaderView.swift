@@ -17,8 +17,7 @@ class SeriesDetailCollectionHeaderView: UICollectionReusableView, BothamViewCell
     @IBOutlet weak var descriptionLabel: UILabel!
 
     func configureForItem(series: Series) {
-        let url = NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/6/60/538cd3628a05e.jpg")
-        seriesCoverImageView.sd_setImageWithURL(url)
+        seriesCoverImageView.sd_setImageWithURL(series.coverURL)
         ratingLabel.text = series.rating
         descriptionLabel.text = series.description
     }
