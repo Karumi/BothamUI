@@ -11,6 +11,12 @@ import BothamUI
 
 class SerieDetailPresenter : BothamPresenter {
 
+    private let serieName: String
+
+    init(serieName: String) {
+        self.serieName = serieName
+    }
+
     func viewDidLoad() {
 
     }
