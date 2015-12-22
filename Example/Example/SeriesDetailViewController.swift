@@ -27,6 +27,13 @@ class SeriesDetailViewController : ExampleViewController, BothamCollectionViewCo
         super.viewDidLoad()
     }
 
+    override func viewWillDisappear(animated: Bool) {
+        navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: UIBarMetrics.Default)
+        navigationController?.navigationBar.backgroundColor = UIColor.navigationBarColor
+        navigationController?.navigationBar.shadowImage = nil
+        navigationController?.navigationBar.translucent = false
+    }
+
     func collectionView(
         collectionView: UICollectionView,
         numberOfItemsInSection section: Int) -> Int {
