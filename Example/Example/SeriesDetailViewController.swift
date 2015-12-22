@@ -14,6 +14,7 @@ private struct Config {
     static let cellHeight = 174
     static let headerHeight = 534
     static let footerHeight = 20
+    static let cellMargin = 20
 }
 class SeriesDetailViewController : ExampleViewController, BothamCollectionViewController, SeriesDetailUI, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -91,7 +92,7 @@ class SeriesDetailViewController : ExampleViewController, BothamCollectionViewCo
             width: view.frame.width / CGFloat(Config.numberOfColumns),
             height: CGFloat(Config.cellHeight))
         layout.minimumInteritemSpacing = 0
-        layout.minimumLineSpacing = 20
+        layout.minimumLineSpacing = CGFloat(Config.cellMargin)
         collectionView.setCollectionViewLayout(layout, animated: true)
         layout.headerReferenceSize = CGSize(width: view.frame.width, height: CGFloat(Config.headerHeight))
     }
