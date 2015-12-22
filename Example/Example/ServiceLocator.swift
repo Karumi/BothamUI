@@ -42,8 +42,7 @@ class ServiceLocator {
 
     func provideCharactersNavigationController() -> CharactersNavigationController {
         let viewController = provideCharactersViewController()
-        let navigationController = CharactersNavigationController(rootViewController: viewController)
-        return navigationController
+        return CharactersNavigationController(rootViewController: viewController)
     }
 
     func provideSeriesNavigationController() -> SeriesNavigationController {
