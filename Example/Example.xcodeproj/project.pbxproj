@@ -49,6 +49,8 @@
 		EB142D2D1C296F1800F2E920 /* SeriesDetailUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB142D2C1C296F1800F2E920 /* SeriesDetailUI.swift */; };
 		EB142D2F1C29789300F2E920 /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB142D2E1C29789300F2E920 /* Comic.swift */; };
 		EB142D311C2978C900F2E920 /* ComicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB142D301C2978C900F2E920 /* ComicCollectionViewCell.swift */; };
+		EB2DA1C21C299A1D00783B32 /* Gidole-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB2DA1C11C299A1D00783B32 /* Gidole-Regular.ttf */; };
+		EB2DA1C41C29A52A00783B32 /* SeriesDetailCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2DA1C31C29A52A00783B32 /* SeriesDetailCollectionHeaderView.swift */; };
 		EB7978971C2835B20075BD82 /* SeriesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7978961C2835B20075BD82 /* SeriesDetailViewController.swift */; };
 		EB7978991C2835C70075BD82 /* SeriesDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7978981C2835C70075BD82 /* SeriesDetailPresenter.swift */; };
 		EB7B641F1C2422F600422325 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7B641E1C2422F600422325 /* UIColor.swift */; };
@@ -133,6 +135,8 @@
 		EB142D2C1C296F1800F2E920 /* SeriesDetailUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesDetailUI.swift; sourceTree = "<group>"; };
 		EB142D2E1C29789300F2E920 /* Comic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
 		EB142D301C2978C900F2E920 /* ComicCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComicCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB2DA1C11C299A1D00783B32 /* Gidole-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gidole-Regular.ttf"; sourceTree = "<group>"; };
+		EB2DA1C31C29A52A00783B32 /* SeriesDetailCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesDetailCollectionHeaderView.swift; sourceTree = "<group>"; };
 		EB7978961C2835B20075BD82 /* SeriesDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesDetailViewController.swift; sourceTree = "<group>"; };
 		EB7978981C2835C70075BD82 /* SeriesDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeriesDetailPresenter.swift; sourceTree = "<group>"; };
 		EB7B641E1C2422F600422325 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -191,6 +195,7 @@
 		491AFB011C241BDE00F8574D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EB2DA1C11C299A1D00783B32 /* Gidole-Regular.ttf */,
 				491AFB021C241C1700F8574D /* ManifoldCF-Light.otf */,
 				491AFB031C241C1700F8574D /* ManifoldCF-Regular.otf */,
 			);
@@ -366,6 +371,7 @@
 			children = (
 				6BDE3E061BFE283A0030EB8B /* SeriesTableViewCell.swift */,
 				EB142D301C2978C900F2E920 /* ComicCollectionViewCell.swift */,
+				EB2DA1C31C29A52A00783B32 /* SeriesDetailCollectionHeaderView.swift */,
 			);
 			name = TableView;
 			sourceTree = "<group>";
@@ -560,6 +566,7 @@
 				6B6B092E1BDD1A830013891D /* Main.storyboard in Resources */,
 				491AFB051C241C4500F8574D /* ManifoldCF-Regular.otf in Resources */,
 				491AFB041C241C4500F8574D /* ManifoldCF-Light.otf in Resources */,
+				EB2DA1C21C299A1D00783B32 /* Gidole-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,6 +746,7 @@
 				6BDE3DF81BFE0DEE0030EB8B /* SeriesNavigationController.swift in Sources */,
 				6B0737091BFDCF67000E0E7D /* CharactersPresenter.swift in Sources */,
 				EB7B641F1C2422F600422325 /* UIColor.swift in Sources */,
+				EB2DA1C41C29A52A00783B32 /* SeriesDetailCollectionHeaderView.swift in Sources */,
 				6BDE3E1A1C0392ED0030EB8B /* Dispatch.swift in Sources */,
 				6B8E733B1C11AD640006F9E1 /* ExampleWireframe.swift in Sources */,
 				6BDE3DFA1BFE0E760030EB8B /* SeriesViewController.swift in Sources */,

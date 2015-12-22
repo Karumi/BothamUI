@@ -5,6 +5,9 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="Gidole-Regular.ttf">
+            <string>Gidole-Regular</string>
+        </mutableArray>
         <mutableArray key="ManifoldCF-Light.otf">
             <string>ManifoldCF-Light</string>
         </mutableArray>
@@ -134,37 +137,70 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xyq-Qk-QYB" userLabel="Series Detail Collection View">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.13333333333333333" green="0.15686274509803921" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZvB-Mr-dxH">
                                     <size key="itemSize" width="282" height="272"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="569"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ComicCollectionViewCellReuseIdentifier" id="T99-sD-NG3" customClass="ComicCollectionViewCell" customModule="Example" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="282" height="272"/>
+                                        <rect key="frame" x="0.0" y="569" width="282" height="272"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="282" height="272"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rcf-7a-4wd" userLabel="Cover Image View">
-                                                    <rect key="frame" x="21" y="72" width="240" height="128"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sf-Jp-het" userLabel="Comic Name Label">
+                                                    <rect key="frame" x="89" y="161" width="104" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Gidole-Regular" family="Gidole" pointSize="12"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rcf-7a-4wd" userLabel="Cover Image View">
+                                                    <rect key="frame" x="89" y="0.0" width="104" height="156"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="128" id="jwl-1h-6K9"/>
-                                                        <constraint firstAttribute="width" constant="240" id="wIn-It-utl"/>
+                                                        <constraint firstAttribute="height" constant="156" id="jwl-1h-6K9"/>
+                                                        <constraint firstAttribute="width" constant="104" id="wIn-It-utl"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="rcf-7a-4wd" firstAttribute="centerY" secondItem="T99-sD-NG3" secondAttribute="centerY" id="2fM-gJ-mlb"/>
+                                            <constraint firstItem="9Sf-Jp-het" firstAttribute="top" secondItem="rcf-7a-4wd" secondAttribute="bottom" constant="5" id="8h3-F2-pJf"/>
                                             <constraint firstItem="rcf-7a-4wd" firstAttribute="centerX" secondItem="T99-sD-NG3" secondAttribute="centerX" id="ZoZ-3g-8fT"/>
+                                            <constraint firstItem="rcf-7a-4wd" firstAttribute="top" secondItem="T99-sD-NG3" secondAttribute="topMargin" constant="-8" id="jgc-Nu-XqZ"/>
+                                            <constraint firstItem="9Sf-Jp-het" firstAttribute="centerX" secondItem="rcf-7a-4wd" secondAttribute="centerX" id="quT-yW-qfh"/>
+                                            <constraint firstItem="9Sf-Jp-het" firstAttribute="width" secondItem="rcf-7a-4wd" secondAttribute="width" id="yPQ-cT-Hdh"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="comicNameLabel" destination="9Sf-Jp-het" id="FPH-ox-Cce"/>
+                                            <outlet property="coverImageView" destination="rcf-7a-4wd" id="i3G-43-XUE"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SeriesDetailCollectionHeaderViewReusableIdentifier" id="0Tn-pl-Jzw" customClass="SeriesDetailCollectionHeaderView" customModule="Example" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="569"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Coh-fQ-nhO" userLabel="Series Image View">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="305"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="305" id="qXd-2G-mOk"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Coh-fQ-nhO" firstAttribute="width" secondItem="0Tn-pl-Jzw" secondAttribute="width" id="2pC-39-Wpy"/>
+                                        <constraint firstItem="Coh-fQ-nhO" firstAttribute="top" secondItem="0Tn-pl-Jzw" secondAttribute="topMargin" constant="-8" id="MZM-6r-mIT"/>
+                                        <constraint firstItem="Coh-fQ-nhO" firstAttribute="centerX" secondItem="0Tn-pl-Jzw" secondAttribute="centerX" id="dHn-Po-OJN"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="seriesCoverImageView" destination="Coh-fQ-nhO" id="8mP-au-Qbf"/>
+                                    </connections>
+                                </collectionReusableView>
                             </collectionView>
                         </subviews>
                         <constraints>

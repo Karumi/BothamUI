@@ -9,11 +9,16 @@
 import Foundation
 import UIKit
 import BothamUI
+import SDWebImage
 
 class ComicCollectionViewCell: UICollectionViewCell, BothamViewCell {
 
-    func configureForItem(item: Comic) {
+    @IBOutlet weak var coverImageView: UIImageView!
+    @IBOutlet weak var comicNameLabel: UILabel!
 
+    func configureForItem(item: Comic) {
+        coverImageView.sd_setImageWithURL(item.coverURL)
+        comicNameLabel.text = item.name
     }
 
 }
