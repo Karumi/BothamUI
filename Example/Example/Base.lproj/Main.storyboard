@@ -82,14 +82,14 @@
                         <color key="separatorColor" red="0.22352941176470587" green="0.27058823529411763" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="SerieTableViewCellIdentifier" focusStyle="custom" rowHeight="375" id="fl0-27-EyA" userLabel="SerieTableViewCell" customClass="SerieTableViewCell" customModule="Example" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="SeriesTableViewCellIdentifier" focusStyle="custom" rowHeight="375" id="fl0-27-EyA" userLabel="SerieTableViewCell" customClass="SeriesTableViewCell" customModule="Example" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="375"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fl0-27-EyA" id="z2K-AO-WII">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="374.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dN-ix-dIs" userLabel="Serie Name Label">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dN-ix-dIs" userLabel="Series Name Label">
                                             <rect key="frame" x="23" y="177.5" width="34.5" height="19.5"/>
                                             <fontDescription key="fontDescription" name="ManifoldCF-Light" family="Manifold CF" pointSize="16"/>
                                             <color key="textColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
@@ -105,7 +105,7 @@
                                 <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
-                                    <outlet property="serieNameLabel" destination="3dN-ix-dIs" id="i4A-KO-27Y"/>
+                                    <outlet property="seriesNameLabel" destination="3dN-ix-dIs" id="DEj-NN-u0y"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="2038" y="576"/>
         </scene>
-        <!--Serie Detail View Controller-->
+        <!--Series Detail View Controller-->
         <scene sceneID="eun-5n-RXV">
             <objects>
-                <viewController storyboardIdentifier="SerieDetailViewController" id="ieI-79-zNb" customClass="SerieDetailViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SeriesDetailViewController" id="ieI-79-zNb" customClass="SeriesDetailViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lWM-qq-opW"/>
                         <viewControllerLayoutGuide type="bottom" id="jBb-AP-dat"/>

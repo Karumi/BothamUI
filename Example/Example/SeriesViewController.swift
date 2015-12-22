@@ -13,7 +13,7 @@ import BothamUI
 class SeriesViewController: ExampleViewController, BothamTableViewController, SeriesUI {
 
     @IBOutlet var tableView: UITableView!
-    var dataSource: BothamTableViewDataSource<Serie, SerieTableViewCell>!
+    var dataSource: BothamTableViewDataSource<Series, SeriesTableViewCell>!
     var delegate: UITableViewDelegate!
 
     override func viewDidLoad() {

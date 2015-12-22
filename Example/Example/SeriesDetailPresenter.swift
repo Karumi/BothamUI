@@ -9,7 +9,7 @@
 import Foundation
 import BothamUI
 
-class SerieDetailPresenter : BothamPresenter {
+class SeriesDetailPresenter : BothamPresenter {
 
     func viewDidLoad() {
 

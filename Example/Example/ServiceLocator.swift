@@ -69,19 +69,19 @@ class ServiceLocator {
         let viewController: SeriesViewController = provideMainStoryboard().instantiateViewController()
         let presenter = SeriesPresenter(ui: viewController, wireframe: SeriesWireframe())
         viewController.presenter = presenter
-        let dataSource = BothamTableViewDataSource<Serie, SerieTableViewCell>()
+        let dataSource = BothamTableViewDataSource<Series, SeriesTableViewCell>()
         viewController.dataSource = dataSource
         viewController.delegate = BothamTableViewNavigationDelegate(dataSource: dataSource, presenter: presenter)
         return viewController
     }
 
-    func provideSerieDetailViewController() -> SerieDetailViewController {
-        let viewController: SerieDetailViewController = provideMainStoryboard().instantiateViewController("SerieDetailViewController")
+    func provideSeriesDetailViewController() -> SeriesDetailViewController {
+        let viewController: SeriesDetailViewController = provideMainStoryboard().instantiateViewController("SeriesDetailViewController")
         viewController.presenter = provideSerieDetailPresenter()
         return viewController
     }
 
-    func provideSerieDetailPresenter() -> SerieDetailPresenter {
-        return SerieDetailPresenter()
+    func provideSerieDetailPresenter() -> SeriesDetailPresenter {
+        return SeriesDetailPresenter()
     }
 }

@@ -25,28 +25,28 @@ class SeriesPresenter: BothamPresenter, BothamNavigationPresenter {
             self.ui?.hideLoader()
 
             self.ui?.showItems([
-                Serie(name: "Spider-Man (2004)"),
-                Serie(name: "Iron Fist: The Living Weapon (2004 - Present)"),
-                Serie(name: "Iron Man & the Armor Wars (2009)"),
-                Serie(name: "Avengers (2012 - Present)"),
-                Serie(name: "Thor: God of Thunder (2012 - Present)"),
-                Serie(name: "Iron Man (2012 - Present)"),
-                Serie(name: "Deadpool (2012 - Present)"),
-                Serie(name: "All-New X-Men (2012 - Present)"),
-                Serie(name: "Iron Man (2013)"),
-                Serie(name: "Guardians of the Galaxy (2013 - Present)"),
-                Serie(name: "Amazing Spider-Man (2014 - Present)"),
-                Serie(name: "Daredevil (2014 - Present)"),
-                Serie(name: "Inhuman (2014 - Present)"),
-                Serie(name: "Jessica Jones (2014 - Present)"),
-                Serie(name: "Civil War (2014 - Present)"),
-                Serie(name: "Avengers & X_Men: Axis (2014 - Present)"),
-                Serie(name: "Death of Wolverine: Axis (2015 - Present)"),
+                Series(name: "Spider-Man (2004)"),
+                Series(name: "Iron Fist: The Living Weapon (2004 - Present)"),
+                Series(name: "Iron Man & the Armor Wars (2009)"),
+                Series(name: "Avengers (2012 - Present)"),
+                Series(name: "Thor: God of Thunder (2012 - Present)"),
+                Series(name: "Iron Man (2012 - Present)"),
+                Series(name: "Deadpool (2012 - Present)"),
+                Series(name: "All-New X-Men (2012 - Present)"),
+                Series(name: "Iron Man (2013)"),
+                Series(name: "Guardians of the Galaxy (2013 - Present)"),
+                Series(name: "Amazing Spider-Man (2014 - Present)"),
+                Series(name: "Daredevil (2014 - Present)"),
+                Series(name: "Inhuman (2014 - Present)"),
+                Series(name: "Jessica Jones (2014 - Present)"),
+                Series(name: "Civil War (2014 - Present)"),
+                Series(name: "Avengers & X_Men: Axis (2014 - Present)"),
+                Series(name: "Death of Wolverine: Axis (2015 - Present)"),
                 ])
         }
     }
 
-    func itemWasTapped(item: Serie) {
-        wireframe.presentSerieDetailViewController(item.name)
+    func itemWasTapped(item: Series) {
+        wireframe.presentSeriesDetailViewController(item.name)
     }
 }

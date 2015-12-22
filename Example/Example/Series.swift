@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct Serie {
+struct Series {
 
     let name: String
     
