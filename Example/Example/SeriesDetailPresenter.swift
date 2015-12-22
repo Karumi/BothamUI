@@ -28,7 +28,11 @@ class SeriesDetailPresenter : BothamPresenter {
         let series = Series(name: seriesName,
             coverURL: NSURL(string: "https://vignette3.wikia.nocookie.net/steamtradingcards/images/e/e6/Marvel_Heroes_Artwork_Iron_Man.jpg/revision/latest?cb=20130929234052"),
             rating: "T",
-            description: "Extremis: It changes everything for Iron Man! The deadly new technology from the imagination of Warren Ellis and Adi Granov propels Tony Stark into the next gear as he takes on a super hero Civil War and perhaps his greatest challenge yet as Director of S.H.I.E.L.D.!",
+            description: "Extremis: It changes everything for Iron Man! The deadly "
+            + "new technology from the imagination of Warren Ellis and Adi Granov "
+            + "propels Tony Stark into the next gear as he takes on a super hero "
+            + "Civil War and perhaps his greatest challenge yet as Director of "
+            + "S.H.I.E.L.D.!",
             comics: [
                 Comic(name: "Civil War: Iron Man",
                     coverURL: NSURL(string: "https://x.annihil.us/u/prod/marvel/i/mg/c/90/51ddaa7bb6788/portrait_incredible.jpg")),
