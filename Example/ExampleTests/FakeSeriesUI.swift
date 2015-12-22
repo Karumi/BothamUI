@@ -13,7 +13,7 @@ import XCTest
 class FakeSeriesUI: SeriesUI, FakeBothamLoadingUI {
     var loaderWasShowed = false
     var loaderWasHided = false
-    var itemsShowed:[Serie] = []
+    var itemsShowed:[Series] = []
 
     var expectation: XCTestExpectation?
 
@@ -21,7 +21,7 @@ class FakeSeriesUI: SeriesUI, FakeBothamLoadingUI {
         self.expectation = expectation
     }
 
-    func showItems(items: [Serie]) {
+    func showItems(items: [Series]) {
         itemsShowed = items
         expectation?.fulfill()
     }

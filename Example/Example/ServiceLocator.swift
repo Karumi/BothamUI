@@ -81,7 +81,7 @@ class ServiceLocator {
         return viewController
     }
 
-    func provideSerieDetailPresenter() -> SeriesDetailPresenter {
+    private func provideSerieDetailPresenter() -> SeriesDetailPresenter {
         return SeriesDetailPresenter()
     }
 }

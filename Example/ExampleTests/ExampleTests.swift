@@ -41,8 +41,8 @@ class ExampleTests: XCTestCase {
         let fakeSeriesWireframe = FakeSeriesWireframe()
         let presenter = SeriesPresenter(ui: fakeSeriesUI, wireframe: fakeSeriesWireframe)
 
-        let serie = Serie(name: "IronMan")
-        presenter.itemWasTapped(serie)
+        let series = Series(name: "IronMan")
+        presenter.itemWasTapped(series)
 
         expect(fakeSeriesWireframe.serieDetailViewControllerWasPresented).to(beTrue())
     }
