@@ -35,6 +35,7 @@ class SeriesDetailViewController : ExampleViewController, BothamCollectionViewCo
         navigationController?.navigationBar.backgroundColor = UIColor.navigationBarColor
         navigationController?.navigationBar.shadowImage = nil
         navigationController?.navigationBar.translucent = false
+        super.viewWillDisappear(animated)
     }
 
     func collectionView(
