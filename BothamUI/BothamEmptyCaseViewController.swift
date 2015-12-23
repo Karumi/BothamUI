@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 public protocol BothamEmptyCaseViewController : BothamEmptyCaseUI {
     var currentEmptyCaseView: UIView { get }
@@ -15,7 +16,16 @@ public protocol BothamEmptyCaseViewController : BothamEmptyCaseUI {
 
 public extension BothamEmptyCaseViewController {
     func showEmptyCase() {
-        view.addSubview(currentEmptyCaseView)
+        guard currentEmptyCaseView.superview == nil else {
+            return
+        }
+        if let tableView = view as? UITableView {
+            tableView.insertSubview(currentEmptyCaseView, atIndex: 0)
+        } else if let collectionView = view as? UICollectionView {
+            collectionView.insertSubview(currentEmptyCaseView, atIndex: 0)
+        } else {
+            view.addSubview(currentEmptyCaseView)
+        }
         currentEmptyCaseView.hidden = false
         currentEmptyCaseView.center = view.center
     }
