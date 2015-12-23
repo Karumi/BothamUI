@@ -13,7 +13,7 @@ public protocol BothamPullToRefresh {
 }
 
 public extension BothamPullToRefresh {
-    public func wilEndRefreshing() {
+    public func stopRefreshing() {
         pullToRefreshHandler.endRefreshing()
     }
 }

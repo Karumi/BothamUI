@@ -1,5 +1,5 @@
 PODS:
-  - BothamUI (0.0.1)
+  - BothamUI (0.1.0)
   - KIF (3.3.1):
     - KIF/Core (= 3.3.1)
   - KIF/Core (3.3.1)
@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
     :path: ./
 
 SPEC CHECKSUMS:
-  BothamUI: 7b8d9234afb1c0315d335a9ab84cd90879cf6801
+  BothamUI: 1d124e6a6d2dc8f04682d8d8bf0484031fcaef38
   KIF: ff9f0e585503871bcd096937cc760081d770c5e2
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84

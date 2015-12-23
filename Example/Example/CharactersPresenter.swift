@@ -49,7 +49,7 @@ class CharactersPresenter: BothamPresenter, BothamPullToRefreshPresenter {
             Character(name: "BlackPanther", thumbnail: NSURL(string: "https://i.annihil.us/u/prod/marvel/i/mg/9/03/537ba26276348.jpg")!),
             ])
 
-        self.ui?.wilEndRefreshing()
+        self.ui?.stopRefreshing()
     }
 
     private func loadItems(items: [Character]) {

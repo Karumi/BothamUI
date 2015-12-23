@@ -14,7 +14,7 @@ protocol FakeBothamPullToResfreshUI: BothamPullToResfreshUI {
 }
 
 extension FakeBothamPullToResfreshUI {
-    func wilEndRefreshing() {
+    func stopRefreshing() {
         didRefresh = true
     }
 }

@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol BothamPullToResfreshUI: class {
-    func wilEndRefreshing()
+    func stopRefreshing()
 }
