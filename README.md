@@ -1,6 +1,6 @@
 # ![Karumi logo][karumilogo]BothamUI [![Build Status](https://travis-ci.org/Karumi/BothamUI.svg?branch=ui-tests-and-travis-ci-support)](https://travis-ci.org/Karumi/BothamUI)
 
-BothamUI is MVP(Model-View-Presenter)[[2] [mvp]] framework written in Swift.
+BothamUI is MVP [(Model-View-Presenter)][mvp] framework written in Swift.
 
 This project will help you setup all your presentation logic. BothamUI provides classes to represent the main components of this pattern like ``BothamViewController`` and ``BothamPresenter``.
 
