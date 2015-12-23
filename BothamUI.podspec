@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = 'BothamUI'
-    s.version = '0.0.1'
+    s.version = '0.1.0'
     s.license = 'Apache V2'
     s.summary = 'Model View Presenter Framework written in Swift'
     s.homepage = 'https://github.com/Karumi/BothamUI'
