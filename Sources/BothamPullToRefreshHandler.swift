@@ -9,9 +9,8 @@
 import Foundation
 
 public class BothamPullToRefreshHandler: NSObject {
-    private let presenter: BothamPullToRefreshPresenter
-
-    private let refreshControl = UIRefreshControl()
+    let presenter: BothamPullToRefreshPresenter
+    let refreshControl = UIRefreshControl()
 
     public init(presenter: BothamPullToRefreshPresenter) {
         self.presenter = presenter

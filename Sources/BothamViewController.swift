@@ -12,7 +12,6 @@ import UIKit
 public class BothamViewController: UIViewController, BothamUI {
     public var presenter: BothamPresenter! = nil
 
-    // MARK: UIViewController
     public override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()

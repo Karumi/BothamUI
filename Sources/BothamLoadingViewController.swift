@@ -9,19 +9,22 @@
 import Foundation
 
 public protocol BothamLoadingViewController: BothamLoadingUI {
-    var currentLoadingView: UIView { get }
+    var loadingView: UIView { get }
     var view: UIView! { get }
 }
 
 public extension BothamLoadingViewController {
     func showLoader() {
-        view.addSubview(currentLoadingView)
-        currentLoadingView.hidden = false
-        currentLoadingView.center = view.center
+        guard !view.subviews.contains(loadingView) else {
+            return
+        }
+        view.addSubview(loadingView)
+        loadingView.hidden = false
+        loadingView.center = view.center
     }
 
     func hideLoader() {
-        currentLoadingView.removeFromSuperview()
-        currentLoadingView.hidden = true
+        loadingView.removeFromSuperview()
+        loadingView.hidden = true
     }
 }
