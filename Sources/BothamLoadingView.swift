@@ -11,7 +11,7 @@ import UIKit
 
 
 @IBDesignable
-public class LoadingView: BothamCustomView {
+public class BothamLoadingView: BothamCustomView {
     @IBOutlet public weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet public weak var loadingLabel: UILabel!
 

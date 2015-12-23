@@ -12,7 +12,7 @@ import BothamUI
 class ExampleViewController: BothamViewController, BothamLoadingViewController, BothamPullToRefresh {
 
     let loadingView: UIView = {
-        let loadingView = LoadingView()
+        let loadingView = BothamLoadingView()
         loadingView.color = UIColor.loadingColor
         return loadingView
     }()
