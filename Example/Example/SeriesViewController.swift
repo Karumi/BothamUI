@@ -17,11 +17,20 @@ class SeriesViewController: ExampleViewController, BothamTableViewController, Se
     var delegate: UITableViewDelegate!
 
     override func viewDidLoad() {
+        configureTableView()
+        configureNavigationBarBackButton()
+        super.viewDidLoad()
+    }
+
+    private func configureTableView() {
         tableView.dataSource = dataSource
         tableView.delegate = delegate
         tableView.tableFooterView = UIView()
         tableView.accessibilityLabel = "SeriesTableView"
-        super.viewDidLoad()
+    }
+
+    private func configureNavigationBarBackButton() {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
     }
 
 }

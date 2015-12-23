@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-public protocol BothamCollectionViewController {
+public protocol BothamCollectionViewController: class {
     var collectionView: UICollectionView! { get }
-    typealias CollectionViewCellType: BothamViewCell
-    var dataSource: BothamCollectionViewDataSource<CollectionViewCellType.ItemType, CollectionViewCellType>! { get }
+    typealias CollectionViewDataSourceType: BothamViewDataSource
+    var dataSource: CollectionViewDataSourceType! { get set }
 }
 
 
 extension BothamCollectionViewController {
-    public func showItems(items: [CollectionViewCellType.ItemType]) {
+    public func showItems(items: [CollectionViewDataSourceType.ItemType]) {
         dataSource.items = items
         collectionView.reloadData()
     }

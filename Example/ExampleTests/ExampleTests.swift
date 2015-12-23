@@ -44,6 +44,6 @@ class ExampleTests: XCTestCase {
         let series = Series(name: "IronMan")
         presenter.itemWasTapped(series)
 
-        expect(fakeSeriesWireframe.serieDetailViewControllerWasPresented).to(beTrue())
+        expect(fakeSeriesWireframe.seriesDetailViewControllerWasPresented).to(beTrue())
     }
 }
