@@ -11,7 +11,7 @@ import UIKit
 
 public protocol BothamCollectionViewController: class {
     var collectionView: UICollectionView! { get }
-    typealias CollectionViewDataSourceType: BothamDataSource
+    typealias CollectionViewDataSourceType: BothamViewDataSource
     var dataSource: CollectionViewDataSourceType! { get set }
 }
 
