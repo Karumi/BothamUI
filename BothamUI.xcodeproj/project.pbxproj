@@ -62,8 +62,8 @@
 		6B1BACCD1BDD27E100AC5E9B /* BothamUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamUI.swift; sourceTree = "<group>"; };
 		6B2C2D1D1BFBB19B00576464 /* BothamTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamTableViewController.swift; sourceTree = "<group>"; };
 		6B6CCD301BDD0FFB0015A4D4 /* BothamUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BothamUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B6CCD331BDD0FFB0015A4D4 /* BothamUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BothamUI.h; path = BothamUI/BothamUI.h; sourceTree = "<group>"; };
-		6B6CCD351BDD0FFB0015A4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = BothamUI/Info.plist; sourceTree = "<group>"; };
+		6B6CCD331BDD0FFB0015A4D4 /* BothamUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BothamUI.h; path = Sources/BothamUI.h; sourceTree = "<group>"; };
+		6B6CCD351BDD0FFB0015A4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
 		6B6CCD501BDD11810015A4D4 /* BothamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamViewController.swift; sourceTree = "<group>"; };
 		6B6CCD521BDD12C40015A4D4 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		6B82AD461C075A16009247FB /* BothamPullToRefreshHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamPullToRefreshHandler.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				EBEC624F1BFE2CF600662B5F /* Podfile */,
-				6B6CCD321BDD0FFB0015A4D4 /* BothamUI */,
+				6B6CCD321BDD0FFB0015A4D4 /* Sources */,
 				6B6CCD331BDD0FFB0015A4D4 /* BothamUI.h */,
 				6B6CCD351BDD0FFB0015A4D4 /* Info.plist */,
 				EBEC62671BFE3A7300662B5F /* BothamUIUnitTests */,
@@ -177,7 +177,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6B6CCD321BDD0FFB0015A4D4 /* BothamUI */ = {
+		6B6CCD321BDD0FFB0015A4D4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				6B82AD451C075A04009247FB /* ScrollView */,
@@ -191,7 +191,7 @@
 				6B6CCD541BDD13070015A4D4 /* Storyboard */,
 				6B8E73241C0F5CDC0006F9E1 /* Navigator */,
 			);
-			path = BothamUI;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		6B6CCD4A1BDD10C40015A4D4 /* ViewController */ = {

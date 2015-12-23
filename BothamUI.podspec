@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = '8.0'
 
-    s.source_files = 'BothamUI/*.swift'
-	s.resources = ['BothamUI/*.xib']
+    s.source_files = 'Sources/*.swift'
+	s.resources = ['Sources/*.xib']
     s.requires_arc = true
 end
