@@ -1,6 +1,6 @@
 # ![Karumi logo][karumilogo]BothamUI [![Build Status](https://travis-ci.org/Karumi/BothamUI.svg?branch=ui-tests-and-travis-ci-support)](https://travis-ci.org/Karumi/BothamUI)
 
-BothamUI is MVP(Model-View-Presenter)[[2] [mvp]] framework written in swift.
+BothamUI is MVP(Model-View-Presenter)[[2] [mvp]] framework written in Swift.
 
 This project will help you setup all your presentation logic. BothamUI provides classes to represent the main components of this pattern like ``BothamViewController`` and ``BothamPresenter``.
 
@@ -125,7 +125,7 @@ To understand when the lifecycle methods are called take a look at the following
 $ gem install cocoapods
 ```
 
-> CocoaPods 0.39.0+ is required to build BothamUI 1.0.0+.
+> CocoaPods 0.39.0+ is required to build BothamUI.
 
 To integrate BothamUI into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
