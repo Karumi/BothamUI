@@ -8,15 +8,14 @@
 
 import Foundation
 
-public protocol BothamTableViewController {
+public protocol BothamTableViewController: class {
     var tableView: UITableView! { get }
-    typealias TableViewCellType: BothamViewCell
-    var dataSource: BothamTableViewDataSource<TableViewCellType.ItemType, TableViewCellType>! { get }
-    var delegate: UITableViewDelegate! { get }
+    typealias TableViewDataSource: BothamViewDataSource
+    var dataSource: TableViewDataSource! { get set }
 }
 
 extension BothamTableViewController {
-    public func showItems(items: [TableViewCellType.ItemType]) {
+    public func showItems(items: [TableViewDataSource.ItemType]) {
         dataSource.items = items
         tableView.reloadData()
     }

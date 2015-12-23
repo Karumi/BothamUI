@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class BothamTableViewNavigationDelegate<T: BothamDataSource, U: BothamNavigationPresenter where T.ItemType == U.ItemType>: NSObject, UITableViewDelegate {
+public class BothamTableViewNavigationDelegate<T: BothamViewDataSource, U: BothamNavigationPresenter where T.ItemType == U.ItemType>: NSObject, UITableViewDelegate {
     let dataSource: T
     let presenter: U
 

@@ -10,5 +10,5 @@ import Foundation
 import UIKit
 import BothamUI
 
-class ComicsNavigationController: UINavigationController {
+class SeriesNavigationController: UINavigationController {
 }

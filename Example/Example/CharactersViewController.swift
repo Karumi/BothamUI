@@ -11,6 +11,7 @@ import UIKit
 import BothamUI
 
 class CharactersViewController: ExampleViewController, BothamTableViewController, CharactersUI {
+    
     @IBOutlet var tableView: UITableView!
     var dataSource: BothamTableViewDataSource<Character, CharacterTableViewCell>!
     var delegate: UITableViewDelegate!
@@ -18,7 +19,8 @@ class CharactersViewController: ExampleViewController, BothamTableViewController
     override func viewDidLoad() {
         tableView.dataSource = dataSource
         tableView.delegate = delegate
-
+        tableView.tableFooterView = UIView()
+        tableView.accessibilityLabel = "CharactersTableView"
         pullToRefreshHandler.addTo(tableView)
         super.viewDidLoad()
     }

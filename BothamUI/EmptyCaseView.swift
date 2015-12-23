@@ -18,4 +18,10 @@ public class EmptyCaseView : BothamCustomView {
         }
     }
 
+    @IBInspectable public var textColor: UIColor? = nil {
+        didSet {
+            emptyCaseLabel.textColor = textColor
+        }
+    }
+
 }

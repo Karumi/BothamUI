@@ -10,12 +10,12 @@ import Foundation
 @testable import Example
 
 
-class MockComicsPresenter: ComicsPresenter {
+class MockSeriesPresenter: SeriesPresenter {
 
-    var comics: [Comic] = [Comic]()
+    var series: [Series] = [Series]()
 
-    override func loadComics() -> [Comic] {
-        return self.comics
+    override func loadSeries() -> [Series] {
+        return self.series
     }
 
 }

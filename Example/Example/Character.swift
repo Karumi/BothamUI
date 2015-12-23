@@ -10,4 +10,5 @@ import Foundation
 
 struct Character {
     let name: String
+    let thumbnail: NSURL
 }

@@ -19,7 +19,7 @@
 		6B82AD491C075A2C009247FB /* BothamPullToRefreshPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD481C075A2C009247FB /* BothamPullToRefreshPresenter.swift */; };
 		6B82AD4D1C077A0E009247FB /* BothamPullToResfreshUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD4C1C077A0E009247FB /* BothamPullToResfreshUI.swift */; };
 		6B82AD4F1C0780E9009247FB /* BothamPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82AD4E1C0780E9009247FB /* BothamPullToRefresh.swift */; };
-		6B8E73281C101D240006F9E1 /* BothamDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E73271C101D240006F9E1 /* BothamDataSource.swift */; };
+		6B8E73281C101D240006F9E1 /* BothamViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E73271C101D240006F9E1 /* BothamViewDataSource.swift */; };
 		6B8E732A1C101D8F0006F9E1 /* NavigatorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E73291C101D8F0006F9E1 /* NavigatorContainer.swift */; };
 		6B8E732C1C101DBA0006F9E1 /* NavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E732B1C101DBA0006F9E1 /* NavigationPresenter.swift */; };
 		6B8E732F1C101E570006F9E1 /* TableViewNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E732E1C101E570006F9E1 /* TableViewNavigationDelegate.swift */; };
@@ -74,7 +74,7 @@
 		6B82AD481C075A2C009247FB /* BothamPullToRefreshPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamPullToRefreshPresenter.swift; sourceTree = "<group>"; };
 		6B82AD4C1C077A0E009247FB /* BothamPullToResfreshUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamPullToResfreshUI.swift; sourceTree = "<group>"; };
 		6B82AD4E1C0780E9009247FB /* BothamPullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamPullToRefresh.swift; sourceTree = "<group>"; };
-		6B8E73271C101D240006F9E1 /* BothamDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamDataSource.swift; sourceTree = "<group>"; };
+		6B8E73271C101D240006F9E1 /* BothamViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamViewDataSource.swift; sourceTree = "<group>"; };
 		6B8E73291C101D8F0006F9E1 /* NavigatorContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorContainer.swift; sourceTree = "<group>"; };
 		6B8E732B1C101DBA0006F9E1 /* NavigationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationPresenter.swift; sourceTree = "<group>"; };
 		6B8E732E1C101E570006F9E1 /* TableViewNavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewNavigationDelegate.swift; sourceTree = "<group>"; };
@@ -144,14 +144,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6B0736FB1BFDCB5C000E0E7D /* DataSource */ = {
+		6B0736FB1BFDCB5C000E0E7D /* ViewDataSource */ = {
 			isa = PBXGroup;
 			children = (
 				6B0736FC1BFDCB83000E0E7D /* BothamTableViewDataSource.swift */,
 				6BDE3E081BFE41BF0030EB8B /* BothamCollectionViewDataSource.swift */,
-				6B8E73271C101D240006F9E1 /* BothamDataSource.swift */,
+				6B8E73271C101D240006F9E1 /* BothamViewDataSource.swift */,
 			);
-			name = DataSource;
+			name = ViewDataSource;
 			sourceTree = "<group>";
 		};
 		6B0736FE1BFDCBE3000E0E7D /* ViewCell */ = {
@@ -193,7 +193,7 @@
 				6BDE3E0A1BFFB2F20030EB8B /* UI */,
 				6B0736FE1BFDCBE3000E0E7D /* ViewCell */,
 				6B8E732D1C101E420006F9E1 /* Delegate */,
-				6B0736FB1BFDCB5C000E0E7D /* DataSource */,
+				6B0736FB1BFDCB5C000E0E7D /* ViewDataSource */,
 				6B6CCD4B1BDD10CD0015A4D4 /* Presenter */,
 				6B6CCD4A1BDD10C40015A4D4 /* ViewController */,
 				6B6CCD541BDD13070015A4D4 /* Storyboard */,
@@ -486,8 +486,8 @@
 			files = (
 				6BDE3E1D1C0398390030EB8B /* NSBundle.swift in Sources */,
 				6B2C2D1E1BFBB19B00576464 /* BothamTableViewController.swift in Sources */,
-				6B8E73281C101D240006F9E1 /* BothamDataSource.swift in Sources */,
 				EBB2060C1C1DB59D001FD877 /* BothamEmptyCaseViewController.swift in Sources */,
+				6B8E73281C101D240006F9E1 /* BothamViewDataSource.swift in Sources */,
 				6B8E73311C101FA90006F9E1 /* Storyboard.swift in Sources */,
 				6BDE3E231C04BAFF0030EB8B /* BothamLoadingViewController.swift in Sources */,
 				6B6CCD531BDD12C40015A4D4 /* Presenter.swift in Sources */,
