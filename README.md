@@ -172,4 +172,4 @@ License
 [mvp]: http://martinfowler.com/eaaDev/uiArchs.html#Model-view-presentermvp
 [karumilogo]: https://cloud.githubusercontent.com/assets/858090/11626547/e5a1dc66-9ce3-11e5-908d-537e07e82090.png
 [storyboardReference]: https://cloud.githubusercontent.com/assets/858090/11711471/f425f110-9f26-11e5-9ff3-d59b5a51308e.png
-[screenshot1]: ./art/screenshot1.gif
+[screenshot1]: ./art/screencast1.gif
