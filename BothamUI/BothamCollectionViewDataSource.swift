@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 public class BothamCollectionViewDataSource<U, V: BothamViewCell where U == V.ItemType>
-                                : NSObject, UICollectionViewDataSource, BothamDataSource {
+                                : NSObject, UICollectionViewDataSource, BothamViewDataSource {
     public var items: [U] = []
 
     public override init() {
