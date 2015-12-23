@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingView" customModule="BothamUI" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BothamLoadingView" customModule="BothamUI" customModuleProvider="target">
             <connections>
                 <outlet property="activityIndicator" destination="Bh1-a8-EZS" id="7oG-8k-zdh"/>
                 <outlet property="loadingLabel" destination="gUO-eW-nAZ" id="PJZ-nG-aZz"/>

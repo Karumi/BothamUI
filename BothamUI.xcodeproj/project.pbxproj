@@ -27,7 +27,7 @@
 		6B8E73371C119C800006F9E1 /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E73361C119C800006F9E1 /* UINavigationController.swift */; };
 		6BDE3E011BFE23B30030EB8B /* BothamCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E001BFE23B30030EB8B /* BothamCollectionViewController.swift */; };
 		6BDE3E091BFE41BF0030EB8B /* BothamCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E081BFE41BF0030EB8B /* BothamCollectionViewDataSource.swift */; };
-		6BDE3E111BFFB4B40030EB8B /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BDE3E101BFFB4B40030EB8B /* LoadingView.xib */; };
+		6BDE3E111BFFB4B40030EB8B /* BothamLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BDE3E101BFFB4B40030EB8B /* BothamLoadingView.xib */; };
 		6BDE3E131C03319D0030EB8B /* BothamLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E121C03319D0030EB8B /* BothamLoadingView.swift */; };
 		6BDE3E171C0355A40030EB8B /* BothamCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E161C0355A40030EB8B /* BothamCustomView.swift */; };
 		6BDE3E1D1C0398390030EB8B /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E1C1C0398390030EB8B /* NSBundle.swift */; };
@@ -77,7 +77,7 @@
 		6B8E73361C119C800006F9E1 /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		6BDE3E001BFE23B30030EB8B /* BothamCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamCollectionViewController.swift; sourceTree = "<group>"; };
 		6BDE3E081BFE41BF0030EB8B /* BothamCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamCollectionViewDataSource.swift; sourceTree = "<group>"; };
-		6BDE3E101BFFB4B40030EB8B /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		6BDE3E101BFFB4B40030EB8B /* BothamLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BothamLoadingView.xib; sourceTree = "<group>"; };
 		6BDE3E121C03319D0030EB8B /* BothamLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamLoadingView.swift; sourceTree = "<group>"; };
 		6BDE3E161C0355A40030EB8B /* BothamCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamCustomView.swift; sourceTree = "<group>"; };
 		6BDE3E1C1C0398390030EB8B /* NSBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundle.swift; sourceTree = "<group>"; };
@@ -262,7 +262,7 @@
 		6BDE3E0A1BFFB2F20030EB8B /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				6BDE3E101BFFB4B40030EB8B /* LoadingView.xib */,
+				6BDE3E101BFFB4B40030EB8B /* BothamLoadingView.xib */,
 				6BDE3E121C03319D0030EB8B /* BothamLoadingView.swift */,
 				6BDE3E161C0355A40030EB8B /* BothamCustomView.swift */,
 			);
@@ -401,7 +401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BDE3E111BFFB4B40030EB8B /* LoadingView.xib in Resources */,
+				6BDE3E111BFFB4B40030EB8B /* BothamLoadingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
