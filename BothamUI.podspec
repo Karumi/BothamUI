@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = 'BothamUI'
-    s.version = '0.0.1'
+    s.version = '1.0.0'
     s.license = 'Apache V2'
     s.summary = 'Model View Presenter Framework written in Swift'
     s.homepage = 'https://github.com/Karumi/BothamUI'
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = '8.0'
 
-    s.source_files = 'BothamUI/*.swift'
-	s.resources = ['BothamUI/*.xib']
+    s.source_files = 'Sources/*.swift'
+	s.resources = ['Sources/*.xib']
     s.requires_arc = true
 end

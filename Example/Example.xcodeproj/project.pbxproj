@@ -196,14 +196,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		491AFB011C241BDE00F8574D /* Resources */ = {
+		491AFB011C241BDE00F8574D /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				EB2DA1C11C299A1D00783B32 /* Gidole-Regular.ttf */,
 				491AFB021C241C1700F8574D /* ManifoldCF-Light.otf */,
 				491AFB031C241C1700F8574D /* ManifoldCF-Regular.otf */,
 			);
-			name = Resources;
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		6B0737021BFDCE42000E0E7D /* Characters */ = {
@@ -279,7 +279,8 @@
 		6B6B09271BDD1A830013891D /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				491AFB011C241BDE00F8574D /* Resources */,
+				491AFB011C241BDE00F8574D /* Fonts */,
+				6BDE3E181C0392970030EB8B /* Utils */,
 				EB7B641D1C2422D700422325 /* Extensions */,
 				6BDE3DF51BFE0D1A0030EB8B /* Series */,
 				6B0737021BFDCE42000E0E7D /* Characters */,
@@ -290,7 +291,6 @@
 				6BDE3E1E1C04A3290030EB8B /* ExampleViewController.swift */,
 				6B6B092C1BDD1A830013891D /* Main.storyboard */,
 				491AFAFF1C24000B00F8574D /* LaunchScreen.storyboard */,
-				6BDE3E181C0392970030EB8B /* Utils */,
 				6B6B092F1BDD1A830013891D /* Assets.xcassets */,
 				6B6B09341BDD1A830013891D /* Info.plist */,
 			);
@@ -301,14 +301,14 @@
 			isa = PBXGroup;
 			children = (
 				6B8E733E1C11B57C0006F9E1 /* Extensions */,
-				6B82AD421C0743DF009247FB /* Fake */,
+				6B82AD421C0743DF009247FB /* TestDoubles */,
 				6B82AD381C062497009247FB /* ExampleTests.swift */,
 				6B82AD3A1C062497009247FB /* Info.plist */,
 			);
 			path = ExampleTests;
 			sourceTree = "<group>";
 		};
-		6B82AD421C0743DF009247FB /* Fake */ = {
+		6B82AD421C0743DF009247FB /* TestDoubles */ = {
 			isa = PBXGroup;
 			children = (
 				6B82AD401C074322009247FB /* FakeSeriesUI.swift */,
@@ -317,7 +317,7 @@
 				6B82AD501C08B511009247FB /* FakeBothamPullToResfreshUI.swift */,
 				6B8E73381C11AA3F0006F9E1 /* FakeSeriesWireframe.swift */,
 			);
-			name = Fake;
+			name = TestDoubles;
 			sourceTree = "<group>";
 		};
 		6B8E733E1C11B57C0006F9E1 /* Extensions */ = {
@@ -416,13 +416,13 @@
 		EB9A49231C07529200BF4D55 /* ExampleAcceptanceTests */ = {
 			isa = PBXGroup;
 			children = (
+				EB9A49431C076B1600BF4D55 /* AcceptanceTestCase.swift */,
 				EB9A49351C07544B00BF4D55 /* MainViewControllerTests.swift */,
 				EB9A49371C07579100BF4D55 /* Characters */,
 				EB9A493A1C075A5500BF4D55 /* Series */,
 				EB9A492C1C07535E00BF4D55 /* Extensions */,
 				EB9A49261C07529200BF4D55 /* Info.plist */,
 				EB9A49421C07631E00BF4D55 /* ExampleAcceptanceTests-Bridging-Header.h */,
-				EB9A49431C076B1600BF4D55 /* AcceptanceTestCase.swift */,
 			);
 			path = ExampleAcceptanceTests;
 			sourceTree = "<group>";
@@ -864,6 +864,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = BothamUI;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -902,6 +903,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BothamUI;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -915,7 +917,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.bothamui.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -928,7 +930,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.bothamui.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
