@@ -9,7 +9,10 @@ In addition we will use a wireframe navigation model and a service locator examp
 ##Screenshots
 ![Screenshot1][screenshot1]
 
+Application UI/UX designs by [Luis Herrero][luisHerreroTwitterAccount].
+
 Data provided by Marvel. © 2015 MARVEL
+
 
 ## Usage
 
@@ -176,3 +179,4 @@ License
 [karumilogo]: https://cloud.githubusercontent.com/assets/858090/11626547/e5a1dc66-9ce3-11e5-908d-537e07e82090.png
 [storyboardReference]: https://cloud.githubusercontent.com/assets/858090/11711471/f425f110-9f26-11e5-9ff3-d59b5a51308e.png
 [screenshot1]: ./art/screencast1.gif
+[luisHerreroTwitterAccount]: https://twitter.com/luishj
