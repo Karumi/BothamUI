@@ -29,8 +29,20 @@ class SeriesViewControllerTests: AcceptanceTestCase {
         expect(seriesTableView.numberOfRowsInSection(0)).toEventually(equal(17))
     }
 
+    func testShouldShowEmptyCaseViewIfThereAreNoComics() {
+        openSeriesViewControllerWithoutSeries()
+
+        tester().waitForViewWithAccessibilityLabel("EmptyCaseView")
+    }
+
     private func openSeriesViewController() {
         let seriesViewController = ServiceLocator.sharedInstance.provideSeriesNavigationController()
+        presentViewController(seriesViewController)
+    }
+
+    private func openSeriesViewControllerWithoutSeries() {
+        let seriesViewController = ServiceLocator.sharedInstance.provideSeriesViewController()
+        seriesViewController.presenter = MockSeriesPresenter(ui: seriesViewController, wireframe: SeriesWireframe())
         presentViewController(seriesViewController)
     }
 

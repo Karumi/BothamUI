@@ -21,9 +21,10 @@ class ExampleTests: XCTestCase {
         presenter.viewDidLoad()
 
         waitForExpectationsWithTimeout(10, handler: nil)
-        expect(fakeSeriesUI.loaderWasShowed).to(beTrue())
+
+        expect(fakeSeriesUI.loaderWasShown).to(beTrue())
         expect(fakeSeriesUI.itemsShowed.count).toOneDay(equal(17))
-        expect(fakeSeriesUI.loaderWasHided).toOneDay(beTrue())
+        expect(fakeSeriesUI.loaderWasHidden).toOneDay(beTrue())
     }
 
     func testResfreshTableOfCharacters() {

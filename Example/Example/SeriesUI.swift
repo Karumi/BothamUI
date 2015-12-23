@@ -9,6 +9,6 @@
 import Foundation
 import BothamUI
 
-protocol SeriesUI: BothamUI, BothamLoadingUI {
+protocol SeriesUI: BothamUI, BothamLoadingUI, BothamEmptyCaseUI {
     func showItems(items: [Series])
 }

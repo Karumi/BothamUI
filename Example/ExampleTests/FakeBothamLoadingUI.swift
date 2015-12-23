@@ -9,17 +9,28 @@
 import Foundation
 import BothamUI
 
-protocol FakeBothamLoadingUI: BothamLoadingUI {
-    var loaderWasShowed: Bool { get set }
-    var loaderWasHided: Bool { get set }
+protocol FakeBothamLoadingUI: BothamLoadingUI, BothamEmptyCaseUI {
+    var loaderWasShown: Bool { get set }
+    var loaderWasHidden: Bool { get set }
+    var emptyCaseWasShown: Bool { get set }
+    var emptyCaseWasHidden: Bool { get set }
+
 }
 
 extension FakeBothamLoadingUI {
     func showLoader() {
-        loaderWasShowed = true
+        loaderWasShown = true
     }
 
     func hideLoader() {
-        loaderWasHided = true
+        loaderWasHidden = true
+    }
+
+    func showEmptyCase() {
+        emptyCaseWasShown = true
+    }
+
+    func hideEmptyCase() {
+        emptyCaseWasHidden = true
     }
 }

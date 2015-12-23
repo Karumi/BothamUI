@@ -9,6 +9,6 @@
 import Foundation
 import BothamUI
 
-protocol CharactersUI: BothamUI, BothamPullToResfreshUI {
+protocol CharactersUI: BothamUI, BothamEmptyCaseUI, BothamPullToResfreshUI {
     func showItems(items: [Character])
 }

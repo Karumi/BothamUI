@@ -63,6 +63,10 @@ extension UIColor {
         return UIColor(rgba: "#4D5B69FF")
     }
 
+    static var emptyCaseColor: UIColor {
+        return UIColor(rgba: "#4D5B69FF")
+    }
+
     static var tabBarColor: UIColor {
         return UIColor(rgba: "#4D5B69FF")
     }

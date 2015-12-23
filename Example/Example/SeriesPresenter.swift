@@ -22,28 +22,36 @@ class SeriesPresenter: BothamPresenter, BothamNavigationPresenter {
     func viewDidLoad() {
         self.ui?.showLoader()
         delay(0.5) {
+            let series = self.loadSeries()
             self.ui?.hideLoader()
-
-            self.ui?.showItems([
-                Series(name: "Spider-Man (2004)"),
-                Series(name: "Iron Fist: The Living Weapon (2004 - Present)"),
-                Series(name: "Iron Man & the Armor Wars (2009)"),
-                Series(name: "Avengers (2012 - Present)"),
-                Series(name: "Thor: God of Thunder (2012 - Present)"),
-                Series(name: "Iron Man (2012 - Present)"),
-                Series(name: "Deadpool (2012 - Present)"),
-                Series(name: "All-New X-Men (2012 - Present)"),
-                Series(name: "Iron Man (2013)"),
-                Series(name: "Guardians of the Galaxy (2013 - Present)"),
-                Series(name: "Amazing Spider-Man (2014 - Present)"),
-                Series(name: "Daredevil (2014 - Present)"),
-                Series(name: "Inhuman (2014 - Present)"),
-                Series(name: "Jessica Jones (2014 - Present)"),
-                Series(name: "Civil War (2014 - Present)"),
-                Series(name: "Avengers & X_Men: Axis (2014 - Present)"),
-                Series(name: "Death of Wolverine: Axis (2015 - Present)"),
-                ])
+            self.ui?.hideEmptyCase()
+            if series.isEmpty {
+                self.ui?.showEmptyCase()
+            } else {
+                self.ui?.showItems(series)
+            }
         }
+    }
+
+    func loadSeries() -> [Series] {
+        return [Series(name: "Spider-Man (2004)"),
+            Series(name: "Iron Fist: The Living Weapon (2004 - Present)"),
+            Series(name: "Iron Man & the Armor Wars (2009)"),
+            Series(name: "Avengers (2012 - Present)"),
+            Series(name: "Thor: God of Thunder (2012 - Present)"),
+            Series(name: "Iron Man (2012 - Present)"),
+            Series(name: "Deadpool (2012 - Present)"),
+            Series(name: "All-New X-Men (2012 - Present)"),
+            Series(name: "Iron Man (2013)"),
+            Series(name: "Guardians of the Galaxy (2013 - Present)"),
+            Series(name: "Amazing Spider-Man (2014 - Present)"),
+            Series(name: "Daredevil (2014 - Present)"),
+            Series(name: "Inhuman (2014 - Present)"),
+            Series(name: "Jessica Jones (2014 - Present)"),
+            Series(name: "Civil War (2014 - Present)"),
+            Series(name: "Avengers & X_Men: Axis (2014 - Present)"),
+            Series(name: "Death of Wolverine: Axis (2015 - Present)"),
+        ]
     }
 
     func itemWasTapped(item: Series) {
