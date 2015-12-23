@@ -9,6 +9,8 @@ In addition we will use a wireframe navigation model and a service locator examp
 ##Screenshots
 ![Screenshot1][screenshot1]
 
+Data provided by Marvel. © 2015 MARVEL
+
 ## Usage
 
 This framework contains all the classes needed to implement your presentation logic following the MVP pattern. To use the view package, make your ``ViewController`` extend from ``Botham ViewController`` and specify in the storyboard wich class and Storyboard ID is linked to:
