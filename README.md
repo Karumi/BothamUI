@@ -1,4 +1,4 @@
-# ![Karumi logo][karumilogo]BothamUI [![Build Status](https://travis-ci.org/Karumi/BothamUI.svg?branch=ui-tests-and-travis-ci-support)](https://travis-ci.org/Karumi/BothamUI)
+# ![Karumi logo][karumilogo]BothamUI [![Build Status](https://travis-ci.org/Karumi/BothamUI.svg?branch=ui-tests-and-travis-ci-support)](https://travis-ci.org/Karumi/BothamUI) [![Cocoapods Compatible](https://img.shields.io/cocoapods/v/BothamUI.svg)](https://img.shields.io/cocoapods/v/BothamUI.svg)
 
 BothamUI is MVP [(Model-View-Presenter)][mvp] framework written in Swift.
 
