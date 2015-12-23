@@ -101,7 +101,7 @@
 		6B1BACD11BDD2BF800AC5E9B /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		6B1BACD31BDD2C5D00AC5E9B /* CharacterDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenter.swift; sourceTree = "<group>"; };
 		6B2C2D1B1BFBB0FF00576464 /* CharactersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
-		6B6B09251BDD1A830013891D /* BothamUI Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BothamUI Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6B09251BDD1A830013891D /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6B09281BDD1A830013891D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B6B092D1BDD1A830013891D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B6B092F1BDD1A830013891D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -269,7 +269,7 @@
 		6B6B09261BDD1A830013891D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6B6B09251BDD1A830013891D /* BothamUI Example.app */,
+				6B6B09251BDD1A830013891D /* Example.app */,
 				6B82AD361C062497009247FB /* ExampleTests.xctest */,
 				EB9A49221C07529200BF4D55 /* ExampleAcceptanceTests.xctest */,
 			);
@@ -474,7 +474,7 @@
 			);
 			name = Example;
 			productName = Example;
-			productReference = 6B6B09251BDD1A830013891D /* BothamUI Example.app */;
+			productReference = 6B6B09251BDD1A830013891D /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6B82AD351C062497009247FB /* ExampleTests */ = {
@@ -918,7 +918,7 @@
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.bothamui.example;
-				PRODUCT_NAME = "BothamUI $(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -931,7 +931,7 @@
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.bothamui.example;
-				PRODUCT_NAME = "BothamUI $(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
