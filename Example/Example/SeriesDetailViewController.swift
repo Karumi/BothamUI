@@ -18,7 +18,7 @@ private struct Config {
 }
 class SeriesDetailViewController : ExampleViewController, BothamCollectionViewController, SeriesDetailUI {
 
-    var dataSource: BothamCollectionViewDataSource<Comic, ComicCollectionViewCell>!
+    var dataSource: SeriesDetailCollectionViewDataSource!
 
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -38,7 +38,7 @@ class SeriesDetailViewController : ExampleViewController, BothamCollectionViewCo
 
 
     func configureHeader(series: Series) {
-        (dataSource as? SeriesDetailCollectionViewDataSource)?.seriesHeader = series
+        dataSource.seriesHeader = series
     }
 
     private func configureNavigationBar() {

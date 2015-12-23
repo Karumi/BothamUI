@@ -9,7 +9,7 @@
 import Foundation
 import BothamUI
 
-class SeriesDetailCollectionViewDataSource<U, V: BothamViewCell where U == V.ItemType> : BothamCollectionViewDataSource<U, V> {
+class SeriesDetailCollectionViewDataSource: BothamCollectionViewDataSource<Comic, ComicCollectionViewCell> {
 
     var seriesHeader: Series?
 
