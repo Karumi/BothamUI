@@ -28,7 +28,7 @@ public class BothamCollectionViewDataSource<U, V: BothamViewCell where U == V.It
         cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(
-            String(V.self) + "ReuseIdentifier",
+            V.reuseIdentifier,
             forIndexPath: indexPath
         )
         let item = itemAtIndexPath(indexPath)

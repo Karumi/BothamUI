@@ -9,7 +9,14 @@
 import Foundation
 
 public protocol BothamViewCell {
-    typealias ItemType
+    static var reuseIdentifier: String { get }
+    static var identifier: String { get }
 
+    typealias ItemType
     func configureForItem(item: ItemType)
+}
+
+public extension BothamViewCell {
+    public static var reuseIdentifier: String { return String(Self) + "ReuseIdentifier" }
+    public static var identifier: String { return String(Self) + "Identifier" }
 }
