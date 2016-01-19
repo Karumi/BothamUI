@@ -18,9 +18,17 @@ public extension BothamLoadingViewController {
         guard !view.subviews.contains(loadingView) else {
             return
         }
-        view.addSubview(loadingView)
+
         loadingView.hidden = false
-        loadingView.center = view.center
+        loadingView.bounds = view.bounds
+        loadingView.autoresizingMask = [
+            .FlexibleBottomMargin,
+            .FlexibleLeftMargin,
+            .FlexibleRightMargin,
+            .FlexibleTopMargin
+        ]
+
+        view.addSubview(loadingView)
     }
 
     func hideLoader() {
