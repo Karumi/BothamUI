@@ -15,6 +15,8 @@ class ServiceLocator {
     static let sharedInstance = ServiceLocator()
     let navigatorContainer = BothamNavigatorContainer()
 
+    private init() { }
+
     private func provideMainStoryboard() -> BothamStoryboard {
         return BothamStoryboard(name: "Main")
     }
