@@ -24,7 +24,7 @@ class RootWireframe: ExampleWireframe {
         serviceLocator.navigatorContainer.register(charactersNavigationController)
 
         let seriesNavigationController = serviceLocator.provideSeriesNavigationController()
-        ServiceLocator.sharedInstance.navigatorContainer.register(seriesNavigationController)
+        serviceLocator.navigatorContainer.register(seriesNavigationController)
 
         return [
             charactersNavigationController,
