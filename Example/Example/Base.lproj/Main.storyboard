@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dqw-xU-fWi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10089" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dqw-xU-fWi">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Gidole-Regular.ttf">
-            <string>Gidole-Regular</string>
             <string>Gidole-Regular</string>
             <string>Gidole-Regular</string>
             <string>Gidole-Regular</string>
@@ -42,7 +41,7 @@
                                             <color key="backgroundColor" red="0.13333333333333333" green="0.15686274509803921" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Avengers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJt-hj-T9F">
-                                            <rect key="frame" x="8" y="135" width="584" height="19.5"/>
+                                            <rect key="frame" x="8" y="135" width="584" height="20"/>
                                             <fontDescription key="fontDescription" name="ManifoldCF-Regular" family="Manifold CF" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -95,8 +94,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="374.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dN-ix-dIs" userLabel="Series Name Label">
-                                            <rect key="frame" x="23" y="177.5" width="34.5" height="19.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dN-ix-dIs" userLabel="Series Name Label">
+                                            <rect key="frame" x="23" y="178" width="35" height="19"/>
                                             <fontDescription key="fontDescription" name="ManifoldCF-Light" family="Manifold CF" pointSize="16"/>
                                             <color key="textColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -147,43 +146,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ComicCollectionViewCellReuseIdentifier" id="T99-sD-NG3" customClass="ComicCollectionViewCell" customModule="Example" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="569" width="282" height="272"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="282" height="272"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Sf-Jp-het" userLabel="Comic Name Label">
-                                                    <rect key="frame" x="89" y="161" width="104" height="14"/>
-                                                    <fontDescription key="fontDescription" name="Gidole-Regular" family="Gidole" pointSize="12"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rcf-7a-4wd" userLabel="Cover Image View">
-                                                    <rect key="frame" x="89" y="0.0" width="104" height="156"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="156" id="jwl-1h-6K9"/>
-                                                        <constraint firstAttribute="width" constant="104" id="wIn-It-utl"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <constraints>
-                                            <constraint firstItem="9Sf-Jp-het" firstAttribute="top" secondItem="rcf-7a-4wd" secondAttribute="bottom" constant="5" id="8h3-F2-pJf"/>
-                                            <constraint firstItem="rcf-7a-4wd" firstAttribute="centerX" secondItem="T99-sD-NG3" secondAttribute="centerX" id="ZoZ-3g-8fT"/>
-                                            <constraint firstItem="rcf-7a-4wd" firstAttribute="top" secondItem="T99-sD-NG3" secondAttribute="topMargin" constant="-8" id="jgc-Nu-XqZ"/>
-                                            <constraint firstItem="9Sf-Jp-het" firstAttribute="centerX" secondItem="rcf-7a-4wd" secondAttribute="centerX" id="quT-yW-qfh"/>
-                                            <constraint firstItem="9Sf-Jp-het" firstAttribute="width" secondItem="rcf-7a-4wd" secondAttribute="width" id="yPQ-cT-Hdh"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="comicNameLabel" destination="9Sf-Jp-het" id="FPH-ox-Cce"/>
-                                            <outlet property="coverImageView" destination="rcf-7a-4wd" id="i3G-43-XUE"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                                 <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SeriesDetailCollectionHeaderViewReusableIdentifier" id="0Tn-pl-Jzw" customClass="SeriesDetailCollectionHeaderView" customModule="Example" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="569"/>
                                     <autoresizingMask key="autoresizingMask"/>
@@ -194,14 +157,14 @@
                                                 <constraint firstAttribute="height" constant="305" id="qXd-2G-mOk"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBF-ue-gFw" userLabel="Rating">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBF-ue-gFw" userLabel="Rating">
                                             <rect key="frame" x="20" y="325" width="42" height="17"/>
                                             <fontDescription key="fontDescription" name="Gidole-Regular" family="Gidole" pointSize="15"/>
                                             <color key="textColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0j3-WL-IHg" userLabel="Rating Label">
-                                            <rect key="frame" x="67" y="325" width="7.5" height="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0j3-WL-IHg" userLabel="Rating Label">
+                                            <rect key="frame" x="67" y="325" width="8" height="17"/>
                                             <accessibility key="accessibilityConfiguration" label="RatingLabel"/>
                                             <fontDescription key="fontDescription" name="Gidole-Regular" family="Gidole" pointSize="15"/>
                                             <color key="textColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>

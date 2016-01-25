@@ -17,7 +17,7 @@ public class BothamTableViewDataSource<U, V: BothamViewCell where U == V.ItemTyp
     }
 
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(String(V.self) + "Identifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(V.identifier, forIndexPath: indexPath)
         let item = itemAtIndexPath(indexPath)
         (cell as! V).configureForItem(item)
         return cell

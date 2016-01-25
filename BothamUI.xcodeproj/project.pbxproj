@@ -12,6 +12,7 @@
 		6B0737001BFDCBF3000E0E7D /* BothamViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0736FF1BFDCBF3000E0E7D /* BothamViewCell.swift */; };
 		6B1BACCE1BDD27E100AC5E9B /* BothamUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BACCD1BDD27E100AC5E9B /* BothamUI.swift */; };
 		6B2C2D1E1BFBB19B00576464 /* BothamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2C2D1D1BFBB19B00576464 /* BothamTableViewController.swift */; };
+		6B2D38AF1C4EAC2D00BC2B88 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2D38AE1C4EAC2D00BC2B88 /* UICollectionView.swift */; };
 		6B6CCD341BDD0FFB0015A4D4 /* BothamUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B6CCD331BDD0FFB0015A4D4 /* BothamUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6B6CCD511BDD11810015A4D4 /* BothamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD501BDD11810015A4D4 /* BothamViewController.swift */; };
 		6B6CCD531BDD12C40015A4D4 /* BothamPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6CCD521BDD12C40015A4D4 /* BothamPresenter.swift */; };
@@ -60,6 +61,7 @@
 		6B0736FF1BFDCBF3000E0E7D /* BothamViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamViewCell.swift; sourceTree = "<group>"; };
 		6B1BACCD1BDD27E100AC5E9B /* BothamUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamUI.swift; sourceTree = "<group>"; };
 		6B2C2D1D1BFBB19B00576464 /* BothamTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamTableViewController.swift; sourceTree = "<group>"; };
+		6B2D38AE1C4EAC2D00BC2B88 /* UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		6B6CCD301BDD0FFB0015A4D4 /* BothamUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BothamUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6CCD331BDD0FFB0015A4D4 /* BothamUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BothamUI.h; path = Sources/BothamUI.h; sourceTree = "<group>"; };
 		6B6CCD351BDD0FFB0015A4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 			children = (
 				6BDE3E1C1C0398390030EB8B /* NSBundle.swift */,
 				6B8E73361C119C800006F9E1 /* UINavigationController.swift */,
+				6B2D38AE1C4EAC2D00BC2B88 /* UICollectionView.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				6B8E73311C101FA90006F9E1 /* BothamStoryboard.swift in Sources */,
 				6BDE3E231C04BAFF0030EB8B /* BothamLoadingViewController.swift in Sources */,
 				6B6CCD531BDD12C40015A4D4 /* BothamPresenter.swift in Sources */,
+				6B2D38AF1C4EAC2D00BC2B88 /* UICollectionView.swift in Sources */,
 				6B1BACCE1BDD27E100AC5E9B /* BothamUI.swift in Sources */,
 				FF7C15451C5578A400A67DD7 /* BothamTableViewNavigationDelegate.swift in Sources */,
 				6BDE3E131C03319D0030EB8B /* BothamLoadingView.swift in Sources */,

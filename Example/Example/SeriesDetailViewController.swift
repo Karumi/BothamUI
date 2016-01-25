@@ -49,6 +49,8 @@ class SeriesDetailViewController : ExampleViewController, BothamCollectionViewCo
     }
 
     private func configureCollectionView() {
+        collectionView.registerNib(nibName: "ComicCollectionViewCell", forCellReuseIdentifier: ComicCollectionViewCell.reuseIdentifier)
+
         dataSource = SeriesDetailCollectionViewDataSource()
         let navBarHeight = navigationController?.navigationBar.frame.height ?? 0
         let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.size.height

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10089" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Gidole-Regular.ttf">
+            <string>Gidole-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ComicCollectionViewCellReuseIdentifier" id="BYH-Nf-1eK" customClass="ComicCollectionViewCell" customModule="Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="282" height="272"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hj-jn-vDw" userLabel="Comic Name Label">
+                        <rect key="frame" x="89" y="161" width="104" height="14"/>
+                        <fontDescription key="fontDescription" name="Gidole-Regular" family="Gidole" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QT5-aR-OcJ" userLabel="Cover Image View">
+                        <rect key="frame" x="89" y="0.0" width="104" height="156"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="156" id="DXF-JA-EdC"/>
+                            <constraint firstAttribute="width" constant="104" id="DxZ-rO-ceu"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="9Hj-jn-vDw" firstAttribute="width" secondItem="QT5-aR-OcJ" secondAttribute="width" id="5i8-MF-2Tq"/>
+                <constraint firstItem="9Hj-jn-vDw" firstAttribute="centerX" secondItem="QT5-aR-OcJ" secondAttribute="centerX" id="5jt-qy-eng"/>
+                <constraint firstItem="QT5-aR-OcJ" firstAttribute="top" secondItem="BYH-Nf-1eK" secondAttribute="topMargin" constant="-8" id="Elv-c7-ihE"/>
+                <constraint firstItem="9Hj-jn-vDw" firstAttribute="top" secondItem="QT5-aR-OcJ" secondAttribute="bottom" constant="5" id="Hds-9Y-odG"/>
+                <constraint firstItem="QT5-aR-OcJ" firstAttribute="centerX" secondItem="BYH-Nf-1eK" secondAttribute="centerX" id="um2-aA-UkZ"/>
+            </constraints>
+            <connections>
+                <outlet property="comicNameLabel" destination="9Hj-jn-vDw" id="9iC-Oo-7Gz"/>
+                <outlet property="coverImageView" destination="QT5-aR-OcJ" id="Hza-DH-zGT"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
