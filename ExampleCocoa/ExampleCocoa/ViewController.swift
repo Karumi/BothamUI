@@ -7,13 +7,20 @@
 //
 
 import Cocoa
+import BothamUICocoa
 
-class ViewController: NSViewController {
+struct Presenter: BothamPresenter {
+    func viewDidLoad() {
+
+    }
+}
+
+class ViewController: BothamViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+        self.presenter = Presenter()
 
-        // Do any additional setup after loading the view.
+        super.viewDidLoad()
     }
 
     override var representedObject: AnyObject? {
