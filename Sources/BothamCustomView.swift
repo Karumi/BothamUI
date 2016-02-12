@@ -24,7 +24,11 @@ public class BothamCustomView: UIView {
     private func xibSetup() {
         view = loadViewFromNib()
         view.frame = bounds
+#if os(iOS) || os(watchOS) || os(tvOS)
         view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+#elseif os(OSX)
+    view.autoresizingMask = [NSAutoresizingMaskOptions.ViewWidthSizable, NSAutoresizingMaskOptions.ViewHeightSizable]
+#endif
         addSubview(view)
     }
 
