@@ -83,6 +83,6 @@ class ServiceLocator {
     }
 
     func provideSeriesDetailPresenter(ui: SeriesDetailUI, seriesName: String) -> SeriesDetailPresenter {
-        return SeriesDetailPresenter(ui: ui,seriesName: seriesName)
+        return SeriesDetailPresenter(ui: ui, seriesName: seriesName)
     }
 }

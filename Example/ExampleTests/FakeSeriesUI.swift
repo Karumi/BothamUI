@@ -13,7 +13,7 @@ import XCTest
 class FakeSeriesUI: SeriesUI, FakeBothamLoadingUI {
     var loaderWasShowed = false
     var loaderWasHided = false
-    var itemsShowed:[Series] = []
+    var itemsShowed: [Series] = []
 
     var expectation: XCTestExpectation?
 

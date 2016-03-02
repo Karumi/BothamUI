@@ -9,7 +9,7 @@
 import Foundation
 import BothamUI
 
-class SeriesDetailPresenter : BothamPresenter {
+class SeriesDetailPresenter: BothamPresenter {
 
     private let seriesName: String
     private weak var ui: SeriesDetailUI?

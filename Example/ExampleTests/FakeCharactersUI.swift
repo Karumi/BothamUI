@@ -11,7 +11,7 @@ import Foundation
 import BothamUI
 
 class FakeCharactersUI: CharactersUI, FakeBothamPullToResfreshUI {
-    var itemsShowed:[Example.Character] = []
+    var itemsShowed: [Example.Character] = []
     var didRefresh = false
 
     func showItems(items: [Example.Character]) {

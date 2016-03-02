@@ -12,7 +12,7 @@ import BothamUI
 @testable import Example
 
 class ExampleTests: XCTestCase {
-    
+
     func testShowListOfSeries() {
         let expectation = expectationWithDescription("Covers will be shown")
         let fakeSeriesUI = FakeSeriesUI(expectation: expectation)

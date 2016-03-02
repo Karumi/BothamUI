@@ -29,8 +29,8 @@ class CharacterTableViewCell: UITableViewCell, BothamViewCell {
         let gradient: CAGradientLayer = CAGradientLayer(layer: thumbnailImage.layer)
         gradient.frame = thumbnailImage.bounds
         gradient.colors = [UIColor.gradientStartColor.CGColor, UIColor.gradientEndColor.CGColor]
-        gradient.startPoint = CGPointMake(0.0, 0.6)
-        gradient.endPoint = CGPointMake(0.0, 1.0)
+        gradient.startPoint = CGPoint(x: 0.0, y: 0.6)
+        gradient.endPoint = CGPoint(x: 0.0, y: 1.0)
         thumbnailImage.layer.insertSublayer(gradient, atIndex: 0)
     }
 

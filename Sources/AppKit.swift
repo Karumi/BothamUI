@@ -56,7 +56,7 @@ extension NSStoryboard {
 
 extension NSBundle {
     public func loadNibNamed(name: String!, owner: AnyObject!, options: [NSObject : AnyObject]!) -> [AnyObject]! {
-        var topLevelObjects:NSArray?
+        var topLevelObjects: NSArray?
         self.loadNibNamed(name, owner: owner, topLevelObjects: &topLevelObjects)
         return topLevelObjects.map { $0 as [AnyObject] }
     }

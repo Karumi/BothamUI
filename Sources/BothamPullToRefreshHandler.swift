@@ -23,8 +23,7 @@ public class BothamPullToRefreshHandler: NSObject {
         scrollView.alwaysBounceVertical = true
     }
 
-    func refresh(refreshControl: UIRefreshControl)
-    {
+    func refresh(refreshControl: UIRefreshControl) {
         presenter.didStartRefreshing()
     }
 
