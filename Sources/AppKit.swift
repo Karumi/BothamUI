@@ -9,8 +9,10 @@
 import Foundation
 
 // MARK: Constant
+// swiftlint:disable variable_name
 let UICollectionElementKindSectionHeader = NSCollectionElementKindSectionHeader
 let UICollectionElementKindSectionFooter = NSCollectionElementKindSectionFooter
+// swiftlint:enable variable_name
 
 // MARK: Typealias
 public typealias UIViewController = NSViewController
