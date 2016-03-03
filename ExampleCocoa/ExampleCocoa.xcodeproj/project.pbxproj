@@ -11,7 +11,6 @@
 		6B2902971C6E015B0072E04D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2902961C6E015B0072E04D /* ViewController.swift */; };
 		6B2902991C6E015B0072E04D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B2902981C6E015B0072E04D /* Assets.xcassets */; };
 		6B29029C1C6E015B0072E04D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B29029A1C6E015B0072E04D /* Main.storyboard */; };
-		6B2902A71C6E015B0072E04D /* ExampleCocoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2902A61C6E015B0072E04D /* ExampleCocoaTests.swift */; };
 		6B2902B41C6E02310072E04D /* BothamUICocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2902B31C6E02310072E04D /* BothamUICocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +32,6 @@
 		6B29029B1C6E015B0072E04D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B29029D1C6E015B0072E04D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B2902A21C6E015B0072E04D /* ExampleCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B2902A61C6E015B0072E04D /* ExampleCocoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCocoaTests.swift; sourceTree = "<group>"; };
 		6B2902A81C6E015B0072E04D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B2902B11C6E02190072E04D /* BothamUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BothamUI.framework; path = "../build/Debug-iphoneos/BothamUI.framework"; sourceTree = "<group>"; };
 		6B2902B31C6E02310072E04D /* BothamUICocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BothamUICocoa.framework; path = ../build/Debug/BothamUICocoa.framework; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 		6B2902A51C6E015B0072E04D /* ExampleCocoaTests */ = {
 			isa = PBXGroup;
 			children = (
-				6B2902A61C6E015B0072E04D /* ExampleCocoaTests.swift */,
 				6B2902A81C6E015B0072E04D /* Info.plist */,
 			);
 			path = ExampleCocoaTests;
@@ -208,7 +205,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B2902A71C6E015B0072E04D /* ExampleCocoaTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +379,7 @@
 				6B2902AD1C6E015B0072E04D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B2902AE1C6E015B0072E04D /* Build configuration list for PBXNativeTarget "ExampleCocoaTests" */ = {
 			isa = XCConfigurationList;
@@ -391,6 +388,7 @@
 				6B2902B01C6E015B0072E04D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
