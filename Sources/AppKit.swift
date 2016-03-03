@@ -8,21 +8,7 @@
 
 import Foundation
 
-// MARK: Constant
-// swiftlint:disable variable_name
-let UICollectionElementKindSectionHeader = NSCollectionElementKindSectionHeader
-let UICollectionElementKindSectionFooter = NSCollectionElementKindSectionFooter
-// swiftlint:enable variable_name
-
 // MARK: Typealias
-public typealias UIViewController = NSViewController
-public typealias UITableView = NSTableView
-public typealias UIView = NSView
-typealias UITableViewDelegate = NSTableViewDelegate
-typealias UITableViewDataSource = NSTableViewDataSource
-typealias UICollectionViewDataSource = NSCollectionViewDataSource
-public typealias UICollectionView = NSCollectionView
-public typealias UICollectionViewCell = NSCollectionViewItem
 typealias UINib = NSNib
 typealias UIStoryboard = NSStoryboard
 
@@ -30,17 +16,6 @@ typealias UIStoryboard = NSStoryboard
 extension UINib {
     convenience init?(nibName name: String, bundle bundleOrNil: NSBundle?) {
         self.init(nibNamed: name, bundle: bundleOrNil)
-    }
-}
-
-extension UICollectionView {
-    func registerNib(nib: UINib?, forCellWithReuseIdentifier identifier: String) {
-        self.registerNib(nib, forItemWithIdentifier: identifier)
-        NSCollectionElementKindSectionHeader
-    }
-
-    func registerNib(nib: UINib?, forSupplementaryViewOfKind kind: String, withReuseIdentifier identifier: String) {
-        registerNib(nib, forSupplementaryViewOfKind: kind, withIdentifier: identifier)
     }
 }
 
