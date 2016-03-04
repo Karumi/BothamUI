@@ -1,6 +1,10 @@
 language: objective-c
 osx_image: xcode7.1
 
+env:
+  - SCHEME="BothamUIProject"
+  - SCHEME="Example"   
+
 before_install:
   - brew install swiftlint
   - gem install xcpretty
@@ -11,5 +15,4 @@ install:
 
 script:
   - swiftlint
-  - set -o pipefail && xcodebuild -workspace BothamUI.xcworkspace -scheme 'BothamUIProject' -destination 'platform=iOS Simulator,name=iPhone 6s Plus' build test CODE_SIGN_IDENTITY=- | xcpretty -c
-  - set -o pipefail && xcodebuild -workspace BothamUI.xcworkspace -scheme 'Example' -destination 'platform=iOS Simulator,name=iPhone 6s Plus' build test CODE_SIGN_IDENTITY=- | xcpretty -c
+  - set -o pipefail && xcodebuild -workspace BothamUI.xcworkspace -scheme "$SCHEME" -destination 'platform=iOS Simulator,name=iPhone 6s Plus' build test CODE_SIGN_IDENTITY=- | xcpretty -c
