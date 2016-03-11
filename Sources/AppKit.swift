@@ -8,6 +8,8 @@
 
 import Foundation
 
+#if os(OSX)
+
 // MARK: Typealias
 typealias UINib = NSNib
 typealias UIStoryboard = NSStoryboard
@@ -36,3 +38,5 @@ extension NSBundle {
         return topLevelObjects.map { $0 as [AnyObject] }
     }
 }
+
+#endif
