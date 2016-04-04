@@ -10,7 +10,7 @@ import Foundation
 
 public protocol BothamCollectionViewController: class {
     var collectionView: UICollectionView! { get }
-    typealias CollectionViewDataSourceType: BothamViewDataSource
+    associatedtype CollectionViewDataSourceType: BothamViewDataSource
     var dataSource: CollectionViewDataSourceType! { get set }
 }
 
