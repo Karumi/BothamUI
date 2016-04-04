@@ -10,7 +10,7 @@ import Foundation
 import BothamUI
 
 class SeriesPresenter: BothamPresenter, BothamNavigationPresenter {
-    
+
     private weak var ui: SeriesUI?
     private let wireframe: SeriesWireframe
 

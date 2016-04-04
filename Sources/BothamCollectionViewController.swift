@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 public protocol BothamCollectionViewController: class {
     var collectionView: UICollectionView! { get }

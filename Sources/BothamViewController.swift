@@ -7,7 +7,8 @@
 //
 
 import Foundation
-import UIKit
+#if os(iOS) || os(watchOS) || os(tvOS)
+    import UIKit
 
 public class BothamViewController: UIViewController, BothamUI {
     public var presenter: BothamPresenter! = nil
@@ -37,3 +38,35 @@ public class BothamViewController: UIViewController, BothamUI {
         presenter.viewDidDisappear()
     }
 }
+#elseif os(OSX)
+    import AppKit
+
+    public class BothamViewController: NSViewController, BothamUI {
+        public var presenter: BothamPresenter! = nil
+
+        public override func viewDidLoad() {
+            super.viewDidLoad()
+            presenter.viewDidLoad()
+        }
+
+        public override func viewWillAppear() {
+            super.viewWillAppear()
+            presenter.viewWillAppear()
+        }
+
+        public override func viewDidAppear() {
+            super.viewDidAppear()
+            presenter.viewDidAppear()
+        }
+
+        public override func viewWillDisappear() {
+            super.viewWillDisappear()
+            presenter.viewWillDisappear()
+        }
+
+        public override func viewDidDisappear() {
+            super.viewDidDisappear()
+            presenter.viewDidDisappear()
+        }
+    }
+#endif

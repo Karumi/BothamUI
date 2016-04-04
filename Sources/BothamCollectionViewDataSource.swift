@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 public class BothamCollectionViewDataSource<U, V: BothamViewCell where U == V.ItemType>
                                 : NSObject, UICollectionViewDataSource, BothamViewDataSource {
