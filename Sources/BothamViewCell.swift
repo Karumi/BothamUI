@@ -12,7 +12,7 @@ public protocol BothamViewCell {
     static var reuseIdentifier: String { get }
     static var identifier: String { get }
 
-    typealias ItemType
+    associatedtype ItemType
     func configureForItem(item: ItemType)
 }
 

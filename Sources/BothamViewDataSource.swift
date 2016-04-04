@@ -9,7 +9,7 @@
 import Foundation
 
 public protocol BothamViewDataSource {
-    typealias ItemType
+    associatedtype ItemType
 
     var items: [ItemType] { get set }
 }
