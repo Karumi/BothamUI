@@ -1,12 +1,12 @@
 PODS:
-  - BothamUI (1.0.0)
-  - KIF (3.3.1):
-    - KIF/Core (= 3.3.1)
-  - KIF/Core (3.3.1)
-  - Nimble (3.0.0)
-  - SDWebImage (3.7.3):
-    - SDWebImage/Core (= 3.7.3)
-  - SDWebImage/Core (3.7.3)
+  - BothamUI (1.1.0)
+  - KIF (3.4.1):
+    - KIF/Core (= 3.4.1)
+  - KIF/Core (3.4.1)
+  - Nimble (3.2.0)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
 
 DEPENDENCIES:
   - BothamUI (from `./`)
@@ -16,12 +16,12 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   BothamUI:
-    :path: ./
+    :path: "./"
 
 SPEC CHECKSUMS:
-  BothamUI: 47899bef74e940cb07c8413b0ddb2e48eb1b7379
-  KIF: ff9f0e585503871bcd096937cc760081d770c5e2
-  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
-  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  BothamUI: e1132c1fd6c98fe87063f4f95b58403a32f10c5a
+  KIF: 2275c6d59c77e5e56f660f006b99d73780130540
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
 COCOAPODS: 0.39.0
