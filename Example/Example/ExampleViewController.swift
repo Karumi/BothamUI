@@ -9,7 +9,7 @@
 import Foundation
 import BothamUI
 
-class ExampleViewController: BothamViewController, BothamLoadingViewController, BothamPullToRefresh {
+class ExampleViewController<Presenter: BothamPresenter>: BothamViewController<Presenter>, BothamLoadingViewController, BothamPullToRefresh {
 
     let loadingView: UIView = {
         let loadingView = BothamLoadingView()

@@ -16,7 +16,7 @@ private struct Config {
     static let footerHeight = 20
     static let cellMargin = 20
 }
-class SeriesDetailViewController: ExampleViewController, BothamCollectionViewController, SeriesDetailUI {
+class SeriesDetailViewController: ExampleViewController<SeriesDetailPresenter>, BothamCollectionViewController, SeriesDetailUI {
 
     var dataSource: SeriesDetailCollectionViewDataSource!
 
