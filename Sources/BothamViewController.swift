@@ -13,6 +13,14 @@ import Foundation
 public class BothamViewController<Presenter: BothamPresenter>: UIViewController, BothamUI {
     public var presenter: Presenter! = nil
 
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+
     public override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
