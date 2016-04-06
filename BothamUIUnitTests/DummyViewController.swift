@@ -10,4 +10,5 @@ import UIKit
 import BothamUI
 
 class DummyViewController: BothamViewController {
+    var presenter: SpyPresenter!
 }

@@ -9,7 +9,7 @@
 import Foundation
 import BothamUI
 
-class SpyPresenter: BothamPresenter {
+class SpyPresenter: NSObject, BothamPresenter {
 
     var executedStages: [Stage] = []
 

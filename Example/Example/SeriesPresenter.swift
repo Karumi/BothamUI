@@ -9,7 +9,7 @@
 import Foundation
 import BothamUI
 
-class SeriesPresenter: BothamPresenter, BothamNavigationPresenter {
+class SeriesPresenter: NSObject, BothamPresenter, BothamNavigationPresenter {
 
     private weak var ui: SeriesUI?
     private let wireframe: SeriesWireframe

@@ -15,6 +15,7 @@ class SeriesViewController: ExampleViewController, BothamTableViewController, Se
     @IBOutlet var tableView: UITableView!
     var dataSource: BothamTableViewDataSource<Series, SeriesTableViewCell>!
     var delegate: UITableViewDelegate!
+    var presenter: SeriesPresenter!
 
     override func viewDidLoad() {
         configureTableView()
