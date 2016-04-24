@@ -9,8 +9,10 @@
 import Foundation
 
 public class BothamPullToRefreshHandler: NSObject {
-    let presenter: BothamPullToRefreshPresenter
-    let refreshControl = UIRefreshControl()
+    private let presenter: BothamPullToRefreshPresenter
+    private let refreshControl = UIRefreshControl()
+    private var scrollView: UIScrollView?
+    
 
     public init(presenter: BothamPullToRefreshPresenter) {
         self.presenter = presenter
@@ -18,6 +20,7 @@ public class BothamPullToRefreshHandler: NSObject {
     }
 
     public func addTo(scrollView: UIScrollView) {
+        self.scrollView = scrollView
         refreshControl.addTarget(self, action:#selector(BothamPullToRefreshHandler.refresh(_:)), forControlEvents: .ValueChanged)
         scrollView.addSubview(refreshControl)
         scrollView.alwaysBounceVertical = true
@@ -36,8 +39,14 @@ public class BothamPullToRefreshHandler: NSObject {
         self.refreshControl.endRefreshing()
     }
 
-    public func beginRefreshing(scrollView: UIScrollView) {
-        scrollView.setContentOffset(CGPoint(x: 0, y: -refreshControl.frame.size.height), animated: true)
-        self.refreshControl.beginRefreshing()
+    public func beginRefreshing() {
+        if scrollView?.contentOffset.y == 0 {
+            scrollView?.setContentOffset(CGPoint(x: 0, y: -refreshControl.frame.size.height), animated: true)
+            self.refreshControl.beginRefreshing()
+        }
+    }
+    
+    public func isRefreshing() -> Bool {
+        return self.refreshControl.refreshing
     }
 }
