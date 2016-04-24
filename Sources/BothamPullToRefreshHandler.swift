@@ -40,7 +40,7 @@ public class BothamPullToRefreshHandler: NSObject {
     }
 
     public func beginRefreshing() {
-        if scrollView?.contentOffset.y == 0 {
+        if !refreshControl.refreshing {
             scrollView?.setContentOffset(CGPoint(x: 0, y: -refreshControl.frame.size.height), animated: true)
             self.refreshControl.beginRefreshing()
         }
