@@ -13,13 +13,16 @@ public class BothamPullToRefreshHandler: NSObject {
     private let refreshControl = UIRefreshControl()
     private var scrollView: UIScrollView?
     
-
     public init(presenter: BothamPullToRefreshPresenter) {
         self.presenter = presenter
         super.init()
     }
 
-    public func addTo(scrollView: UIScrollView) {
+    public var isRefreshing: Bool {
+        return self.refreshControl.refreshing
+    }
+
+    public func setTo(scrollView: UIScrollView) {
         self.scrollView = scrollView
         refreshControl.addTarget(self, action:#selector(BothamPullToRefreshHandler.refresh(_:)), forControlEvents: .ValueChanged)
         scrollView.addSubview(refreshControl)
@@ -44,9 +47,5 @@ public class BothamPullToRefreshHandler: NSObject {
             scrollView?.setContentOffset(CGPoint(x: 0, y: -refreshControl.frame.size.height), animated: true)
             self.refreshControl.beginRefreshing()
         }
-    }
-    
-    public func isRefreshing() -> Bool {
-        return self.refreshControl.refreshing
     }
 }
