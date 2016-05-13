@@ -7,18 +7,18 @@ target 'BothamUIUnitTests' do
     pod 'Nimble'
 end
 
-target 'Example', :exclusive => true do
+target 'Example' do
         xcodeproj 'Example/Example.xcodeproj'
     pod 'BothamUI', :path => './'
     pod 'SDWebImage', '~>3.7'
 end
 
-target 'ExampleTests', :exclusive => true do
+target 'ExampleTests' do
     xcodeproj 'Example/Example.xcodeproj'
     pod "Nimble"
 end
 
-target 'ExampleAcceptanceTests', :exclusive => true do
+target 'ExampleAcceptanceTests' do
         xcodeproj 'Example/Example.xcodeproj'
     pod 'BothamUI', :path => "./"
     pod 'Nimble'
