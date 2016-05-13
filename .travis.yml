@@ -8,8 +8,10 @@ env:
 before_install:
   - brew install swiftlint
   - gem install xcpretty
-  - gem install cocoapods
   - gem install xcpretty-travis-formatter
+
+install:
+  - pod _0.39.0_ install
 
 script:
   - swiftlint
