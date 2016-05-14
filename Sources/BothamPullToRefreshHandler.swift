@@ -18,13 +18,13 @@ public class BothamPullToRefreshHandler: NSObject {
     }
 
     public func addTo(scrollView: UIScrollView) {
-        refreshControl.addTarget(self, action:#selector(BothamPullToRefreshHandler.refresh(_:)), forControlEvents: .ValueChanged)
+        refreshControl.addTarget(self, action: .refresh, forControlEvents: .ValueChanged)
         scrollView.addSubview(refreshControl)
         scrollView.alwaysBounceVertical = true
     }
 
     public func remove() {
-        refreshControl.removeTarget(self, action:#selector(BothamPullToRefreshHandler.refresh(_:)), forControlEvents: .ValueChanged)
+        refreshControl.removeTarget(self, action: .refresh, forControlEvents: .ValueChanged)
         refreshControl.removeFromSuperview()
     }
 
@@ -40,4 +40,8 @@ public class BothamPullToRefreshHandler: NSObject {
         scrollView.setContentOffset(CGPoint(x: 0, y: -refreshControl.frame.size.height), animated: true)
         self.refreshControl.beginRefreshing()
     }
+}
+
+private extension Selector {
+    static let refresh = #selector(BothamPullToRefreshHandler.refresh(_:))
 }
