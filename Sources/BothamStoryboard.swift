@@ -12,7 +12,7 @@ public struct BothamStoryboard {
     private let name: String
     private let bundle: NSBundle
 
-    public init(name: String, bundle: NSBundle = NSBundle.mainBundle()) {
+    public init(name: String, bundle: NSBundle = .mainBundle()) {
         self.name = name
         self.bundle = bundle
     }
@@ -26,12 +26,8 @@ public struct BothamStoryboard {
         return uiStoryboard.instantiateInitialViewController() as! T
     }
 
-    public func instantiateViewController<T>(viewControllerIdentifier: String) -> T {
+    public func instantiateViewController<T>(viewControllerIdentifier: String = String(T.self)) -> T {
         let uiStoryboard = storyboard(name, bundle: bundle)
         return uiStoryboard.instantiateViewControllerWithIdentifier(viewControllerIdentifier) as! T
-    }
-
-    public func instantiateViewController<T>() -> T {
-        return instantiateViewController(String(T.self))
     }
 }
