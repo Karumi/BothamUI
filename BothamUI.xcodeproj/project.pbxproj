@@ -49,6 +49,8 @@
 		6BDE3E1D1C0398390030EB8B /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E1C1C0398390030EB8B /* NSBundle.swift */; };
 		6BDE3E231C04BAFF0030EB8B /* BothamLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E221C04BAFF0030EB8B /* BothamLoadingViewController.swift */; };
 		6BDE3E251C04BB1F0030EB8B /* BothamLoadingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E241C04BB1F0030EB8B /* BothamLoadingUI.swift */; };
+		A99BE3FB1D49E28700691DD4 /* BothamStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BE3FA1D49E28700691DD4 /* BothamStoryboardTests.swift */; };
+		A99BE3FD1D49E4B100691DD4 /* DummyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99BE3FC1D49E4B100691DD4 /* DummyStoryboard.storyboard */; };
 		EBB63E421BFE5D5500DB3F8A /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB63E3F1BFE5D5500DB3F8A /* DummyViewController.swift */; };
 		EBB63E431BFE5D5500DB3F8A /* SpyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB63E401BFE5D5500DB3F8A /* SpyPresenter.swift */; };
 		EBB63E441BFE5D5500DB3F8A /* SpyWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB63E411BFE5D5500DB3F8A /* SpyWireframe.swift */; };
@@ -114,6 +116,8 @@
 		6BDE3E221C04BAFF0030EB8B /* BothamLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamLoadingViewController.swift; sourceTree = "<group>"; };
 		6BDE3E241C04BB1F0030EB8B /* BothamLoadingUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamLoadingUI.swift; sourceTree = "<group>"; };
 		79EF6311B818596A2229FAEB /* Pods-BothamUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BothamUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BothamUnitTests/Pods-BothamUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		A99BE3FA1D49E28700691DD4 /* BothamStoryboardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamStoryboardTests.swift; sourceTree = "<group>"; };
+		A99BE3FC1D49E4B100691DD4 /* DummyStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DummyStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
 		EA0B0EC999465C46E114B5C6 /* Pods-BothamUIUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BothamUIUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BothamUIUnitTests/Pods-BothamUIUnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		EBB63E3F1BFE5D5500DB3F8A /* DummyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DummyViewController.swift; path = BothamUIUnitTests/DummyViewController.swift; sourceTree = SOURCE_ROOT; };
 		EBB63E401BFE5D5500DB3F8A /* SpyPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpyPresenter.swift; path = BothamUIUnitTests/SpyPresenter.swift; sourceTree = SOURCE_ROOT; };
@@ -327,6 +331,7 @@
 		6B97DB421BE8A99200EE96B7 /* TestDoubles */ = {
 			isa = PBXGroup;
 			children = (
+				A99BE3FC1D49E4B100691DD4 /* DummyStoryboard.storyboard */,
 				EBB63E3F1BFE5D5500DB3F8A /* DummyViewController.swift */,
 				EBB63E401BFE5D5500DB3F8A /* SpyPresenter.swift */,
 				EBB63E411BFE5D5500DB3F8A /* SpyWireframe.swift */,
@@ -355,6 +360,14 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		A99BE3F91D49E26100691DD4 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A99BE3FA1D49E28700691DD4 /* BothamStoryboardTests.swift */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
 		EBEC62601BFE3A4D00662B5F /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
@@ -378,6 +391,7 @@
 			children = (
 				6B97DB421BE8A99200EE96B7 /* TestDoubles */,
 				EBEC62611BFE3A5400662B5F /* ViewController */,
+				A99BE3F91D49E26100691DD4 /* Storyboard */,
 				EBEC62601BFE3A4D00662B5F /* Wireframe */,
 				EBEC626A1BFE3A7300662B5F /* Info.plist */,
 			);
@@ -552,6 +566,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99BE3FD1D49E4B100691DD4 /* DummyStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +689,7 @@
 				EBB63E431BFE5D5500DB3F8A /* SpyPresenter.swift in Sources */,
 				EBB63E461BFE5D5D00DB3F8A /* BothamViewControllerTest.swift in Sources */,
 				EBB63E481BFE5D6200DB3F8A /* WireframeTests.swift in Sources */,
+				A99BE3FB1D49E28700691DD4 /* BothamStoryboardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
