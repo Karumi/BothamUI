@@ -10,6 +10,9 @@ before_install:
   - gem install xcpretty
   - gem install xcpretty-travis-formatter
 
+install:
+  - pod _1.0.1_ install
+
 script:
   - swiftlint
   - set -o pipefail && xcodebuild -workspace BothamUI.xcworkspace -scheme "$SCHEME" -destination 'platform=iOS Simulator,name=iPhone 6s Plus' build test CODE_SIGN_IDENTITY=- | xcpretty -f `xcpretty-travis-formatter`
