@@ -25,7 +25,7 @@ class BothamStoryboardTests: XCTestCase {
     func testStoryboardInstantiatesInitialViewController() {
         let viewController: DummyViewController = sut.initialViewController()
         
-        expect(viewController).toNot(beNil())
+        expect(viewController).to(beAnInstanceOf(DummyViewController))
     }
     
     func testStoryboardInstantiatesViewControllerByIdentifier() {
@@ -33,12 +33,12 @@ class BothamStoryboardTests: XCTestCase {
         
         let viewController: DummyViewController = sut.instantiateViewController(identifier)
 
-        expect(viewController).toNot(beNil())
+        expect(viewController).to(beAnInstanceOf(DummyViewController))
     }
     
     func testStoryboardInstantiatesViewControllerByClassName() {
         let viewController: DummyViewController = sut.instantiateViewController()
         
-        expect(viewController).toNot(beNil())
+        expect(viewController).to(beAnInstanceOf(DummyViewController))
     }
 }
