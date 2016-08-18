@@ -16,7 +16,7 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   BothamUI:
-    :path: ./
+    :path: "./"
 
 SPEC CHECKSUMS:
   BothamUI: e1132c1fd6c98fe87063f4f95b58403a32f10c5a
