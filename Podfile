@@ -15,6 +15,7 @@ end
 
 target 'ExampleTests' do
     project 'Example/Example.xcodeproj'
+    pod 'BothamUI', :path => './'
     pod "Nimble"
 end
 
