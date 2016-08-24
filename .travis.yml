@@ -21,7 +21,10 @@ matrix:
       osx_image: xcode8
       env: SCHEME="Example"
 
-before_install:
+install:
+  - pod install
+
+before_script:
   - gem install xcpretty
   - gem install xcpretty-travis-formatter
 
