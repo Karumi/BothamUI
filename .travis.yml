@@ -4,12 +4,16 @@ matrix:
   include:
     - os: osx
       osx_image: xcode7.3
+      env: SCHEME="BothamUIProject"
+    - os: osx
+      osx_image: xcode7.3
+      env: SCHEME="Example"
     - os: osx
       osx_image: xcode8
-
-env:
-  - SCHEME="BothamUIProject"
-  - SCHEME="Example"   
+      env: SCHEME="BothamUIProject"
+    - os: osx
+      osx_image: xcode8
+      env: SCHEME="Example"
 
 before_install:
   - brew install swiftlint
