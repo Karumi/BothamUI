@@ -6,13 +6,11 @@ matrix:
       osx_image: xcode7.3
       env: SCHEME="BothamUIProject"
       before_install:
-        - sudo gem install cocoapods --pre
         - brew install swiftlint
     - os: osx
       osx_image: xcode7.3
       env: SCHEME="Example"
       before_install:
-        - sudo gem install cocoapods --pre
         - brew install swiftlint
     - os: osx
       osx_image: xcode8
@@ -20,9 +18,6 @@ matrix:
     - os: osx
       osx_image: xcode8
       env: SCHEME="Example"
-
-install:
-  - pod install
 
 before_script:
   - gem install xcpretty
