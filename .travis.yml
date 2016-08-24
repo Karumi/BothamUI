@@ -1,7 +1,11 @@
 language: objective-c
-osx_image:
-  - xcode7.3 
-  - xcode8
+
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode7.3
+    - os: osx
+      osx_image: xcode8
 
 env:
   - SCHEME="BothamUIProject"
