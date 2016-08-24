@@ -23,5 +23,5 @@ target 'ExampleAcceptanceTests' do
         project 'Example/Example.xcodeproj'
     pod 'BothamUI', :path => "./"
     pod 'Nimble'
-    pod 'KIF', '~> 3.5', :configurations => ['Debug']
+    pod 'KIF', '~> 3.0', :configurations => ['Debug']
 end
