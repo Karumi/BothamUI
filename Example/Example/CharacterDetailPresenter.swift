@@ -9,7 +9,7 @@
 import Foundation
 import BothamUI
 
-class CharacterDetailPresenter: BothamPresenter {
+class CharacterDetailPresenter: NSObject, BothamPresenter {
     let ui: CharacterDetailUI
 
     init(ui: CharacterDetailUI) {

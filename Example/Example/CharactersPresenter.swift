@@ -9,7 +9,7 @@
 import Foundation
 import BothamUI
 
-class CharactersPresenter: BothamPresenter, BothamPullToRefreshPresenter {
+class CharactersPresenter: NSObject, BothamPresenter, BothamPullToRefreshPresenter {
     private weak var ui: CharactersUI?
     private let wireframe: CharactersWireframe
 

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol BothamPresenter {
+public protocol BothamPresenter: NSObjectProtocol {
     func viewDidLoad()
     func viewWillAppear()
     func viewDidAppear()

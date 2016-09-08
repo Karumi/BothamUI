@@ -19,6 +19,7 @@ private struct Config {
 class SeriesDetailViewController: ExampleViewController, BothamCollectionViewController, SeriesDetailUI {
 
     var dataSource: SeriesDetailCollectionViewDataSource!
+    var presenter: SeriesDetailPresenter!
 
     @IBOutlet weak var collectionView: UICollectionView!
 

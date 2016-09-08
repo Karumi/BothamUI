@@ -14,6 +14,7 @@ class CharactersViewController: ExampleViewController, BothamTableViewController
     @IBOutlet var tableView: UITableView!
     var dataSource: BothamTableViewDataSource<Character, CharacterTableViewCell>!
     var delegate: UITableViewDelegate!
+    var presenter: CharactersPresenter!
 
     override func viewDidLoad() {
         tableView.dataSource = dataSource
