@@ -15,7 +15,7 @@ public protocol BothamTableViewController: class {
 }
 
 extension BothamTableViewController {
-    public func showItems(items: [TableViewDataSource.ItemType]) {
+    public func show(items: [TableViewDataSource.ItemType]) {
         dataSource.items = items
         tableView.reloadData()
     }

@@ -8,22 +8,18 @@
 
 import Foundation
 
-public class BothamTableViewDataSource<U, V: BothamViewCell where U == V.ItemType>
-                                      : NSObject, UITableViewDataSource, BothamViewDataSource {
-    public var items = [U]()
+open class BothamTableViewDataSource<U, V: BothamViewCell>
+                                      : NSObject, UITableViewDataSource, BothamViewDataSource where U == V.ItemType {
+    open var items = [U]()
 
-    public override init() {
-        super.init()
-    }
-
-    public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(V.identifier, forIndexPath: indexPath)
-        let item = itemAtIndexPath(indexPath)
-        (cell as! V).configureForItem(item)
+    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: V.identifier, for: indexPath)
+        let item = self.item(atIndexPath: indexPath)
+        (cell as! V).configure(forItem: item)
         return cell
     }
 
-    public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
 }

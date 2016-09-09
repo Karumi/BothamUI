@@ -8,18 +8,18 @@
 
 import Foundation
 
-public class BothamNavigatorContainer {
-    private var container: [String : UINavigationController] = [ : ]
+open class BothamNavigatorContainer {
+    fileprivate var container: [String : UINavigationController] = [ : ]
 
     public init() {
     }
 
-    public func register<T: UINavigationController>(navigationController: T) -> T {
-        container[String(T.self)] = navigationController
+    open func register<T: UINavigationController>(navigationController: T) -> T {
+        container[String(describing: T.self)] = navigationController
         return navigationController
     }
 
-    public func resolve<T: UINavigationController>() -> T? {
-        return (container[String(T.self)] as! T)
+    open func resolve<T: UINavigationController>() -> T? {
+        return (container[String(describing: T.self)] as! T)
     }
 }
