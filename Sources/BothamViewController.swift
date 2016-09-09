@@ -10,8 +10,8 @@ import Foundation
 #if os(iOS) || os(watchOS) || os(tvOS)
     import UIKit
 
-open class BothamViewController: UIViewController, BothamUI {
-    open var presenter: BothamPresenter! = nil
+    open class BothamViewController<Presenter: BothamPresenter>: UIViewController, BothamUI {
+    open var presenter: Presenter! = nil
 
     open override func viewDidLoad() {
         super.viewDidLoad()
