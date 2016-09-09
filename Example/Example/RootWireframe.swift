@@ -10,7 +10,7 @@ import BothamUI
 import UIKit
 
 class RootWireframe: ExampleWireframe {
-    func presentInitialViewControllerInWindow(window: UIWindow) {
+    func presentInitialViewController(inWindow window: UIWindow) {
         let viewController = serviceLocator.provideRootTabBarController()
         viewController.viewControllers = self.tabsViewControllers()
         let tabBar = viewController.tabBar
@@ -20,10 +20,10 @@ class RootWireframe: ExampleWireframe {
 
     private func tabsViewControllers() -> [UIViewController] {
         let charactersNavigationController = serviceLocator.provideCharactersNavigationController()
-        serviceLocator.navigatorContainer.register(charactersNavigationController)
+        serviceLocator.navigatorContainer.register(navigationController: charactersNavigationController)
 
         let seriesNavigationController = serviceLocator.provideSeriesNavigationController()
-        serviceLocator.navigatorContainer.register(seriesNavigationController)
+        serviceLocator.navigatorContainer.register(navigationController: seriesNavigationController)
 
         return [
             charactersNavigationController,
@@ -31,18 +31,18 @@ class RootWireframe: ExampleWireframe {
         ]
     }
 
-    private func configureTabBarItems(tabBar: UITabBar) {
+    private func configureTabBarItems(_ tabBar: UITabBar) {
         tabBar.accessibilityLabel = "MainWireframe TabBar"
         tabBar.tintColor = UIColor.tabBarTintColor
 
         let charactersIcon = UIImage(named: "tab_bar_icon_characters")
         let charactersTabBarItem = tabBar.items?[0]
-        charactersTabBarItem?.image = charactersIcon?.imageWithRenderingMode(.AlwaysOriginal)
+        charactersTabBarItem?.image = charactersIcon?.withRenderingMode(.alwaysOriginal)
         charactersTabBarItem?.selectedImage = charactersIcon
 
         let comicsIcon = UIImage(named: "tab_bar_icon_comics")
         let comicsTabBarItem = tabBar.items?[1]
-        comicsTabBarItem?.image = comicsIcon?.imageWithRenderingMode(.AlwaysOriginal)
+        comicsTabBarItem?.image = comicsIcon?.withRenderingMode(.alwaysOriginal)
         comicsTabBarItem?.selectedImage = comicsIcon
     }
 

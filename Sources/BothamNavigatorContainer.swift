@@ -9,7 +9,7 @@
 import Foundation
 
 open class BothamNavigatorContainer {
-    fileprivate var container: [String : UINavigationController] = [ : ]
+    private var container: [String : UINavigationController] = [ : ]
 
     public init() {
     }

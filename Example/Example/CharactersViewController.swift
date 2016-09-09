@@ -20,7 +20,7 @@ class CharactersViewController: ExampleViewController, BothamTableViewController
         tableView.delegate = delegate
         tableView.tableFooterView = UIView()
         tableView.accessibilityLabel = "CharactersTableView"
-        pullToRefreshHandler.addTo(tableView)
+        pullToRefreshHandler.addTo(scrollView: tableView)
         super.viewDidLoad()
     }
 }

@@ -75,13 +75,13 @@ class ServiceLocator {
         return viewController
     }
 
-    func provideSeriesDetailViewController(seriesName: String) -> SeriesDetailViewController {
+    func provideSeriesDetailViewController(_ seriesName: String) -> SeriesDetailViewController {
         let viewController: SeriesDetailViewController = provideMainStoryboard().instantiateViewController("SeriesDetailViewController")
         viewController.presenter = provideSeriesDetailPresenter(viewController, seriesName: seriesName)
         return viewController
     }
 
-    func provideSeriesDetailPresenter(ui: SeriesDetailUI, seriesName: String) -> SeriesDetailPresenter {
+    func provideSeriesDetailPresenter(_ ui: SeriesDetailUI, seriesName: String) -> SeriesDetailPresenter {
         return SeriesDetailPresenter(ui: ui, seriesName: seriesName)
     }
 }
