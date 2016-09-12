@@ -24,7 +24,7 @@ open class BothamCollectionViewDataSource<U, V: BothamViewCell>
             withReuseIdentifier: V.reuseIdentifier,
             for: indexPath
         )
-        let item = self.item(atIndexPath: indexPath)
+        let item = self.item(at: indexPath)
         (cell as! V).configure(forItem: item)
         return cell
     }

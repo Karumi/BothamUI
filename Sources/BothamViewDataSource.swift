@@ -15,7 +15,7 @@ public protocol BothamViewDataSource {
 }
 
 public extension BothamViewDataSource {
-    public func item(atIndexPath indexPath: IndexPath) -> ItemType {
+    public func item(at indexPath: IndexPath) -> ItemType {
         return items[(indexPath as NSIndexPath).item]
     }
 }

@@ -9,8 +9,8 @@
 import Foundation
 
 public struct BothamStoryboard {
-    fileprivate let name: String
-    fileprivate let bundle: Bundle
+    private let name: String
+    private let bundle: Bundle
 
     public init(name: String, bundle: Bundle = .main) {
         self.name = name
