@@ -14,7 +14,7 @@ open class BothamTableViewDataSource<U, V: BothamViewCell>
 
     open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: V.identifier, for: indexPath)
-        let item = self.item(atIndexPath: indexPath)
+        let item = self.item(at: indexPath)
         (cell as! V).configure(forItem: item)
         return cell
     }

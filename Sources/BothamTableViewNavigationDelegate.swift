@@ -18,7 +18,7 @@ open class BothamTableViewNavigationDelegate<T: BothamViewDataSource, U: BothamN
     }
 
     open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let item = dataSource.item(atIndexPath: indexPath)
+        let item = dataSource.item(at: indexPath)
         presenter.itemWasTapped(item)
     }
 }
