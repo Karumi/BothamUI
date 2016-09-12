@@ -14,7 +14,7 @@ class FakeCharactersUI: CharactersUI, FakeBothamPullToResfreshUI {
     var itemsShowed: [Example.Character] = []
     var didRefresh = false
 
-    func showItems(items: [Example.Character]) {
+    func show(items: [Example.Character]) {
         itemsShowed = items
     }
 }

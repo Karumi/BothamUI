@@ -4,7 +4,7 @@ platform :ios, '8.4'
 use_frameworks!
 
 target 'BothamUIUnitTests' do
-    pod 'Nimble'
+    pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git', :branch => 'swift-3.0'
 end
 
 target 'Example' do
@@ -16,12 +16,12 @@ end
 target 'ExampleTests' do
     project 'Example/Example.xcodeproj'
     pod 'BothamUI', :path => './'
-    pod "Nimble"
+    pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git', :branch => 'swift-3.0'
 end
 
 target 'ExampleAcceptanceTests' do
         project 'Example/Example.xcodeproj'
     pod 'BothamUI', :path => "./"
-    pod 'Nimble'
+    pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git', :branch => 'swift-3.0'
     pod 'KIF', '~> 3.0', :configurations => ['Debug']
 end

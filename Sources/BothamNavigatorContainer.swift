@@ -14,6 +14,7 @@ open class BothamNavigatorContainer {
     public init() {
     }
 
+    @discardableResult
     open func register<T: UINavigationController>(navigationController: T) -> T {
         container[String(describing: T.self)] = navigationController
         return navigationController

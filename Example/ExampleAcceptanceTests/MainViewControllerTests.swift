@@ -18,13 +18,13 @@ class MainViewControllerTests: AcceptanceTestCase {
     }
 
     func testShouldShowCharactersTab() {
-        let charactersTabBarItem = tabBarItemAtPosition(0)
+        let charactersTabBarItem = tabBarItemAtPosition(position: 0)
 
         expect(charactersTabBarItem?.title).to(equal("Characters"))
     }
 
     func testShouldShowSeriesTab() {
-        let comicsTabBarItem = tabBarItemAtPosition(1)
+        let comicsTabBarItem = tabBarItemAtPosition(position: 1)
 
         expect(comicsTabBarItem?.title).to(equal("Series"))
     }
@@ -35,7 +35,7 @@ class MainViewControllerTests: AcceptanceTestCase {
 
     private var tabBar: UITabBar {
         get {
-            return tester().waitForViewWithAccessibilityLabel("MainWireframe TabBar") as! UITabBar
+            return tester().waitForView(withAccessibilityLabel: "MainWireframe TabBar") as! UITabBar
         }
     }
 

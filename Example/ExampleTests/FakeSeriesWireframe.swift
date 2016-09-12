@@ -13,7 +13,7 @@ class FakeSeriesWireframe: SeriesWireframe {
     var seriesDetailViewControllerWasPresented = false
     var seriesName = ""
 
-    override func presentSeriesDetailViewController(seriesName: String) {
+    override func presentSeriesDetailViewController(_ seriesName: String) {
         self.seriesName = seriesName
         seriesDetailViewControllerWasPresented = true
     }

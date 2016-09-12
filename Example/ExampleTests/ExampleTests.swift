@@ -14,16 +14,16 @@ import BothamUI
 class ExampleTests: XCTestCase {
 
     func testShowListOfSeries() {
-        let expectation = expectationWithDescription("Covers will be shown")
+        let expectation = self.expectation(description: "Covers will be shown")
         let fakeSeriesUI = FakeSeriesUI(expectation: expectation)
         let presenter = SeriesPresenter(ui: fakeSeriesUI, wireframe: FakeSeriesWireframe())
 
         presenter.viewDidLoad()
 
-        waitForExpectationsWithTimeout(10, handler: nil)
+        waitForExpectations(timeout: 10, handler: nil)
         expect(fakeSeriesUI.loaderWasShowed).to(beTrue())
-        expect(fakeSeriesUI.itemsShowed.count).toOneDay(equal(17))
-        expect(fakeSeriesUI.loaderWasHided).toOneDay(beTrue())
+        expect(fakeSeriesUI.itemsShowed.count).toOneDay(matcher: equal(17))
+        expect(fakeSeriesUI.loaderWasHided).toOneDay(matcher: beTrue())
     }
 
     func testResfreshTableOfCharacters() {
