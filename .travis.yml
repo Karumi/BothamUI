@@ -13,6 +13,7 @@ matrix:
 before_script:
   - gem install xcpretty
   - gem install xcpretty-travis-formatter
+  - pod repo update
 
 script:
   - swiftlint
