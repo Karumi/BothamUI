@@ -16,12 +16,12 @@ end
 target 'ExampleTests' do
     project 'Example/Example.xcodeproj'
     pod 'BothamUI', :path => './'
-    pod "Nimble"
+    pod 'Nimble'
 end
 
 target 'ExampleAcceptanceTests' do
         project 'Example/Example.xcodeproj'
-    pod 'BothamUI', :path => "./"
+    pod 'BothamUI', :path => './'
     pod 'Nimble'
     pod 'KIF', '~> 3.0', :configurations => ['Debug']
 end
