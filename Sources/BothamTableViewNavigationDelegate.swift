@@ -8,17 +8,17 @@
 
 import Foundation
 
-public class BothamTableViewNavigationDelegate<T: BothamViewDataSource, U: BothamNavigationPresenter where T.ItemType == U.ItemType>: NSObject, UITableViewDelegate {
-    private let dataSource: T
-    private let presenter: U
+open class BothamTableViewNavigationDelegate<T: BothamViewDataSource, U: BothamNavigationPresenter>: NSObject, UITableViewDelegate where T.ItemType == U.ItemType {
+    fileprivate let dataSource: T
+    fileprivate let presenter: U
 
     public init(dataSource: T, presenter: U) {
         self.dataSource = dataSource
         self.presenter = presenter
     }
 
-    public func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let item = dataSource.itemAtIndexPath(indexPath)
+    open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = dataSource.item(at: indexPath)
         presenter.itemWasTapped(item)
     }
 }

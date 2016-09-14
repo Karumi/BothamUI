@@ -10,5 +10,5 @@ import Foundation
 
 public protocol BothamNavigationPresenter: BothamPresenter {
     associatedtype ItemType
-    func itemWasTapped(item: ItemType)
+    func itemWasTapped(_ item: ItemType)
 }

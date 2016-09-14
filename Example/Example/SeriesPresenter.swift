@@ -24,7 +24,7 @@ class SeriesPresenter: BothamPresenter, BothamNavigationPresenter {
         delay(0.5) {
             self.ui?.hideLoader()
 
-            self.ui?.showItems([
+            self.ui?.show(items: [
                 Series(name: "Spider-Man (2004)"),
                 Series(name: "Iron Fist: The Living Weapon (2004 - Present)"),
                 Series(name: "Iron Man & the Armor Wars (2009)"),
@@ -46,7 +46,7 @@ class SeriesPresenter: BothamPresenter, BothamNavigationPresenter {
         }
     }
 
-    func itemWasTapped(item: Series) {
+    func itemWasTapped(_ item: Series) {
         wireframe.presentSeriesDetailViewController(item.name)
     }
 }

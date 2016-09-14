@@ -11,12 +11,12 @@ import UIKit
 class Series {
 
     let name: String
-    let coverURL: NSURL?
+    let coverURL: URL?
     let rating: String
     let description: String
     let comics: [Comic]
 
-    init(name: String, coverURL: NSURL? = nil, rating: String = "", description: String = "", comics: [Comic] = [Comic]()) {
+    init(name: String, coverURL: URL? = nil, rating: String = "", description: String = "", comics: [Comic] = [Comic]()) {
         self.name = name
         self.coverURL = coverURL
         self.rating = rating

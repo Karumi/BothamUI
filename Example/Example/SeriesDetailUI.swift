@@ -13,7 +13,7 @@ protocol SeriesDetailUI: BothamUI, BothamLoadingUI {
 
     var title: String? { get set }
 
-    func configureHeader(series: Series)
-    func showItems(items: [Comic])
+    func configureHeader(_ series: Series)
+    func show(items: [Comic])
 
 }

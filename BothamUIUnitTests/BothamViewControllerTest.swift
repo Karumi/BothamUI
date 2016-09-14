@@ -24,8 +24,8 @@ class BothamViewControllerTests: XCTestCase {
             viewController.viewWillDisappear(animated)
             viewController.viewDidDisappear(animated)
 
-            expect(presenter.executedStages).to(equal([.ViewDidLoad,
-                .ViewWillAppear, .ViewDidAppear,
-                .ViewWillDisappear, .ViewDidDisappear]))
+            expect(presenter.executedStages).to(equal([.viewDidLoad,
+                .viewWillAppear, .viewDidAppear,
+                .viewWillDisappear, .viewDidDisappear]))
         }
 }

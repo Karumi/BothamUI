@@ -14,11 +14,11 @@ class AcceptanceTestCase: KIFTestCase {
     private var originalRootViewController: UIViewController?
     private var rootViewController: UIViewController? {
         get {
-            return UIApplication.sharedApplication().keyWindow?.rootViewController
+            return UIApplication.shared.keyWindow?.rootViewController
         }
 
         set(newRootViewController) {
-            UIApplication.sharedApplication().keyWindow?.rootViewController = newRootViewController
+            UIApplication.shared.keyWindow?.rootViewController = newRootViewController
         }
     }
 

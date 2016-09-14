@@ -4,23 +4,14 @@ cache: cocoapods
 matrix:
   include:
     - os: osx
-      osx_image: xcode7.3
-      env: SCHEME="BothamUIProject"
-      before_install:
-        - pod repo update --silent
-        - brew install swiftlint
-    - os: osx
-      osx_image: xcode7.3
-      env: SCHEME="Example"
-      before_install:
-        - pod repo update --silent
-        - brew install swiftlint
-    - os: osx
       osx_image: xcode8
       env: SCHEME="BothamUIProject"
     - os: osx
       osx_image: xcode8
       env: SCHEME="Example"
+
+before_install:
+  - pod repo update --silent
 
 before_script:
   - gem install xcpretty

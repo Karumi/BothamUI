@@ -17,26 +17,26 @@ class SeriesViewControllerTests: AcceptanceTestCase {
     func testShouldShowLoadingView() {
         openSeriesViewController()
 
-        tester().waitForViewWithAccessibilityLabel("LoadingView")
+        tester().waitForView(withAccessibilityLabel: "LoadingView")
     }
 
     func testShouldShowSeventeenSeries() {
         openSeriesViewController()
 
         waitForTableViewLoaded()
-        let seriesTableView = tester().waitForViewWithAccessibilityLabel("SeriesTableView") as! UITableView
+        let seriesTableView = tester().waitForView(withAccessibilityLabel: "SeriesTableView") as! UITableView
 
-        expect(seriesTableView.numberOfRowsInSection(0)).toEventually(equal(17))
+        expect(seriesTableView.numberOfRows(inSection: 0)).toEventually(equal(17))
     }
 
     private func openSeriesViewController() {
         let seriesViewController = ServiceLocator.sharedInstance.provideSeriesNavigationController()
-        presentViewController(seriesViewController)
+        presentViewController(viewController: seriesViewController)
     }
 
     private func waitForTableViewLoaded() {
-        let loadingView = tester().waitForViewWithAccessibilityLabel("LoadingView")
-        expect(loadingView.isVisibleInViewHierarchy()).toOneDay(beFalse())
+        let loadingView = tester().waitForView(withAccessibilityLabel: "LoadingView")
+        expect(loadingView?.isVisibleInViewHierarchy()).toOneDay(matcher: beFalse())
     }
 
 }

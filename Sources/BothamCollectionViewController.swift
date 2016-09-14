@@ -16,7 +16,7 @@ public protocol BothamCollectionViewController: class {
 
 
 extension BothamCollectionViewController {
-    public func showItems(items: [CollectionViewDataSourceType.ItemType]) {
+    public func show(items: [CollectionViewDataSourceType.ItemType]) {
         dataSource.items = items
         collectionView.reloadData()
     }

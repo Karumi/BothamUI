@@ -13,17 +13,17 @@ class SeriesDetailCollectionViewDataSource: BothamCollectionViewDataSource<Comic
 
     var seriesHeader: Series?
 
-    func collectionView(collectionView: UICollectionView,
+    func collectionView(_ collectionView: UICollectionView,
         viewForSupplementaryElementOfKind kind: String,
         atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
             if kind == UICollectionElementKindSectionHeader {
                 let headerView =
-                collectionView.dequeueReusableSupplementaryViewOfKind(kind,
+                collectionView.dequeueReusableSupplementaryView(ofKind: kind,
                     withReuseIdentifier: "SeriesDetailCollectionHeaderViewReusableIdentifier",
-                    forIndexPath: indexPath)
+                    for: indexPath as IndexPath)
                     as! SeriesDetailCollectionHeaderView
                 if let header = self.seriesHeader {
-                    headerView.configureForItem(header)
+                    headerView.configure(forItem: header)
                 }
                 return headerView
 

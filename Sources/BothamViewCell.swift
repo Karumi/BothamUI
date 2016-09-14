@@ -13,10 +13,10 @@ public protocol BothamViewCell {
     static var identifier: String { get }
 
     associatedtype ItemType
-    func configureForItem(item: ItemType)
+    func configure(forItem item: ItemType)
 }
 
 public extension BothamViewCell {
-    public static var reuseIdentifier: String { return String(Self) + "ReuseIdentifier" }
-    public static var identifier: String { return String(Self) + "Identifier" }
+    public static var reuseIdentifier: String { return String(describing: Self.self) + "ReuseIdentifier" }
+    public static var identifier: String { return String(describing: Self.self) + "Identifier" }
 }

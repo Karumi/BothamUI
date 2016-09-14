@@ -19,20 +19,20 @@ class SeriesDetailViewControllerTests: AcceptanceTestCase {
     func testShouldShowHeaderInformation() {
         openSeriesDetailViewController()
 
-        let ratingLabel = tester().waitForViewWithAccessibilityLabel("RatingLabel") as! UILabel
-        let descriptionLabel = tester().waitForViewWithAccessibilityLabel("DescriptionLabel") as! UILabel
+        let ratingLabel = tester().waitForView(withAccessibilityLabel: "RatingLabel") as! UILabel
+        let descriptionLabel = tester().waitForView(withAccessibilityLabel: "DescriptionLabel") as! UILabel
 
-        assertShowsSeriesHeaderInformation(ratingLabel, descriptionLabel: descriptionLabel)
+        assertShowsSeriesHeaderInformation(ratingLabel: ratingLabel, descriptionLabel: descriptionLabel)
     }
 
     func testShouldShowSeriesComics() {
         openSeriesDetailViewController()
 
-        let collectionView = tester().waitForViewWithAccessibilityLabel("ComicsCollectionView") as! UICollectionView
-        let firstComicLabel = tester().waitForViewWithAccessibilityLabel("Civil War: Iron Man") as! UILabel
-        let secondComicLabel = tester().waitForViewWithAccessibilityLabel("Iron Man: Execute Program") as! UILabel
+        let collectionView = tester().waitForView(withAccessibilityLabel: "ComicsCollectionView") as! UICollectionView
+        let firstComicLabel = tester().waitForView(withAccessibilityLabel: "Civil War: Iron Man") as! UILabel
+        let secondComicLabel = tester().waitForView(withAccessibilityLabel: "Iron Man: Execute Program") as! UILabel
 
-        expect(collectionView.numberOfItemsInSection(0)).to(equal(15))
+        expect(collectionView.numberOfItems(inSection: 0)).to(equal(15))
         expect(firstComicLabel.text).to(equal("Civil War: Iron Man"))
         expect(secondComicLabel.text).to(equal("Iron Man: Execute Program"))
     }
@@ -48,6 +48,6 @@ class SeriesDetailViewControllerTests: AcceptanceTestCase {
 
     private func openSeriesDetailViewController() {
         let seriesViewController = ServiceLocator.sharedInstance.provideSeriesDetailViewController(anySeriesName)
-        presentViewController(seriesViewController)
+        presentViewController(viewController: seriesViewController)
     }
 }

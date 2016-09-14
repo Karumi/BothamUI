@@ -10,30 +10,30 @@ import Foundation
 #if os(iOS) || os(watchOS) || os(tvOS)
     import UIKit
 
-public class BothamViewController: UIViewController, BothamUI {
-    public var presenter: BothamPresenter! = nil
+open class BothamViewController: UIViewController, BothamUI {
+    open var presenter: BothamPresenter! = nil
 
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
     }
 
-    public override func viewWillAppear(animated: Bool) {
+    open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter.viewWillAppear()
     }
 
-    public override func viewDidAppear(animated: Bool) {
+    open override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         presenter.viewDidAppear()
     }
 
-    public override func viewWillDisappear(animated: Bool) {
+    open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         presenter.viewWillDisappear()
     }
 
-    public override func viewDidDisappear(animated: Bool) {
+    open override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         presenter.viewDidDisappear()
     }
@@ -41,30 +41,30 @@ public class BothamViewController: UIViewController, BothamUI {
 #elseif os(OSX)
     import AppKit
 
-    public class BothamViewController: NSViewController, BothamUI {
-        public var presenter: BothamPresenter! = nil
+    open class BothamViewController: NSViewController, BothamUI {
+        open var presenter: BothamPresenter! = nil
 
-        public override func viewDidLoad() {
+        open override func viewDidLoad() {
             super.viewDidLoad()
             presenter.viewDidLoad()
         }
 
-        public override func viewWillAppear() {
+        open override func viewWillAppear() {
             super.viewWillAppear()
             presenter.viewWillAppear()
         }
 
-        public override func viewDidAppear() {
+        open override func viewDidAppear() {
             super.viewDidAppear()
             presenter.viewDidAppear()
         }
 
-        public override func viewWillDisappear() {
+        open override func viewWillDisappear() {
             super.viewWillDisappear()
             presenter.viewWillDisappear()
         }
 
-        public override func viewDidDisappear() {
+        open override func viewDidDisappear() {
             super.viewDidDisappear()
             presenter.viewDidDisappear()
         }
