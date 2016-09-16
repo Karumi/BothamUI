@@ -14,18 +14,18 @@ class BothamStoryboardTests: XCTestCase {
     
     private var sut: BothamStoryboard!
     
-    private var testBundle: NSBundle!
+    private var testBundle: Bundle!
     private let storyboardName = "DummyStoryboard"
 
     override func setUp() {
-        testBundle = NSBundle(forClass: self.dynamicType)
+        testBundle = Bundle(for: type(of: self))
         sut = BothamStoryboard(name: storyboardName, bundle: testBundle)
     }
     
     func testStoryboardInstantiatesInitialViewController() {
         let viewController: DummyViewController = sut.initialViewController()
         
-        expect(viewController).to(beAnInstanceOf(DummyViewController))
+        expect(viewController).to(beAnInstanceOf(DummyViewController.self))
     }
     
     func testStoryboardInstantiatesViewControllerByIdentifier() {
@@ -33,12 +33,12 @@ class BothamStoryboardTests: XCTestCase {
         
         let viewController: DummyViewController = sut.instantiateViewController(identifier)
 
-        expect(viewController).to(beAnInstanceOf(DummyViewController))
+        expect(viewController).to(beAnInstanceOf(DummyViewController.self))
     }
     
     func testStoryboardInstantiatesViewControllerByClassName() {
         let viewController: DummyViewController = sut.instantiateViewController()
         
-        expect(viewController).to(beAnInstanceOf(DummyViewController))
+        expect(viewController).to(beAnInstanceOf(DummyViewController.self))
     }
 }
