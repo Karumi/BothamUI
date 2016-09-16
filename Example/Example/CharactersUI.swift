@@ -10,5 +10,5 @@ import Foundation
 import BothamUI
 
 protocol CharactersUI: BothamUI, BothamPullToResfreshUI {
-    func showItems(items: [Character])
+    func show(items: [Character])
 }

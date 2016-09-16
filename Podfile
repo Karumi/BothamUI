@@ -1,26 +1,27 @@
 workspace 'BothamUI.xcworkspace'
-xcodeproj 'BothamUI.xcodeproj'
-platform :ios, '8.0'
+project 'BothamUI.xcodeproj'
+platform :ios, '8.4'
 use_frameworks!
 
 target 'BothamUIUnitTests' do
-    pod 'Nimble'
+    pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git', :branch => 'swift-3.0'
 end
 
 target 'Example' do
-        xcodeproj 'Example/Example.xcodeproj'
+        project 'Example/Example.xcodeproj'
     pod 'BothamUI', :path => './'
     pod 'SDWebImage', '~>3.7'
 end
 
 target 'ExampleTests' do
-    xcodeproj 'Example/Example.xcodeproj'
-    pod "Nimble"
+    project 'Example/Example.xcodeproj'
+    pod 'BothamUI', :path => './'
+    pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git', :branch => 'swift-3.0'
 end
 
 target 'ExampleAcceptanceTests' do
-        xcodeproj 'Example/Example.xcodeproj'
+        project 'Example/Example.xcodeproj'
     pod 'BothamUI', :path => "./"
-    pod 'Nimble'
+    pod 'Nimble', :git => 'https://github.com/Quick/Nimble.git', :branch => 'swift-3.0'
     pod 'KIF', '~> 3.0', :configurations => ['Debug']
 end

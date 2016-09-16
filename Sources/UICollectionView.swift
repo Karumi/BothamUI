@@ -11,23 +11,23 @@ import Foundation
 public extension UICollectionView {
 
     public func registerNib(nibName name: String, forCellReuseIdentifier identifier: String) {
-        registerNib(
-            UINib(nibName: name, bundle: NSBundle.mainBundle()),
+        register(
+            UINib(nibName: name, bundle: Bundle.main),
             forCellWithReuseIdentifier: identifier
         )
     }
 
     public func registerNib(nibName name: String, forHeaderWithReuseIdentifier identifier: String) {
-        registerNib(
-            UINib(nibName: name, bundle: NSBundle.mainBundle()),
+        register(
+            UINib(nibName: name, bundle: Bundle.main),
             forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
             withReuseIdentifier: identifier
         )
     }
 
     public func registerNib(nibName name: String, forFooterWithReuseIdentifier identifier: String) {
-        registerNib(
-            UINib(nibName: name, bundle: NSBundle.mainBundle()),
+        register(
+            UINib(nibName: name, bundle: Bundle.main),
             forSupplementaryViewOfKind: UICollectionElementKindSectionFooter,
             withReuseIdentifier: identifier
         )

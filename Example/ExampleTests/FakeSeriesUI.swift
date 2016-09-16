@@ -21,7 +21,7 @@ class FakeSeriesUI: SeriesUI, FakeBothamLoadingUI {
         self.expectation = expectation
     }
 
-    func showItems(items: [Series]) {
+    func show(items: [Series]) {
         itemsShowed = items
         expectation?.fulfill()
     }

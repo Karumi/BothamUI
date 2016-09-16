@@ -14,26 +14,26 @@ class SpyPresenter: BothamPresenter {
     var executedStages: [Stage] = []
 
     func viewDidLoad() {
-        executedStages.append(.ViewDidLoad)
+        executedStages.append(.viewDidLoad)
     }
 
     func viewWillAppear() {
-        executedStages.append(.ViewWillAppear)
+        executedStages.append(.viewWillAppear)
     }
 
     func viewDidAppear() {
-        executedStages.append(.ViewDidAppear)
+        executedStages.append(.viewDidAppear)
     }
 
     func viewWillDisappear() {
-        executedStages.append(.ViewWillDisappear)
+        executedStages.append(.viewWillDisappear)
     }
 
     func viewDidDisappear() {
-        executedStages.append(.ViewDidDisappear)
+        executedStages.append(.viewDidDisappear)
     }
 
     enum Stage {
-        case ViewDidLoad, ViewWillAppear, ViewDidAppear, ViewWillDisappear, ViewDidDisappear
+        case viewDidLoad, viewWillAppear, viewDidAppear, viewWillDisappear, viewDidDisappear
     }
 }

@@ -11,6 +11,6 @@ import Foundation
 struct Comic {
 
     let name: String
-    let coverURL: NSURL?
+    let coverURL: URL?
 
 }

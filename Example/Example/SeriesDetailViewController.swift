@@ -28,24 +28,24 @@ class SeriesDetailViewController: ExampleViewController, BothamCollectionViewCon
         super.viewDidLoad()
     }
 
-    override func viewWillDisappear(animated: Bool) {
-        navigationController?.navigationBar.setBackgroundImage(nil, forBarMetrics: UIBarMetrics.Default)
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.setBackgroundImage(nil, for: UIBarMetrics.default)
         navigationController?.navigationBar.backgroundColor = UIColor.navigationBarColor
         navigationController?.navigationBar.shadowImage = nil
-        navigationController?.navigationBar.translucent = false
+        navigationController?.navigationBar.isTranslucent = false
         super.viewWillDisappear(animated)
     }
 
 
-    func configureHeader(series: Series) {
+    func configureHeader(_ series: Series) {
         dataSource.seriesHeader = series
     }
 
     private func configureNavigationBar() {
-        navigationController?.navigationBar.backgroundColor = UIColor.clearColor()
-        navigationController?.navigationBar.translucent = true
+        navigationController?.navigationBar.backgroundColor = UIColor.clear
+        navigationController?.navigationBar.isTranslucent = true
         navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
     }
 
     private func configureCollectionView() {
@@ -53,7 +53,7 @@ class SeriesDetailViewController: ExampleViewController, BothamCollectionViewCon
 
         dataSource = SeriesDetailCollectionViewDataSource()
         let navBarHeight = navigationController?.navigationBar.frame.height ?? 0
-        let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.size.height
+        let statusBarHeight = UIApplication.shared.statusBarFrame.size.height
         let topInset = navBarHeight + statusBarHeight
         collectionView.accessibilityLabel = "ComicsCollectionView"
         collectionView.contentInset = UIEdgeInsetsMake(-topInset, 0, 0, 0)

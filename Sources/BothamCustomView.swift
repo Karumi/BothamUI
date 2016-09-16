@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class BothamCustomView: UIView {
+open class BothamCustomView: UIView {
     var view: UIView!
 
     public override init(frame: CGRect) {
@@ -25,7 +25,7 @@ public class BothamCustomView: UIView {
         view = loadViewFromNib()
         view.frame = bounds
 #if os(iOS) || os(watchOS) || os(tvOS)
-        view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+        view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
 #elseif os(OSX)
     view.autoresizingMask = [NSAutoresizingMaskOptions.ViewWidthSizable, NSAutoresizingMaskOptions.ViewHeightSizable]
 #endif
@@ -33,6 +33,6 @@ public class BothamCustomView: UIView {
     }
 
     private func loadViewFromNib() -> UIView {
-        return NSBundle(forClass: self.dynamicType).loadNib(name: String(self.dynamicType), owner: self)
+        return Bundle(for: type(of: self)).loadNib(name: String(describing: type(of: self)), owner: self)
     }
 }

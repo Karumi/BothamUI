@@ -13,7 +13,7 @@ class SpyWireframe {
     let storyboardName: String = "Fake"
     var isRootViewControllerPresented = false
 
-    func presentInitialViewControllerInWindow(window: UIWindow) {
+    func presentInitialViewController(inWindow window: UIWindow) {
         isRootViewControllerPresented = true
     }
 

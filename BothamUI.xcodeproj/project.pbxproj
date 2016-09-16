@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		168BBF004D2769ACD85FB91F /* Pods_BothamUIUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF37E82FA1E8951B20CF920 /* Pods_BothamUIUnitTests.framework */; };
 		6B0736FD1BFDCB83000E0E7D /* BothamTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0736FC1BFDCB83000E0E7D /* BothamTableViewDataSource.swift */; };
 		6B0737001BFDCBF3000E0E7D /* BothamViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0736FF1BFDCBF3000E0E7D /* BothamViewCell.swift */; };
 		6B1BACCE1BDD27E100AC5E9B /* BothamUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BACCD1BDD27E100AC5E9B /* BothamUI.swift */; };
@@ -49,15 +48,16 @@
 		6BDE3E1D1C0398390030EB8B /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E1C1C0398390030EB8B /* NSBundle.swift */; };
 		6BDE3E231C04BAFF0030EB8B /* BothamLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E221C04BAFF0030EB8B /* BothamLoadingViewController.swift */; };
 		6BDE3E251C04BB1F0030EB8B /* BothamLoadingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDE3E241C04BB1F0030EB8B /* BothamLoadingUI.swift */; };
-		A99BE3FB1D49E28700691DD4 /* BothamStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99BE3FA1D49E28700691DD4 /* BothamStoryboardTests.swift */; };
-		A99BE3FD1D49E4B100691DD4 /* DummyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99BE3FC1D49E4B100691DD4 /* DummyStoryboard.storyboard */; };
-		EBB63E421BFE5D5500DB3F8A /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB63E3F1BFE5D5500DB3F8A /* DummyViewController.swift */; };
+		8629A3B1F013635FBDAF5D56 /* Pods_BothamUIUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD2E0AADC4B010DF1D5FA09 /* Pods_BothamUIUnitTests.framework */; };
 		EBB63E431BFE5D5500DB3F8A /* SpyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB63E401BFE5D5500DB3F8A /* SpyPresenter.swift */; };
 		EBB63E441BFE5D5500DB3F8A /* SpyWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB63E411BFE5D5500DB3F8A /* SpyWireframe.swift */; };
 		EBB63E461BFE5D5D00DB3F8A /* BothamViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB63E451BFE5D5D00DB3F8A /* BothamViewControllerTest.swift */; };
 		EBB63E481BFE5D6200DB3F8A /* WireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB63E471BFE5D6200DB3F8A /* WireframeTests.swift */; };
 		EBEC626B1BFE3A7300662B5F /* BothamUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6CCD301BDD0FFB0015A4D4 /* BothamUI.framework */; };
 		FF7C15451C5578A400A67DD7 /* BothamTableViewNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7C15441C5578A400A67DD7 /* BothamTableViewNavigationDelegate.swift */; };
+		FF8854B01D8BDF7500E31FA8 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB63E3F1BFE5D5500DB3F8A /* DummyViewController.swift */; };
+		FFA0105C1D8BE03200E1ED09 /* BothamStoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8854A91D8BDD5C00E31FA8 /* BothamStoryboardTests.swift */; };
+		FFA010661D8BE1F400E1ED09 /* DummyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA010621D8BE0CE00E1ED09 /* DummyStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,10 +78,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0955C3E71675DF3E12853E18 /* Pods-BothamUIUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BothamUIUnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BothamUIUnitTests/Pods-BothamUIUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1AF37E82FA1E8951B20CF920 /* Pods_BothamUIUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BothamUIUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28655E756E2C312F243CEE4A /* Pods_BothamUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BothamUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C4B841725A0D71FEB1D4871 /* Pods-BothamUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BothamUnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BothamUnitTests/Pods-BothamUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6B0736FC1BFDCB83000E0E7D /* BothamTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamTableViewDataSource.swift; sourceTree = "<group>"; };
 		6B0736FF1BFDCBF3000E0E7D /* BothamViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamViewCell.swift; sourceTree = "<group>"; };
 		6B1BACCD1BDD27E100AC5E9B /* BothamUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamUI.swift; sourceTree = "<group>"; };
@@ -115,10 +111,9 @@
 		6BDE3E1C1C0398390030EB8B /* NSBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundle.swift; sourceTree = "<group>"; };
 		6BDE3E221C04BAFF0030EB8B /* BothamLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamLoadingViewController.swift; sourceTree = "<group>"; };
 		6BDE3E241C04BB1F0030EB8B /* BothamLoadingUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamLoadingUI.swift; sourceTree = "<group>"; };
-		79EF6311B818596A2229FAEB /* Pods-BothamUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BothamUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BothamUnitTests/Pods-BothamUnitTests.release.xcconfig"; sourceTree = "<group>"; };
-		A99BE3FA1D49E28700691DD4 /* BothamStoryboardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamStoryboardTests.swift; sourceTree = "<group>"; };
-		A99BE3FC1D49E4B100691DD4 /* DummyStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DummyStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
-		EA0B0EC999465C46E114B5C6 /* Pods-BothamUIUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BothamUIUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BothamUIUnitTests/Pods-BothamUIUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		B78E8EE749A7C2B8DF698911 /* Pods-BothamUIUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BothamUIUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BothamUIUnitTests/Pods-BothamUIUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		BAD2E0AADC4B010DF1D5FA09 /* Pods_BothamUIUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BothamUIUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9F166B512DAF349DBB7592F /* Pods-BothamUIUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BothamUIUnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BothamUIUnitTests/Pods-BothamUIUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EBB63E3F1BFE5D5500DB3F8A /* DummyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DummyViewController.swift; path = BothamUIUnitTests/DummyViewController.swift; sourceTree = SOURCE_ROOT; };
 		EBB63E401BFE5D5500DB3F8A /* SpyPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpyPresenter.swift; path = BothamUIUnitTests/SpyPresenter.swift; sourceTree = SOURCE_ROOT; };
 		EBB63E411BFE5D5500DB3F8A /* SpyWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpyWireframe.swift; path = BothamUIUnitTests/SpyWireframe.swift; sourceTree = SOURCE_ROOT; };
@@ -127,6 +122,8 @@
 		EBEC62661BFE3A7300662B5F /* BothamUIUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BothamUIUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEC626A1BFE3A7300662B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF7C15441C5578A400A67DD7 /* BothamTableViewNavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamTableViewNavigationDelegate.swift; sourceTree = "<group>"; };
+		FF8854A91D8BDD5C00E31FA8 /* BothamStoryboardTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BothamStoryboardTests.swift; sourceTree = "<group>"; };
+		FFA010621D8BE0CE00E1ED09 /* DummyStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DummyStoryboard.storyboard; path = BothamUIUnitTests/DummyStoryboard.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,33 +154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBEC626B1BFE3A7300662B5F /* BothamUI.framework in Frameworks */,
-				168BBF004D2769ACD85FB91F /* Pods_BothamUIUnitTests.framework in Frameworks */,
+				8629A3B1F013635FBDAF5D56 /* Pods_BothamUIUnitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E0AFE0FF3BFFAF7B2BDA789 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4C4B841725A0D71FEB1D4871 /* Pods-BothamUnitTests.debug.xcconfig */,
-				79EF6311B818596A2229FAEB /* Pods-BothamUnitTests.release.xcconfig */,
-				0955C3E71675DF3E12853E18 /* Pods-BothamUIUnitTests.debug.xcconfig */,
-				EA0B0EC999465C46E114B5C6 /* Pods-BothamUIUnitTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		37DABA2E9A8E845F148F0BF2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				28655E756E2C312F243CEE4A /* Pods_BothamUnitTests.framework */,
-				1AF37E82FA1E8951B20CF920 /* Pods_BothamUIUnitTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		6B0736FB1BFDCB5C000E0E7D /* ViewDataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,8 +214,8 @@
 				6B2902541C6DE3300072E04D /* BothamUICocoa */,
 				6B2902601C6DE3300072E04D /* BothamUICocoaTests */,
 				6B6CCD311BDD0FFB0015A4D4 /* Products */,
-				2E0AFE0FF3BFFAF7B2BDA789 /* Pods */,
-				37DABA2E9A8E845F148F0BF2 /* Frameworks */,
+				996F38F4A5E9417E832B1E7C /* Pods */,
+				D18576139E14F61186556E22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -331,7 +308,7 @@
 		6B97DB421BE8A99200EE96B7 /* TestDoubles */ = {
 			isa = PBXGroup;
 			children = (
-				A99BE3FC1D49E4B100691DD4 /* DummyStoryboard.storyboard */,
+				FFA010621D8BE0CE00E1ED09 /* DummyStoryboard.storyboard */,
 				EBB63E3F1BFE5D5500DB3F8A /* DummyViewController.swift */,
 				EBB63E401BFE5D5500DB3F8A /* SpyPresenter.swift */,
 				EBB63E411BFE5D5500DB3F8A /* SpyWireframe.swift */,
@@ -360,12 +337,21 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
-		A99BE3F91D49E26100691DD4 /* Storyboard */ = {
+		996F38F4A5E9417E832B1E7C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A99BE3FA1D49E28700691DD4 /* BothamStoryboardTests.swift */,
+				C9F166B512DAF349DBB7592F /* Pods-BothamUIUnitTests.debug.xcconfig */,
+				B78E8EE749A7C2B8DF698911 /* Pods-BothamUIUnitTests.release.xcconfig */,
 			);
-			name = Storyboard;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D18576139E14F61186556E22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAD2E0AADC4B010DF1D5FA09 /* Pods_BothamUIUnitTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EBEC62601BFE3A4D00662B5F /* Wireframe */ = {
@@ -391,11 +377,19 @@
 			children = (
 				6B97DB421BE8A99200EE96B7 /* TestDoubles */,
 				EBEC62611BFE3A5400662B5F /* ViewController */,
-				A99BE3F91D49E26100691DD4 /* Storyboard */,
+				FF8854A81D8BDD2800E31FA8 /* Storyboard */,
 				EBEC62601BFE3A4D00662B5F /* Wireframe */,
 				EBEC626A1BFE3A7300662B5F /* Info.plist */,
 			);
 			path = BothamUIUnitTests;
+			sourceTree = "<group>";
+		};
+		FF8854A81D8BDD2800E31FA8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FF8854A91D8BDD5C00E31FA8 /* BothamStoryboardTests.swift */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,12 +472,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBEC626E1BFE3A7300662B5F /* Build configuration list for PBXNativeTarget "BothamUIUnitTests" */;
 			buildPhases = (
-				C3477870ABC504E089CEE066 /* Check Pods Manifest.lock */,
+				8E865E3087B7B0E8796375B6 /* [CP] Check Pods Manifest.lock */,
 				EBEC62621BFE3A7300662B5F /* Sources */,
 				EBEC62631BFE3A7300662B5F /* Frameworks */,
-				EBEC62641BFE3A7300662B5F /* Resources */,
-				9596ED742A51C653AA1012C1 /* Embed Pods Frameworks */,
-				210F3AFB46DE57467F98933E /* Copy Pods Resources */,
+				4B92342914EF565C54D15E3D /* [CP] Embed Pods Frameworks */,
+				F5018F9DA890B9FF33FD0424 /* [CP] Copy Pods Resources */,
+				FFA010651D8BE1EA00E1ED09 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -502,20 +496,27 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "GoKarumi S.L.";
 				TargetAttributes = {
 					6B2902521C6DE3300072E04D = {
 						CreatedOnToolsVersion = 7.2.1;
+						ProvisioningStyle = Automatic;
 					};
 					6B29025B1C6DE3300072E04D = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeamName = "Gokarumi S.L.";
+						ProvisioningStyle = Automatic;
 					};
 					6B6CCD2F1BDD0FFB0015A4D4 = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					EBEC62651BFE3A7300662B5F = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeamName = "Gokarumi S.L.";
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -562,40 +563,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EBEC62641BFE3A7300662B5F /* Resources */ = {
+		FFA010651D8BE1EA00E1ED09 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A99BE3FD1D49E4B100691DD4 /* DummyStoryboard.storyboard in Resources */,
+				FFA010661D8BE1F400E1ED09 /* DummyStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		210F3AFB46DE57467F98933E /* Copy Pods Resources */ = {
+		4B92342914EF565C54D15E3D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BothamUIUnitTests/Pods-BothamUIUnitTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9596ED742A51C653AA1012C1 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,19 +589,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BothamUIUnitTests/Pods-BothamUIUnitTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C3477870ABC504E089CEE066 /* Check Pods Manifest.lock */ = {
+		8E865E3087B7B0E8796375B6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F5018F9DA890B9FF33FD0424 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BothamUIUnitTests/Pods-BothamUIUnitTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -685,11 +686,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB63E441BFE5D5500DB3F8A /* SpyWireframe.swift in Sources */,
-				EBB63E421BFE5D5500DB3F8A /* DummyViewController.swift in Sources */,
+				FF8854B01D8BDF7500E31FA8 /* DummyViewController.swift in Sources */,
 				EBB63E431BFE5D5500DB3F8A /* SpyPresenter.swift in Sources */,
+				FFA0105C1D8BE03200E1ED09 /* BothamStoryboardTests.swift in Sources */,
 				EBB63E461BFE5D5D00DB3F8A /* BothamViewControllerTest.swift in Sources */,
 				EBB63E481BFE5D6200DB3F8A /* WireframeTests.swift in Sources */,
-				A99BE3FB1D49E28700691DD4 /* BothamStoryboardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,7 +713,7 @@
 		6B2902641C6DE3300072E04D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -733,7 +734,7 @@
 		6B2902651C6DE3300072E04D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -748,14 +749,16 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
 		6B2902661C6DE3300072E04D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BothamUICocoaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -768,8 +771,9 @@
 		6B2902671C6DE3300072E04D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BothamUICocoaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -792,8 +796,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -821,6 +827,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -840,8 +847,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -861,6 +870,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -872,6 +883,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -890,6 +902,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -900,14 +913,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.BothamUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
 		EBEC626F1BFE3A7300662B5F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0955C3E71675DF3E12853E18 /* Pods-BothamUIUnitTests.debug.xcconfig */;
+			baseConfigurationReference = C9F166B512DAF349DBB7592F /* Pods-BothamUIUnitTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BothamUIUnitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -919,14 +934,16 @@
 		};
 		EBEC62701BFE3A7300662B5F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA0B0EC999465C46E114B5C6 /* Pods-BothamUIUnitTests.release.xcconfig */;
+			baseConfigurationReference = B78E8EE749A7C2B8DF698911 /* Pods-BothamUIUnitTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BothamUIUnitTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.marvelapiclient.BothamUIUnitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};

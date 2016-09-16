@@ -13,13 +13,13 @@ class SeriesTableViewCell: UITableViewCell, BothamViewCell {
 
     @IBOutlet weak var seriesNameLabel: UILabel!
 
-    func configureForItem(item: Series) {
+    func configure(forItem item: Series) {
         seriesNameLabel.text = item.name
         seriesNameLabel.accessibilityLabel = item.name
-        accessoryType = .DisclosureIndicator
+        accessoryType = .disclosureIndicator
     }
 
-    override func setHighlighted(highlighted: Bool, animated: Bool) {
+    override func setHighlighted(_ highlighted: Bool, animated: Bool) {
         if highlighted {
             seriesNameLabel.textColor = UIColor.cellTextHighlightedColor
             backgroundColor = UIColor.cellBackgroundHighlightedColor

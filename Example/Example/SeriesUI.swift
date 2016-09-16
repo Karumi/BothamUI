@@ -10,5 +10,5 @@ import Foundation
 import BothamUI
 
 protocol SeriesUI: BothamUI, BothamLoadingUI {
-    func showItems(items: [Series])
+    func show(items: [Series])
 }

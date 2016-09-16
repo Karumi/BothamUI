@@ -8,30 +8,24 @@
 
 import Foundation
 
-public class BothamCollectionViewDataSource<U, V: BothamViewCell where U == V.ItemType>
-                                : NSObject, UICollectionViewDataSource, BothamViewDataSource {
-    public var items = [U]()
+open class BothamCollectionViewDataSource<U, V: BothamViewCell>
+                                : NSObject, UICollectionViewDataSource, BothamViewDataSource where U == V.ItemType {
+    open var items = [U]()
 
-    public override init() {
-        super.init()
-    }
-
-    public func collectionView(
-        collectionView: UICollectionView,
-        numberOfItemsInSection section: Int) -> Int {
+    open func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }
 
-    public func collectionView(
-        collectionView: UICollectionView,
-        cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    open func collectionView(
+        _ collectionView: UICollectionView,
+        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(
-            V.reuseIdentifier,
-            forIndexPath: indexPath
+        let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: V.reuseIdentifier,
+            for: indexPath
         )
-        let item = itemAtIndexPath(indexPath)
-        (cell as! V).configureForItem(item)
+        let item = self.item(at: indexPath)
+        (cell as! V).configure(forItem: item)
         return cell
     }
 }

@@ -16,18 +16,18 @@ class CharactersViewControllerTests: AcceptanceTestCase {
     func testShowsDefaultSuperHeroes() {
         openCharactersViewController()
 
-        let tableView = tester().waitForViewWithAccessibilityLabel("CharactersTableView") as! UITableView
-        let spiderManCell = tester().waitForViewWithAccessibilityLabel("Spider-Man") as! CharacterTableViewCell
-        let ironManCell = tester().waitForViewWithAccessibilityLabel("Iron Man") as! CharacterTableViewCell
+        let tableView = tester().waitForView(withAccessibilityLabel: "CharactersTableView") as! UITableView
+        let spiderManCell = tester().waitForView(withAccessibilityLabel: "Spider-Man") as! CharacterTableViewCell
+        let ironManCell = tester().waitForView(withAccessibilityLabel: "Iron Man") as! CharacterTableViewCell
 
         expect(spiderManCell.nameLabel.text).to(equal("Spider-Man"))
         expect(ironManCell.nameLabel.text).to(equal("Iron Man"))
-        expect(tableView.numberOfRowsInSection(0)).toEventually(equal(11))
+        expect(tableView.numberOfRows(inSection: 0)).toEventually(equal(11))
     }
 
     private func openCharactersViewController() {
         let charactersViewController = ServiceLocator.sharedInstance.provideCharactersViewController()
-        presentViewController(charactersViewController)
+        presentViewController(viewController: charactersViewController)
     }
 
 }
