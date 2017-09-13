@@ -16,25 +16,25 @@ typealias UIStoryboard = NSStoryboard
 
 // MARK: Extension
 extension UINib {
-    convenience init?(nibName name: String, bundle bundleOrNil: NSBundle?) {
-        self.init(nibNamed: name, bundle: bundleOrNil)
+    convenience init?(nibName name: String, bundle bundleOrNil: Bundle?) {
+        self.init(nibNamed: NSNib.Name(rawValue: name), bundle: bundleOrNil)
     }
 }
 
 extension NSStoryboard {
     func instantiateInitialViewController() -> AnyObject? {
-        return instantiateInitialController()
+        return instantiateInitialController() as AnyObject
     }
 
     func instantiateViewControllerWithIdentifier(identifier: String) -> AnyObject {
-        return instantiateControllerWithIdentifier(identifier)
+        return instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: identifier)) as AnyObject
     }
 }
 
-extension NSBundle {
+extension Bundle {
     public func loadNibNamed(name: String!, owner: AnyObject!, options: [NSObject : AnyObject]!) -> [AnyObject]! {
         var topLevelObjects: NSArray?
-        self.loadNibNamed(name, owner: owner, topLevelObjects: &topLevelObjects)
+        self.loadNibNamed(NSNib.Name(rawValue: name!), owner: owner, topLevelObjects: &topLevelObjects)
         return topLevelObjects.map { $0 as [AnyObject] }
     }
 }
