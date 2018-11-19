@@ -6,7 +6,7 @@ This project will help you setup all your presentation logic. BothamUI provides 
 
 In addition we will use a wireframe navigation model and a service locator example[[5] [di]].
 
-##Screenshots
+## Screenshots
 ![Screenshot1][screenshot1]
 
 Application UI/UX designs by [Luis Herrero][luisHerreroTwitterAccount].
