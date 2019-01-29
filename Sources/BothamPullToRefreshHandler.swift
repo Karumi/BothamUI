@@ -28,7 +28,7 @@ open class BothamPullToRefreshHandler: NSObject {
         refreshControl.removeFromSuperview()
     }
 
-    func refresh(refreshControl: UIRefreshControl) {
+    @objc func refresh(refreshControl: UIRefreshControl) {
         presenter.didStartRefreshing()
     }
 
